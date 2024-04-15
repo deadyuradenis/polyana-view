@@ -3,7 +3,64 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/media/favicon.svg" type="image/svg+xml">
+<style type="text/css">
+  .preloader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    -webkit-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+  }
+
+  .preloader__logo {
+    position: relative;
+    -webkit-transition: opacity 0.6s ease, transform 0.6s ease;
+    -o-transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 1;
+    width: 145px;
+    height: 44px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='145' height='44' viewBox='0 0 145 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M34.0212 8.16205L10.0156 43.7975L6.98597 41.7652L30.9915 6.1298L34.0212 8.16205Z' fill='%2378DA76'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.2168 9.37001L21.8674 9.37004L21.8672 23.9595L32.6957 18.9611L34.2283 22.2673L18.2166 29.6582L18.2168 9.37001Z' fill='%2378DA76'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.0319 17.6362L12.6521 17.1676L14.7288 33.1421L27.7812 30.0398L28.627 33.5835L11.6302 37.6233L9.0319 17.6362Z' fill='%2378DA76'/%3E%3Cpath d='M12.9682 23.6727C10.6174 24.5791 7.97532 23.4123 7.06698 21.0665C6.15865 18.7207 7.328 16.0842 9.6788 15.1778C12.0296 14.2714 14.6717 15.4383 15.58 17.7841C16.4883 20.1299 15.319 22.7663 12.9682 23.6727Z' fill='%2378DA76'/%3E%3Cpath d='M21.6601 13.5324C19.3093 14.4388 16.6672 13.2719 15.7589 10.9261C14.8505 8.58028 16.0199 5.94384 18.3707 5.03743C20.7215 4.13103 23.3635 5.29789 24.2719 7.6437C25.1802 9.98951 24.0109 12.6259 21.6601 13.5324Z' fill='%2378DA76'/%3E%3Cpath d='M34.9586 10.1361C32.6078 11.0425 29.9658 9.87565 29.0575 7.52984C28.1491 5.18404 29.3185 2.5476 31.6693 1.64119C34.0201 0.734787 36.6621 1.90165 37.5705 4.24746C38.4788 6.59327 37.3095 9.22971 34.9586 10.1361Z' fill='%2378DA76'/%3E%3Cpath d='M37.9457 23.401C35.5949 24.3074 32.9529 23.1405 32.0445 20.7947C31.1362 18.4489 32.3055 15.8125 34.6563 14.9061C37.0071 13.9997 39.6492 15.1665 40.5575 17.5124C41.4659 19.8582 40.2965 22.4946 37.9457 23.401Z' fill='%2378DA76'/%3E%3Cpath d='M33.3595 35.2157C31.0087 36.1221 28.3667 34.9552 27.4583 32.6094C26.55 30.2636 27.7194 27.6272 30.0702 26.7208C32.421 25.8144 35.063 26.9812 35.9713 29.3271C36.8797 31.6729 35.7103 34.3093 33.3595 35.2157Z' fill='%2378DA76'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 19.5469L46.6492 19.5469L46.6492 36.9864L42.0747 36.9864L42.0747 24.1117L4.57451 24.1117L4.57451 36.9864L-1.80703e-09 36.9864L0 19.5469Z' fill='%23262626'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M58.2844 33.5747C61.0443 33.5747 63.2816 31.3421 63.2816 28.588C63.2816 25.834 61.0443 23.6014 58.2844 23.6014C55.5245 23.6014 53.2872 25.834 53.2872 28.588C53.2872 31.3421 55.5245 33.5747 58.2844 33.5747ZM58.2844 38.1394C63.5707 38.1394 67.8561 33.8631 67.8561 28.588C67.8561 23.3129 63.5707 19.0366 58.2844 19.0366C52.9981 19.0366 48.7126 23.3129 48.7126 28.588C48.7126 33.8631 52.9981 38.1394 58.2844 38.1394Z' fill='%23262626'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M140.253 28.5881C140.253 31.3421 138.015 33.5747 135.256 33.5747C132.496 33.5747 130.258 31.3421 130.258 28.5881C130.258 25.834 132.496 23.6014 135.256 23.6014C138.015 23.6014 140.253 25.834 140.253 28.5881ZM140.426 36.6278C138.935 37.5845 137.16 38.1395 135.256 38.1395C129.969 38.1395 125.684 33.8632 125.684 28.5881C125.684 23.313 129.969 19.0366 135.256 19.0366C137.16 19.0366 138.935 19.5916 140.426 20.5484L140.426 19.5824L145 19.5824L145 37.9647L140.426 37.9647L140.426 36.6278Z' fill='%23262626'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M107.344 37.4933L107.344 19.5454L111.918 19.5454L111.918 26.2987L119.226 26.2988L119.226 19.5822L123.801 19.5822L123.801 37.5302L119.226 37.5302L119.226 30.8636L111.918 30.8635L111.918 37.4933L107.344 37.4933Z' fill='%23262626'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M85.9072 37.5768L85.9072 19.5469L76.1842 19.5474L66.8374 37.5768L71.9878 37.5768L78.9682 24.112L81.3326 24.1119L81.3326 37.5768L85.9072 37.5768Z' fill='%23262626'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M94.8144 24.1072L100.393 24.1072L100.393 28.3188L94.8144 28.3188C93.649 28.3188 92.7041 27.376 92.7041 26.213C92.7041 25.05 93.649 24.1072 94.8144 24.1072ZM88.1296 26.213C88.1296 22.529 91.1225 19.5425 94.8144 19.5425L104.967 19.5425L104.967 28.6142H104.967L104.967 37.5758L100.393 37.5758L100.393 32.8835L96.022 32.8835L93.5894 37.5758L88.439 37.5758L91.3665 31.9289C89.4268 30.7613 88.1296 28.6383 88.1296 26.213Z' fill='%23262626'/%3E%3C/svg%3E%0A");
+  }
+
+  .preloader__mask {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: width 0.4s ease;
+    -o-transition: width 0.4s ease;
+    transition: width 0.4s ease;
+    background-color: #fff;
+  }
+
+  .preloader.is-loaded {
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+
+  .preloader.is-loaded .preloader__logo {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+</style>
 <link rel="stylesheet" href="css/index.css">
 <title>UI KIT</title>
 
@@ -1959,6 +2016,63 @@
       </div>
     </div>
   </div>
+  <div class="preloader" data-preloader="component"><span class="preloader__logo"><span class="preloader__mask" data-preloader="mask"></span></span></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (document.querySelector('[data-preloader="component"]')) {
+        const preloader = document.querySelector('[data-preloader="component"]');
+        const preloaderMask = preloader.querySelector('[data-preloader="mask"]');
+        const images = document.querySelectorAll('img');
+        const imagesCount = images.length;
+        const body = document.querySelector('body');
+        const percent = 100 / imagesCount;
+        let progress = 0;
+        let loadedImg = 0;
+
+        const imgLoad = () => {
+          progress += percent;
+          loadedImg++;
+          unlock(progress, loadedImg);
+        };
+
+        const unlock = (progress, loadedImg) => {
+          progress = Math.round(progress);
+          preloaderMask.style.width = (100 - progress) + '%';
+
+          if (progress >= 100 || loadedImg === imagesCount) {
+            setTimeout(() => {
+              preloader.classList.add('is-loaded');
+            }, 250);
+
+            setTimeout(() => {
+              body.classList.add('is-unlock');
+            }, 500);
+          }
+        };
+
+        if (imagesCount !== 0) {
+          images.forEach(img => {
+            if (img.complete) {
+              imgLoad();
+            } else {
+              img.onload = () => {
+                imgLoad();
+              };
+
+              img.onerror = () => {
+                imgLoad();
+              };
+            }
+          });
+        } else {
+          progress = 100;
+          loadedImg = 0;
+
+          unlock(progress, loadedImg);
+        }
+      }
+    })
+  </script>
   <script src="js/index.js"></script>
 </body>
 
