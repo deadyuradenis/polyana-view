@@ -70,7 +70,7 @@
       <div class="header-nav header__nav">
         <div class="container">
           <div class="header-nav__content">
-            <nav class="nav header-nav__list"><a href="faq.html">Помощь</a><a href="#">Покупателям</a><a href="#">Стать продавцом</a><a href="delivery-payment.html">Все поставщики</a><a href="#">Журнал</a></nav>
+            <nav class="nav header-nav__list"><a href="faq.html">Помощь</a><a href="#">Покупателям</a><a href="#">Стать продавцом</a><a href="sellers.html">Все поставщики</a><a href="journal.html">Журнал</a></nav>
           </div>
         </div>
       </div>
@@ -3701,6 +3701,7 @@
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-location"><span>Modal "Location"</span></button></div>
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-success"><span>Modal "Success"</span></button></div>
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-commentAdd"><span>Modal "Comment add"</span></button></div>
+              <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-rate"><span>Modal "Rate"</span></button></div>
             </div>
           </div>
           <div class="ui__block" id="ui-section">
@@ -3722,8 +3723,50 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
                           </svg></a></div>
                     </div>
-                    <div class="section__filter">
-                      <p>Section filter</p>
+                    <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                      <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                        <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
+                            <div class="badge__wrapper"> <span>Специи</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                            <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                              </svg></div>
+                          </button></div>
+                      </div>
                     </div>
                   </div>
                   <div class="section__body">
@@ -3760,8 +3803,50 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
                           </svg></a></div>
                     </div>
-                    <div class="section__filter">
-                      <p>Section filter</p>
+                    <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                      <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                        <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
+                            <div class="badge__wrapper"> <span>Специи</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                            <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                              </svg></div>
+                          </button></div>
+                      </div>
                     </div>
                   </div>
                   <div class="section__body">
@@ -3811,8 +3896,50 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
                           </svg></a></div>
                     </div>
-                    <div class="section__filter">
-                      <p>Section filter</p>
+                    <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                      <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                        <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
+                            <div class="badge__wrapper"> <span>Специи</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                            <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                              </svg></div>
+                          </button></div>
+                      </div>
                     </div>
                   </div>
                   <div class="section__body">
@@ -3849,8 +3976,50 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
                           </svg></a></div>
                     </div>
-                    <div class="section__filter">
-                      <p>Section filter</p>
+                    <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                      <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                        <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
+                            <div class="badge__wrapper"> <span>Специи</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                            <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                              </svg></div>
+                          </button></div>
+                      </div>
                     </div>
                   </div>
                   <div class="section__body">
@@ -3887,15 +4056,56 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
                           </svg></a></div>
                     </div>
-                    <div class="section__filter">
-                      <p>Section filter</p>
+                    <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                      <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                        <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
+                            <div class="badge__wrapper"> <span>Специи</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                            <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                              </svg></div>
+                          </button></div>
+                      </div>
                     </div>
                   </div>
                   <div class="section__body">
                     <div class="section__main">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, dolorum ducimus fuga fugiat iusto quod sunt. A cum illum in ipsa molestiae quaerat, qui quibusdam quo sequi tempore vel, voluptatibus.</p>
-                      <section class="section section--size-md"></section>
-                      <div class="container section__container">
+                      <section class="section section--size-md">
                         <div class="section__header section__header--size-md">
                           <div class="section__header-content">
                             <div class="section__header-main">
@@ -3928,7 +4138,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </section>
                     </div>
                     <div class="section__footer section__footer--size-lg">
                       <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
@@ -3960,45 +4170,127 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
                           </svg></a></div>
                     </div>
-                    <div class="section__filter">
-                      <p>Section filter</p>
+                    <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                      <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                        <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
+                            <div class="badge__wrapper"> <span>Специи</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                            <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                              </svg></div>
+                          </button></div>
+                      </div>
                     </div>
                   </div>
                   <div class="section__body">
                     <div class="section__main">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, dolorum ducimus fuga fugiat iusto quod sunt. A cum illum in ipsa molestiae quaerat, qui quibusdam quo sequi tempore vel, voluptatibus.</p>
                       <section class="section section--size-sm">
-                        <div class="container section__container">
-                          <div class="section__header section__header--size-sm">
-                            <div class="section__header-content">
-                              <div class="section__header-main">
-                                <h3 class="section__title">Section sm title</h3>
-                                <p class="section__subtitle">Section subtitle</p>
-                              </div>
-                              <div class="section__header-actions"> <a class="button button--style-ghost section__link" href="#"><span class="text-swap"><span>desktop text</span><span>mobile</span></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
-                                  </svg></a></div>
+                        <div class="section__header section__header--size-sm">
+                          <div class="section__header-content">
+                            <div class="section__header-main">
+                              <h3 class="section__title">Section sm title</h3>
+                              <p class="section__subtitle">Section subtitle</p>
                             </div>
-                            <div class="section__filter">
-                              <p>Section filter</p>
+                            <div class="section__header-actions"> <a class="button button--style-ghost section__link" href="#"><span class="text-swap"><span>desktop text</span><span>mobile</span></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
+                                </svg></a></div>
+                          </div>
+                          <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                            <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                              <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
+                                  <div class="badge__wrapper"> <span>Специи</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Удобрения</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Приправы</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Семена</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Удобрения</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Приправы</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Семена</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Удобрения</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Приправы</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Семена</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Удобрения</span></div>
+                                </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                  <div class="badge__wrapper"> <span>Приправы</span></div>
+                                </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                                  <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                                    </svg></div>
+                                </button></div>
                             </div>
                           </div>
-                          <div class="section__body">
-                            <div class="section__main">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, dolorum ducimus fuga fugiat iusto quod sunt. A cum illum in ipsa molestiae quaerat, qui quibusdam quo sequi tempore vel, voluptatibus.</p>
-                            </div>
-                            <div class="section__footer section__footer--size-sm">
-                              <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
-                              <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                                  </svg><span>Назад</span></a>
-                                <div class="pagination__list"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__item" href="#"> <span>1</span></a>
-                                  <div class="button button--style-outline button--size-rg button--rounded pagination__item"><span>2</span></div><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__item" href="#"> <span>3</span></a>
-                                  <div class="button button--style-ghost button--theme-neutral button--size-rg pagination__item"> <span>...</span></div><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__item" href="#"> <span>12</span></a>
-                                </div><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                                  </svg></a>
-                              </div>
+                        </div>
+                        <div class="section__body">
+                          <div class="section__main">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, dolorum ducimus fuga fugiat iusto quod sunt. A cum illum in ipsa molestiae quaerat, qui quibusdam quo sequi tempore vel, voluptatibus.</p>
+                          </div>
+                          <div class="section__footer section__footer--size-sm">
+                            <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
+                            <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                                </svg><span>Назад</span></a>
+                              <div class="pagination__list"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__item" href="#"> <span>1</span></a>
+                                <div class="button button--style-outline button--size-rg button--rounded pagination__item"><span>2</span></div><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__item" href="#"> <span>3</span></a>
+                                <div class="button button--style-ghost button--theme-neutral button--size-rg pagination__item"> <span>...</span></div><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__item" href="#"> <span>12</span></a>
+                              </div><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                                </svg></a>
                             </div>
                           </div>
                         </div>
@@ -4034,8 +4326,50 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
                           </svg></a></div>
                     </div>
-                    <div class="section__filter">
-                      <p>Section filter</p>
+                    <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                      <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                        <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
+                            <div class="badge__wrapper"> <span>Специи</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Семена</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Удобрения</span></div>
+                          </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                            <div class="badge__wrapper"> <span>Приправы</span></div>
+                          </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                            <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                              </svg></div>
+                          </button></div>
+                      </div>
                     </div>
                   </div>
                   <div class="section__grid">
@@ -4068,8 +4402,50 @@
                                 <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
                               </svg></a></div>
                         </div>
-                        <div class="section__filter">
-                          <p>Section filter</p>
+                        <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                          <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                            <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
+                                <div class="badge__wrapper"> <span>Специи</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Удобрения</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Приправы</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Семена</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Удобрения</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Приправы</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Семена</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Удобрения</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Приправы</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Семена</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Пищевые ингредиенты</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Чайное сырье</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Удобрения</span></div>
+                              </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                                <div class="badge__wrapper"> <span>Приправы</span></div>
+                              </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                                <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                                  </svg></div>
+                              </button></div>
+                          </div>
                         </div>
                       </div>
                       <div class="section__body">
@@ -4726,33 +5102,27 @@
                       </svg></div>
                   </div>
                 </a></div>
-              <div class="ui__col"><a class="card-article-socials" href="#">
+              <div class="ui__col">
+                <div class="card-article-socials card-article-socials--style-default">
                   <div class="card-article-socials__content">
-                    <div class="card-article-socials__main">
-                      <div class="socials card-article-socials__list">
-                        <div class="socials__item"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#logo--vk"></use>
-                          </svg></div>
-                        <div class="socials__item"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#logo--telegram"></use>
-                          </svg></div>
-                        <div class="socials__item"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#logo--ok"></use>
-                          </svg></div>
-                        <div class="socials__item"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#logo--dzen"></use>
-                          </svg></div>
-                      </div>
-                      <p class="card-article-socials__title">Следи за всеми событиями в наших соцсетях</p>
-                      <div class="card-article-socials__button">
-                        <div class="card-article-socials__button-text">Все статьи</div>
-                        <div class="card-article-socials__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                          </svg></div>
-                      </div>
-                    </div>
+                    <div class="socials card-article-socials__list"><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#logo--vk"></use>
+                        </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#logo--telegram"></use>
+                        </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#logo--ok"></use>
+                        </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#logo--dzen"></use>
+                        </svg></a></div>
+                    <div class="card-article-socials__title">Следи за всеми событиями в наших соцсетях</div><a class="card-article-socials__button" href="juornal.html">
+                      <div class="card-article-socials__button-text">Все статьи</div>
+                      <div class="card-article-socials__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
+                        </svg></div>
+                    </a>
                   </div>
-                </a></div>
+                </div>
+              </div>
             </div>
             <div class="ui__row">
               <div class="ui__col"><a class="card-article card-article--style-full" href="#">
@@ -4904,7 +5274,7 @@
                       <div class="banner-slide__header">
                         <h2 class="banner-slide__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h2>
                       </div>
-                      <div class="banner-slide__footer"> <a class="button button--style-outline button--theme-light button--size-md banner-slide__button" href="#"><span>Регистрация</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <div class="banner-slide__footer"> <a class="button button--style-outline button--theme-light button--size-md banner-slide__button" href="#"><span>Подробнее</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
                           </svg></a></div>
                     </div>
@@ -5226,7 +5596,7 @@
           <div class="footer__logo-wrapper"><a class="footer__logo" href="#"><img src="assets/media/logos/logo-icon.svg" alt="" /></a></div>
           <div class="footer-nav footer__nav">
             <div class="footer-nav__group">
-              <nav class="nav footer-nav__list footer-nav__list--one-column"><a href="faq.html">Помощь</a><a href="#">Покупателям</a><a href="#">Стать продавцом</a><a href="delivery-payment.html">Все поставщики</a><a href="#">Журнал</a></nav><a class="footer-nav__registration" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <nav class="nav footer-nav__list footer-nav__list--one-column"><a href="faq.html">Помощь</a><a href="#">Покупателям</a><a href="#">Стать продавцом</a><a href="sellers.html">Все поставщики</a><a href="journal.html">Журнал</a></nav><a class="footer-nav__registration" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                   <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
                 </svg><span>Регистрация</span></a>
             </div>
@@ -5362,6 +5732,35 @@
             <p class="modal-success__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
           </div>
           <div class="modal-success__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--size-sm" id="modal-rate" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal-rate__header">
+              <h2 class="modal-rate__title">Как вам материал?</h2>
+            </div>
+            <div class="modal-rate__body">
+              <div class="rating modal-rate__rating rating--size-md"><input class="rating__input" type="radio" name="rating" value="5" id="rating-5" /><label class="rating__label" for="rating-5"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                  </svg></label><input class="rating__input" type="radio" name="rating" value="4" id="rating-4" /><label class="rating__label" for="rating-4"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                  </svg></label><input class="rating__input" type="radio" name="rating" value="3" id="rating-3" /><label class="rating__label" for="rating-3"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                  </svg></label><input class="rating__input" type="radio" name="rating" value="2" id="rating-2" /><label class="rating__label" for="rating-2"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                  </svg></label><input class="rating__input" type="radio" name="rating" value="1" id="rating-1" /><label class="rating__label" for="rating-1"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                  </svg></label></div>
+            </div>
+            <div class="modal-rate__footer"> <button class="button button--size-lg" type="submit" data-bs-dismiss="modal" aria-label="Close"><span>Оценить</span></button></div>
+          </form>
         </div>
       </div>
     </div>
