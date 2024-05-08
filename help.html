@@ -69,7 +69,7 @@
     <div class="header__content">
       <div class="header-nav header__nav">
         <div class="container">
-          <div class="header-nav__content">
+          <div class="header-nav__content"><!-- is-active для активного-->
             <nav class="nav header-nav__list"><a href="faq.html">Помощь</a><a href="#">Покупателям</a><a href="#">Стать продавцом</a><a href="sellers.html">Все поставщики</a><a href="journal.html">Журнал</a></nav>
           </div>
         </div>
@@ -79,7 +79,7 @@
           <div class="header-main__content" data-teleport-target="header-main-content"><a class="header-main__logo" href="index.html"><img src="assets/media/logos/logo-large.svg" alt="" /><img src="assets/media/logos/logo.svg" alt="" /></a><button class="button button--size-rg header__catalog-trigger" type="button" data-header-catalog="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                 <use xlink:href="assets/icons/clean/sprite.svg#menu"></use>
               </svg><span>Каталог</span></button>
-            <div class="header-search header-main__search" data-teleport-target="headerSearch" data-component="header-search">
+            <div class="header-search header-main__search" data-component="header-search" data-teleport-target="headerSearch">
               <form action="#">
                 <div class="header-search__wrapper"><label class="search-input header-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
@@ -88,12 +88,12 @@
                       </svg></button></label>
                   <div class="header-search__result" data-header-search="result">
                     <div class="header-search__result-content">
-                      <div class="header-search__result-group"><a href="#"><strong>Ч</strong>ебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a></div>
-                      <div class="header-search__result-group header-search__result-group--maker"><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></div>
+                      <div class="header-search__result-group"><a href="#"><strong>Ч</strong>ебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a></div>
+                      <div class="header-search__result-group header-search__result-group--maker"><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></div>
                     </div>
                   </div>
                 </div>
-              </form><button class="header-main__location" type="button" data-location="trigger" data-teleport="lg,header-main-content" data-bs-toggle="modal" data-bs-target="#modal-location"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              </form><button class="header-main__location" type="button" data-location="trigger" data-teleport="md,header-main-content" data-bs-toggle="modal" data-bs-target="#modal-location"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                   <use xlink:href="assets/icons/clean/sprite.svg#location"></use>
                 </svg><span>Санкт-Петербург</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                   <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
@@ -116,7 +116,7 @@
                 </button><a class="header-menu__button" href="#">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
-                    </svg><span>12	</span></div><span class="header-menu__button-title">Избранное</span>
+                    </svg><span>12  </span></div><span class="header-menu__button-title">Избранное</span>
                 </a><button class="header-menu__button" type="button">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
@@ -2647,7 +2647,7 @@
   <div class="layout__main">
     <div class="breadcrumbs">
       <div class="container">
-        <div class="breadcrumbs__list" data-node="content"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Помощь</a></div>
+        <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Помощь</a></div>
       </div>
     </div>
     <section class="section section-help section--visible">
@@ -2811,7 +2811,7 @@
   </footer><button class="button button--type-icon button--rounded scroll-up" type="button" data-component="scroll-up"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
       <use xlink:href="assets/icons/clean/sprite.svg#arrow-long--up"></use>
     </svg></button>
-  <div class="modal fade modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-default modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -2835,65 +2835,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal--size-md" id="modal-commentAdd" aria-hidden="aria-hidden" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-          </svg></button>
-        <div class="modal__inner">
-          <form action="#">
-            <div class="modal__header">
-              <h2 class="modal__title">Отзыв о товаре</h2>
-            </div>
-            <div class="modal__body">
-              <div class="modal-comment-add__form">
-                <div class="modal-comment-add__rating">
-                  <div class="text-swap modal-comment-add__rating-title"><span>Ваша оценка </span><span>Оцените товар *</span></div>
-                  <div class="rating"><input class="rating__input" type="radio" name="rating" value="5" id="rating-5" /><label class="rating__label" for="rating-5"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                      </svg></label><input class="rating__input" type="radio" name="rating" value="4" id="rating-4" /><label class="rating__label" for="rating-4"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                      </svg></label><input class="rating__input" type="radio" name="rating" value="3" id="rating-3" /><label class="rating__label" for="rating-3"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                      </svg></label><input class="rating__input" type="radio" name="rating" value="2" id="rating-2" /><label class="rating__label" for="rating-2"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                      </svg></label><input class="rating__input" type="radio" name="rating" value="1" id="rating-1" /><label class="rating__label" for="rating-1"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                      </svg></label></div>
-                </div>
-                <div class="input input--type-textarea" data-component="input">
-                  <div class="input__title">Комментарий к товару</div><label class="input__wrapper"><textarea class="input__native" type="textarea" name="comment text" placeholder="" data-input="native" data-mask="letters"></textarea><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span>
-                </div>
-                <div class="input-file" data-component="input-file">
-                  <div class="input-file-preview input-file__preview" data-input-file="preview">
-                    <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
-                    <div class="input-file-preview__list" data-input-file="preview-list" draggable="true"></div>
-                  </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="media" multiple="multiple" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
-                    <div class="input-file-field__content">
-                      <div class="input-file-field__main">
-                        <div class="text-swap input-file-field__call"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
-                          </svg><span>Перетащите сюда или <strong>Выберите файл</strong> для загрузки</span><span>Прикрепить фото</span></div>
-                      </div>
-                      <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
-                        </svg><span>JPG, WEBP or PNG. Максимальный размер 2MB</span></div>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="modal__footer"><button class="button" type="submti" disabled="disabled"><span>Отправить отзыв</span></button></div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-mini modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -2907,35 +2849,6 @@
             <p class="modal-success__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
           </div>
           <div class="modal-success__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade modal--size-sm" id="modal-rate" aria-hidden="aria-hidden" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-          </svg></button>
-        <div class="modal__inner">
-          <form action="#">
-            <div class="modal-rate__header">
-              <h2 class="modal-rate__title">Как вам материал?</h2>
-            </div>
-            <div class="modal-rate__body">
-              <div class="rating modal-rate__rating rating--size-md"><input class="rating__input" type="radio" name="rating" value="5" id="rating-5" /><label class="rating__label" for="rating-5"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                    <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                  </svg></label><input class="rating__input" type="radio" name="rating" value="4" id="rating-4" /><label class="rating__label" for="rating-4"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                    <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                  </svg></label><input class="rating__input" type="radio" name="rating" value="3" id="rating-3" /><label class="rating__label" for="rating-3"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                    <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                  </svg></label><input class="rating__input" type="radio" name="rating" value="2" id="rating-2" /><label class="rating__label" for="rating-2"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                    <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                  </svg></label><input class="rating__input" type="radio" name="rating" value="1" id="rating-1" /><label class="rating__label" for="rating-1"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                    <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                  </svg></label></div>
-            </div>
-            <div class="modal-rate__footer"> <button class="button button--size-lg" type="submit" data-bs-dismiss="modal" aria-label="Close"><span>Оценить</span></button></div>
-          </form>
         </div>
       </div>
     </div>

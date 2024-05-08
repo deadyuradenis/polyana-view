@@ -69,7 +69,7 @@
     <div class="header__content">
       <div class="header-nav header__nav">
         <div class="container">
-          <div class="header-nav__content">
+          <div class="header-nav__content"><!-- is-active для активного-->
             <nav class="nav header-nav__list"><a href="faq.html">Помощь</a><a href="#">Покупателям</a><a href="#">Стать продавцом</a><a href="sellers.html">Все поставщики</a><a href="journal.html">Журнал</a></nav>
           </div>
         </div>
@@ -79,7 +79,7 @@
           <div class="header-main__content" data-teleport-target="header-main-content"><a class="header-main__logo" href="index.html"><img src="assets/media/logos/logo-large.svg" alt="" /><img src="assets/media/logos/logo.svg" alt="" /></a><button class="button button--size-rg header__catalog-trigger" type="button" data-header-catalog="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                 <use xlink:href="assets/icons/clean/sprite.svg#menu"></use>
               </svg><span>Каталог</span></button>
-            <div class="header-search header-main__search" data-teleport-target="headerSearch" data-component="header-search">
+            <div class="header-search header-main__search" data-component="header-search" data-teleport-target="headerSearch">
               <form action="#">
                 <div class="header-search__wrapper"><label class="search-input header-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
@@ -88,12 +88,12 @@
                       </svg></button></label>
                   <div class="header-search__result" data-header-search="result">
                     <div class="header-search__result-content">
-                      <div class="header-search__result-group"><a href="#"><strong>Ч</strong>ебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a></div>
-                      <div class="header-search__result-group header-search__result-group--maker"><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></div>
+                      <div class="header-search__result-group"><a href="#"><strong>Ч</strong>ебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a><a href="#">Чебрец</a></div>
+                      <div class="header-search__result-group header-search__result-group--maker"><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a><a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></div>
                     </div>
                   </div>
                 </div>
-              </form><button class="header-main__location" type="button" data-location="trigger" data-teleport="lg,header-main-content" data-bs-toggle="modal" data-bs-target="#modal-location"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              </form><button class="header-main__location" type="button" data-location="trigger" data-teleport="md,header-main-content" data-bs-toggle="modal" data-bs-target="#modal-location"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                   <use xlink:href="assets/icons/clean/sprite.svg#location"></use>
                 </svg><span>Санкт-Петербург</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                   <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
@@ -116,7 +116,7 @@
                 </button><a class="header-menu__button" href="#">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
-                    </svg><span>12	</span></div><span class="header-menu__button-title">Избранное</span>
+                    </svg><span>12  </span></div><span class="header-menu__button-title">Избранное</span>
                 </a><button class="header-menu__button" type="button">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
@@ -2650,120 +2650,234 @@
         min-height: 100vh;
         flex-grow: 1;
         display: flex;
-        flex-direction: column;
-        padding: 32px 0;
-        background-color: var(--color-neutral-50);
+        justify-content: space-between;
+        background-color: var(--color-neutral-100);
         background-repeat: repeat;
         background-size: 820px auto;
         color: var(--color-neutral-900);
       }
 
+      @media only screen and (max-width: 833px) {
+        .ui {
+          flex-direction: column;
+        }
+      }
+
+      .ui__aside {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        z-index: 10;
+        width: 260px;
+        flex-shrink: 0;
+        margin-left: 20px;
+        max-height: calc(100% - var(--header-height));
+        border-left: 2px solid var(--color-neutral-300);
+      }
+
+      @media only screen and (max-width: 1023px) {
+        .ui__aside {
+          width: 220px;
+        }
+      }
+
+      @media only screen and (max-width: 833px) {
+        .ui__aside {
+          order: -1;
+          width: 100%;
+          padding: 8px 16px;
+          margin-left: 0;
+          position: sticky;
+          top: 0;
+          background-color: var(--color-neutral-50);
+          border-left: 0;
+          border-bottom: 2px solid var(--color-neutral-300);
+        }
+      }
+
+      .ui__nav {
+        position: sticky;
+        top: var(--header-height);
+        display: flex;
+        flex-direction: column;
+        padding: 16px 8px;
+        row-gap: 8px;
+        height: calc(100vh - var(--header-height));
+        overflow: hidden scroll;
+        text-transform: capitalize;
+        direction: rtl;
+      }
+
+      @media only screen and (max-width: 833px) {
+        .ui__nav {
+          position: static;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 0;
+          height: 68px;
+          gap: 4px;
+          direction: ltr;
+        }
+      }
+
+      .ui__body {
+        padding: 32px 20px;
+        width: 100%;
+        max-width: calc(100% - 260px);
+        flex-grow: 1;
+      }
+
+      @media only screen and (max-width: 1023px) {
+        .ui__body {
+          max-width: calc(100% - 220px);
+        }
+      }
+
+      @media only screen and (max-width: 833px) {
+        .ui__body {
+          padding: 24px 16px;
+          max-width: none;
+        }
+      }
+
       .ui__inner {
-        padding: 0 20px;
+        padding: 0 16px;
       }
 
       .ui__header {
         margin-bottom: 30px;
       }
 
-      .ui__nav {
-        position: sticky;
-        top: 168px;
-        z-index: 9;
-        min-width: 100%;
-        padding: 20px 0;
-        box-sizing: border-box;
-        border-bottom: 1px solid var(--color-primary-300);
-        background-color: #FFF;
-      }
-
-      @media only screen and (max-width: 1023px) {
-        .ui__nav {
-          top: 62px;
-          margin-right: -16px;
-          margin-left: -16px;
-          padding: 12px 16px;
-        }
-      }
-
-      .ui__nav .badges {
-        overflow: hidden;
-      }
-
-      .ui__nav .badges__list {
-        max-height: 110px;
-        overflow: hidden auto;
-      }
-
-      @media only screen and (max-width: 1023px) {
-        .ui__nav .badges__list {
-          max-height: 88px;
-        }
-      }
-
-      @media only screen and (max-width: 833px) {
-        .ui__nav .badges__list {
-          max-height: 64px;
-        }
-      }
-
       .ui__block {
-        margin-top: 30px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid var(--color-neutral-700);
+        border-bottom: 1px solid var(--color-neutral-400);
       }
 
       .ui__block:first-of-type {
         margin-top: 0;
       }
 
+      .ui__block::before {
+        content: "";
+        pointer-events: none;
+        display: block;
+        height: var(--header-height);
+        margin-top: calc(-1 * var(--header-height));
+        flex-shrink: 0;
+        display: flex;
+      }
+
+      @media only screen and (max-width: 833px) {
+        .ui__block::before {
+          height: 85px;
+          margin-top: -85px;
+        }
+      }
+
       .ui__row {
-        margin: 0 -32px -5px;
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
+        gap: 32px 20px;
+        margin: 24px 0;
       }
 
       @media only screen and (max-width: 1023px) {
         .ui__row {
-          margin-right: -20px;
-          margin-left: -20px;
+          margin: 20px 0;
+          gap: 24px 16px;
         }
       }
 
       @media only screen and (max-width: 833px) {
         .ui__row {
-          margin-right: -15px;
-          margin-left: -15px;
+          margin: 16px 0;
+          gap: 20px 16px;
         }
       }
 
       .ui__col {
         position: relative;
+        flex: 1 0 calc(25% - 15px);
         max-width: 100%;
         min-height: 50px;
         flex-grow: 1;
-        margin-bottom: 20px;
-        padding: 0 32px;
         box-sizing: border-box;
+      }
+
+      @media only screen and (max-width: 1259px) {
+        .ui__col {
+          flex-basis: calc(33.33% - 13.3333333333px);
+        }
       }
 
       @media only screen and (max-width: 1023px) {
         .ui__col {
-          padding-right: 20px;
-          padding-left: 20px;
+          flex-basis: calc(33% - 12px);
         }
       }
 
-      @media only screen and (max-width: 833px) {
+      @media only screen and (max-width: 575px) {
         .ui__col {
-          padding-right: 15px;
-          padding-left: 15px;
+          flex-basis: calc(50% - 8px);
         }
       }
     </style>
     <section class="ui">
-      <div class="container ui__container">
+      <div class="ui__aside">
+        <div class="ui__nav"> <a class="badge badge--style-tab badge--size-rg" href="#ui-typography">
+            <div class="badge__wrapper"> <span>typography</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-link">
+            <div class="badge__wrapper"> <span>link</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-button">
+            <div class="badge__wrapper"> <span>button</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-badge">
+            <div class="badge__wrapper"> <span>badge</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-input">
+            <div class="badge__wrapper"> <span>input</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-range">
+            <div class="badge__wrapper"> <span>range</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-range-dropdown">
+            <div class="badge__wrapper"> <span>range-dropdown</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-checkbox">
+            <div class="badge__wrapper"> <span>checkbox</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-radio">
+            <div class="badge__wrapper"> <span>radio</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-tumbler">
+            <div class="badge__wrapper"> <span>tumbler</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-counter">
+            <div class="badge__wrapper"> <span>counter</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-packaging">
+            <div class="badge__wrapper"> <span>packaging</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-modal">
+            <div class="badge__wrapper"> <span>modal</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-section">
+            <div class="badge__wrapper"> <span>section</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-breadcrumbs">
+            <div class="badge__wrapper"> <span>breadcrumbs</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-slider">
+            <div class="badge__wrapper"> <span>slider</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-accordion">
+            <div class="badge__wrapper"> <span>accordion</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-comment">
+            <div class="badge__wrapper"> <span>comment</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-card-seller">
+            <div class="badge__wrapper"> <span>card-seller</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-card-product">
+            <div class="badge__wrapper"> <span>card-product</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-card-article">
+            <div class="badge__wrapper"> <span>card-article</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-card-category">
+            <div class="badge__wrapper"> <span>card-category</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-banner-slide">
+            <div class="badge__wrapper"> <span>banner-slide</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-banner-card">
+            <div class="badge__wrapper"> <span>banner-card</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-banner-product">
+            <div class="badge__wrapper"> <span>banner-product</span></div>
+          </a></div>
+      </div>
+      <div class="ui__body">
         <div class="ui__header">
           <h1 class="h1">UI KIT</h1>
         </div>
@@ -2778,23 +2892,15 @@
               <div class="ui__col">
                 <div class="h1">h1</div>
               </div>
-            </div>
-            <div class="ui__row">
               <div class="ui__col">
                 <div class="h2">h2</div>
               </div>
-            </div>
-            <div class="ui__row">
               <div class="ui__col">
                 <div class="h3">h3</div>
               </div>
-            </div>
-            <div class="ui__row">
               <div class="ui__col">
                 <div class="h4">h4</div>
               </div>
-            </div>
-            <div class="ui__row">
               <div class="ui__col">
                 <div class="h5">h5</div>
               </div>
@@ -2810,23 +2916,15 @@
               <div class="ui__col">
                 <div class="text">text</div>
               </div>
-            </div>
-            <div class="ui__row">
               <div class="ui__col">
                 <div class="text-xl">text-xl</div>
               </div>
-            </div>
-            <div class="ui__row">
               <div class="ui__col">
                 <div class="text-lg">text-lg</div>
               </div>
-            </div>
-            <div class="ui__row">
               <div class="ui__col">
                 <div class="text-md">text-md</div>
               </div>
-            </div>
-            <div class="ui__row">
               <div class="ui__col">
                 <div class="text-sm">text-sm</div>
               </div>
@@ -2855,8 +2953,6 @@
                   </li>
                 </ul>
               </div>
-            </div>
-            <div class="ui__row">
               <div class="ui__col">
                 <ol class="list">
                   <li class="list__item">
@@ -2875,7 +2971,7 @@
               </div>
             </div>
           </div>
-          <div class="ui__block" id="ui-links">
+          <div class="ui__block" id="ui-link">
             <div class="ui__row">
               <div class="ui__col">
                 <div class="h2">Link</div>
@@ -2893,153 +2989,203 @@
                   </svg></a></div>
             </div>
           </div>
-          <div class="ui__block" id="ui-buttons">
+          <div class="ui__block" id="ui-button">
             <div class="ui__row">
               <div class="ui__col">
                 <div class="h3">Button</div>
               </div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="button button--size-lg" href="#"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="ui__col">
+                <div class="h4">Button sizes</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="button button--size-lg" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                  </svg><span>Кнопка</span><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg><span>Кнопка lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                  </svg></a></div>
-              <div class="ui__col"><a class="button" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--size-md" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--size-sm" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--size-xs" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg></a></div>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--size-md" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--size-rg" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--size-sm" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--size-xs" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка xs</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="button button--type-icon button--size-lg" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--type-icon" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--type-icon button--size-md" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--type-icon button--size-sm" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--type-icon button--size-xs" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--type-icon button--rounded" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg></a></div>
+              <div class="ui__col">
+                <div class="h4">Button types</div>
+              </div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="button button--theme-red" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--theme-neutral" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--theme-dark" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
+              <div class="ui__col"><button class="button button--type-icon button--size-lg" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--type-icon button--size-md" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--type-icon button--size-rg" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--type-icon button--size-sm" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--type-icon button--size-xs" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="button button--style-outline" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--theme-red button--style-outline" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--theme-neutral button--style-outline" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--theme-dark button--style-outline" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
+              <div class="ui__col">
+                <div class="h4">Button styles</div>
+              </div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="button button--style-ghost" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--theme-red button--style-ghost" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--theme-neutral button--style-ghost" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--theme-dark button--style-ghost" href="#"><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
+              <div class="ui__col">
+                <div class="h5">Button style default</div>
+              </div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="button" href="#" disabled><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--style-outline" href="#" disabled><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--style-ghost" href="#" disabled><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
-                    </svg></svg></a></div>
+              <div class="ui__col"><button class="button button--style-default button--theme-" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-default button--theme-default" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка default</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-default button--theme-red" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка red</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-default button--theme-neutral" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка neutral</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-default button--theme-light" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка light</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-default button--theme-dark" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка dark</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="button" href="#" disabled><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--light" href="#" disabled><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
-                    </svg></svg></a></div>
-              <div class="ui__col"><a class="button button--style-ghost" href="#" disabled><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                    </svg></svg><span>Кнопка</span><svg class="icon"><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                    </svg></svg></a></div>
+              <div class="ui__col">
+                <div class="h5">Button style ghost</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="button button--style-ghost button--theme-" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-ghost button--theme-default" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка default</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-ghost button--theme-red" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка red</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-ghost button--theme-neutral" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка neutral</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-ghost button--theme-light" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка light</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-ghost button--theme-dark" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка dark</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h5">Button style outline</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="button button--style-outline button--theme-" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-outline button--theme-default" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка default</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-outline button--theme-red" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка red</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-outline button--theme-neutral" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка neutral</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-outline button--theme-light" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка light</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-outline button--theme-dark" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка dark</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h4">Button disabled</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="button button--style-default" type="button" disabled><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка default</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-ghost" type="button" disabled><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка ghost</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
+              <div class="ui__col"><button class="button button--style-outline" type="button" disabled><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                  </svg><span>Кнопка outline</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                  </svg></button></div>
             </div>
           </div>
           <div class="ui__block" id="ui-badge">
@@ -3049,117 +3195,539 @@
               </div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="badge" href="#">
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                    </svg></div>
-                </a></div>
-              <div class="ui__col"><button class="badge" type="button">
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                    </svg></div>
-                </button></div>
-              <div class="ui__col"><label class="badge"><input class="badge__input" type="radio" name="badge" value="badge" />
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                    </svg></div>
-                </label></div>
-              <div class="ui__col"><label class="badge"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                    </svg></div>
-                </label></div>
+              <div class="ui__col">
+                <div class="h4">Badge style outline</div>
+              </div>
             </div>
             <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-outline badge--size-lg is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button outline lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
               <div class="ui__col"><a class="badge badge--style-outline badge--size-lg" href="#">
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link outline lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
                     </svg></div>
                 </a></div>
+              <div class="ui__col"><label class="badge badge--style-outline badge--size-lg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox outline lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-outline badge--size-lg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio outline lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
               <div class="ui__col"><button class="badge badge--style-outline badge--size-md is-active" type="button">
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button outline md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
                     </svg></div>
                 </button></div>
+              <div class="ui__col"><a class="badge badge--style-outline badge--size-md" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link outline md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-outline badge--size-md"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox outline md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-outline badge--size-md"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio outline md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-outline badge--size-rg is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button outline rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-outline badge--size-rg" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link outline rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox outline rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
               <div class="ui__col"><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio outline rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
                     </svg></div>
                 </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-outline badge--size-sm is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button outline sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-outline badge--size-sm" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link outline sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
               <div class="ui__col"><label class="badge badge--style-outline badge--size-sm"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox outline sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-outline badge--size-sm"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio outline sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h4">Badge style tab</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-tab badge--size-lg is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button tab lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-tab badge--size-lg" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link tab lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-tab badge--size-lg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox tab lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-tab badge--size-lg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio tab lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-tab badge--size-md is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button tab md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-tab badge--size-md" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link tab md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-tab badge--size-md"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox tab md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-tab badge--size-md"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio tab md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-tab badge--size-rg is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button tab rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-tab badge--size-rg" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link tab rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox tab rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio tab rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-tab badge--size-sm is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button tab sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-tab badge--size-sm" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link tab sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-tab badge--size-sm"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox tab sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-tab badge--size-sm"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio tab sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h4">Badge style tag</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-tag badge--size-lg is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button tag lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-tag badge--size-lg" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link tag lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-tag badge--size-lg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox tag lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-tag badge--size-lg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio tag lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                     </svg></div>
                 </label></div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="badge badge--style-outline badge--size-rg is-active" href="#" disabled="disabled">
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                    </svg></div>
-                </a></div>
-              <div class="ui__col"><button class="badge badge--style-outline badge--size-rg" type="button" disabled="disabled">
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="ui__col"><button class="badge badge--style-tag badge--size-md is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button tag md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                     </svg></div>
                 </button></div>
-              <div class="ui__col"><label class="badge" disabled="disabled"><input class="badge__input" type="radio" name="badge" value="badge" checked="checked" />
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="ui__col"><a class="badge badge--style-tag badge--size-md" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link tag md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-tag badge--size-md"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox tag md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                     </svg></div>
                 </label></div>
-              <div class="ui__col"><label class="badge" disabled="disabled"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="ui__col"><label class="badge badge--style-tag badge--size-md"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio tag md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                     </svg></div>
                 </label></div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="badge badge--style-tag" href="#">
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                    </svg></div>
-                </a></div>
-              <div class="ui__col"><button class="badge badge--style-tag" type="button">
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="ui__col"><button class="badge badge--style-tag badge--size-rg is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button tag rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                     </svg></div>
                 </button></div>
-              <div class="ui__col"><label class="badge badge--style-tag"><input class="badge__input" type="radio" name="badge" value="badge" />
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="ui__col"><a class="badge badge--style-tag badge--size-rg" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link tag rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-tag badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox tag rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                     </svg></div>
                 </label></div>
-              <div class="ui__col"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="ui__col"><label class="badge badge--style-tag badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio tag rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                     </svg></div>
                 </label></div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><a class="badge badge--style-tag badge--size-rg is-active" href="#" disabled="disabled">
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                    </svg></div>
-                </a></div>
-              <div class="ui__col"><button class="badge badge--style-tag badge--size-rg" type="button" disabled="disabled">
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="ui__col"><button class="badge badge--style-tag badge--size-sm is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button tag sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                     </svg></div>
                 </button></div>
-              <div class="ui__col"><label class="badge" disabled="disabled"><input class="badge__input" type="radio" name="tag" value="tag" checked="checked" />
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="ui__col"><a class="badge badge--style-tag badge--size-sm" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link tag sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-tag badge--size-sm"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox tag sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                     </svg></div>
                 </label></div>
-              <div class="ui__col"><label class="badge" disabled="disabled"><input class="badge__input" type="checkbox" name="tag" value="tag" />
-                  <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="ui__col"><label class="badge badge--style-tag badge--size-sm"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio tag sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h4">Badge style ghost</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-ghost badge--size-lg is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button ghost lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-ghost badge--size-lg" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link ghost lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-ghost badge--size-lg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox ghost lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-ghost badge--size-lg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio ghost lg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-ghost badge--size-md is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button ghost md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-ghost badge--size-md" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link ghost md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-ghost badge--size-md"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox ghost md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-ghost badge--size-md"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio ghost md</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-ghost badge--size-rg is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button ghost rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-ghost badge--size-rg" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link ghost rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-ghost badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox ghost rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-ghost badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio ghost rg</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col"><button class="badge badge--style-ghost badge--size-sm is-active" type="button">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge button ghost sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </button></div>
+              <div class="ui__col"><a class="badge badge--style-ghost badge--size-sm" href="#">
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge link ghost sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </a></div>
+              <div class="ui__col"><label class="badge badge--style-ghost badge--size-sm"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge checkbox ghost sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
+                    </svg></div>
+                </label></div>
+              <div class="ui__col"><label class="badge badge--style-ghost badge--size-sm"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badge__wrapper"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--up"></use>
+                    </svg><span>badge radio ghost sm</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--down"></use>
                     </svg></div>
                 </label></div>
             </div>
           </div>
-          <div class="ui__block" id="ui-badges">
+          <div class="ui__block">
             <div class="ui__row">
               <div class="ui__col">
                 <div class="h3">Badges</div>
@@ -3168,27 +3736,27 @@
             <div class="ui__row">
               <div class="ui__col">
                 <div class="badges">
-                  <div class="badges__list"><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                  <div class="badges__list"><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                         </svg></div>
-                    </label><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                         </svg></div>
-                    </label><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                         </svg></div>
-                    </label><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                         </svg></div>
-                    </label><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                         </svg></div>
-                    </label><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                         </svg></div>
@@ -3199,20 +3767,20 @@
             <div class="ui__row">
               <div class="ui__col">
                 <div class="badges">
-                  <div class="badges__list"><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                  <div class="badges__list"><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>first</span></div>
-                    </label><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>second</span></div>
-                    </label><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>third</span></div>
-                    </label><label class="badge badge--style-outline badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>fourth</span></div>
                     </label></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="ui__block" id="ui-inputs">
+          <div class="ui__block" id="ui-input">
             <div class="ui__row">
               <div class="ui__col">
                 <div class="h3">Input</div>
@@ -3227,7 +3795,7 @@
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
               </div>
               <div class="ui__col">
@@ -3238,7 +3806,7 @@
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
               </div>
             </div>
@@ -3251,7 +3819,7 @@
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
               </div>
               <div class="ui__col">
@@ -3262,7 +3830,7 @@
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
               </div>
               <div class="ui__col">
@@ -3273,7 +3841,7 @@
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
               </div>
               <div class="ui__col">
@@ -3284,7 +3852,7 @@
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
               </div>
             </div>
@@ -3302,7 +3870,7 @@
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
               </div>
               <div class="ui__col">
@@ -3310,7 +3878,7 @@
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span></div>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span></div>
               </div>
             </div>
           </div>
@@ -3403,10 +3971,10 @@
               </div>
             </div>
           </div>
-          <div class="ui__block" id="ui-selects">
+          <div class="ui__block" id="ui-range-dropdown">
             <div class="ui__row">
               <div class="ui__col">
-                <div class="h3">Range dropdowns</div>
+                <div class="h3">Range dropdown</div>
               </div>
             </div>
             <div class="ui__row">
@@ -3461,7 +4029,7 @@
                     </div>
                   </div>
                 </label></div>
-              <div class="ui__col"><label class="checkbox" id="checkbox-id" data-custom="true" disabled="disabled"><input class="checkbox__input" type="checkbox" name="checkboxes dis" value="checkbox value" />
+              <div class="ui__col"><label class="checkbox" disabled="disabled" id="checkbox-id" data-custom="true"><input class="checkbox__input" type="checkbox" name="checkboxes dis" value="checkbox value" />
                   <div class="checkbox__wrapper">
                     <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
@@ -3473,7 +4041,7 @@
                     </div>
                   </div>
                 </label></div>
-              <div class="ui__col"><label class="checkbox" id="checkbox-id" data-custom="true" disabled="disabled"><input class="checkbox__input" type="checkbox" name="checkboxes dis" value="checkbox value" checked="checked" />
+              <div class="ui__col"><label class="checkbox" disabled="disabled" id="checkbox-id" data-custom="true"><input class="checkbox__input" type="checkbox" name="checkboxes dis" value="checkbox value" checked="checked" />
                   <div class="checkbox__wrapper">
                     <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
@@ -3518,7 +4086,7 @@
                     </div>
                   </div>
                 </label></div>
-              <div class="ui__col"><label class="radio" id="radio-id" data-custom="true" disabled="disabled"><input class="radio__input" type="radio" name="radios dis" value="radio" />
+              <div class="ui__col"><label class="radio" disabled="disabled" id="radio-id" data-custom="true"><input class="radio__input" type="radio" name="radios dis" value="radio" />
                   <div class="radio__wrapper">
                     <div class="radio__icon-wrapper">
                       <div class="radio__icon"></div>
@@ -3530,7 +4098,7 @@
                     </div>
                   </div>
                 </label></div>
-              <div class="ui__col"><label class="radio" id="radio-id" data-custom="true" disabled="disabled"><input class="radio__input" type="radio" name="radios dis" value="radio" checked="checked" />
+              <div class="ui__col"><label class="radio" disabled="disabled" id="radio-id" data-custom="true"><input class="radio__input" type="radio" name="radios dis" value="radio" checked="checked" />
                   <div class="radio__wrapper">
                     <div class="radio__icon-wrapper">
                       <div class="radio__icon"></div>
@@ -3700,7 +4268,7 @@
             <div class="ui__row">
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-location"><span>Modal "Location"</span></button></div>
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-success"><span>Modal "Success"</span></button></div>
-              <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-commentAdd"><span>Modal "Comment add"</span></button></div>
+              <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-comment-add"><span>Modal "Comment add"</span></button></div>
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-rate"><span>Modal "Rate"</span></button></div>
             </div>
           </div>
@@ -4472,7 +5040,7 @@
               <div class="ui__col">
                 <div class="breadcrumbs">
                   <div class="container">
-                    <div class="breadcrumbs__list" data-node="content"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Страница</a><a class="breadcrumbs__link" href="#">Страница</a></div>
+                    <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Страница</a><a class="breadcrumbs__link" href="#">Страница</a></div>
                   </div>
                 </div>
               </div>
@@ -5230,7 +5798,7 @@
                 </a></div>
             </div>
           </div>
-          <div class="ui__block" id="ui-banner-product">
+          <div class="ui__block" id="ui-banner-slide">
             <div class="ui__row">
               <div class="ui__col">
                 <div class="h3">Banner Slide</div>
@@ -5636,7 +6204,7 @@
   </footer><button class="button button--type-icon button--rounded scroll-up" type="button" data-component="scroll-up"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
       <use xlink:href="assets/icons/clean/sprite.svg#arrow-long--up"></use>
     </svg></button>
-  <div class="modal fade modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-default modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -5660,7 +6228,25 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal--size-md" id="modal-commentAdd" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-mini modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <div class="modal-success__status-image"><img src="assets/media/modal/success.svg" alt="" /></div>
+          <div class="modal-success__header">
+            <h2 class="modal-success__title">Спасибо!</h2>
+          </div>
+          <div class="modal-success__body">
+            <p class="modal-success__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
+          </div>
+          <div class="modal-success__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-comment-add" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -5691,7 +6277,7 @@
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
                 <div class="input-file" data-component="input-file">
                   <div class="input-file-preview input-file__preview" data-input-file="preview">
@@ -5712,31 +6298,13 @@
                 </div>
               </div>
             </div>
-            <div class="modal__footer"><button class="button" type="submti" disabled="disabled"><span>Отправить отзыв</span></button></div>
+            <div class="modal__footer"><button class="button" type="submit" disabled="disabled"><span>Отправить отзыв</span></button></div>
           </form>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-          </svg></button>
-        <div class="modal__inner">
-          <div class="modal-success__status-image"><img src="assets/media/modal/success.svg" alt="" /></div>
-          <div class="modal-success__header">
-            <h2 class="modal-success__title">Спасибо!</h2>
-          </div>
-          <div class="modal-success__body">
-            <p class="modal-success__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
-          </div>
-          <div class="modal-success__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade modal--size-sm" id="modal-rate" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-mini modal--size-sm" id="modal-rate" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
