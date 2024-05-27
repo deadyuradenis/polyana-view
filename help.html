@@ -111,13 +111,17 @@
                 </a><button class="header-menu__button header-menu__button--basket" type="button">
                   <div class="header-menu__button-price">0 ₽ </div>
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#basket"></use>
+                      <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
                     </svg></div><span class="header-menu__button-title">Корзина</span>
                 </button><a class="header-menu__button" href="#">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
                     </svg><span>12  </span></div><span class="header-menu__button-title">Избранное</span>
-                </a><button class="header-menu__button" type="button">
+                </a><!-- На всех страницах кроме страниц профиля--><a class="header-menu__button" href="#" style="display: none;">
+                  <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
+                    </svg></div><span class="header-menu__button-title">Профиль</span>
+                </a><!-- На всех страницах профиля--><button class="header-menu__button" type="button" data-account-aside="trigger" data-account="trigger">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
                     </svg></div><span class="header-menu__button-title">Профиль</span>
@@ -2650,12 +2654,12 @@
         <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Помощь</a></div>
       </div>
     </div>
-    <section class="section section-help section--visible">
+    <section class="section section-help">
       <div class="container section__container">
         <div class="section__header section__header--size-md">
           <div class="section__header-content">
             <div class="section__header-main">
-              <h2 class="section__title">Помощь</h2>
+              <h1 class="section__title">Помощь</h1>
             </div>
           </div>
         </div>

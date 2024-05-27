@@ -111,13 +111,17 @@
                 </a><button class="header-menu__button header-menu__button--basket" type="button">
                   <div class="header-menu__button-price">0 ₽ </div>
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#basket"></use>
+                      <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
                     </svg></div><span class="header-menu__button-title">Корзина</span>
                 </button><a class="header-menu__button" href="#">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
                     </svg><span>12  </span></div><span class="header-menu__button-title">Избранное</span>
-                </a><button class="header-menu__button" type="button">
+                </a><!-- На всех страницах кроме страниц профиля--><a class="header-menu__button" href="#" style="display: none;">
+                  <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
+                    </svg></div><span class="header-menu__button-title">Профиль</span>
+                </a><!-- На всех страницах профиля--><button class="header-menu__button" type="button" data-account-aside="trigger" data-account="trigger">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
                     </svg></div><span class="header-menu__button-title">Профиль</span>
@@ -2650,7 +2654,7 @@
         <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Категории</a></div>
       </div>
     </div>
-    <section class="section section--visible section-journal">
+    <section class="section section-journal">
       <form action="#">
         <div class="container section__container">
           <div class="section__header">
@@ -2682,7 +2686,7 @@
             <div class="section__grid-main">
               <div class="section__body">
                 <div class="section__main">
-                  <section class="section section--visible section--size-md">
+                  <section class="section section--size-md">
                     <div class="section__body">
                       <div class="section__main"><img class="section__decor" src="assets/media/decorations/branch.svg" alt="">
                         <div class="slider section-intro__slider slider--rounded" data-slider-id="intro" data-component="slider">
@@ -2781,14 +2785,14 @@
                       </div>
                     </div>
                   </section>
-                  <section class="section section--visible section--size-md">
+                  <section class="section section--size-md">
                     <div class="section__header section__header--size-md">
                       <div class="section__header-content">
                         <div class="section__header-main">
                           <h3 class="section__title">Последние новости</h3>
                         </div>
                         <div class="section__header-actions"> <a class="button button--style-ghost section__link" href="#"><span class="text-swap"><span>Все новости</span><span>Все</span></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
+                              <use xlink:href="assets/icons/clean/sprite.svg#open-in-new"></use>
                             </svg></a></div>
                       </div>
                     </div>
@@ -2828,14 +2832,14 @@
                       </div>
                     </div>
                   </section>
-                  <section class="section section--visible section--size-md">
+                  <section class="section section--size-md">
                     <div class="section__header section__header--size-md">
                       <div class="section__header-content">
                         <div class="section__header-main">
                           <h3 class="section__title">Последние видео</h3>
                         </div>
                         <div class="section__header-actions"> <a class="button button--style-ghost section__link" href="#"><span class="text-swap"><span>Все видео</span><span>Все</span></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
+                              <use xlink:href="assets/icons/clean/sprite.svg#open-in-new"></use>
                             </svg></a></div>
                       </div>
                     </div>
@@ -2871,14 +2875,14 @@
                       </div>
                     </div>
                   </section>
-                  <section class="section section--visible section--size-md">
+                  <section class="section section--size-md">
                     <div class="section__header section__header--size-md">
                       <div class="section__header-content">
                         <div class="section__header-main">
                           <h3 class="section__title">Полезные материалы</h3>
                         </div>
                         <div class="section__header-actions"> <a class="button button--style-ghost section__link" href="#"><span class="text-swap"><span>Все материалы</span><span>Все</span></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
+                              <use xlink:href="assets/icons/clean/sprite.svg#open-in-new"></use>
                             </svg></a></div>
                       </div>
                     </div>
@@ -2937,7 +2941,7 @@
                             </div>
                           </a></div>
                       </div>
-                      <div class="section__footer section__footer--size-md">
+                      <div class="section__footer section__footer--size-rg">
                         <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
                       </div>
                     </div>

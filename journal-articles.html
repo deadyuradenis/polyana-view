@@ -111,13 +111,17 @@
                 </a><button class="header-menu__button header-menu__button--basket" type="button">
                   <div class="header-menu__button-price">0 ₽ </div>
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#basket"></use>
+                      <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
                     </svg></div><span class="header-menu__button-title">Корзина</span>
                 </button><a class="header-menu__button" href="#">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
                     </svg><span>12  </span></div><span class="header-menu__button-title">Избранное</span>
-                </a><button class="header-menu__button" type="button">
+                </a><!-- На всех страницах кроме страниц профиля--><a class="header-menu__button" href="#" style="display: none;">
+                  <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
+                    </svg></div><span class="header-menu__button-title">Профиль</span>
+                </a><!-- На всех страницах профиля--><button class="header-menu__button" type="button" data-account-aside="trigger" data-account="trigger">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
                     </svg></div><span class="header-menu__button-title">Профиль</span>
@@ -2650,7 +2654,7 @@
         <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Журнал</a></div>
       </div>
     </div>
-    <section class="section section--visible section-journal">
+    <section class="section section-journal">
       <form action="#">
         <div class="container section__container">
           <div class="section__header">
@@ -2735,14 +2739,13 @@
                       </div>
                     </a></div>
                 </div>
-                <div class="section__footer section__footer--size-md">
+                <div class="section__footer section__footer--size-rg">
                   <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
                   <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
                       </svg><span>Назад</span></a>
-                    <div class="pagination__list"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__item" href="#"> <span>1</span></a>
-                      <div class="button button--style-outline button--size-rg button--rounded pagination__item"><span>2</span></div><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__item" href="#"> <span>3</span></a>
-                      <div class="button button--style-ghost button--theme-neutral button--size-rg pagination__item"> <span>...</span></div><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__item" href="#"> <span>12</span></a>
+                    <div class="pagination__list"><a class="button button--size-rg pagination__item" href="#"> <span>1</span></a><a class="button button--size-rg pagination__item is-active" href="#"><span>2</span></a><a class="button button--size-rg pagination__item" href="#"> <span>3</span></a>
+                      <div class="button button--size-rg pagination__item"> <span>...</span></div><a class="button button--size-rg pagination__item" href="#"> <span>12</span></a>
                     </div><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
                       </svg></a>
