@@ -5827,6 +5827,8 @@
             <div class="badge__wrapper"> <span>range</span></div>
           </a><a class="badge badge--style-tab badge--size-rg" href="#ui-range-dropdown">
             <div class="badge__wrapper"> <span>range-dropdown</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-select">
+            <div class="badge__wrapper"> <span>select</span></div>
           </a><a class="badge badge--style-tab badge--size-rg" href="#ui-checkbox">
             <div class="badge__wrapper"> <span>checkbox</span></div>
           </a><a class="badge badge--style-tab badge--size-rg" href="#ui-radio">
@@ -5863,6 +5865,10 @@
             <div class="badge__wrapper"> <span>card-seller</span></div>
           </a><a class="badge badge--style-tab badge--size-rg" href="#ui-card-product">
             <div class="badge__wrapper"> <span>card-product</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-card-product-cart">
+            <div class="badge__wrapper"> <span>card-product-cart</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-card-product-order">
+            <div class="badge__wrapper"> <span>card-product-order</span></div>
           </a><a class="badge badge--style-tab badge--size-rg" href="#ui-card-article">
             <div class="badge__wrapper"> <span>card-article</span></div>
           </a><a class="badge badge--style-tab badge--size-rg" href="#ui-card-category">
@@ -7016,8 +7022,8 @@
             </div>
             <div class="ui__row">
               <div class="ui__col">
-                <div class="badges">
-                  <div class="badges__list"><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                <div class="badges" data-component="badges" data-badges-mode="scroll">
+                  <div class="badges__list" data-badges="list"><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="checkbox" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>text </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
                         </svg></div>
@@ -7046,9 +7052,9 @@
               </div>
             </div>
             <div class="ui__row">
-              <div class="ui__col">
-                <div class="badges">
-                  <div class="badges__list"><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+              <div class="ui__col"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                  <div class="badges__list" data-badges="list"><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>first</span></div>
                     </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>second</span></div>
@@ -7056,7 +7062,35 @@
                       <div class="badge__wrapper"> <span>third</span></div>
                     </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
                       <div class="badge__wrapper"> <span>fourth</span></div>
-                    </label></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>first</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>second</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>third</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>fourth</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>first</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>second</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>third</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>fourth</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>first</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>second</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>third</span></div>
+                    </label><label class="badge badge--style-tab badge--size-rg"><input class="badge__input" type="radio" name="badge" value="badge" />
+                      <div class="badge__wrapper"> <span>fourth</span></div>
+                    </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                      <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                        </svg></div>
+                    </button></div>
                 </div>
               </div>
             </div>
@@ -7363,11 +7397,7 @@
                         </svg></button>
                     </div>
                     <div class="range-dropdown__wrapper">
-                      <div class="range-dropdown__list" data-range-dropdown="list">
-                        <div class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="за кг" /><span>за кг</span></div>
-                        <div class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="упаковка" checked="checked" /><span>упаковка</span></div>
-                        <div class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="за человека" /><span>за человека</span></div>
-                      </div>
+                      <div class="range-dropdown__list" data-range-dropdown="list"><label class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="за кг" /><span>за кг</span></label><label class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="упаковка" checked="checked" /><span>упаковка</span></label><label class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="за человека" /><span>за человека</span></label></div>
                     </div>
                   </div>
                 </div>
@@ -7402,13 +7432,93 @@
                         </svg></button>
                     </div>
                     <div class="range-dropdown__wrapper">
-                      <div class="range-dropdown__list" data-range-dropdown="list">
-                        <div class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="за кг" /><span>за кг</span></div>
-                        <div class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="упаковка" checked="checked" /><span>упаковка</span></div>
-                        <div class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="за человека" /><span>за человека</span></div>
-                      </div>
+                      <div class="range-dropdown__list" data-range-dropdown="list"><label class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="за кг" /><span>за кг</span></label><label class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="упаковка" checked="checked" /><span>упаковка</span></label><label class="range-dropdown__item" data-range-dropdown="item"><input type="radio" name="dropdown" value="за человека" /><span>за человека</span></label></div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui__block" id="ui-select">
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h3">Select</div>
+              </div>
+            </div>
+          </div>
+          <div class="ui__row">
+            <div class="ui__col">
+              <div class="select select--size-xl" data-component="select">
+                <div class="select__title">Транспортная компания</div>
+                <div class="select__main" data-select="main">
+                  <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                    </svg></button>
+                </div>
+                <div class="select__dropdown">
+                  <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 0</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 1</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 2</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 3</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 4</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 5</span></div>
+                    </label></div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__col">
+              <div class="select select--size-lg" data-component="select">
+                <div class="select__title">Транспортная компания</div>
+                <div class="select__main" data-select="main">
+                  <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                    </svg></button>
+                </div>
+                <div class="select__dropdown">
+                  <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 0</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 1</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 2</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 3</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 4</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 5</span></div>
+                    </label></div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__col">
+              <div class="select select--size-rg" data-component="select">
+                <div class="select__title">Транспортная компания</div>
+                <div class="select__main" data-select="main">
+                  <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                    </svg></button>
+                </div>
+                <div class="select__dropdown">
+                  <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 0</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 1</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 2</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 3</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 4</span></div>
+                    </label><label class="select-option" data-select="option"><input type="radio" name="dropdown" value="select" />
+                      <div class="select-option__content" data-select="option-content"><span>option 5</span></div>
+                    </label></div>
                 </div>
               </div>
             </div>
@@ -8620,7 +8730,11 @@
               <div class="ui__col">
                 <div class="breadcrumbs">
                   <div class="container">
-                    <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Страница</a><a class="breadcrumbs__link" href="#">Страница</a></div>
+                    <ul class="breadcrumbs__list">
+                      <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Главная</a></li>
+                      <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Страница</a></li>
+                      <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Страница</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -9367,7 +9481,7 @@
                           <source srcset="assets/media/cards/product/1.png" type="image/webp" />
                         </picture>
                       </div>
-                      <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
                         </svg></button>
                       <div class="card-product__label"><span>15%</span></div>
@@ -9424,7 +9538,7 @@
                           <source srcset="assets/media/cards/product/2.png" type="image/webp" />
                         </picture>
                       </div>
-                      <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
                         </svg></button>
                       <div class="card-product__label"><span>10%</span></div>
@@ -9483,7 +9597,7 @@
                           <source srcset="assets/media/cards/product/3.png" type="image/webp" />
                         </picture>
                       </div>
-                      <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
                         </svg></button>
                     </div>
@@ -9534,7 +9648,7 @@
                           <source srcset="assets/media/cards/product/1.png" type="image/webp" />
                         </picture>
                       </div>
-                      <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
                         </svg></button>
                       <div class="card-product__label"><span>150%</span></div>
@@ -9571,6 +9685,248 @@
                       </div>
                     </div>
                   </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui__block" id="ui-card-product-cart">
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h3">Cards product cart</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="card-product-cart">
+                  <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
+                      <div class="card-product-cart__image-wrapper">
+                        <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                          <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                        </picture>
+                      </div>
+                      <div class="card-product-cart__info">
+                        <h4 class="card-product-cart__title">Перец черный горошек двойной</h4>
+                        <div class="card-product-cart__maker">Агродрое</div>
+                      </div>
+                    </a>
+                    <div class="card-product-cart__price-block">
+                      <div class="card-product-cart__prices"> <span class="card-product-cart__price">4 291 ₽ /кг</span></div><label class="counter card-product-cart__counter counter--size-md" data-component="counter"><input class="counter__input" type="text" name="product-cart-counter" value="2" data-counter="input" data-min="0" data-max="1000" data-step="1" />
+                        <div class="counter__wrapper">
+                          <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
+                              </svg></button>
+                            <div class="counter__result"> <span data-counter="result">2</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
+                              </svg></button>
+                          </div>
+                        </div>
+                      </label>
+                      <div class="card-product-cart__price-total">= 16 437 ₽</div>
+                    </div>
+                    <div class="card-product-cart__actions"><label class="checkbox card-product-cart__checkbox"><input class="checkbox__input" type="checkbox" name="product-cart=checkbox" value="in order" checked="checked" />
+                        <div class="checkbox__wrapper">
+                          <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                            </svg></div>
+                        </div>
+                      </label><button class="card-product-cart__action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                        </svg></button><!-- Активный класс: is-active--><button class="favorite card-product-cart__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                        </svg></button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="card-product-cart card-product-cart--has-sale">
+                  <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
+                      <div class="card-product-cart__image-wrapper">
+                        <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                          <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                        </picture>
+                      </div>
+                      <div class="card-product-cart__info">
+                        <h4 class="card-product-cart__title">Перец черный горошек двойной Перец черный горошек двойной Перец черный горошек двойной</h4>
+                        <div class="card-product-cart__maker">Агродрое</div>
+                      </div>
+                    </a>
+                    <div class="card-product-cart__price-block">
+                      <div class="card-product-cart__prices"> <span class="card-product-cart__price">1 523 ₽ /кг</span><span class="card-product-cart__price-sale">скидка 358 ₽ </span></div><label class="counter card-product-cart__counter counter--size-md" data-component="counter"><input class="counter__input" type="text" name="product-cart-counter" value="2" data-counter="input" data-min="0" data-max="1000" data-step="1" />
+                        <div class="counter__wrapper">
+                          <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
+                              </svg></button>
+                            <div class="counter__result"> <span data-counter="result">2</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
+                              </svg></button>
+                          </div>
+                        </div>
+                      </label>
+                      <div class="card-product-cart__price-total">= 16 437 ₽</div>
+                    </div>
+                    <div class="card-product-cart__actions"><label class="checkbox card-product-cart__checkbox"><input class="checkbox__input" type="checkbox" name="product-cart=checkbox" value="in order" checked="checked" />
+                        <div class="checkbox__wrapper">
+                          <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                            </svg></div>
+                        </div>
+                      </label><button class="card-product-cart__action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                        </svg></button><!-- Активный класс: is-active--><button class="favorite card-product-cart__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                        </svg></button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="card-product-cart card-product-cart--has-sale">
+                  <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
+                      <div class="card-product-cart__image-wrapper">
+                        <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                          <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                        </picture>
+                      </div>
+                      <div class="card-product-cart__info">
+                        <h4 class="card-product-cart__title">Горох Дорохова</h4>
+                        <div class="card-product-cart__maker">Агродрое</div>
+                      </div>
+                    </a>
+                    <div class="card-product-cart__price-block">
+                      <div class="card-product-cart__prices"> <span class="card-product-cart__price">2 000 ₽ /кг</span><span class="card-product-cart__price-sale">скидка 358 ₽ </span></div><label class="counter card-product-cart__counter counter--size-md" data-component="counter"><input class="counter__input" type="text" name="product-cart-counter" value="2" data-counter="input" data-min="0" data-max="1000" data-step="1" />
+                        <div class="counter__wrapper">
+                          <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
+                              </svg></button>
+                            <div class="counter__result"> <span data-counter="result">2</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
+                              </svg></button>
+                          </div>
+                        </div>
+                      </label>
+                      <div class="card-product-cart__price-total">= 16 437 ₽</div>
+                    </div>
+                    <div class="card-product-cart__actions"><label class="checkbox card-product-cart__checkbox"><input class="checkbox__input" type="checkbox" name="product-cart=checkbox" value="in order" checked="checked" />
+                        <div class="checkbox__wrapper">
+                          <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                            </svg></div>
+                        </div>
+                      </label><button class="card-product-cart__action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                        </svg></button><!-- Активный класс: is-active--><button class="favorite card-product-cart__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                        </svg></button></div>
+                  </div>
+                  <div class="card-product-cart__message"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                    </svg><span>Максимальное количество товара для зaкaза изменилось </span></div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="card-product-cart card-product-cart--not-available">
+                  <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
+                      <div class="card-product-cart__image-wrapper">
+                        <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                          <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                        </picture>
+                      </div>
+                      <div class="card-product-cart__info">
+                        <h4 class="card-product-cart__title">Перец черный горошек</h4>
+                        <div class="card-product-cart__maker">Агродрое</div>
+                      </div>
+                    </a>
+                    <div class="card-product-cart__mark">Нет в наличии</div>
+                    <div class="card-product-cart__actions"><label class="checkbox card-product-cart__checkbox"><input class="checkbox__input" type="checkbox" name="product-cart=checkbox" value="in order" />
+                        <div class="checkbox__wrapper">
+                          <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                            </svg></div>
+                        </div>
+                      </label><button class="card-product-cart__action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                        </svg></button><!-- Активный класс: is-active--><button class="favorite card-product-cart__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                        </svg></button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui__block" id="ui-card-product-order">
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h3">Cards product order</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="card-product-order">
+                  <div class="card-product-order__content"><a class="card-product-order__main" href="product.html">
+                      <div class="card-product-order__image-wrapper">
+                        <picture class="card-product-order__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                          <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                        </picture>
+                      </div>
+                      <div class="card-product-order__info">
+                        <h4 class="card-product-order__title">Перец черный горошек двойной</h4>
+                        <div class="card-product-order__maker">Агродрое</div>
+                      </div>
+                    </a>
+                    <div class="card-product-order__price-block">
+                      <div class="card-product-order__price-count">50 кг</div>
+                      <div class="card-product-order__price-total">4 291 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="card-product-order">
+                  <div class="card-product-order__content"><a class="card-product-order__main" href="product.html">
+                      <div class="card-product-order__image-wrapper">
+                        <picture class="card-product-order__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                          <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                        </picture>
+                      </div>
+                      <div class="card-product-order__info">
+                        <h4 class="card-product-order__title">Перец черный горошек двойной Перец черный горошек двойной Перец черный горошек двойной</h4>
+                        <div class="card-product-order__maker">Агродрое</div>
+                      </div>
+                    </a>
+                    <div class="card-product-order__price-block">
+                      <div class="card-product-order__price-count">50 кг</div>
+                      <div class="card-product-order__price-total">1 523 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="card-product-order">
+                  <div class="card-product-order__content"><a class="card-product-order__main" href="product.html">
+                      <div class="card-product-order__image-wrapper">
+                        <picture class="card-product-order__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                          <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                        </picture>
+                      </div>
+                      <div class="card-product-order__info">
+                        <h4 class="card-product-order__title">Горох Дорохова</h4>
+                        <div class="card-product-order__maker">Агродрое</div>
+                      </div>
+                    </a>
+                    <div class="card-product-order__price-block">
+                      <div class="card-product-order__price-count">50 кг</div>
+                      <div class="card-product-order__price-total">2 000 ₽</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

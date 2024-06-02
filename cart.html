@@ -62,7 +62,7 @@
   }
 </style>
 <link rel="stylesheet" href="css/index.css">
-<title>Личный кабинет. Избранное</title>
+<title>Корзина</title>
 
 <body class="layout">
   <header class="header" data-component="header">
@@ -5629,587 +5629,305 @@
     </div>
   </header>
   <div class="layout__main">
-    <section class="section section-account" data-component="account">
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Корзина</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="section section--size-md">
       <div class="container section__container">
-        <div class="section__grid">
-          <div class="section-aside section__grid-aside">
-            <div class="section-aside__inner">
-              <div class="account-aside section-account__aside" data-component="account-aside">
-                <div class="account-aside__content">
-                  <div class="account-aside-header account-aside__header"><button class="account-aside-header__close" type="button" data-account-aside="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                      </svg></button>
-                    <div class="account-aside-header__image-wrapper">
-                      <picture class="account-aside-header__image"><img src="assets/media/seller-logo.png" alt="" />
-                        <source srcset="assets/media/seller-logo.webp" type="image/webp" />
-                      </picture>
-                    </div>
-                    <div class="account-aside-header__uppertitle">Добро пожаловать, </div>
-                    <div class="account-aside-header__title">Username</div>
-                  </div>
-                  <div class="account-aside__body">
-                    <div class="account-aside__body-content">
-                      <div class="account-aside-menu account-aside__menu">
-                        <div class="account-aside-menu__group account-aside-menu__group--has-divider">
-                          <div class="account-aside-menu__list"> <!-- Если это ссылка текущей страницы, то <button>, в остальных случаях <a>--><button class="account-aside__button account-aside__button--has-arrow" type="button" data-account="trigger"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#bell"></use>
-                              </svg><span class="account-aside__button-title">Уведомления</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
-                              </svg><span class="account-aside__button-counter">12</span></button><a class="account-aside__button account-aside__button--has-arrow" href="account-notifications.html" style="display: none;"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#bell"></use>
-                              </svg><span class="account-aside__button-title">Уведомления</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
-                              </svg><span class="account-aside__button-counter">12</span></a></div>
-                        </div>
-                        <div class="account-aside-menu__group">
-                          <div class="account-aside-menu__title">Личная информация</div>
-                          <div class="account-aside-menu__list"><a class="account-aside__button is-active" href="account-profile.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
-                              </svg><span class="account-aside__button-title">Профиль</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
-                              </svg></a><a class="account-aside__button" href="account-comments.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
-                              </svg><span class="account-aside__button-title">Отзывы</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
-                              </svg></a><a class="account-aside__button" href="#"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#bolt"></use>
-                              </svg><span class="account-aside__button-title">Реферальная система</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
-                              </svg></a></div>
-                        </div>
-                        <div class="account-aside-menu__group">
-                          <div class="account-aside-menu__title">Заказы</div>
-                          <div class="account-aside-menu__list"><a class="account-aside__button" href="account-cart.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#basket"></use>
-                              </svg><span class="account-aside__button-title">Моя корзина</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
-                              </svg></a><a class="account-aside__button" href="account-favorites.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
-                              </svg><span class="account-aside__button-title">Избранное</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
-                              </svg></a><a class="account-aside__button" href="#"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                              </svg><span class="account-aside__button-title">История заказов</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
-                              </svg></a><a class="account-aside__button" href="account-chats.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#message"></use>
-                              </svg><span class="account-aside__button-title">Сообщения</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
-                              </svg></a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="account-aside__footer"><button class="account-aside__footer-button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#log-out"></use>
-                    </svg><span>Выйти</span></button></div>
-              </div>
-            </div>
-          </div>
-          <div class="section__grid-main">
-            <div class="section__body">
-              <div class="section__main">
-                <section class="section section--size-md">
-                  <div class="section__header section__header--size-md">
-                    <div class="section__header-content"> <button class="button button--style-ghost button--type-icon button--theme-neutral section__header-back" type="button" data-account="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                        </svg></button>
-                      <div class="section__header-main">
-                        <h1 class="section__title">Избранное</h1>
-                      </div>
-                    </div>
-                    <div class="section__filter">
-                      <div class="section__filter-group">
-                        <div class="sort-badge sort-badge--size-rg" data-component="sort-badge"><input class="sort-badge__input" type="radio" name="sort" value="По новизне-rise" checked="checked" data-sort-badge-input="rise" /><input class="sort-badge__input" type="radio" name="sort" value="По новизне-decline" data-sort-badge-input="decline" />
-                          <div class="sort-badge__wrapper"> <span>По новизне</span>
-                            <div class="sort-badge__icons"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#arrowhead-mini--up"></use>
-                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#arrowhead-mini--down"></use>
-                              </svg></div>
-                          </div>
-                        </div>
-                        <div class="sort-badge sort-badge--size-rg" data-component="sort-badge"><input class="sort-badge__input" type="radio" name="sort" value="По цене-rise" data-sort-badge-input="rise" /><input class="sort-badge__input" type="radio" name="sort" value="По цене-decline" data-sort-badge-input="decline" />
-                          <div class="sort-badge__wrapper"> <span>По цене</span>
-                            <div class="sort-badge__icons"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#arrowhead-mini--up"></use>
-                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#arrowhead-mini--down"></use>
-                              </svg></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="section__filter-group"> <label class="checkbox"><input class="checkbox__input" type="checkbox" name="inStock" value="in stock" />
-                          <div class="checkbox__wrapper">
-                            <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
-                              </svg></div>
-                            <div class="checkbox__content"><span>В наличии</span></div>
-                          </div>
-                        </label></div>
-                    </div>
-                  </div>
-                  <div class="section__body">
-                    <div class="section__main">
-                      <div class="grid grid--products grid--template-secondary">
-                        <div class="card-product"><a class="card-product__content">
-                            <div class="card-product__header">
-                              <div class="card-product__image-wrapper">
-                                <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                                  <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                                </picture>
-                              </div>
-                              <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                                </svg></button>
-                              <div class="card-product__label"><span>15%</span></div>
-                            </div>
-                            <div class="card-product__body">
-                              <div class="card-product__maker">
-                                <div class="card-product__maker-name">ЮгАгро</div>
-                                <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                                  </svg></div>
-                              </div>
-                              <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                              <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                            </div>
-                          </a>
-                          <form action="#">
-                            <div class="card-product__form">
-                              <div class="card-product__packaging">
-                                <div class="card-product__packaging-title">фасовка:</div>
-                                <div class="badges card-product__packaging-list">
-                                  <div class="badges__list"><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>1</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>5</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>10</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>20</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>+50 кг</span></div>
-                                    </label></div>
-                                </div>
-                              </div>
-                              <div class="card-product__actions"><label class="counter card-product__counter" data-component="counter"><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" /><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                                  <div class="counter__wrapper">
-                                    <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                                        </svg></button>
-                                      <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                                        </svg></button>
-                                    </div>
-                                  </div>
-                                </label></div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="card-product card-product--has-sale"><a class="card-product__content">
-                            <div class="card-product__header">
-                              <div class="card-product__image-wrapper">
-                                <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                                  <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                                </picture>
-                              </div>
-                              <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                                </svg></button>
-                              <div class="card-product__label"><span>15%</span></div>
-                            </div>
-                            <div class="card-product__body">
-                              <div class="card-product__maker">
-                                <div class="card-product__maker-name">ЮгАгро</div>
-                                <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                                  </svg></div>
-                              </div>
-                              <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                              <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                            </div>
-                          </a>
-                          <form action="#">
-                            <div class="card-product__form">
-                              <div class="card-product__packaging">
-                                <div class="card-product__packaging-title">фасовка:</div>
-                                <div class="badges card-product__packaging-list">
-                                  <div class="badges__list"><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>1</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>5</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>10</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>20</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>+50 кг</span></div>
-                                    </label></div>
-                                </div>
-                              </div>
-                              <div class="card-product__actions"><label class="counter card-product__counter" data-component="counter"><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" /><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                                  <div class="counter__wrapper">
-                                    <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                                        </svg></button>
-                                      <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                                        </svg></button>
-                                    </div>
-                                  </div>
-                                </label></div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="card-product card-product--has-sale"><a class="card-product__content">
-                            <div class="card-product__header">
-                              <div class="card-product__image-wrapper">
-                                <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                                  <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                                </picture>
-                              </div>
-                              <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                                </svg></button>
-                              <div class="card-product__label"><span>15%</span></div>
-                            </div>
-                            <div class="card-product__body">
-                              <div class="card-product__maker">
-                                <div class="card-product__maker-name">ЮгАгро</div>
-                                <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                                  </svg></div>
-                              </div>
-                              <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                              <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                            </div>
-                          </a>
-                          <form action="#">
-                            <div class="card-product__form">
-                              <div class="card-product__packaging">
-                                <div class="card-product__packaging-title">фасовка:</div>
-                                <div class="badges card-product__packaging-list">
-                                  <div class="badges__list"><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>1</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>5</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>10</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>20</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>+50 кг</span></div>
-                                    </label></div>
-                                </div>
-                              </div>
-                              <div class="card-product__actions"><label class="counter card-product__counter" data-component="counter"><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" /><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                                  <div class="counter__wrapper">
-                                    <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                                        </svg></button>
-                                      <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                                        </svg></button>
-                                    </div>
-                                  </div>
-                                </label></div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="card-product"><a class="card-product__content">
-                            <div class="card-product__header">
-                              <div class="card-product__image-wrapper">
-                                <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                                  <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                                </picture>
-                              </div>
-                              <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                                </svg></button>
-                              <div class="card-product__label"><span>15%</span></div>
-                            </div>
-                            <div class="card-product__body">
-                              <div class="card-product__maker">
-                                <div class="card-product__maker-name">ЮгАгро</div>
-                                <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                                  </svg></div>
-                              </div>
-                              <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                              <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                            </div>
-                          </a>
-                          <form action="#">
-                            <div class="card-product__form">
-                              <div class="card-product__packaging">
-                                <div class="card-product__packaging-title">фасовка:</div>
-                                <div class="badges card-product__packaging-list">
-                                  <div class="badges__list"><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>1</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>5</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>10</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>20</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>+50 кг</span></div>
-                                    </label></div>
-                                </div>
-                              </div>
-                              <div class="card-product__actions"><label class="counter card-product__counter" data-component="counter"><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" /><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                                  <div class="counter__wrapper">
-                                    <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                                        </svg></button>
-                                      <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                                        </svg></button>
-                                    </div>
-                                  </div>
-                                </label></div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="card-product card-product--has-sale"><a class="card-product__content">
-                            <div class="card-product__header">
-                              <div class="card-product__image-wrapper">
-                                <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                                  <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                                </picture>
-                              </div>
-                              <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                                </svg></button>
-                              <div class="card-product__label"><span>15%</span></div>
-                            </div>
-                            <div class="card-product__body">
-                              <div class="card-product__maker">
-                                <div class="card-product__maker-name">ЮгАгро</div>
-                                <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                                  </svg></div>
-                              </div>
-                              <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                              <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                            </div>
-                          </a>
-                          <form action="#">
-                            <div class="card-product__form">
-                              <div class="card-product__packaging">
-                                <div class="card-product__packaging-title">фасовка:</div>
-                                <div class="badges card-product__packaging-list">
-                                  <div class="badges__list"><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>1</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>5</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>10</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>20</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>+50 кг</span></div>
-                                    </label></div>
-                                </div>
-                              </div>
-                              <div class="card-product__actions"><label class="counter card-product__counter" data-component="counter"><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" /><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                                  <div class="counter__wrapper">
-                                    <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                                        </svg></button>
-                                      <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                                        </svg></button>
-                                    </div>
-                                  </div>
-                                </label></div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="card-product"><a class="card-product__content">
-                            <div class="card-product__header">
-                              <div class="card-product__image-wrapper">
-                                <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                                  <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                                </picture>
-                              </div>
-                              <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                                </svg></button>
-                              <div class="card-product__label"><span>15%</span></div>
-                            </div>
-                            <div class="card-product__body">
-                              <div class="card-product__maker">
-                                <div class="card-product__maker-name">ЮгАгро</div>
-                                <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                                  </svg></div>
-                              </div>
-                              <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                              <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                            </div>
-                          </a>
-                          <form action="#">
-                            <div class="card-product__form">
-                              <div class="card-product__packaging">
-                                <div class="card-product__packaging-title">фасовка:</div>
-                                <div class="badges card-product__packaging-list">
-                                  <div class="badges__list"><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>1</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>5</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>10</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>20</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>+50 кг</span></div>
-                                    </label></div>
-                                </div>
-                              </div>
-                              <div class="card-product__actions"><label class="counter card-product__counter" data-component="counter"><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" /><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                                  <div class="counter__wrapper">
-                                    <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                                        </svg></button>
-                                      <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                                        </svg></button>
-                                    </div>
-                                  </div>
-                                </label></div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="card-product"><a class="card-product__content">
-                            <div class="card-product__header">
-                              <div class="card-product__image-wrapper">
-                                <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                                  <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                                </picture>
-                              </div>
-                              <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                                </svg></button>
-                              <div class="card-product__label"><span>15%</span></div>
-                            </div>
-                            <div class="card-product__body">
-                              <div class="card-product__maker">
-                                <div class="card-product__maker-name">ЮгАгро</div>
-                                <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                                  </svg></div>
-                              </div>
-                              <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                              <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                            </div>
-                          </a>
-                          <form action="#">
-                            <div class="card-product__form">
-                              <div class="card-product__packaging">
-                                <div class="card-product__packaging-title">фасовка:</div>
-                                <div class="badges card-product__packaging-list">
-                                  <div class="badges__list"><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>1</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>5</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>10</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>20</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>+50 кг</span></div>
-                                    </label></div>
-                                </div>
-                              </div>
-                              <div class="card-product__actions"><label class="counter card-product__counter" data-component="counter"><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" /><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                                  <div class="counter__wrapper">
-                                    <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                                        </svg></button>
-                                      <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                                        </svg></button>
-                                    </div>
-                                  </div>
-                                </label></div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="card-product card-product--not-available"><a class="card-product__content">
-                            <div class="card-product__header">
-                              <div class="card-product__image-wrapper">
-                                <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                                  <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                                </picture>
-                              </div>
-                              <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                                </svg></button>
-                              <div class="card-product__label"><span>15%</span></div>
-                              <div class="card-product__mark">нет в наличии</div>
-                            </div>
-                            <div class="card-product__body">
-                              <div class="card-product__maker">
-                                <div class="card-product__maker-name">ЮгАгро</div>
-                                <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                                  </svg></div>
-                              </div>
-                              <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                              <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                            </div>
-                          </a>
-                          <form action="#">
-                            <div class="card-product__form">
-                              <div class="card-product__packaging">
-                                <div class="card-product__packaging-title">фасовка:</div>
-                                <div class="badges card-product__packaging-list">
-                                  <div class="badges__list"><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>1</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>5</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>10</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>20</span></div>
-                                    </label><label class="badge card-product__package badge--style-outline"><input class="badge__input" type="radio" name="package" value="package" />
-                                      <div class="badge__wrapper"> <span>+50 кг</span></div>
-                                    </label></div>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="section__footer">
-                      <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
-                      <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                          </svg><span>Назад</span></a>
-                        <ul class="pagination__list">
-                          <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                          <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                          <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                          <li class="pagination__item">
-                            <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                          </li>
-                          <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                        </ul><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                          </svg></a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
+        <div class="section__header">
+          <div class="section__header-content">
+            <div class="section__header-main">
+              <h1 class="section__title">Корзина</h1>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="section section--size-md section-cart">
+      <form action="#">
+        <div class="container section__container">
+          <div class="section__grid">
+            <div class="section__grid-main">
+              <div class="section__body">
+                <div class="section__main">
+                  <div class="grid grid--cart">
+                    <div class="card-product-cart card-product-cart--has-sale">
+                      <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
+                          <div class="card-product-cart__image-wrapper">
+                            <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                              <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                            </picture>
+                          </div>
+                          <div class="card-product-cart__info">
+                            <h4 class="card-product-cart__title">Горох Дорохова</h4>
+                            <div class="card-product-cart__maker">Агродрое</div>
+                          </div>
+                        </a>
+                        <div class="card-product-cart__price-block">
+                          <div class="card-product-cart__prices"> <span class="card-product-cart__price">2 000 ₽ /кг</span><span class="card-product-cart__price-sale">скидка 358 ₽ </span></div><label class="counter card-product-cart__counter counter--size-md" data-component="counter"><input class="counter__input" type="text" name="product-cart-counter" value="2" data-counter="input" data-min="0" data-max="1000" data-step="1" />
+                            <div class="counter__wrapper">
+                              <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
+                                  </svg></button>
+                                <div class="counter__result"> <span data-counter="result">2</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
+                                  </svg></button>
+                              </div>
+                            </div>
+                          </label>
+                          <div class="card-product-cart__price-total">= 16 437 ₽</div>
+                        </div>
+                        <div class="card-product-cart__actions"><label class="checkbox card-product-cart__checkbox"><input class="checkbox__input" type="checkbox" name="product-cart=checkbox" value="in order" checked="checked" />
+                            <div class="checkbox__wrapper">
+                              <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                </svg></div>
+                            </div>
+                          </label><button class="card-product-cart__action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                            </svg></button><!-- Активный класс: is-active--><button class="favorite card-product-cart__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button></div>
+                      </div>
+                      <div class="card-product-cart__message"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                        </svg><span>Максимальное количество товара для зaкaза изменилось </span></div>
+                    </div>
+                    <div class="card-product-cart">
+                      <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
+                          <div class="card-product-cart__image-wrapper">
+                            <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                              <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                            </picture>
+                          </div>
+                          <div class="card-product-cart__info">
+                            <h4 class="card-product-cart__title">Перец черный горошек двойной</h4>
+                            <div class="card-product-cart__maker">Агродрое</div>
+                          </div>
+                        </a>
+                        <div class="card-product-cart__price-block">
+                          <div class="card-product-cart__prices"> <span class="card-product-cart__price">4 291 ₽ /кг</span></div><label class="counter card-product-cart__counter counter--size-md" data-component="counter"><input class="counter__input" type="text" name="product-cart-counter" value="2" data-counter="input" data-min="0" data-max="1000" data-step="1" />
+                            <div class="counter__wrapper">
+                              <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
+                                  </svg></button>
+                                <div class="counter__result"> <span data-counter="result">2</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
+                                  </svg></button>
+                              </div>
+                            </div>
+                          </label>
+                          <div class="card-product-cart__price-total">= 16 437 ₽</div>
+                        </div>
+                        <div class="card-product-cart__actions"><label class="checkbox card-product-cart__checkbox"><input class="checkbox__input" type="checkbox" name="product-cart=checkbox" value="in order" checked="checked" />
+                            <div class="checkbox__wrapper">
+                              <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                </svg></div>
+                            </div>
+                          </label><button class="card-product-cart__action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                            </svg></button><!-- Активный класс: is-active--><button class="favorite card-product-cart__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button></div>
+                      </div>
+                    </div>
+                    <div class="card-product-cart">
+                      <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
+                          <div class="card-product-cart__image-wrapper">
+                            <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                              <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                            </picture>
+                          </div>
+                          <div class="card-product-cart__info">
+                            <h4 class="card-product-cart__title">Перец черный горошек двойной</h4>
+                            <div class="card-product-cart__maker">Агродрое</div>
+                          </div>
+                        </a>
+                        <div class="card-product-cart__price-block">
+                          <div class="card-product-cart__prices"> <span class="card-product-cart__price">4 291 ₽ /кг</span></div><label class="counter card-product-cart__counter counter--size-md" data-component="counter"><input class="counter__input" type="text" name="product-cart-counter" value="2" data-counter="input" data-min="0" data-max="1000" data-step="1" />
+                            <div class="counter__wrapper">
+                              <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
+                                  </svg></button>
+                                <div class="counter__result"> <span data-counter="result">2</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
+                                  </svg></button>
+                              </div>
+                            </div>
+                          </label>
+                          <div class="card-product-cart__price-total">= 16 437 ₽</div>
+                        </div>
+                        <div class="card-product-cart__actions"><label class="checkbox card-product-cart__checkbox"><input class="checkbox__input" type="checkbox" name="product-cart=checkbox" value="in order" checked="checked" />
+                            <div class="checkbox__wrapper">
+                              <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                </svg></div>
+                            </div>
+                          </label><button class="card-product-cart__action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                            </svg></button><!-- Активный класс: is-active--><button class="favorite card-product-cart__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button></div>
+                      </div>
+                    </div>
+                    <div class="card-product-cart card-product-cart--has-sale">
+                      <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
+                          <div class="card-product-cart__image-wrapper">
+                            <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                              <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                            </picture>
+                          </div>
+                          <div class="card-product-cart__info">
+                            <h4 class="card-product-cart__title">Перец черный горошек двойной Перец черный горошек двойной Перец черный горошек двойной</h4>
+                            <div class="card-product-cart__maker">Агродрое</div>
+                          </div>
+                        </a>
+                        <div class="card-product-cart__price-block">
+                          <div class="card-product-cart__prices"> <span class="card-product-cart__price">1 523 ₽ /кг</span><span class="card-product-cart__price-sale">скидка 358 ₽ </span></div><label class="counter card-product-cart__counter counter--size-md" data-component="counter"><input class="counter__input" type="text" name="product-cart-counter" value="2" data-counter="input" data-min="0" data-max="1000" data-step="1" />
+                            <div class="counter__wrapper">
+                              <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
+                                  </svg></button>
+                                <div class="counter__result"> <span data-counter="result">2</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
+                                  </svg></button>
+                              </div>
+                            </div>
+                          </label>
+                          <div class="card-product-cart__price-total">= 16 437 ₽</div>
+                        </div>
+                        <div class="card-product-cart__actions"><label class="checkbox card-product-cart__checkbox"><input class="checkbox__input" type="checkbox" name="product-cart=checkbox" value="in order" checked="checked" />
+                            <div class="checkbox__wrapper">
+                              <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                </svg></div>
+                            </div>
+                          </label><button class="card-product-cart__action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                            </svg></button><!-- Активный класс: is-active--><button class="favorite card-product-cart__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button></div>
+                      </div>
+                    </div>
+                    <div class="card-product-cart card-product-cart--not-available">
+                      <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
+                          <div class="card-product-cart__image-wrapper">
+                            <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                              <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                            </picture>
+                          </div>
+                          <div class="card-product-cart__info">
+                            <h4 class="card-product-cart__title">Перец черный горошек</h4>
+                            <div class="card-product-cart__maker">Агродрое</div>
+                          </div>
+                        </a>
+                        <div class="card-product-cart__mark">Нет в наличии</div>
+                        <div class="card-product-cart__actions"><label class="checkbox card-product-cart__checkbox"><input class="checkbox__input" type="checkbox" name="product-cart=checkbox" value="in order" />
+                            <div class="checkbox__wrapper">
+                              <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                </svg></div>
+                            </div>
+                          </label><button class="card-product-cart__action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                            </svg></button><!-- Активный класс: is-active--><button class="favorite card-product-cart__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button></div>
+                      </div>
+                    </div>
+                    <div class="card-product-cart card-product-cart--not-available">
+                      <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
+                          <div class="card-product-cart__image-wrapper">
+                            <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                              <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                            </picture>
+                          </div>
+                          <div class="card-product-cart__info">
+                            <h4 class="card-product-cart__title">Перец черный горошек</h4>
+                            <div class="card-product-cart__maker">Агродрое</div>
+                          </div>
+                        </a>
+                        <div class="card-product-cart__mark">Нет в наличии</div>
+                        <div class="card-product-cart__actions"><label class="checkbox card-product-cart__checkbox"><input class="checkbox__input" type="checkbox" name="product-cart=checkbox" value="in order" />
+                            <div class="checkbox__wrapper">
+                              <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                </svg></div>
+                            </div>
+                          </label><button class="card-product-cart__action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                            </svg></button><!-- Активный класс: is-active--><button class="favorite card-product-cart__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-aside section__grid-aside">
+              <div class="section-aside__inner">
+                <div class="cart-aside">
+                  <div class="cart-aside__content">
+                    <div class="cart-aside__group">
+                      <div class="cart-aside__stats">
+                        <div class="cart-aside__stat">
+                          <div class="cart-aside__stat-text">Товары:</div>
+                          <div class="cart-aside__stat-text">3 товара</div>
+                        </div>
+                        <div class="cart-aside__stat">
+                          <div class="cart-aside__stat-text">Вес:</div>
+                          <div class="cart-aside__stat-text">153 кг</div>
+                        </div>
+                        <div class="cart-aside__stat">
+                          <div class="cart-aside__stat-text">Cкидка:</div>
+                          <div class="cart-aside__stat-text">-53 358 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-aside__group">
+                      <div class="cart-aside__form"><label class="tumbler tumbler--size-rg tumbler--style-block tumbler--theme-primary"><input class="tumbler__input" type="checkbox" name="bonuses" value="bonuses" />
+                          <div class="tumbler__wrapper">
+                            <div class="tumbler__content"> <span>Списать баллы</span><strong>200</strong></div>
+                            <div class="tumbler__icon"></div>
+                          </div>
+                        </label><!-- Если промокод есть, то disabled-->
+                        <div class="input input-promocode" data-component="input"><label class="input__wrapper"><input class="input__native" type="" name="promocode" value="" placeholder="Ввести промокод" data-input="native"></input><button class="button button--size-sm input-promocode__button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                              </svg></button><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message">Такого промокода не существует</span></div>
+                      </div>
+                    </div>
+                    <div class="cart-aside__group">
+                      <div class="cart-aside__price-block">
+                        <div class="cart-aside__price-title">Итого:</div>
+                        <div class="cart-aside__price">120 000 ₽</div>
+                      </div><button class="button button--size-md" type="submit" disabled="disabled"><span>К оформлению</span></button>
+                      <div class="cart-aside__message"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                        </svg><span>Мин. сумма заказа 125 000 ₽</span></div><label class="tumbler cart-aside__call tumbler--size-rg"><input class="tumbler__input" type="checkbox" name="operator-call" value="operator-call" checked="checked" />
+                        <div class="tumbler__wrapper">
+                          <div class="tumbler__icon"></div>
+                          <div class="tumbler__content"> <span>Звонок оператора</span></div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </section>
   </div>
   <footer class="footer">
