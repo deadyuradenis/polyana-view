@@ -136,7 +136,7 @@
                   <div class="header-menu__button-price">0 ₽ </div>
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
-                    </svg></div><span class="header-menu__button-title">Корзина</span>
+                    </svg><span>12  </span></div><span class="header-menu__button-title">Корзина</span>
                 </button><a class="header-menu__button" href="#">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
@@ -144,10 +144,14 @@
                 </a><!-- На всех страницах кроме страниц профиля--><a class="header-menu__button" href="#" style="display: none;">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
+                    </svg></div><span class="header-menu__button-title">Войти</span>
+                </a><a class="header-menu__button" href="#" style="display: none;">
+                  <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#user"></use>
                     </svg></div><span class="header-menu__button-title">Профиль</span>
                 </a><!-- На всех страницах профиля--><button class="header-menu__button" type="button" data-account-aside="trigger" data-account="trigger">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
+                      <use xlink:href="assets/icons/clean/sprite.svg#user"></use>
                     </svg></div><span class="header-menu__button-title">Профиль</span>
                 </button></div>
             </div>
@@ -5073,7 +5077,7 @@
                       <div class="article-header__time">2 октября 2023</div>
                       <div class="article-header__author">
                         <div class="article-header__author-name">Автор: <span>Алексей Иванов</span></div>
-                        <div class="article-header__author-photo"><img src="assets/media/article/author.jpg" alt=""></div>
+                        <div class="article-header__author-photo"><img src="assets/media/photo.jpg" alt=""></div>
                       </div>
                     </div>
                     <picture class="article-header__image"><img src="assets/media/article/1.jpg" alt="">
@@ -5112,7 +5116,7 @@
                           <p>“Если человек молчит - не стоит его перебивать” (с)</p>
                         </blockquote>
                         <figcaption>
-                          <p><strong>Альберт Франкенштей, 2022 д.н.э.</strong> / <span>2022 д.н.э.</span></p>
+                          <p><strong>Альберт Франкенштей, 2022 д.н.э.</strong> / 2022 д.н.э.</p>
                         </figcaption>
                       </figure>
                       <div class="article-content__row">
@@ -5124,7 +5128,16 @@
                         </div>
                       </div>
                       <div class="article-content__row">
-                        <div class="article-content__col"><img src="assets/media/article/1.jpg" alt="" data-fancybox="article"></div>
+                        <div class="article-content__col">
+                          <figure>
+                            <picture data-src="assets/media/article/1.jpg" data-fancybox="article"><img src="assets/media/article/1.jpg" alt="">
+                              <source srcset="assets/media/article/1.webp" type="image/webp">
+                            </picture>
+                            <figcaption>
+                              <p><strong>Подпись</strong> изображения обернутого в picture</p>
+                            </figcaption>
+                          </figure>
+                        </div>
                         <div class="article-content__col">
                           <p>Каждый из нас понимает очевидную вещь: глубокий уровень погружения предопределяет высокую востребованность экспериментов, поражающих по своей масштабности и грандиозности. Ясность нашей позиции очевидна: высокое качество позиционных исследований, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для модели развития. </p>
                         </div>
@@ -5185,14 +5198,52 @@
                             </tbody>
                           </table>
                         </div>
-                      </div>
-                      <div class="slider" data-slider-id="article" data-component="slider">
+                      </div><!-- Просто в img--><img src="assets/media/article/1.jpg" alt="" data-fancybox="article"><!-- Превью видео--><img src="assets/media/article/1.jpg" alt="" data-fancybox="article" data-type="iframe" data-src="https://www.youtube.com/watch?v=rUxyKA_-grg"><!-- Обернуто в picture-->
+                      <picture data-src="assets/media/article/1.jpg" data-fancybox="article"><img src="assets/media/article/1.jpg" alt="">
+                        <source srcset="assets/media/article/1.webp" type="image/webp">
+                      </picture><!-- С подписью-->
+                      <figure><img src="assets/media/article/1.jpg" alt="" data-fancybox="article">
+                        <figcaption>
+                          <p><strong>Подпись</strong> изображения</p>
+                        </figcaption>
+                      </figure><!-- С подписью обернуто в picture-->
+                      <figure>
+                        <picture data-src="assets/media/article/1.jpg" data-fancybox="article"><img src="assets/media/article/1.jpg" alt="">
+                          <source srcset="assets/media/article/1.webp" type="image/webp">
+                        </picture>
+                        <figcaption>
+                          <p><strong>Подпись</strong> изображения обернутого в picture</p>
+                        </figcaption>
+                      </figure><!-- Изображения в ряд-->
+                      <div class="article-content__images">
+                        <figure>
+                          <picture data-src="assets/media/article/1.jpg" data-fancybox="article"><img src="assets/media/article/1.jpg" alt="">
+                            <source srcset="assets/media/article/1.webp" type="image/webp">
+                          </picture>
+                          <figcaption>
+                            <p><strong>Подпись</strong> изображения из ряда</p>
+                          </figcaption>
+                        </figure>
+                        <picture data-src="assets/media/article/1.jpg" data-fancybox="article"><img src="assets/media/article/1.jpg" alt="">
+                          <source srcset="assets/media/article/1.webp" type="image/webp">
+                        </picture><img src="assets/media/article/1.jpg" alt="" data-fancybox="article">
+                      </div><!-- Иображения в слайдере-->
+                      <div class="slider slider--rounded" data-slider-id="article" data-component="slider">
                         <div class="slider__content">
                           <div class="swiper slider__inner" data-slider="inner">
                             <div class="swiper-wrapper slider__wrapper" data-slider="wrapper">
                               <div class="swiper-slide slider__slide"><img src="assets/media/article/1.jpg" alt="" data-fancybox="article"></div>
+                              <div class="swiper-slide slider__slide">
+                                <picture data-src="assets/media/article/1.jpg" data-fancybox="article"><img src="assets/media/article/1.jpg" alt="">
+                                  <source srcset="assets/media/article/1.webp" type="image/webp">
+                                </picture>
+                              </div>
                               <div class="swiper-slide slider__slide"><img src="assets/media/article/1.jpg" alt="" data-fancybox="article"></div>
-                              <div class="swiper-slide slider__slide"><img src="assets/media/article/1.jpg" alt="" data-fancybox="article"></div>
+                              <div class="swiper-slide slider__slide">
+                                <picture data-src="assets/media/article/1.jpg" data-fancybox="article"><img src="assets/media/article/1.jpg" alt="">
+                                  <source srcset="assets/media/article/1.webp" type="image/webp">
+                                </picture>
+                              </div>
                             </div>
                           </div>
                           <div class="slider__navigation" data-slider="navigation">
@@ -5205,24 +5256,41 @@
                           </div>
                         </div>
                         <div class="swiper-pagination slider__pagination" data-slider="pagination"></div>
-                      </div><img src="assets/media/article/1.jpg" alt="" data-fancybox="article" data-type="iframe" data-src="https://www.youtube.com/watch?v=rUxyKA_-grg">
-                      <figure><img src="assets/media/article/1.jpg" alt="" data-fancybox="article" data-type="iframe" data-src="https://www.youtube.com/watch?v=rUxyKA_-grg">
+                      </div><!-- Иображения в слайдере с подписью-->
+                      <figure>
+                        <div class="slider slider--rounded" data-slider-id="article" data-component="slider">
+                          <div class="slider__content">
+                            <div class="swiper slider__inner" data-slider="inner">
+                              <div class="swiper-wrapper slider__wrapper" data-slider="wrapper">
+                                <div class="swiper-slide slider__slide"><img src="assets/media/article/1.jpg" alt="" data-fancybox="article"></div>
+                                <div class="swiper-slide slider__slide">
+                                  <picture data-src="assets/media/article/1.jpg" data-fancybox="article"><img src="assets/media/article/1.jpg" alt="">
+                                    <source srcset="assets/media/article/1.webp" type="image/webp">
+                                  </picture>
+                                </div>
+                                <div class="swiper-slide slider__slide"><img src="assets/media/article/1.jpg" alt="" data-fancybox="article"></div>
+                                <div class="swiper-slide slider__slide">
+                                  <picture data-src="assets/media/article/1.jpg" data-fancybox="article"><img src="assets/media/article/1.jpg" alt="">
+                                    <source srcset="assets/media/article/1.webp" type="image/webp">
+                                  </picture>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="slider__navigation" data-slider="navigation">
+                              <div class="swiper-button-prev slider__button slider__button--prev" data-slider-button="prev"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#chevron--left"></use>
+                                </svg></div>
+                              <div class="swiper-button-next slider__button slider__button--next" data-slider-button="next"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#chevron--right"></use>
+                                </svg></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination slider__pagination" data-slider="pagination"></div>
+                        </div>
                         <figcaption>
-                          <p><strong>Альберт Франкенштей, 2022 д.н.э.</strong> <span>2022 д.н.э.</span></p>
+                          <p><strong>Подпись</strong> изображений в слайдере </p>
                         </figcaption>
                       </figure>
-                      <div class="article-content__images">
-                        <figure><img src="assets/media/article/1.jpg" alt="" data-fancybox="article" data-type="iframe" data-src="https://www.youtube.com/watch?v=rUxyKA_-grg">
-                          <figcaption>
-                            <p><strong>Альберт Франкенштей, 2022 д.н.э.</strong> <span>2022 д.н.э.</span></p>
-                          </figcaption>
-                        </figure>
-                        <figure><img src="assets/media/article/1.jpg" alt="" data-fancybox="article" data-type="iframe" data-src="https://www.youtube.com/watch?v=rUxyKA_-grg">
-                          <figcaption>
-                            <p><strong>Альберт Франкенштей, 2022 д.н.э.</strong> <span>2022 д.н.э.</span></p>
-                          </figcaption>
-                        </figure>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -5360,17 +5428,17 @@
                   <li><a href="#">Специи</a></li>
                   <li><a href="#">Приправы</a></li>
                   <li><a href="#">Лекарственное сырье</a></li>
-                  <li><a class="text-700" href="#">Весь каталог </a></li>
+                  <li><a class="text-700" href="#">Весь каталог</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-contacts footer__contacts">
             <div class="footer-contacts__main">
-              <div class="footer-contacts__title">Написать нам </div>
+              <div class="footer-contacts__title">Написать нам</div>
               <div class="footer-contacts__list">
-                <div class="footer-contacts__item"> <span>Служба поддержки:</span><a href="mailto:info@polana.ru">info@polana.ru</a></div>
-                <div class="footer-contacts__item"> <span>Сотрудничество: </span><a href="mailto:feedback@polana.ru">feedback@polana.ru</a></div>
+                <div class="footer-contacts__item"><span>Служба поддержки:</span><a href="mailto:info@polana.ru">info@polana.ru</a></div>
+                <div class="footer-contacts__item"><span>Сотрудничество:</span><a href="mailto:feedback@polana.ru">feedback@polana.ru</a></div>
               </div>
             </div>
             <div class="footer-contacts__socials">
