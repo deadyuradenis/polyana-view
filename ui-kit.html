@@ -6816,10 +6816,12 @@
             </div>
             <div class="ui__row">
               <div class="ui__col">
-                <div class="input-file" data-component="input-file">
+                <div class="input-file" data-component="input-file" data-input-file-type="">
                   <div class="input-file-preview input-file__preview" data-input-file="preview">
                     <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
-                    <div class="input-file-preview__list" data-input-file="preview-list" draggable="true"></div>
+                    <div class="input-file-preview__list" data-input-file="preview-list" draggable="true">
+                      <div class="crop-container" data-crop-container="data-crop-container"></div>
+                    </div>
                   </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="" multiple="multiple" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
                     <div class="input-file-field__content">
                       <div class="input-file-field__main">
@@ -6832,6 +6834,11 @@
                         </svg><span>JPG, WEBP or PNG. Максимальный размер 2MB</span></div>
                     </div>
                   </label>
+                  <div class="input-file__editor input-file-editor" data-input-file="editor">
+                    <div class="input-file-editor__window">
+                      <div class="input-file-editor__content" data-input-file="editor-content"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -6843,9 +6850,13 @@
               </div>
             </div>
             <div class="ui__row">
-              <div class="ui__col"><label class="datepicker"><input class="datepicker__input" name="datepciker" data-component="datepicker" /><button class="button button--theme-light" type="button"><span>datepicker </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
-                    </svg></button></label></div>
+              <div class="ui__col">
+                <div class="datepicker" data-component="datepicker"><input class="datepicker__input" data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="datepciker" data-datepicker="input" data-type="single" autocomplete="off" />
+                    <div class="button button--theme-light" type="button"><span>datepicker </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                      </svg></div>
+                  </label></div>
+              </div>
             </div>
           </div>
           <div class="ui__block" id="ui-range">
@@ -7346,12 +7357,15 @@
             </div>
             <div class="ui__row">
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-location"><span>Modal "location"</span></button></div>
+              <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-search"><span>Modal "search"</span></button></div>
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-packaging"><span>Modal "packaging"</span></button></div>
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-success"><span>Modal "success"</span></button></div>
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-comment-add"><span>Modal "comment-add"</span></button></div>
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-rate"><span>Modal "rate"</span></button></div>
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-add-address"><span>Modal "add-address"</span></button></div>
               <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-add-requisites"><span>Modal "add-requisites"</span></button></div>
+              <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-edit-avatar"><span>Modal "edit-avatar"</span></button></div>
+              <div class="ui__col"><button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-open-dispute"><span>Modal "open-dispute"</span></button></div>
             </div>
           </div>
           <div class="ui__block" id="ui-section">
@@ -9493,7 +9507,7 @@
             </div>
             <div class="ui__row">
               <div class="ui__col">
-                <div class="card-product-order">
+                <div class="card-product-order card-product-order--style-default">
                   <div class="card-product-order__content"><a class="card-product-order__main" href="product.html">
                       <div class="card-product-order__image-wrapper">
                         <picture class="card-product-order__image"> <img src="assets/media/cards/product/1.png" alt="" />
@@ -9505,17 +9519,14 @@
                         <div class="card-product-order__maker">Агродрое</div>
                       </div>
                     </a>
-                    <div class="card-product-order__price-block">
-                      <div class="card-product-order__price-count">50 кг</div>
-                      <div class="card-product-order__price-total">4 291 ₽</div>
-                    </div>
+                    <div class="card-product-order__price-block"><span class="card-product-order__price-count">50 кг</span><span class="card-product-order__price-total">4 291 ₽</span></div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="ui__row">
               <div class="ui__col">
-                <div class="card-product-order">
+                <div class="card-product-order card-product-order--style-default">
                   <div class="card-product-order__content"><a class="card-product-order__main" href="product.html">
                       <div class="card-product-order__image-wrapper">
                         <picture class="card-product-order__image"> <img src="assets/media/cards/product/1.png" alt="" />
@@ -9527,17 +9538,14 @@
                         <div class="card-product-order__maker">Агродрое</div>
                       </div>
                     </a>
-                    <div class="card-product-order__price-block">
-                      <div class="card-product-order__price-count">50 кг</div>
-                      <div class="card-product-order__price-total">1 523 ₽</div>
-                    </div>
+                    <div class="card-product-order__price-block"><span class="card-product-order__price-count">50 кг</span><span class="card-product-order__price-total">1 523 ₽</span></div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="ui__row">
               <div class="ui__col">
-                <div class="card-product-order">
+                <div class="card-product-order card-product-order--style-default">
                   <div class="card-product-order__content"><a class="card-product-order__main" href="product.html">
                       <div class="card-product-order__image-wrapper">
                         <picture class="card-product-order__image"> <img src="assets/media/cards/product/1.png" alt="" />
@@ -9549,10 +9557,51 @@
                         <div class="card-product-order__maker">Агродрое</div>
                       </div>
                     </a>
-                    <div class="card-product-order__price-block">
-                      <div class="card-product-order__price-count">50 кг</div>
-                      <div class="card-product-order__price-total">2 000 ₽</div>
-                    </div>
+                    <div class="card-product-order__price-block"><span class="card-product-order__price-count">50 кг</span><span class="card-product-order__price-total">2 000 ₽</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="card-product-order card-product-order--style-second">
+                  <div class="card-product-order__content"><a class="card-product-order__main" href="product.html">
+                      <div class="card-product-order__image-wrapper">
+                        <picture class="card-product-order__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                          <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                        </picture>
+                      </div>
+                      <div class="card-product-order__info">
+                        <h4 class="card-product-order__title">Горох Дорохова</h4>
+                        <div class="card-product-order__maker">Агродрое</div>
+                      </div>
+                    </a>
+                    <div class="card-product-order__price-block"><span class="card-product-order__price-sale">1 545 ₽/кг</span><span class="card-product-order__price-count">50 кг</span><span class="card-product-order__price-total">2 000 ₽</span></div>
+                    <div class="card-product-order__actions"> <button class="button button--size-sm card-product-order__button" type="button"><span>В корзину</span></button><!-- Активный класс: is-active--><button class="favorite card-product-order__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                        </svg></button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="card-product-order card-product-order--style-second">
+                  <div class="card-product-order__content"><a class="card-product-order__main" href="product.html">
+                      <div class="card-product-order__image-wrapper">
+                        <picture class="card-product-order__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                          <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                        </picture>
+                      </div>
+                      <div class="card-product-order__info">
+                        <h4 class="card-product-order__title">Горох Дорохова</h4>
+                        <div class="card-product-order__maker">Агродрое</div>
+                      </div>
+                    </a>
+                    <div class="card-product-order__price-block"><span class="card-product-order__price-count">50 кг</span><span class="card-product-order__price-total">2 000 ₽</span></div>
+                    <div class="card-product-order__actions"> <button class="button button--size-sm card-product-order__button" type="button"><span>В корзину</span></button><!-- Активный класс: is-active--><button class="favorite card-product-order__favorite" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                        </svg></button></div>
                   </div>
                 </div>
               </div>
@@ -10280,6 +10329,95 @@
       </div>
     </div>
   </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-edit-avatar" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#"><!-- она нужна для отправки формы после клика сохранить (чтобы костыли не придумывать для кнопки сохранить у файлового инпута)--><button class="button" type="submit" style="display: none"></button>
+            <div class="modal__header">
+              <h2 class="modal__title">Редактирование фото</h2>
+            </div>
+            <div class="modal__body">
+              <div class="input-file modal-edit-avatar__input input-file--type-avatar" data-component="input-file" data-input-file-type="avatar">
+                <div class="input-file-preview input-file__preview" data-input-file="preview">
+                  <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
+                  <div class="input-file-preview__list" data-input-file="preview-list" draggable="true">
+                    <div class="crop-container" data-crop-container="data-crop-container"></div>
+                  </div>
+                </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="avatar" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
+                  <div class="input-file-field__content">
+                    <div class="input-file-field__main">
+                      <div class="text-swap input-file-field__call"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                        </svg><span>Перетащите сюда или <strong>Выберите файл</strong> для загрузки</span><span>Прикрепить фото</span></div>
+                    </div>
+                    <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
+                      </svg><span>JPG, WEBP or PNG. Максимальный размер 2MB</span></div>
+                  </div>
+                </label>
+                <div class="input-file__editor input-file-editor" data-input-file="editor">
+                  <div class="input-file-editor__window">
+                    <div class="input-file-editor__content" data-input-file="editor-content"></div>
+                  </div>
+                  <div class="input-file-editor__actions"><button class="button button--theme-light input-file-editor__action input-file-editor__action--upload" type="button" data-input-file-button="upload"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                      </svg><span>Загрузить другое фото</span></button><button class="button button--theme-red button--style-outline input-file-editor__action" type="button" data-input-file-button="delete"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                      </svg><span>Удалить</span></button><button class="button input-file-editor__action" type="button" data-input-file-button="save"><span>Сохранить    </span></button></div>
+                </div>
+              </div>
+              <div class="modal-edit-avatar__actions"> <button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-search" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <div class="modal-search__header">
+            <h2 class="modal-search__title">Поиск</h2>
+          </div>
+          <div class="modal-search__body">
+            <div class="modal-search__search"> <label class="search-input modal-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
+                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
+                  </svg></button></label>
+              <div class="modal-search__result">
+                <div class="modal-search__result-content">
+                  <ul class="modal-search__result-group">
+                    <li> <a href="#">Абакан </a></li>
+                    <li> <a href="#"><strong>Санкт</strong>-Петербург</a></li>
+                    <li> <a href="#">Самара</a></li>
+                    <li> <a href="#">Саратов</a></li>
+                    <li> <a href="#">Сахалин</a></li>
+                    <li> <a href="#">Абакан </a></li>
+                    <li> <a href="#"><strong>Санкт</strong>-Петербург</a></li>
+                    <li> <a href="#">Самара</a></li>
+                    <li> <a href="#">Саратов</a></li>
+                    <li> <a href="#">Сахалин</a></li>
+                  </ul>
+                  <ul class="modal-search__result-group modal-search__result-group--maker">
+                    <li> <a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></li>
+                    <li> <a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></li>
+                    <li> <a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="modal fade modal--style-default modal--size-md" id="modal-comment-add" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
@@ -10313,10 +10451,12 @@
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
                     </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
-                <div class="input-file" data-component="input-file">
+                <div class="input-file" data-component="input-file" data-input-file-type="">
                   <div class="input-file-preview input-file__preview" data-input-file="preview">
                     <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
-                    <div class="input-file-preview__list" data-input-file="preview-list" draggable="true"></div>
+                    <div class="input-file-preview__list" data-input-file="preview-list" draggable="true">
+                      <div class="crop-container" data-crop-container="data-crop-container"></div>
+                    </div>
                   </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="media" multiple="multiple" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
                     <div class="input-file-field__content">
                       <div class="input-file-field__main">
@@ -10329,6 +10469,11 @@
                         </svg><span>JPG, WEBP or PNG. Максимальный размер 2MB</span></div>
                     </div>
                   </label>
+                  <div class="input-file__editor input-file-editor" data-input-file="editor">
+                    <div class="input-file-editor__window">
+                      <div class="input-file-editor__content" data-input-file="editor-content"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -10362,6 +10507,110 @@
                   </svg></label></div>
             </div>
             <div class="modal-rate__footer"> <button class="button button--size-lg" type="submit" data-bs-dismiss="modal" aria-label="Close"><span>Оценить</span></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-open-dispute" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Открытие спора</h2>
+            </div>
+            <div class="modal__body">
+              <div class="card-product-order modal-open-dispute__product card-product-order--style-default">
+                <div class="card-product-order__content"><a class="card-product-order__main" href="product.html">
+                    <div class="card-product-order__image-wrapper">
+                      <picture class="card-product-order__image"> <img src="assets/media/cards/product/1.png" alt="" />
+                        <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                      </picture>
+                    </div>
+                    <div class="card-product-order__info">
+                      <h4 class="card-product-order__title">Горох Дорох</h4>
+                      <div class="card-product-order__maker">Спикс</div>
+                    </div>
+                  </a>
+                  <div class="card-product-order__price-block"><span class="card-product-order__price-count">50 кг</span><span class="card-product-order__price-total">4 291 ₽</span></div>
+                </div>
+              </div>
+              <div class="form-grid modal-open-dispute__form">
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="select" data-component="select">
+                      <div class="select__title">Причина открытия спора</div>
+                      <div class="select__main" data-select="main">
+                        <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                          </svg></button>
+                      </div>
+                      <div class="select__dropdown">
+                        <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 5</span></span></span></label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="select" data-component="select">
+                      <div class="select__title">Требования к спору</div>
+                      <div class="select__main" data-select="main">
+                        <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                          </svg></button>
+                      </div>
+                      <div class="select__dropdown">
+                        <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 5</span></span></span></label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-textarea" data-component="input">
+                      <div class="input__title">Комментарий</div><label class="input__wrapper"><textarea class="input__native" type="textarea" name="comment text" placeholder="Опишите вашу проблему" data-input="native" data-mask="letters"></textarea><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input-file" data-component="input-file" data-input-file-type="">
+                      <div class="input-file-preview input-file__preview" data-input-file="preview">
+                        <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
+                        <div class="input-file-preview__list" data-input-file="preview-list" draggable="true">
+                          <div class="crop-container" data-crop-container="data-crop-container"></div>
+                        </div>
+                      </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="media" multiple="multiple" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
+                        <div class="input-file-field__content">
+                          <div class="input-file-field__main">
+                            <div class="text-swap input-file-field__call"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                              </svg><span>Перетащите сюда или <strong>Выберите файл</strong> для загрузки</span><span>Прикрепить фото</span></div>
+                          </div>
+                          <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
+                            </svg><span>JPG, WEBP or PNG. Максимальный размер 2MB</span></div>
+                        </div>
+                      </label>
+                      <div class="input-file__editor input-file-editor" data-input-file="editor">
+                        <div class="input-file-editor__window">
+                          <div class="input-file-editor__content" data-input-file="editor-content"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button button--theme-red" type="submit"><span>Открыть спор</span></button><button class="button button--theme-light" type="button"><span>Отменить</span></button></div>
           </form>
         </div>
       </div>

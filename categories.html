@@ -5363,6 +5363,95 @@
       </div>
     </div>
   </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-edit-avatar" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#"><!-- она нужна для отправки формы после клика сохранить (чтобы костыли не придумывать для кнопки сохранить у файлового инпута)--><button class="button" type="submit" style="display: none"></button>
+            <div class="modal__header">
+              <h2 class="modal__title">Редактирование фото</h2>
+            </div>
+            <div class="modal__body">
+              <div class="input-file modal-edit-avatar__input input-file--type-avatar" data-component="input-file" data-input-file-type="avatar">
+                <div class="input-file-preview input-file__preview" data-input-file="preview">
+                  <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
+                  <div class="input-file-preview__list" data-input-file="preview-list" draggable="true">
+                    <div class="crop-container" data-crop-container="data-crop-container"></div>
+                  </div>
+                </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="avatar" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
+                  <div class="input-file-field__content">
+                    <div class="input-file-field__main">
+                      <div class="text-swap input-file-field__call"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                        </svg><span>Перетащите сюда или <strong>Выберите файл</strong> для загрузки</span><span>Прикрепить фото</span></div>
+                    </div>
+                    <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
+                      </svg><span>JPG, WEBP or PNG. Максимальный размер 2MB</span></div>
+                  </div>
+                </label>
+                <div class="input-file__editor input-file-editor" data-input-file="editor">
+                  <div class="input-file-editor__window">
+                    <div class="input-file-editor__content" data-input-file="editor-content"></div>
+                  </div>
+                  <div class="input-file-editor__actions"><button class="button button--theme-light input-file-editor__action input-file-editor__action--upload" type="button" data-input-file-button="upload"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                      </svg><span>Загрузить другое фото</span></button><button class="button button--theme-red button--style-outline input-file-editor__action" type="button" data-input-file-button="delete"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                      </svg><span>Удалить</span></button><button class="button input-file-editor__action" type="button" data-input-file-button="save"><span>Сохранить    </span></button></div>
+                </div>
+              </div>
+              <div class="modal-edit-avatar__actions"> <button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-search" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <div class="modal-search__header">
+            <h2 class="modal-search__title">Поиск</h2>
+          </div>
+          <div class="modal-search__body">
+            <div class="modal-search__search"> <label class="search-input modal-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
+                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
+                  </svg></button></label>
+              <div class="modal-search__result">
+                <div class="modal-search__result-content">
+                  <ul class="modal-search__result-group">
+                    <li> <a href="#">Абакан </a></li>
+                    <li> <a href="#"><strong>Санкт</strong>-Петербург</a></li>
+                    <li> <a href="#">Самара</a></li>
+                    <li> <a href="#">Саратов</a></li>
+                    <li> <a href="#">Сахалин</a></li>
+                    <li> <a href="#">Абакан </a></li>
+                    <li> <a href="#"><strong>Санкт</strong>-Петербург</a></li>
+                    <li> <a href="#">Самара</a></li>
+                    <li> <a href="#">Саратов</a></li>
+                    <li> <a href="#">Сахалин</a></li>
+                  </ul>
+                  <ul class="modal-search__result-group modal-search__result-group--maker">
+                    <li> <a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></li>
+                    <li> <a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></li>
+                    <li> <a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="preloader" data-preloader="component"><span class="preloader__logo"><span class="preloader__mask" data-preloader="mask"></span></span></div>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
