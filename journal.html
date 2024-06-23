@@ -72,8 +72,8 @@
           <div class="header-nav__content"><!-- is-active для активного-->
             <nav class="nav header-nav__list">
               <ul>
-                <li> <a href="faq.html">Помощь</a></li>
-                <li> <a href="#">Покупателям</a></li>
+                <li> <a href="help.html">Помощь</a></li>
+                <li> <a href="buyer.html">Покупателям</a></li>
                 <li> <a href="#">Стать продавцом</a></li>
                 <li> <a href="sellers.html">Все поставщики</a></li>
                 <li> <a href="journal.html">Журнал</a></li>
@@ -128,24 +128,24 @@
                   <div class="header-menu__button-icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#menu"></use>
                     </svg></div><span class="header-menu__button-title">Каталог</span>
-                </button><a class="header-menu__button" href="#">
+                </button><a class="header-menu__button" href="account-order-history.html">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#box"></use>
                     </svg></div><span class="header-menu__button-title">Заказы</span>
-                </a><button class="header-menu__button header-menu__button--basket" type="button">
+                </a><a class="header-menu__button header-menu__button--basket" href="cart.html">
                   <div class="header-menu__button-price">0 ₽ </div>
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
                     </svg><span>12  </span></div><span class="header-menu__button-title">Корзина</span>
-                </button><a class="header-menu__button" href="#">
+                </a><a class="header-menu__button" href="favorites.html">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
                     </svg><span>12  </span></div><span class="header-menu__button-title">Избранное</span>
-                </a><!-- На всех страницах кроме страниц профиля--><a class="header-menu__button" href="#" style="display: none;">
+                </a><!-- На всех страницах кроме страниц профиля--><button class="header-menu__button" href="#" style="display: none;">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
                     </svg></div><span class="header-menu__button-title">Войти</span>
-                </a><a class="header-menu__button" href="#" style="display: none;">
+                </button><a class="header-menu__button" href="#" style="display: none;">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#user"></use>
                     </svg></div><span class="header-menu__button-title">Профиль</span>
@@ -5457,20 +5457,20 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__main">
-          <div class="footer__logo-wrapper"><a class="footer__logo" href="#"><img src="assets/media/logos/logo-icon.svg" alt="" /></a></div>
+          <div class="footer__logo-wrapper"><a class="footer__logo" href="index.html"><img src="assets/media/logos/logo-icon.svg" alt="" /></a></div>
           <div class="footer-nav footer__nav">
             <div class="footer-nav__group">
               <nav class="nav footer-nav__list footer-nav__list--one-column">
                 <ul>
-                  <li> <a href="faq.html">Помощь</a></li>
-                  <li> <a href="#">Покупателям</a></li>
+                  <li> <a href="help.html">Помощь</a></li>
+                  <li> <a href="buyer.html">Покупателям</a></li>
                   <li> <a href="#">Стать продавцом</a></li>
                   <li> <a href="sellers.html">Все поставщики</a></li>
                   <li> <a href="journal.html">Журнал</a></li>
                 </ul>
-              </nav><a class="footer-nav__registration" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              </nav><button class="footer-nav__registration" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                   <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
-                </svg><span>Регистрация</span></a>
+                </svg><span>Регистрация</span></button>
             </div>
             <div class="footer-nav__group footer-nav__group--other">
               <div class="footer-nav__title">Основные разделы </div>
@@ -5491,7 +5491,7 @@
                   <li><a href="#">Специи</a></li>
                   <li><a href="#">Приправы</a></li>
                   <li><a href="#">Лекарственное сырье</a></li>
-                  <li><a class="text-700" href="#">Весь каталог</a></li>
+                  <li><a class="text-700" href="categories.html">Весь каталог</a></li>
                 </ul>
               </div>
             </div>
@@ -5527,7 +5527,7 @@
   </footer><button class="button button--type-icon button--rounded scroll-up" type="button" data-component="scroll-up"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
       <use xlink:href="assets/icons/clean/sprite.svg#arrow-long--up"></use>
     </svg></button>
-  <div class="modal fade modal--style-default modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-full modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -5577,7 +5577,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal--style-mini modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-default modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -5595,7 +5595,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal-packaging modal--style-mini modal--size-sm" id="modal-packaging" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal-packaging modal--style-default modal--size-sm" id="modal-packaging" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -5706,7 +5706,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal--style-default modal--size-md" id="modal-search" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-full modal--size-md" id="modal-search" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>

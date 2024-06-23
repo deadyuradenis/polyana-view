@@ -72,8 +72,8 @@
           <div class="header-nav__content"><!-- is-active для активного-->
             <nav class="nav header-nav__list">
               <ul>
-                <li> <a href="faq.html">Помощь</a></li>
-                <li> <a href="#">Покупателям</a></li>
+                <li> <a href="help.html">Помощь</a></li>
+                <li> <a href="buyer.html">Покупателям</a></li>
                 <li> <a href="#">Стать продавцом</a></li>
                 <li> <a href="sellers.html">Все поставщики</a></li>
                 <li> <a href="journal.html">Журнал</a></li>
@@ -128,24 +128,24 @@
                   <div class="header-menu__button-icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#menu"></use>
                     </svg></div><span class="header-menu__button-title">Каталог</span>
-                </button><a class="header-menu__button" href="#">
+                </button><a class="header-menu__button" href="account-order-history.html">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#box"></use>
                     </svg></div><span class="header-menu__button-title">Заказы</span>
-                </a><button class="header-menu__button header-menu__button--basket" type="button">
+                </a><a class="header-menu__button header-menu__button--basket" href="cart.html">
                   <div class="header-menu__button-price">0 ₽ </div>
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
                     </svg><span>12  </span></div><span class="header-menu__button-title">Корзина</span>
-                </button><a class="header-menu__button" href="#">
+                </a><a class="header-menu__button" href="favorites.html">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
                     </svg><span>12  </span></div><span class="header-menu__button-title">Избранное</span>
-                </a><!-- На всех страницах кроме страниц профиля--><a class="header-menu__button" href="#" style="display: none;">
+                </a><!-- На всех страницах кроме страниц профиля--><button class="header-menu__button" href="#" style="display: none;">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
                     </svg></div><span class="header-menu__button-title">Войти</span>
-                </a><a class="header-menu__button" href="#" style="display: none;">
+                </button><a class="header-menu__button" href="#" style="display: none;">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#user"></use>
                     </svg></div><span class="header-menu__button-title">Профиль</span>
@@ -5255,6 +5255,8 @@
             <div class="badge__wrapper"> <span>range-dropdown</span></div>
           </a><a class="badge badge--style-tab badge--size-rg" href="#ui-select">
             <div class="badge__wrapper"> <span>select</span></div>
+          </a><a class="badge badge--style-tab badge--size-rg" href="#ui-dropdown">
+            <div class="badge__wrapper"> <span>dropdown</span></div>
           </a><a class="badge badge--style-tab badge--size-rg" href="#ui-checkbox">
             <div class="badge__wrapper"> <span>checkbox</span></div>
           </a><a class="badge badge--style-tab badge--size-rg" href="#ui-radio">
@@ -6724,62 +6726,83 @@
               <div class="ui__col">
                 <div class="h4">Input mask</div>
               </div>
-              <div class="ui__row">
-                <div class="ui__col">
-                  <div class="input" data-component="input">
-                    <div class="input__title">mask: false</div><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
-                      </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                      </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                      </svg></label><span class="input__message">Обязательно для заполнения</span>
-                  </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="input" data-component="input">
+                  <div class="input__title">mask: false</div><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
-                <div class="ui__col">
-                  <div class="input" data-component="input">
-                    <div class="input__title">mask: letters</div><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-mask="letters" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
-                      </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                      </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                      </svg></label><span class="input__message">Обязательно для заполнения</span>
-                  </div>
+              </div>
+              <div class="ui__col">
+                <div class="input" data-component="input">
+                  <div class="input__title">mask: letters</div><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-mask="letters" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
-                <div class="ui__col">
-                  <div class="input" data-component="input">
-                    <div class="input__title">mask: number</div><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
-                      </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                      </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                      </svg></label><span class="input__message">Обязательно для заполнения</span>
-                  </div>
+              </div>
+              <div class="ui__col">
+                <div class="input" data-component="input">
+                  <div class="input__title">mask: number</div><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
-                <div class="ui__col">
-                  <div class="input" data-component="input">
-                    <div class="input__title">mask: phone</div><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-mask="phone" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
-                      </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                      </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                      </svg></label><span class="input__message">Обязательно для заполнения</span>
-                  </div>
+              </div>
+              <div class="ui__col">
+                <div class="input" data-component="input">
+                  <div class="input__title">mask: phone</div><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-mask="phone" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
-                <div class="ui__col">
-                  <div class="input" data-component="input">
-                    <div class="input__title">mask: mail</div><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-mask="mail" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
-                      </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                      </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                      </svg></label><span class="input__message">Обязательно для заполнения</span>
-                  </div>
+              </div>
+              <div class="ui__col">
+                <div class="input" data-component="input">
+                  <div class="input__title">mask: mail</div><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-mask="mail" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h4">Input datepicker</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="input" data-component="input" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-required="data-required" data-component="datepicker" data-datepicker-type="single" autocomplete="off"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span></div>
+              </div>
+              <div class="ui__col">
+                <div class="input" data-component="input" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="input__wrapper"><input class="input__native" type="" name="input" value="" placeholder="" data-input="native" data-required="data-required" data-component="datepicker" data-datepicker-type="range" autocomplete="off"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span></div>
               </div>
             </div>
           </div>
@@ -6805,6 +6828,36 @@
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
                     </svg></label><span class="input__message">Обязательно для заполнения</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="ui__block" id="ui-datepicker">
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h3">Datepicker</div>
+              </div>
+            </div>
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="datepicker" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="input" data-component="datepicker" data-datepicker-type="" autocomplete="off" />
+                    <div class="button button--theme-neutral" type="button"><span>Datepicker </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                      </svg></div>
+                  </label></div>
+              </div>
+              <div class="ui__col">
+                <div class="datepicker" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="input" data-component="datepicker" data-datepicker-type="single" autocomplete="off" />
+                    <div class="button button--theme-neutral" type="button"><span>Datepicker single</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                      </svg></div>
+                  </label></div>
+              </div>
+              <div class="ui__col">
+                <div class="datepicker" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="input" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
+                    <div class="button button--theme-neutral" type="button"><span>Datepicker range</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                      </svg></div>
+                  </label></div>
               </div>
             </div>
           </div>
@@ -6840,22 +6893,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="ui__block" id="ui-datepicker">
-            <div class="ui__row">
-              <div class="ui__col">
-                <div class="h3">Datepicker</div>
-              </div>
-            </div>
-            <div class="ui__row">
-              <div class="ui__col">
-                <div class="datepicker" data-component="datepicker"><input class="datepicker__input" data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="datepciker" data-datepicker="input" data-type="single" autocomplete="off" />
-                    <div class="button button--theme-light" type="button"><span>datepicker </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
-                      </svg></div>
-                  </label></div>
               </div>
             </div>
           </div>
@@ -6955,8 +6992,8 @@
                       <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                     </svg></button>
                 </div>
-                <div class="select__dropdown">
-                  <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 5</span></span></span></label></div>
+                <div class="select-dropdown select__dropdown" data-select="dropdown">
+                  <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 5</span></span></span></label></div>
                 </div>
               </div>
             </div>
@@ -6968,8 +7005,8 @@
                       <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                     </svg></button>
                 </div>
-                <div class="select__dropdown">
-                  <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 5</span></span></span></label></div>
+                <div class="select-dropdown select__dropdown select-dropdown--size-xl" data-select="dropdown">
+                  <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 5</span></span></span></label></div>
                 </div>
               </div>
             </div>
@@ -6981,8 +7018,8 @@
                       <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                     </svg></button>
                 </div>
-                <div class="select__dropdown">
-                  <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 5</span></span></span></label></div>
+                <div class="select-dropdown select__dropdown select-dropdown--size-lg" data-select="dropdown">
+                  <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 5</span></span></span></label></div>
                 </div>
               </div>
             </div>
@@ -6994,8 +7031,62 @@
                       <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                     </svg></button>
                 </div>
-                <div class="select__dropdown">
-                  <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 5</span></span></span></label></div>
+                <div class="select-dropdown select__dropdown select-dropdown--size-rg" data-select="dropdown">
+                  <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>option 5</span></span></span></label></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui__block" id="ui-dropdown">
+            <div class="ui__row">
+              <div class="ui__col">
+                <div class="h3">Dropdown</div>
+              </div>
+            </div>
+          </div>
+          <div class="ui__row">
+            <div class="ui__col">
+              <div class="dropdown" data-component="dropdown"><button class="dropdown__trigger button button--theme-light button--size-sm button--type-icon account-requisites__action" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#more--vertical"></use>
+                  </svg></button>
+                <div class="dropdown-wrapper dropdown__wrapper" data-dropdown="wrapper">
+                  <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
+                      </svg><span>Редактировать</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#check-badge--outline"></use>
+                      </svg><span>Назначить основным</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                      </svg><span>Удалить</span></button></div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__col">
+              <div class="dropdown dropdown--size-rg" data-component="dropdown"><button class="dropdown__trigger button button--theme-light button--size-sm button--type-icon account-requisites__action" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#more--vertical"></use>
+                  </svg></button>
+                <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-rg" data-dropdown="wrapper">
+                  <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
+                      </svg><span>Редактировать</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#check-badge--outline"></use>
+                      </svg><span>Назначить основным</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                      </svg><span>Удалить</span></button></div>
+                </div>
+              </div>
+            </div>
+            <div class="ui__col">
+              <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger button button--theme-light button--size-sm button--type-icon account-requisites__action" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#more--vertical"></use>
+                  </svg></button>
+                <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm" data-dropdown="wrapper">
+                  <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
+                      </svg><span>Редактировать</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#check-badge--outline"></use>
+                      </svg><span>Назначить основным</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                      </svg><span>Удалить</span></button></div>
                 </div>
               </div>
             </div>
@@ -7323,18 +7414,18 @@
               <div class="ui__col">
                 <div class="referral-link">
                   <div class="referral-link__header">
-                    <h4 class="referral-link__title">Ваша ссылка</h4><a class="button button--style-ghost button--size-xs referral-link__link" href="#"><span>Что это такое?</span></a>
+                    <h4 class="referral-link__title">Ваша ссылка</h4><a class="button button--style-ghost button--size-xs referral-link__link" href="#section-about"><span>Что это такое?</span></a>
                   </div>
                   <div class="referral-link__field" data-component="copy-to-clipboard">
                     <div class="referral-link__text" data-copy-to-clipboard="text">http:polyana/registration/id3284711</div>
                     <div class="referral-link__buttons"><button class="button button--theme-neutral button--size-rg referral-link__button referral-link__button--copy" type="button" data-copy-to-clipboard="trigger"><span>Скопировать</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#link"></use>
                         </svg></button>
-                      <div class="dropdown referral-link__button referral-link__button--share" data-component="dropdown"><button class="dropdown__trigger button button--theme-neutral button--size-rg button--type-icon" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <div class="dropdown referral-link__button dropdown--style-socials" data-component="dropdown"><button class="dropdown__trigger button button--theme-neutral button--size-rg button--type-icon" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#more--vertical"></use>
                           </svg></button>
-                        <div class="dropdown__wrapper" data-dropdown="wrapper">
-                          <div class="dropdown__list"><a class="dropdown-option" href="#" target="_blank"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--style-socials" data-dropdown="wrapper">
+                          <div class="dropdown-wrapper__list"><a class="dropdown-option" href="#" target="_blank"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#logo--telegram"></use>
                               </svg><span>Telegram</span></a><a class="dropdown-option" href="#" target="_blank"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#logo--telegram"></use>
@@ -8876,8 +8967,8 @@
                   <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger button button--theme-light button--size-rg button--type-icon card-address__button" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#more--vertical"></use>
                       </svg></button>
-                    <div class="dropdown__wrapper" data-dropdown="wrapper">
-                      <div class="dropdown__list"><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm" data-dropdown="wrapper">
+                      <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
                           </svg><span>Редактировать</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#check-badge--outline"></use>
@@ -8902,8 +8993,8 @@
                   <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger button button--theme-light button--size-rg button--type-icon card-address__button" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#more--vertical"></use>
                       </svg></button>
-                    <div class="dropdown__wrapper" data-dropdown="wrapper">
-                      <div class="dropdown__list"><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm" data-dropdown="wrapper">
+                      <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
                           </svg><span>Редактировать</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#check-badge--outline"></use>
@@ -10127,20 +10218,20 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__main">
-          <div class="footer__logo-wrapper"><a class="footer__logo" href="#"><img src="assets/media/logos/logo-icon.svg" alt="" /></a></div>
+          <div class="footer__logo-wrapper"><a class="footer__logo" href="index.html"><img src="assets/media/logos/logo-icon.svg" alt="" /></a></div>
           <div class="footer-nav footer__nav">
             <div class="footer-nav__group">
               <nav class="nav footer-nav__list footer-nav__list--one-column">
                 <ul>
-                  <li> <a href="faq.html">Помощь</a></li>
-                  <li> <a href="#">Покупателям</a></li>
+                  <li> <a href="help.html">Помощь</a></li>
+                  <li> <a href="buyer.html">Покупателям</a></li>
                   <li> <a href="#">Стать продавцом</a></li>
                   <li> <a href="sellers.html">Все поставщики</a></li>
                   <li> <a href="journal.html">Журнал</a></li>
                 </ul>
-              </nav><a class="footer-nav__registration" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              </nav><button class="footer-nav__registration" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                   <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
-                </svg><span>Регистрация</span></a>
+                </svg><span>Регистрация</span></button>
             </div>
             <div class="footer-nav__group footer-nav__group--other">
               <div class="footer-nav__title">Основные разделы </div>
@@ -10161,7 +10252,7 @@
                   <li><a href="#">Специи</a></li>
                   <li><a href="#">Приправы</a></li>
                   <li><a href="#">Лекарственное сырье</a></li>
-                  <li><a class="text-700" href="#">Весь каталог</a></li>
+                  <li><a class="text-700" href="categories.html">Весь каталог</a></li>
                 </ul>
               </div>
             </div>
@@ -10197,7 +10288,7 @@
   </footer><button class="button button--type-icon button--rounded scroll-up" type="button" data-component="scroll-up"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
       <use xlink:href="assets/icons/clean/sprite.svg#arrow-long--up"></use>
     </svg></button>
-  <div class="modal fade modal--style-default modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-full modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -10247,7 +10338,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal--style-mini modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-default modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -10265,7 +10356,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal-packaging modal--style-mini modal--size-sm" id="modal-packaging" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal-packaging modal--style-default modal--size-sm" id="modal-packaging" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -10376,7 +10467,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal--style-default modal--size-md" id="modal-search" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-full modal--size-md" id="modal-search" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -10483,7 +10574,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal--style-mini modal--size-sm" id="modal-rate" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-default modal--size-sm" id="modal-rate" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -10548,8 +10639,8 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                           </svg></button>
                       </div>
-                      <div class="select__dropdown">
-                        <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 5</span></span></span></label></div>
+                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 5</span></span></span></label></div>
                       </div>
                     </div>
                   </div>
@@ -10563,8 +10654,8 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                           </svg></button>
                       </div>
-                      <div class="select__dropdown">
-                        <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 5</span></span></span></label></div>
+                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 5</span></span></span></label></div>
                       </div>
                     </div>
                   </div>
@@ -10610,7 +10701,7 @@
                 </div>
               </div>
             </div>
-            <div class="modal__footer"><button class="button button--theme-red" type="submit"><span>Открыть спор</span></button><button class="button button--theme-light" type="button"><span>Отменить</span></button></div>
+            <div class="modal__footer"><button class="button button--theme-red" type="submit"><span>Открыть спор</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
           </form>
         </div>
       </div>
@@ -10680,7 +10771,7 @@
                   </label></div>
               </div>
             </div>
-            <div class="modal__footer"><button class="button" type="submit"><span>Сохранить</span></button><button class="button button--theme-light" type="button"><span>Отменить</span></button></div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Сохранить</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
           </form>
         </div>
       </div>
@@ -10716,8 +10807,8 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                           </svg></button>
                       </div>
-                      <div class="select__dropdown">
-                        <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 5</span></span></span></label></div>
+                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 5</span></span></span></label></div>
                       </div>
                     </div>
                   </div>
@@ -10780,8 +10871,8 @@
                             <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                           </svg></button>
                       </div>
-                      <div class="select__dropdown">
-                        <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 5</span></span></span></label></div>
+                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 5</span></span></span></label></div>
                       </div>
                     </div>
                   </div>
@@ -10807,7 +10898,7 @@
                   </label></div>
               </div>
             </div>
-            <div class="modal__footer"><button class="button" type="submit"><span>Сохранить</span></button><button class="button button--theme-light" type="button"><span>Отменить</span></button></div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Сохранить</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
           </form>
         </div>
       </div>

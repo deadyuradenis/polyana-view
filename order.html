@@ -72,8 +72,8 @@
           <div class="header-nav__content"><!-- is-active для активного-->
             <nav class="nav header-nav__list">
               <ul>
-                <li> <a href="faq.html">Помощь</a></li>
-                <li> <a href="#">Покупателям</a></li>
+                <li> <a href="help.html">Помощь</a></li>
+                <li> <a href="buyer.html">Покупателям</a></li>
                 <li> <a href="#">Стать продавцом</a></li>
                 <li> <a href="sellers.html">Все поставщики</a></li>
                 <li> <a href="journal.html">Журнал</a></li>
@@ -128,24 +128,24 @@
                   <div class="header-menu__button-icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#menu"></use>
                     </svg></div><span class="header-menu__button-title">Каталог</span>
-                </button><a class="header-menu__button" href="#">
+                </button><a class="header-menu__button" href="account-order-history.html">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#box"></use>
                     </svg></div><span class="header-menu__button-title">Заказы</span>
-                </a><button class="header-menu__button header-menu__button--basket" type="button">
+                </a><a class="header-menu__button header-menu__button--basket" href="cart.html">
                   <div class="header-menu__button-price">0 ₽ </div>
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
                     </svg><span>12  </span></div><span class="header-menu__button-title">Корзина</span>
-                </button><a class="header-menu__button" href="#">
+                </a><a class="header-menu__button" href="favorites.html">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
                     </svg><span>12  </span></div><span class="header-menu__button-title">Избранное</span>
-                </a><!-- На всех страницах кроме страниц профиля--><a class="header-menu__button" href="#" style="display: none;">
+                </a><!-- На всех страницах кроме страниц профиля--><button class="header-menu__button" href="#" style="display: none;">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
                     </svg></div><span class="header-menu__button-title">Войти</span>
-                </a><a class="header-menu__button" href="#" style="display: none;">
+                </button><a class="header-menu__button" href="#" style="display: none;">
                   <div class="header-menu__button-icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#user"></use>
                     </svg></div><span class="header-menu__button-title">Профиль</span>
@@ -5179,8 +5179,8 @@
                                   <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                                 </svg></button>
                             </div>
-                            <div class="select__dropdown">
-                              <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requisites" value="requisites-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Аромат-Град</span>
+                            <div class="select-dropdown select__dropdown select-dropdown--size-lg" data-select="dropdown">
+                              <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requisites" value="requisites-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Аромат-Град</span>
                                   <div class="label label--size-xs"><span>Основной</span></div></span></span>
                                 </label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requisites" value="requisites-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Виноградарь</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requisites" value="requisites-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Кофешоп</span></span></span></label></div>
                             </div>
@@ -5280,8 +5280,8 @@
                                   <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                                 </svg></button>
                             </div>
-                            <div class="select__dropdown">
-                              <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>СДЭК</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Почта россии</span></span></span></label></div>
+                            <div class="select-dropdown select__dropdown select-dropdown--size-lg" data-select="dropdown">
+                              <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>СДЭК</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Почта россии</span></span></span></label></div>
                             </div>
                           </div>
                           <div class="select select--size-lg select--style-address" data-component="select">
@@ -5291,8 +5291,8 @@
                                   <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                                 </svg></button>
                             </div>
-                            <div class="select__dropdown">
-                              <div class="select__list" data-select="list">
+                            <div class="select-dropdown select__dropdown select-dropdown--size-lg select-dropdown--style-address" data-select="dropdown">
+                              <div class="select-dropdown__list" data-select="list">
                                 <div class="select-option"><span class="select-option__content" data-select="option-content"> <button class="card-address card-address--style-add" type="button" data-bs-toggle="modal" data-bs-target="#modal-add-address"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#plus"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Добавить новый адрес</div></div></div></button></span></div><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-0" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Домашний адрес</div><div class="label card-address__label label--size-xs"><span>Основной</span>
                               </div>
                             </div>
@@ -5396,8 +5396,8 @@
                           <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                         </svg></button>
                     </div>
-                    <div class="select__dropdown">
-                      <div class="select__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>СДЭК</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Почта россии</span></span></span></label></div>
+                    <div class="select-dropdown select__dropdown select-dropdown--size-lg" data-select="dropdown">
+                      <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>СДЭК</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Почта россии</span></span></span></label></div>
                     </div>
                   </div>
                   <div class="select select--size-lg select--style-address" data-component="select">
@@ -5407,8 +5407,8 @@
                           <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                         </svg></button>
                     </div>
-                    <div class="select__dropdown">
-                      <div class="select__list" data-select="list">
+                    <div class="select-dropdown select__dropdown select-dropdown--size-lg select-dropdown--style-address" data-select="dropdown">
+                      <div class="select-dropdown__list" data-select="list">
                         <div class="select-option"><span class="select-option__content" data-select="option-content"> <button class="card-address card-address--style-add" type="button" data-bs-toggle="modal" data-bs-target="#modal-add-address"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#plus"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Добавить новый адрес</div></div></div></button></span></div><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-0" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Домашний адрес</div><div class="label card-address__label label--size-xs"><span>Основной</span>
                       </div>
                     </div>
@@ -5458,26 +5458,26 @@
   </div>
   <div class="section-aside section__grid-aside">
     <div class="section-aside__inner">
-      <div class="cart-aside">
-        <div class="cart-aside__content">
-          <div class="cart-aside__group">
-            <div class="cart-aside__stats">
-              <div class="cart-aside__stat">
-                <div class="cart-aside__stat-text">Товары:</div>
-                <div class="cart-aside__stat-text">3 товара</div>
+      <div class="aside-cart">
+        <div class="aside-cart__content">
+          <div class="aside-cart__group">
+            <div class="aside-cart__stats">
+              <div class="aside-cart__stat">
+                <div class="aside-cart__stat-text">Товары:</div>
+                <div class="aside-cart__stat-text">3 товара</div>
               </div>
-              <div class="cart-aside__stat">
-                <div class="cart-aside__stat-text">Вес:</div>
-                <div class="cart-aside__stat-text">153 кг</div>
+              <div class="aside-cart__stat">
+                <div class="aside-cart__stat-text">Вес:</div>
+                <div class="aside-cart__stat-text">153 кг</div>
               </div>
-              <div class="cart-aside__stat">
-                <div class="cart-aside__stat-text">Cкидка:</div>
-                <div class="cart-aside__stat-text">-53 358 ₽</div>
+              <div class="aside-cart__stat">
+                <div class="aside-cart__stat-text">Cкидка:</div>
+                <div class="aside-cart__stat-text">-53 358 ₽</div>
               </div>
             </div>
           </div>
-          <div class="cart-aside__group">
-            <div class="cart-aside__form"><label class="tumbler tumbler--size-rg tumbler--style-block tumbler--theme-primary"><input class="tumbler__input" type="checkbox" name="bonuses" value="bonuses" />
+          <div class="aside-cart__group">
+            <div class="aside-cart__form"><label class="tumbler tumbler--size-rg tumbler--style-block tumbler--theme-primary"><input class="tumbler__input" type="checkbox" name="bonuses" value="bonuses" />
                 <div class="tumbler__wrapper">
                   <div class="tumbler__content"> <span>Списать баллы</span><strong>200</strong></div>
                   <div class="tumbler__icon"></div>
@@ -5492,14 +5492,14 @@
                   </svg></label><span class="input__message">Такого промокода не существует</span></div>
             </div>
           </div>
-          <div class="cart-aside__group">
-            <div class="cart-aside__price-block">
-              <div class="cart-aside__price-title">Итого:</div>
-              <div class="cart-aside__price">120 000 ₽</div>
+          <div class="aside-cart__group">
+            <div class="aside-cart__price-block">
+              <div class="aside-cart__price-title">Итого:</div>
+              <div class="aside-cart__price">120 000 ₽</div>
             </div><button class="button button--size-md" type="submit" disabled="disabled"><span>К оформлению</span></button>
-            <div class="cart-aside__message"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <div class="aside-cart__message"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
                 <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
-              </svg><span>Мин. сумма заказа 125 000 ₽</span></div><label class="tumbler cart-aside__call tumbler--size-rg"><input class="tumbler__input" type="checkbox" name="operator-call" value="operator-call" checked="checked" />
+              </svg><span>Мин. сумма заказа 125 000 ₽</span></div><label class="tumbler aside-cart__call tumbler--size-rg"><input class="tumbler__input" type="checkbox" name="operator-call" value="operator-call" checked="checked" />
               <div class="tumbler__wrapper">
                 <div class="tumbler__icon"></div>
                 <div class="tumbler__content"> <span>Звонок оператора</span></div>
@@ -5519,20 +5519,20 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__main">
-          <div class="footer__logo-wrapper"><a class="footer__logo" href="#"><img src="assets/media/logos/logo-icon.svg" alt="" /></a></div>
+          <div class="footer__logo-wrapper"><a class="footer__logo" href="index.html"><img src="assets/media/logos/logo-icon.svg" alt="" /></a></div>
           <div class="footer-nav footer__nav">
             <div class="footer-nav__group">
               <nav class="nav footer-nav__list footer-nav__list--one-column">
                 <ul>
-                  <li> <a href="faq.html">Помощь</a></li>
-                  <li> <a href="#">Покупателям</a></li>
+                  <li> <a href="help.html">Помощь</a></li>
+                  <li> <a href="buyer.html">Покупателям</a></li>
                   <li> <a href="#">Стать продавцом</a></li>
                   <li> <a href="sellers.html">Все поставщики</a></li>
                   <li> <a href="journal.html">Журнал</a></li>
                 </ul>
-              </nav><a class="footer-nav__registration" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              </nav><button class="footer-nav__registration" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                   <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
-                </svg><span>Регистрация</span></a>
+                </svg><span>Регистрация</span></button>
             </div>
             <div class="footer-nav__group footer-nav__group--other">
               <div class="footer-nav__title">Основные разделы </div>
@@ -5553,7 +5553,7 @@
                   <li><a href="#">Специи</a></li>
                   <li><a href="#">Приправы</a></li>
                   <li><a href="#">Лекарственное сырье</a></li>
-                  <li><a class="text-700" href="#">Весь каталог</a></li>
+                  <li><a class="text-700" href="categories.html">Весь каталог</a></li>
                 </ul>
               </div>
             </div>
@@ -5589,7 +5589,7 @@
   </footer><button class="button button--type-icon button--rounded scroll-up" type="button" data-component="scroll-up"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
       <use xlink:href="assets/icons/clean/sprite.svg#arrow-long--up"></use>
     </svg></button>
-  <div class="modal fade modal--style-default modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-full modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -5639,7 +5639,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal--style-mini modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-default modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -5657,7 +5657,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal-packaging modal--style-mini modal--size-sm" id="modal-packaging" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal-packaging modal--style-default modal--size-sm" id="modal-packaging" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -5768,7 +5768,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal--style-default modal--size-md" id="modal-search" aria-hidden="aria-hidden" tabindex="-1">
+  <div class="modal fade modal--style-full modal--size-md" id="modal-search" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
@@ -5874,7 +5874,7 @@
                   </label></div>
               </div>
             </div>
-            <div class="modal__footer"><button class="button" type="submit"><span>Сохранить</span></button><button class="button button--theme-light" type="button"><span>Отменить</span></button></div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Сохранить</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
           </form>
         </div>
       </div>
