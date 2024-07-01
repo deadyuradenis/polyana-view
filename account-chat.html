@@ -62,7 +62,7 @@
   }
 </style>
 <link rel="stylesheet" href="css/index.css">
-<title>Категории</title>
+<title>Личный кабинет. Сообщения</title>
 
 <body class="layout">
   <header class="header" data-component="header">
@@ -5055,402 +5055,311 @@
     </div>
   </header>
   <div class="layout__main">
-    <div class="breadcrumbs">
-      <div class="container">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Главная</a></li>
-          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Категории</a></li>
-        </ul>
-      </div>
-    </div>
-    <section class="section">
+    <section class="section section-account" data-component="account">
       <div class="container section__container">
-        <div class="section__header">
-          <div class="section__header-content">
-            <div class="section__header-main">
-              <h1 class="section__title">Аграрный журнал</h1>
-              <p class="section__subtitle">Здесь растёт бизнес </p>
+        <div class="section__grid">
+          <div class="section-aside section__grid-aside">
+            <div class="section-aside__inner">
+              <div class="account-aside section-account__aside" data-component="account-aside">
+                <div class="account-aside__content">
+                  <div class="account-aside-header account-aside__header"><button class="account-aside-header__close" type="button" data-account-aside="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                      </svg></button><button class="account-aside-header__image-wrapper" type="button" data-bs-toggle="modal" data-bs-target="#modal-edit-avatar">
+                      <picture class="account-aside-header__image"><img src="assets/media/seller-logo.png" alt="" />
+                        <source srcset="assets/media/seller-logo.webp" type="image/webp" />
+                      </picture>
+                    </button>
+                    <div class="account-aside-header__uppertitle">Добро пожаловать, </div>
+                    <div class="account-aside-header__title">Username</div>
+                  </div>
+                  <div class="account-aside__body">
+                    <div class="account-aside__body-content">
+                      <div class="account-aside-menu account-aside__menu">
+                        <div class="account-aside-menu__group account-aside-menu__group--has-divider">
+                          <div class="account-aside-menu__list"> <!-- Если это ссылка текущей страницы, то <button>, в остальных случаях <a>--><button class="account-aside__button account-aside__button--has-arrow" type="button" data-account="trigger"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#bell"></use>
+                              </svg><span class="account-aside__button-title">Уведомления</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><span class="account-aside__button-counter">12</span></button><a class="account-aside__button account-aside__button--has-arrow" href="account-notifications.html" style="display: none;"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#bell"></use>
+                              </svg><span class="account-aside__button-title">Уведомления</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><span class="account-aside__button-counter">12</span></a></div>
+                        </div>
+                        <div class="account-aside-menu__group">
+                          <div class="account-aside-menu__title">Личная информация</div>
+                          <div class="account-aside-menu__list"><a class="account-aside__button is-active" href="account-profile.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
+                              </svg><span class="account-aside__button-title">Профиль</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg></a><a class="account-aside__button" href="account-comments.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
+                              </svg><span class="account-aside__button-title">Отзывы</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg></a><a class="account-aside__button" href="account-referral.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#bolt"></use>
+                              </svg><span class="account-aside__button-title">Реферальная система</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg></a></div>
+                        </div>
+                        <div class="account-aside-menu__group">
+                          <div class="account-aside-menu__title">Заказы</div>
+                          <div class="account-aside-menu__list"><a class="account-aside__button" href="account-cart.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#basket"></use>
+                              </svg><span class="account-aside__button-title">Моя корзина</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg></a><a class="account-aside__button" href="account-favorites.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
+                              </svg><span class="account-aside__button-title">Избранное</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg></a><a class="account-aside__button" href="account-order-history.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
+                              </svg><span class="account-aside__button-title">История заказов</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg></a><a class="account-aside__button" href="account-chat.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#message"></use>
+                              </svg><span class="account-aside__button-title">Сообщения</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="account-aside__footer"><button class="account-aside__footer-button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#log-out"></use>
+                    </svg><span>Выйти</span></button></div>
+              </div>
+            </div>
+          </div>
+          <div class="section__grid-main">
+            <div class="section__body">
+              <div class="section__main">
+                <section class="section section--size-md section-chat">
+                  <div class="section__header section__header--size-md section__header--row">
+                    <div class="section__header-content"><button class="button button--style-ghost button--type-icon button--theme-neutral section__header-back" type="button" data-account="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                        </svg></button>
+                      <div class="section__header-main">
+                        <h1 class="section__title">Сообщения</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__body">
+                    <div class="section__main">
+                      <div class="chat" data-component="chat">
+                        <div class="chat-aside chat__aside" data-chat="aside">
+                          <div class="chat-aside__header">
+                            <h3 class="chat-aside__title">Список чатов</h3>
+                          </div>
+                          <div class="chat-aside__body">
+                            <div class="chat-aside__list"><!-- chat-link--unread для непрочитанных--><button class="chat-link chat-aside__link" type="button" data-chat="link" data-chat-id="chat-1">
+                                <picture class="chat-link__photo">
+                                  <source srcset="assets/media/logos/logo-chat.svg" type="image/webp" /><img src="assets/media/logos/logo-chat.svg" alt="" />
+                                </picture>
+                                <div class="chat-link__main">
+                                  <div class="chat-link__header">
+                                    <div class="chat-link__name">Поддержка Поляна</div>
+                                    <div class="chat-link__date">26.10.2022</div>
+                                  </div>
+                                  <div class="chat-link__body">
+                                    <div class="chat-link__text">Текст последнего присланного сообщения в одну строку</div>
+                                  </div>
+                                </div>
+                              </button><!-- Вроде как будет один чат, поэтому оставлю для примера непрочитанного--><!-- chat-link--unread для непрочитанных--><button class="chat-link chat-aside__link chat-link--unread" type="button" data-chat="link" data-chat-id="chat-1">
+                                <picture class="chat-link__photo">
+                                  <source srcset="assets/media/logos/logo-chat.svg" type="image/webp" /><img src="assets/media/logos/logo-chat.svg" alt="" />
+                                </picture>
+                                <div class="chat-link__main">
+                                  <div class="chat-link__header">
+                                    <div class="chat-link__name">Поддержка поддержки Поляны</div>
+                                    <div class="chat-link__date">26.10.2022</div>
+                                  </div>
+                                  <div class="chat-link__body">
+                                    <div class="chat-link__text">Текст последнего присланного сообщения в одну строку. Текст последнего присланного сообщения в одну строку</div>
+                                    <div class="chat-link__count">14</div>
+                                  </div>
+                                </div>
+                              </button></div>
+                          </div>
+                        </div><!-- Если на мобилке нужно по дефолту открывать чат, то добавить is-active-->
+                        <div class="chat-main chat__main" data-chat="main">
+                          <div class="chat-window chat-main__window">
+                            <div class="chat-window__content">
+                              <div class="chat-window__header"><button class="button button--type-icon button--size-sm button--style-ghost button--theme-neutral chat-window__header-back" type="button" data-chat="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                                  </svg></button>
+                                <picture class="chat-window__header-photo">
+                                  <source srcset="assets/media/logos/logo-chat.svg" type="image/webp" /><img src="assets/media/logos/logo-chat.svg" alt="" />
+                                </picture>
+                                <div class="chat-window__header-name">Поддержка Поляна</div>
+                              </div>
+                              <div class="chat-window__body">
+                                <div class="chat-dialog chat-window__dialog" data-chat="dialog">
+                                  <div class="chat-dialog__date">30 ноября</div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте, открыть спор по <a href="#"> заказу </a>?</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-dialog__date">29 ноября</div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text"><a href="#"> Заказ </a>!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по заказу!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-dialog__date">30 ноября</div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте, открыть спор по <a href="#"> заказу </a>?</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-dialog__date">29 ноября</div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text"><a href="#"> Заказ </a>!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по заказу!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-dialog__date">30 ноября</div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте, открыть спор по <a href="#"> заказу </a>?</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-dialog__date">29 ноября</div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text"><a href="#"> Заказ </a>!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по заказу!</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message__main">
+                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    </div>
+                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="chat-window__footer">
+                                <div class="chat-window__variants" data-chat="variants"><button class="button button--size-rg chat-window__variant" type="button"><span>Нужна помощь по заказу</span></button><button class="button button--size-rg chat-window__variant" type="button"><span>Где мой заказ?</span></button><button class="button button--size-rg chat-window__variant" type="button"><span>Хочу открыть спор по заказу</span></button><button class="button button--size-rg chat-window__variant" type="button"><span>Где мой заказ?</span></button></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat-form chat-main__form">
+                            <form action="#">
+                              <div class="chat-form__content"><button class="button button--type-icon button--size-rg button--style-ghost button--theme-neutral chat-form__button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#attachment"></use>
+                                  </svg></button>
+                                <div class="input chat-form__field input--type-textarea" data-component="input"><label class="input__wrapper"><textarea class="input__native" type="textarea" name="message" placeholder="Введите сообщение" data-input="native" data-autoheight="data-autoheight"></textarea><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                    </svg></label><span class="input__message">Обязательно для заполнения</span></div><button class="button button--type-icon button--size-rg button--style-ghost button--theme-neutral chat-form__button" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#paperplane"></use>
+                                  </svg></button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="section section-journal">
-      <form action="#">
-        <div class="container section__container">
-          <div class="section__header">
-            <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
-              <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
-                <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
-                    <div class="badge__wrapper"> <span>Все</span></div>
-                  </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
-                    <div class="badge__wrapper"> <span>Статьи</span></div>
-                  </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
-                    <div class="badge__wrapper"> <span>Новости</span></div>
-                  </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
-                    <div class="badge__wrapper"> <span>Видео</span></div>
-                  </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
-                    <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
-                      </svg></div>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-          <div class="section__grid">
-            <div class="section__grid-main">
-              <div class="section__body">
-                <div class="section__main">
-                  <section class="section section--size-md">
-                    <div class="section__body">
-                      <div class="section__main"><img class="section__decor" src="assets/media/decorations/branch.svg" alt="">
-                        <div class="slider section-intro__slider slider--rounded" data-slider-id="intro" data-component="slider">
-                          <div class="slider__content">
-                            <div class="swiper slider__inner" data-slider="inner">
-                              <div class="swiper-wrapper slider__wrapper" data-slider="wrapper">
-                                <div class="swiper-slide slider__slide">
-                                  <div class="banner-slide">
-                                    <div class="banner-slide__background-wrapper">
-                                      <picture class="banner-slide__background"><img src="assets/media/banners/slide/bg-2.jpg" />
-                                        <source srcset="assets/media/banners/slide/bg-2--webp.webp" />
-                                      </picture>
-                                    </div>
-                                    <div class="banner-slide__content">
-                                      <div class="banner-slide__main">
-                                        <div class="banner-slide__header">
-                                          <h2 class="banner-slide__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h2>
-                                        </div>
-                                        <div class="banner-slide__footer"> <a class="button button--style-outline button--theme-light button--size-md banner-slide__button" href="#"><span>Подробнее</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                              <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                                            </svg></a></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="swiper-slide slider__slide">
-                                  <div class="banner-slide">
-                                    <div class="banner-slide__background-wrapper">
-                                      <picture class="banner-slide__background"><img src="assets/media/banners/slide/bg-2.jpg" />
-                                        <source srcset="assets/media/banners/slide/bg-2--webp.webp" />
-                                      </picture>
-                                    </div>
-                                    <div class="banner-slide__content">
-                                      <div class="banner-slide__main">
-                                        <div class="banner-slide__header">
-                                          <h2 class="banner-slide__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h2>
-                                        </div>
-                                        <div class="banner-slide__footer"> <a class="button button--style-outline button--theme-light button--size-md banner-slide__button" href="#"><span>Подробнее</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                              <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                                            </svg></a></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="swiper-slide slider__slide">
-                                  <div class="banner-slide">
-                                    <div class="banner-slide__background-wrapper">
-                                      <picture class="banner-slide__background"><img src="assets/media/banners/slide/bg-2.jpg" />
-                                        <source srcset="assets/media/banners/slide/bg-2--webp.webp" />
-                                      </picture>
-                                    </div>
-                                    <div class="banner-slide__content">
-                                      <div class="banner-slide__main">
-                                        <div class="banner-slide__header">
-                                          <h2 class="banner-slide__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h2>
-                                        </div>
-                                        <div class="banner-slide__footer"> <a class="button button--style-outline button--theme-light button--size-md banner-slide__button" href="#"><span>Подробнее</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                              <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                                            </svg></a></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="swiper-slide slider__slide">
-                                  <div class="banner-slide">
-                                    <div class="banner-slide__background-wrapper">
-                                      <picture class="banner-slide__background"><img src="assets/media/banners/slide/bg-2.jpg" />
-                                        <source srcset="assets/media/banners/slide/bg-2--webp.webp" />
-                                      </picture>
-                                    </div>
-                                    <div class="banner-slide__content">
-                                      <div class="banner-slide__main">
-                                        <div class="banner-slide__header">
-                                          <h2 class="banner-slide__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h2>
-                                        </div>
-                                        <div class="banner-slide__footer"> <a class="button button--style-outline button--theme-light button--size-md banner-slide__button" href="#"><span>Подробнее</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                              <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                                            </svg></a></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="slider__navigation" data-slider="navigation">
-                              <div class="swiper-button-prev slider__button slider__button--prev" data-slider-button="prev"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#chevron--left"></use>
-                                </svg></div>
-                              <div class="swiper-button-next slider__button slider__button--next" data-slider-button="next"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#chevron--right"></use>
-                                </svg></div>
-                            </div>
-                          </div>
-                          <div class="swiper-pagination slider__pagination" data-slider="pagination"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="section section--size-md">
-                    <div class="section__header section__header--size-md">
-                      <div class="section__header-content">
-                        <div class="section__header-main">
-                          <h3 class="section__title">Последние новости</h3>
-                        </div>
-                        <div class="section__header-actions"> <a class="button button--style-ghost section__link" href="#"><span class="text-swap"><span>Все новости</span><span>Все</span></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#open-in-new"></use>
-                            </svg></a></div>
-                      </div>
-                    </div>
-                    <div class="section__body">
-                      <div class="section__main"><img class="section__decor section__decor--bottom" src="assets/media/decorations/dots.svg" alt="">
-                        <div class="grid grid--articles"><a class="card-article card-article--style-default" href="#">
-                            <div class="card-article__content">
-                              <div class="card-article__main">
-                                <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                                <div class="card-article__date">2 октября 2023</div>
-                              </div>
-                              <div class="card-article__button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                                </svg></div>
-                            </div>
-                          </a><a class="card-article card-article--style-default" href="#">
-                            <div class="card-article__content">
-                              <div class="card-article__main">
-                                <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                                <div class="card-article__date">2 октября 2023</div>
-                              </div>
-                              <div class="card-article__button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                                </svg></div>
-                            </div>
-                          </a><a class="card-article card-article--style-default" href="#">
-                            <div class="card-article__content">
-                              <div class="card-article__main">
-                                <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                                <div class="card-article__date">2 октября 2023</div>
-                              </div>
-                              <div class="card-article__button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                                </svg></div>
-                            </div>
-                          </a></div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="section section--size-md">
-                    <div class="section__header section__header--size-md">
-                      <div class="section__header-content">
-                        <div class="section__header-main">
-                          <h3 class="section__title">Последние видео</h3>
-                        </div>
-                        <div class="section__header-actions"> <a class="button button--style-ghost section__link" href="#"><span class="text-swap"><span>Все видео</span><span>Все</span></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#open-in-new"></use>
-                            </svg></a></div>
-                      </div>
-                    </div>
-                    <div class="section__body">
-                      <div class="section__main">
-                        <div class="grid grid--video"><a class="card-video" data-fancybox="video" href="https://www.youtube.com/watch?v=5z3j-woKCTw">
-                            <div class="card-video__image-wrapper">
-                              <picture class="card-video__image"><img src="assets/media/cards/video/1.jpg" />
-                                <source srcset="assets/media/cards/video/1.webp" />
-                              </picture>
-                              <div class="card-video__play"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#play"></use>
-                                </svg></div>
-                              <div class="card-video__time">2:56</div>
-                            </div>
-                            <div class="card-video__content">
-                              <h4 class="card-video__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            </div>
-                          </a><a class="card-video" data-fancybox="video" href="https://www.youtube.com/watch?v=5z3j-woKCTw">
-                            <div class="card-video__image-wrapper">
-                              <picture class="card-video__image"><img src="assets/media/cards/video/1.jpg" />
-                                <source srcset="assets/media/cards/video/1.webp" />
-                              </picture>
-                              <div class="card-video__play"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#play"></use>
-                                </svg></div>
-                              <div class="card-video__time">2:56</div>
-                            </div>
-                            <div class="card-video__content">
-                              <h4 class="card-video__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            </div>
-                          </a></div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="section section--size-md">
-                    <div class="section__header section__header--size-md">
-                      <div class="section__header-content">
-                        <div class="section__header-main">
-                          <h3 class="section__title">Полезные материалы</h3>
-                        </div>
-                        <div class="section__header-actions"> <a class="button button--style-ghost section__link" href="#"><span class="text-swap"><span>Все материалы</span><span>Все</span></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#open-in-new"></use>
-                            </svg></a></div>
-                      </div>
-                    </div>
-                    <div class="section__body">
-                      <div class="section__main"><img class="section__decor" src="assets/media/decorations/lines.svg" alt="">
-                        <div class="grid"><a class="card-article card-article--style-full" href="#">
-                            <div class="card-article__image-wrapper">
-                              <picture class="card-article__image"><img src="assets/media/cards/article/1.png" />
-                                <source srcset="assets/media/cards/article/1.png" />
-                              </picture>
-                              <div class="card-article__labels"><span class="card-article__label">Статья</span><span class="card-article__label">Видео</span></div>
-                            </div>
-                            <div class="card-article__content">
-                              <div class="card-article__main">
-                                <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                                <p class="card-article__subtitle">Минсельхоз в ближайшие три года закупит беспилотников на 360 млн рублей</p>
-                                <div class="card-article__date">2 октября 2023</div>
-                              </div>
-                              <div class="card-article__button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                                </svg></div>
-                            </div>
-                          </a><a class="card-article card-article--style-full" href="#">
-                            <div class="card-article__image-wrapper">
-                              <picture class="card-article__image"><img src="assets/media/cards/article/1.png" />
-                                <source srcset="assets/media/cards/article/1.png" />
-                              </picture>
-                              <div class="card-article__labels"><span class="card-article__label">Статья</span><span class="card-article__label">Видео</span></div>
-                            </div>
-                            <div class="card-article__content">
-                              <div class="card-article__main">
-                                <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                                <p class="card-article__subtitle">Минсельхоз в ближайшие три года закупит беспилотников на 360 млн рублей</p>
-                                <div class="card-article__date">2 октября 2023</div>
-                              </div>
-                              <div class="card-article__button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                                </svg></div>
-                            </div>
-                          </a><a class="card-article card-article--style-full" href="#">
-                            <div class="card-article__image-wrapper">
-                              <picture class="card-article__image"><img src="assets/media/cards/article/1.png" />
-                                <source srcset="assets/media/cards/article/1.png" />
-                              </picture>
-                              <div class="card-article__labels"><span class="card-article__label">Статья</span><span class="card-article__label">Видео</span></div>
-                            </div>
-                            <div class="card-article__content">
-                              <div class="card-article__main">
-                                <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                                <p class="card-article__subtitle">Минсельхоз в ближайшие три года закупит беспилотников на 360 млн рублей</p>
-                                <div class="card-article__date">2 октября 2023</div>
-                              </div>
-                              <div class="card-article__button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-                                </svg></div>
-                            </div>
-                          </a></div>
-                      </div>
-                      <div class="section__footer section__footer--size-rg">
-                        <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </div>
-            <div class="section-aside section__grid-aside">
-              <div class="section-aside__inner">
-                <div class="aside-articles">
-                  <div class="aside-articles__header">
-                    <h2 class="aside-articles__title">Самое интересное</h2>
-                  </div>
-                  <div class="aside-articles__body">
-                    <div class="aside-articles__list"><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a></div>
-                  </div>
-                  <div class="aside-articles__footer">
-                    <div class="card-article-socials card-article-socials--style-mini">
-                      <div class="card-article-socials__content">
-                        <div class="socials card-article-socials__list"><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#logo--vk"></use>
-                            </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#logo--telegram"></use>
-                            </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#logo--ok"></use>
-                            </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#logo--dzen"></use>
-                            </svg></a></div>
-                        <div class="card-article-socials__title">Следи за всеми событиями в наших соцсетях</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
     </section>
   </div>
   <footer class="footer">
