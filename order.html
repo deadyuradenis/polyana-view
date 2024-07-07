@@ -5228,7 +5228,7 @@
                           <div class="account-tile__row">
                             <div class="account-tile__col">
                               <div class="input input--size-lg input--type-text" data-component="input">
-                                <div class="input__title">Номер карты</div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="card-number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                <div class="input__title">Номер карты</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="card-number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                                   </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5239,7 +5239,7 @@
                           <div class="account-tile__row">
                             <div class="account-tile__col">
                               <div class="input input--size-lg input--type-text" data-component="input">
-                                <div class="input__title">Дата</div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="card-date" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                <div class="input__title">Дата</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="card-date" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                                   </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5248,7 +5248,7 @@
                             </div>
                             <div class="account-tile__col">
                               <div class="input input--size-lg input--type-password" data-component="input">
-                                <div class="input__title">CVV</div><label class="input__wrapper"><input class="input__native" type="password" name="input" data-input="native" data-mask="card-cvv" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                <div class="input__title">CVV</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="password" name="input" data-input="native" data-mask="card-cvv" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                                   </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5433,18 +5433,14 @@
             <div class="order-comment__body">
               <div class="order-comment__form">
                 <div class="input input--type-text" data-component="input">
-                  <div class="input__title">Телефон для связи *</div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="phone"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                  <div class="input__title">Телефон для связи *</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="phone"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
                     </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
                 <div class="input input--type-textarea" data-component="input">
-                  <div class="input__title">Комментарий</div><label class="input__wrapper"><textarea class="input__native" type="textarea" name="textarea" data-input="native"></textarea><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message">Обязательно для заполнения</span>
+                  <div class="input__title">Комментарий</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="textarea" data-input="native"></textarea></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
               </div>
             </div>
@@ -5483,7 +5479,7 @@
                   <div class="tumbler__icon"></div>
                 </div>
               </label><!-- Если промокод есть, то disabled-->
-              <div class="input input-promocode is-active input--type-text" disabled="disabled" data-component="input"><label class="input__wrapper"><input class="input__native" type="text" name="promocode" placeholder="Ввести промокод" data-input="native"></input><button class="button button--size-sm input-promocode__button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+              <div class="input input-promocode is-active input--type-text" disabled="disabled" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="promocode" placeholder="Ввести промокод" data-input="native"></input><button class="button button--size-sm input-promocode__button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
                     </svg></button><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
@@ -5589,6 +5585,42 @@
   </footer><button class="button button--type-icon button--rounded scroll-up" type="button" data-component="scroll-up"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
       <use xlink:href="assets/icons/clean/sprite.svg#arrow-long--up"></use>
     </svg></button>
+  <div class="modal fade modal-success modal--style-default modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <div class="modal-success__status-image"><img src="assets/media/modal/success.svg" alt="" /></div>
+          <div class="modal-success__header">
+            <h2 class="modal-success__title">Спасибо!</h2>
+          </div>
+          <div class="modal-success__body">
+            <p class="modal-success__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
+          </div>
+          <div class="modal-success__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-success modal--style-full modal--size-rg" id="modal-success-full" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <div class="modal-success__status-image"><img src="assets/media/modal/success.svg" alt="" /></div>
+          <div class="modal-success__header">
+            <h2 class="modal-success__title">Спасибо!</h2>
+          </div>
+          <div class="modal-success__body">
+            <p class="modal-success__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
+          </div>
+          <div class="modal-success__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="modal fade modal-location modal--style-full modal--size-md" id="modal-location" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
@@ -5666,11 +5698,7 @@
                       </svg></label></div>
                 </div>
                 <div class="input input--type-textarea" data-component="input">
-                  <div class="input__title">Комментарий к товару</div><label class="input__wrapper"><textarea class="input__native" type="textarea" name="comment text" data-input="native" data-mask="letters"></textarea><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message">Обязательно для заполнения</span>
+                  <div class="input__title">Комментарий к товару</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="comment text" data-input="native" data-mask="letters"></textarea></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
                 <div class="input-file" data-component="input-file" data-input-file-type="">
                   <div class="input-file-preview input-file__preview" data-input-file="preview">
@@ -5704,42 +5732,6 @@
       </div>
     </div>
   </div>
-  <div class="modal fade modal-success modal--style-default modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-          </svg></button>
-        <div class="modal__inner">
-          <div class="modal-success__status-image"><img src="assets/media/modal/success.svg" alt="" /></div>
-          <div class="modal-success__header">
-            <h2 class="modal-success__title">Спасибо!</h2>
-          </div>
-          <div class="modal-success__body">
-            <p class="modal-success__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
-          </div>
-          <div class="modal-success__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade modal-success modal--style-full modal--size-rg" id="modal-success-full" aria-hidden="aria-hidden" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-          </svg></button>
-        <div class="modal__inner">
-          <div class="modal-success__status-image"><img src="assets/media/modal/success.svg" alt="" /></div>
-          <div class="modal-success__header">
-            <h2 class="modal-success__title">Спасибо!</h2>
-          </div>
-          <div class="modal-success__body">
-            <p class="modal-success__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
-          </div>
-          <div class="modal-success__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="modal fade modal-authorization modal--style-full modal--size-rg" id="modal-authorization" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
@@ -5754,14 +5746,14 @@
                   <div class="modal-authorization__body">
                     <div class="modal-authorization__form">
                       <div class="input input--size-lg input--type-text" data-component="input">
-                        <div class="input__title">E-mail или номер телефона</div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="phone-email" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                        <div class="input__title">E-mail или номер телефона</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="phone-email" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                           </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
                           </svg></label><span class="input__message">Обязательно для заполнения</span>
                       </div>
                       <div class="input input--size-lg input--type-password" data-component="input">
-                        <div class="input__title">Пароль</div><label class="input__wrapper"><input class="input__native" type="password" name="input" data-input="native" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                        <div class="input__title">Пароль</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="password" name="input" data-input="native" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                           </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5779,7 +5771,7 @@
                   <div class="modal-authorization__body">
                     <div class="modal-authorization__form">
                       <div class="input modal-authorization__input input--size-lg input--type-text" data-component="input">
-                        <div class="input__title">Номер телефона</div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="phone" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                        <div class="input__title">Номер телефона</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="phone" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                           </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5803,7 +5795,7 @@
             <div class="modal-authorization__body modal-authorization__body--shrink">
               <div class="modal-authorization__subtitle">Код подтверждения отправлен на номер <span>+7 999 636‑42‑00</span></div>
               <div class="modal-authorization__form">
-                <div class="input input--center modal-authorization__input-code input--size-lg input--type-text" data-component="input"><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                <div class="input input--center modal-authorization__input-code input--size-lg input--type-text" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5833,7 +5825,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">Название организации <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Название организации <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5857,7 +5849,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">ФИО руководителя <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">ФИО руководителя <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5866,27 +5858,7 @@
                   </div>
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">ИНН <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                        </svg></label><span class="input__message">Обязательно для заполнения</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-grid__row">
-                  <div class="form-grid__col">
-                    <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">КПП <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                        </svg></label><span class="input__message">Обязательно для заполнения</span>
-                    </div>
-                  </div>
-                  <div class="form-grid__col">
-                    <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">ОГРН <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">ИНН <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5897,7 +5869,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">Р/С <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">КПП <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5906,7 +5878,7 @@
                   </div>
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">Юридический адрес <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">ОГРН <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5917,7 +5889,27 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">БИК <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Р/С <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="input input--size-rg input--type-text" data-component="input">
+                      <div class="input__title">Юридический адрес <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--size-rg input--type-text" data-component="input">
+                      <div class="input__title">БИК <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5955,7 +5947,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">E-mail <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="mail" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">E-mail <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="mail" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5964,7 +5956,7 @@
                   </div>
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">Номер телефона <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="phone" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Номер телефона <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="phone" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5975,7 +5967,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-password" data-component="input">
-                      <div class="input__title">Пароль для входа <span>*</span></div><label class="input__wrapper"><input class="input__native" type="password" name="input" placeholder="Минимум 8 знаков" data-input="native" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Пароль для входа <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="password" name="input" placeholder="Минимум 8 знаков" data-input="native" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5988,7 +5980,7 @@
                   </div>
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-password" data-component="input">
-                      <div class="input__title">Повторите пароль <span>*</span></div><label class="input__wrapper"><input class="input__native" type="password" name="input" placeholder="Минимум 8 знаков" data-input="native" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Повторите пароль <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="password" name="input" placeholder="Минимум 8 знаков" data-input="native" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -6018,7 +6010,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">Время работы <span>*</span></div><label class="input__wrapper"><input class="input__native" type="text" name="input" data-input="native" data-mask="time-range" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Время работы <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="time-range" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -6075,11 +6067,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--type-textarea" data-component="input">
-                      <div class="input__title">Расскажите о компании</div><label class="input__wrapper"><textarea class="input__native" type="textarea" name="textarea" data-input="native"></textarea><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                      <div class="input__title">Расскажите о компании</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="textarea" data-input="native"></textarea></label><span class="input__message">Обязательно для заполнения</span>
                     </div>
                   </div>
                 </div>
@@ -6104,7 +6092,7 @@
             <div class="modal-password-recovery__body">
               <div class="modal-password-recovery__form">
                 <div class="input modal-password-recovery__input input--size-lg" data-component="input">
-                  <div class="input__title">E-mail или номер телефона</div><label class="input__wrapper"><input class="input__native" type="textt" name="input" data-input="native" data-mask="phone-email" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                  <div class="input__title">E-mail или номер телефона</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="phone-email" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -6123,7 +6111,7 @@
             <div class="modal-password-recovery__body">
               <div class="modal-password-recovery__form">
                 <div class="input modal-password-recovery__input input--size-lg input--type-password" data-component="input">
-                  <div class="input__title">Новый пароль</div><label class="input__wrapper"><input class="input__native" type="password" name="input" data-input="native" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                  <div class="input__title">Новый пароль</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="password" name="input" data-input="native" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -6134,7 +6122,7 @@
                       </svg></button></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
                 <div class="input modal-password-recovery__input input--size-lg input--type-password" data-component="input">
-                  <div class="input__title">Повторите пароль</div><label class="input__wrapper"><input class="input__native" type="password" name="input" data-input="native" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                  <div class="input__title">Повторите пароль</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="password" name="input" data-input="native" data-required="data-required" autocomplete="autocomplete"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                     </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -6320,7 +6308,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--type-text" data-component="input">
-                      <div class="input__title">Название точки</div><label class="input__wrapper"><input class="input__native" type="text" name="name" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Название точки</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="name" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -6331,7 +6319,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--type-text" data-component="input">
-                      <div class="input__title">Адрес</div><label class="input__wrapper"><input class="input__native" type="text" name="address" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Адрес</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="address" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -6342,7 +6330,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--type-text" data-component="input">
-                      <div class="input__title">Время начала работы</div><label class="input__wrapper"><input class="input__native" type="text" name="start-time" data-input="native" data-mask="time"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Время начала работы</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="start-time" data-input="native" data-mask="time"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -6351,7 +6339,7 @@
                   </div>
                   <div class="form-grid__col">
                     <div class="input input--type-text" data-component="input">
-                      <div class="input__title">Время конца работы</div><label class="input__wrapper"><input class="input__native" type="text" name="end-time" data-input="native" data-mask="time"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Время конца работы</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="end-time" data-input="native" data-mask="time"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
