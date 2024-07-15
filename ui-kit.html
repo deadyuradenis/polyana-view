@@ -91,7 +91,7 @@
               <form action="#">
                 <div class="header-search__wrapper"><label class="search-input header-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                      </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                       </svg></button></label>
                   <div class="header-search__result" data-header-search="result">
@@ -170,7 +170,7 @@
                 <div class="header-catalog-block__title">Каталог</div>
               </div><label class="search-input header-catalog-block__search" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Найти товар" autocomplete="off" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Найти товар" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="header-catalog-block__body"> <!-- Появляется только при найденных совпадениях-->
@@ -6963,6 +6963,72 @@
                     </svg></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
               </div>
+              <div class="ui__col">
+                <div class="input input--type-text" data-component="input">
+                  <div class="input__title">mask: phone-email</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="phone-email" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
+                </div>
+              </div>
+              <div class="ui__col">
+                <div class="input input--type-text" data-component="input">
+                  <div class="input__title">mask: time-range</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="time-range" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
+                </div>
+              </div>
+              <div class="ui__col">
+                <div class="input input--type-text" data-component="input">
+                  <div class="input__title">mask: time</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="time" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
+                </div>
+              </div>
+              <div class="ui__col">
+                <div class="input input--type-text" data-component="input">
+                  <div class="input__title">mask: card-number</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="card-number" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
+                </div>
+              </div>
+              <div class="ui__col">
+                <div class="input input--type-text" data-component="input">
+                  <div class="input__title">mask: card-cvv</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="card-cvv" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
+                </div>
+              </div>
+              <div class="ui__col">
+                <div class="input input--type-text" data-component="input">
+                  <div class="input__title">mask: card-date</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="card-date" data-required="data-required"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#eye"></use>
+                    </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span>
+                </div>
+              </div>
             </div>
             <div class="ui__row">
               <div class="ui__col">
@@ -7012,6 +7078,9 @@
             <div class="ui__row">
               <div class="ui__col">
                 <div class="datepicker" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="input" data-component="datepicker" data-datepicker-type="" autocomplete="off" />
+                    <div class="button button--size-rg button--theme-light datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                      </svg></div>
                     <div class="button button--theme-neutral" type="button"><span>Datepicker </span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
                       </svg></div>
@@ -7019,6 +7088,9 @@
               </div>
               <div class="ui__col">
                 <div class="datepicker" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="input" data-component="datepicker" data-datepicker-type="single" autocomplete="off" />
+                    <div class="button button--size-rg button--theme-light datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                      </svg></div>
                     <div class="button button--theme-neutral" type="button"><span>Datepicker single</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
                       </svg></div>
@@ -7026,6 +7098,9 @@
               </div>
               <div class="ui__col">
                 <div class="datepicker" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="input" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
+                    <div class="button button--size-rg button--theme-light datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                      </svg></div>
                     <div class="button button--theme-neutral" type="button"><span>Datepicker range</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
                       </svg></div>
@@ -8747,7 +8822,7 @@
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                               </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                               </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -8799,13 +8874,13 @@
                           <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
                           <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
                         </div>
-                        <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                        <div class="comment-info__rating"><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                          </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -8857,13 +8932,13 @@
                           <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
                           <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
                         </div>
-                        <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                        <div class="comment-info__rating"><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                          </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -8909,13 +8984,13 @@
                           <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
                           <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
                         </div>
-                        <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                        <div class="comment-info__rating"><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                          </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -8964,13 +9039,13 @@
                           <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
                           <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
                         </div>
-                        <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                        <div class="comment-info__rating"><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                          </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                           </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -9028,7 +9103,7 @@
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                               </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                               </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -9065,7 +9140,7 @@
                           <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
                         </svg><span>На модерации</span></div>
                     </div>
-                    <div class="comment__actions"> <button class="button button--style-ghost button--size-sm comment__action" type="button"><span>Одобрить</span></button><button class="button button--style-ghost button--theme-red button--size-sm comment__action" type="button" data-bs-toggle="modal" data-bs-target="#modal-comment-reject"><span>Заблокировать</span></button></div>
+                    <div class="comment__actions"> <button class="button button--style-ghost button--size-sm comment__action" type="button"><span>Одобрить</span></button><button class="button button--style-ghost button--theme-red button--size-sm comment__action" type="button" data-bs-toggle="modal" data-bs-target="#modal-publish-reject"><span>Заблокировать</span></button></div>
                   </div>
                 </div>
               </div>
@@ -9086,7 +9161,7 @@
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                               </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                               </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -10637,7 +10712,7 @@
           <div class="modal-location__body">
             <div class="modal-location__search"> <label class="search-input modal-location__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="modal-location__result">
@@ -11267,7 +11342,7 @@
           <div class="modal-search__body">
             <div class="modal-search__search"> <label class="search-input modal-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="modal-search__result">

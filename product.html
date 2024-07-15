@@ -91,7 +91,7 @@
               <form action="#">
                 <div class="header-search__wrapper"><label class="search-input header-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                      </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                       </svg></button></label>
                   <div class="header-search__result" data-header-search="result">
@@ -170,7 +170,7 @@
                 <div class="header-catalog-block__title">Каталог</div>
               </div><label class="search-input header-catalog-block__search" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Найти товар" autocomplete="off" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Найти товар" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="header-catalog-block__body"> <!-- Появляется только при найденных совпадениях-->
@@ -5348,7 +5348,7 @@
                   </div>
                 </div>
                 <div class="product__aside"><!-- При отсутствии скидки убрать класс block-buy--has-sale-->
-                  <div class="product__aside-content block-buy block-buy--has-sale">
+                  <div class="block-buy product__aside-content">
                     <form action="#">
                       <div class="block-buy__header">
                         <div class="block-buy__prices">
@@ -5411,7 +5411,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="product-properties product__section product__section--properties">
+                <div class="product-properties product-section product__section product__section--properties">
                   <div class="product-section__header">
                     <h2 class="product-section__title">Характеристики</h2>
                   </div>
@@ -5505,7 +5505,7 @@
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                 </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                 </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -5555,7 +5555,7 @@
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                 </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                 </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -5599,7 +5599,7 @@
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                 </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                 </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -5701,7 +5701,6 @@
                     <div class="rating-panel-line__count">25</div>
                   </div>
                 </div>
-                <div class="rating-panel__footer"><button class="button button--size-rg" type="button" data-bs-toggle="modal" data-bs-target="#modal-comment-add"><span>Оставить отзыв</span></button></div>
               </div>
             </div>
           </div>
@@ -6326,7 +6325,7 @@
           <div class="modal-location__body">
             <div class="modal-location__search"> <label class="search-input modal-location__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="modal-location__result">
@@ -6956,7 +6955,7 @@
           <div class="modal-search__body">
             <div class="modal-search__search"> <label class="search-input modal-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="modal-search__result">

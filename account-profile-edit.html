@@ -91,7 +91,7 @@
               <form action="#">
                 <div class="header-search__wrapper"><label class="search-input header-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                      </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                       </svg></button></label>
                   <div class="header-search__result" data-header-search="result">
@@ -170,7 +170,7 @@
                 <div class="header-catalog-block__title">Каталог</div>
               </div><label class="search-input header-catalog-block__search" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Найти товар" autocomplete="off" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Найти товар" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="header-catalog-block__body"> <!-- Появляется только при найденных совпадениях-->
@@ -5152,7 +5152,7 @@
                       <div class="section__header-main">
                         <h2 class="section__title">Персональные данные</h2>
                       </div>
-                      <div class="section__header-actions"><!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами-->
+                      <div class="section__header-actions"><!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами (только у юзера)-->
                         <div class="account-edit-controls account-edit-controls--position-header"><button class="button button--theme-light button--size-rg account-edit-controls__button" type="button"><span>Отменить</span></button><button class="button button--size-rg account-edit-controls__button" type="button"><span>Сохранить</span></button></div><!-- При редактировании инлайново задать display: none либо класс d-none--><button class="button button--theme-light button--size-rg section__header-action" type="button" style="display: none"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                             <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
                           </svg><span>Редактировать</span></button>
@@ -5199,7 +5199,7 @@
                                 </svg></label><span class="input__message">Обязательно для заполнения</span>
                             </div>
                           </div>
-                        </div><!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами-->
+                        </div><!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами (только у юзера)-->
                         <div class="account-edit-controls account-edit-controls--position-body"><button class="button button--theme-light button--size-rg account-edit-controls__button" type="button"><span>Отменить</span></button><button class="button button--size-rg account-edit-controls__button" type="button"><span>Сохранить</span></button></div>
                       </div>
                     </div>
@@ -5224,7 +5224,7 @@
                             <div class="account-requisites__header">
                               <h3 class="account-requisites__title">Реквизиты Аромат-Град<div class="label account-requisites__label label--size-xs"><span>Основной</span></div>
                               </h3>
-                              <div class="account-requisites__actions"> <!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами-->
+                              <div class="account-requisites__actions"> <!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами (только у юзера)-->
                                 <div class="account-edit-controls account-requisites__controls account-edit-controls--position-header"><button class="button button--theme-light button--size-rg account-edit-controls__button" type="button"><span>Отменить</span></button><button class="button button--size-rg account-edit-controls__button" type="button"><span>Сохранить</span></button></div>
                               </div>
                             </div>
@@ -5323,7 +5323,7 @@
                                     </div>
                                   </div>
                                 </div>
-                              </div><!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами-->
+                              </div><!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами (только у юзера)-->
                               <div class="account-edit-controls account-edit-controls--position-body"><button class="button button--theme-light button--size-rg account-edit-controls__button" type="button"><span>Отменить</span></button><button class="button button--size-rg account-edit-controls__button" type="button"><span>Сохранить</span></button></div>
                             </div>
                           </div>
@@ -5332,7 +5332,7 @@
                           <div class="account-requisites">
                             <div class="account-requisites__header">
                               <h3 class="account-requisites__title">Реквизиты Агропром</h3>
-                              <div class="account-requisites__actions"> <!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами-->
+                              <div class="account-requisites__actions"> <!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами (только у юзера)-->
                                 <div class="account-edit-controls account-requisites__controls account-edit-controls--position-header"><button class="button button--theme-light button--size-rg account-edit-controls__button" type="button"><span>Отменить</span></button><button class="button button--size-rg account-edit-controls__button" type="button"><span>Сохранить</span></button></div>
                               </div>
                             </div>
@@ -5431,7 +5431,7 @@
                                     </div>
                                   </div>
                                 </div>
-                              </div><!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами-->
+                              </div><!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами (только у юзера)-->
                               <div class="account-edit-controls account-edit-controls--position-body"><button class="button button--theme-light button--size-rg account-edit-controls__button" type="button"><span>Отменить</span></button><button class="button button--size-rg account-edit-controls__button" type="button"><span>Сохранить</span></button></div>
                             </div>
                           </div>
@@ -6685,7 +6685,7 @@
           <div class="modal-location__body">
             <div class="modal-location__search"> <label class="search-input modal-location__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="modal-location__result">
@@ -7315,7 +7315,7 @@
           <div class="modal-search__body">
             <div class="modal-search__search"> <label class="search-input modal-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="modal-search__result">

@@ -151,9 +151,7 @@
                     <div class="section__header-main">
                       <h1 class="section__title">Профиль</h1>
                     </div>
-                    <div class="section__header-actions"><button class="button button--theme-light section__header-action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
-                        </svg><span>Редактировать</span></button></div>
+                    <div class="section__header-actions"><button class="button button--theme-light section__header-action" type="button"><span>Редактировать</span></button></div>
                   </div>
                 </div>
                 <div class="section__body">
@@ -769,6 +767,120 @@
               </div>
             </div>
             <div class="modal__footer"><a class="button" href="#"><span>Скачать</span></a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-import-data modal--style-default modal--size-md" id="modal-import-data" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Импорт данных</h2>
+            </div>
+            <div class="modal__body">
+              <div class="modal-import-data__grid">
+                <div class="manual">
+                  <p class="manual__text">Скачайте инструкцию по подготовке файлов к импорту, чтобы ваши товары загрузить корректно.</p><a class="button button--style-outline button--theme-neutral button--size-rg manual__button" href="#"><span>Скачать</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#download"></use>
+                    </svg></a>
+                </div>
+                <div class="input input--type-text" data-component="input">
+                  <div class="input__title">Прикрепите файл (CSV, Excel) <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="file" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message"></span>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" href="#"><span>Импортировать</span></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-publish-reject modal--style-default modal--size-md" id="modal-publish-reject" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Отказ в публикации</h2>
+            </div>
+            <div class="modal__body"><!-- Если отзыва-->
+              <div class="comment modal-publish-reject__comment comment--theme-neutral">
+                <div class="comment__body">
+                  <div class="comment__main">
+                    <div class="comment-info comment__info">
+                      <div class="comment-info__profile">
+                        <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
+                          <source srcset="assets/media/photo-1.webp" type="image/webp" />
+                        </picture>
+                        <div class="comment-info__main">
+                          <div class="comment-info__mame">Юрий Денисов</div>
+                          <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                            </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                            </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                            </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                            </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                            </svg></div>
+                        </div>
+                      </div>
+                      <div class="comment-info__product">
+                        <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
+                        <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
+                      </div>
+                    </div>
+                    <div class="comment__content-wrapper" data-component="more">
+                      <div class="comment__content-inner" data-more="block">
+                        <div class="comment__content" data-more="content">
+                          <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
+                        </div>
+                      </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
+                    </div>
+                  </div>
+                  <div class="comment__images">
+                    <div class="comment__image" data-src="assets/media/cards/product/1.png" data-fancybox="comment"><img src="assets/media/cards/product/1.png" alt="" /></div>
+                    <div class="comment__image" data-src="assets/media/cards/product/2.png" data-fancybox="comment"><img src="assets/media/cards/product/2.png" alt="" /></div>
+                    <div class="comment__image" data-src="assets/media/cards/product/3.png" data-fancybox="comment"><img src="assets/media/cards/product/3.png" alt="" /></div>
+                    <div class="comment__image" data-src="assets/media/cards/product/4.png" data-fancybox="comment"><img src="assets/media/cards/product/4.png" alt="" /></div>
+                    <div class="comment__image" data-src="assets/media/cards/product/5.png" data-fancybox="comment"><img src="assets/media/cards/product/5.png" alt="" /></div>
+                  </div>
+                </div>
+                <div class="comment__footer">
+                  <div class="comment__date">20 марта 2024</div>
+                </div>
+              </div>
+              <div class="modal-publish-reject__form">
+                <div class="select" data-component="select">
+                  <div class="select__title">Причина отказа в публикации <span>*</span></div>
+                  <div class="select__main" data-select="main">
+                    <div class="select__value" data-select="value"><span class="select__placeholder">Выберите из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                      </svg></button>
+                  </div>
+                  <div class="select-dropdown select__dropdown" data-select="dropdown">
+                    <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина отказа в публикации 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина отказа в публикации 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина отказа в публикации 2</span></span></span></label></div>
+                  </div>
+                </div>
+                <div class="input input--type-textarea" data-component="input">
+                  <div class="input__title">Комментарий для автора отзыва <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="input" data-input="native"></textarea></label><span class="input__message"></span>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit" disabled="disabled"><span>Отказать в публикации</span></button></div>
           </form>
         </div>
       </div>

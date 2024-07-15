@@ -62,7 +62,7 @@
   }
 </style>
 <link rel="stylesheet" href="css/index.css">
-<title>Личный кабинет [Продавец]. Отзывы</title>
+<title>Личный кабинет [Продавец]. Уведомления</title>
 
 <body class="layout">
   <div class="layout__main">
@@ -146,315 +146,251 @@
           <div class="section__body">
             <div class="section__main">
               <section class="section section--size-md">
-                <div class="section__header section__header--size-md section__header--row">
-                  <div class="section__header-content">
+                <div class="section__header section__header--size-md">
+                  <div class="section__header-content"><button class="button button--style-ghost button--type-icon button--theme-neutral section__header-back" type="button" data-account="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                      </svg></button>
                     <div class="section__header-main">
-                      <h1 class="section__title">Отзывы</h1>
+                      <h1 class="section__title">Уведомления <span>12</span></h1>
                     </div>
                   </div>
-                  <div class="section__filter">
-                    <div class="badges">
-                      <div class="badges__list"><label class="badge badge--size-md badge--style-tag badge--theme-light"><input class="badge__input" type="radio" name="comments" value="comments" />
-                          <div class="badge__wrapper"> <span>2024 г.</span></div>
-                        </label><label class="badge badge--size-md badge--style-tag badge--theme-light"><input class="badge__input" type="radio" name="comments" value="comments" />
-                          <div class="badge__wrapper"> <span>2023 г.</span></div>
-                        </label></div>
-                    </div>
-                    <div class="section__filter-group">
-                      <div class="datepicker" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="datepicker" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
-                          <div class="button button--size-rg button--theme-light datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                  <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
+                    <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
+                      <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
+                          <div class="badge__wrapper"> <span>Все</span></div>
+                        </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                          <div class="badge__wrapper"> <span>Заказы</span></div>
+                        </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                          <div class="badge__wrapper"> <span>Платформа</span></div>
+                        </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                          <div class="badge__wrapper"> <span>Сообщения</span></div>
+                        </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                          <div class="badge__wrapper"> <span>Акции</span></div>
+                        </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
+                          <div class="badge__wrapper"> <span>Сообщения</span></div>
+                        </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
+                          <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                             </svg></div>
-                        </label></div>
+                        </button></div>
                     </div>
                   </div>
                 </div>
-                <div class="section__grid">
-                  <div class="section__grid-main">
-                    <div class="section__body">
-                      <div class="section__main">
-                        <div class="grid">
-                          <div class="comment comment--theme-neutral">
-                            <div class="comment__body">
-                              <div class="comment__main">
-                                <div class="comment-info comment__info">
-                                  <div class="comment-info__profile">
-                                    <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
-                                      <source srcset="assets/media/photo-1.webp" type="image/webp" />
-                                    </picture>
-                                    <div class="comment-info__main">
-                                      <div class="comment-info__mame">Юрий Денисов</div>
-                                      <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg></div>
-                                    </div>
-                                  </div>
-                                  <div class="comment-info__product">
-                                    <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                    <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
-                                  </div>
-                                </div>
-                                <div class="comment__content-wrapper" data-component="more">
-                                  <div class="comment__content-inner" data-more="block">
-                                    <div class="comment__content" data-more="content">
-                                      <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
-                                    </div>
-                                  </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
-                                </div>
-                              </div>
-                              <div class="comment__images">
-                                <div class="comment__image" data-src="assets/media/cards/product/1.png" data-fancybox="comment"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/2.png" data-fancybox="comment"><img src="assets/media/cards/product/2.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/3.png" data-fancybox="comment"><img src="assets/media/cards/product/3.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/4.png" data-fancybox="comment"><img src="assets/media/cards/product/4.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/5.png" data-fancybox="comment"><img src="assets/media/cards/product/5.png" alt="" /></div>
-                              </div>
-                            </div>
-                            <div class="comment__footer">
-                              <div class="comment__date">20 марта 2024</div>
-                              <div class="comment-answer comment__answer">
-                                <div class="comment-answer__header"> <span>Ответ продавца</span><button class="comment-answer__close" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                    </svg></button></div>
-                                <div class="comment-answer__body">
-                                  <form action="#">
-                                    <div class="comment-answer__form">
-                                      <div class="input comment-answer__input input--style-ghost input--type-textarea" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="input" data-input="native" data-autoheight="data-autoheight"></textarea></label><span class="input__message"></span></div><button class="button button--size-sm comment-answer__button" type="submit"><span>Отправить</span></button>
-                                    </div>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
+                <div class="section__body">
+                  <div class="section__main">
+                    <div class="grid grid--notifications">
+                      <div class="notification">
+                        <div class="notification__header">
+                          <div class="notification__labels">
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
+                              </svg><span>Отзывы</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                              </svg><span>Споры</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
+                              </svg><span>Заказы</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#globe"></use>
+                              </svg><span>Платформа</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#message"></use>
+                              </svg><span>Сообщения</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#fire"></use>
+                              </svg><span>Акции</span></div>
+                            <div class="label label--theme-orange"><span>Новое</span></div>
                           </div>
-                          <div class="comment comment--theme-neutral">
-                            <div class="comment__body">
-                              <div class="comment__main">
-                                <div class="comment-info comment__info">
-                                  <div class="comment-info__profile">
-                                    <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
-                                      <source srcset="assets/media/photo-1.webp" type="image/webp" />
-                                    </picture>
-                                    <div class="comment-info__main">
-                                      <div class="comment-info__mame">Юрий Денисов</div>
-                                      <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg></div>
-                                    </div>
-                                  </div>
-                                  <div class="comment-info__product">
-                                    <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                    <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
-                                  </div>
-                                </div>
-                                <div class="comment__content-wrapper" data-component="more">
-                                  <div class="comment__content-inner" data-more="block">
-                                    <div class="comment__content" data-more="content">
-                                      <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
-                                    </div>
-                                  </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
-                                </div>
-                              </div>
-                              <div class="comment__images">
-                                <div class="comment__image" data-src="assets/media/cards/product/1.png" data-fancybox="comment"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/2.png" data-fancybox="comment"><img src="assets/media/cards/product/2.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/3.png" data-fancybox="comment"><img src="assets/media/cards/product/3.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/4.png" data-fancybox="comment"><img src="assets/media/cards/product/4.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/5.png" data-fancybox="comment"><img src="assets/media/cards/product/5.png" alt="" /></div>
-                              </div>
-                            </div>
-                            <div class="comment__footer">
-                              <div class="comment__date">20 марта 2024</div>
-                              <div class="comment-answer comment__answer">
-                                <div class="comment-answer__header"> <span>Ответ продавца</span><span>Сегодня, 9:36</span></div>
-                                <div class="comment-answer__body">
-                                  <p>Спасибо за положительный отзыв! Надеемся на дальнейшее сотрудничество)</p>
-                                </div>
-                              </div>
-                            </div>
+                          <div class="notification__date">20 марта 2024</div>
+                        </div>
+                        <div class="notification__body">
+                          <h4 class="notification__title">Прошла оплата по заказу №1982-00</h4>
+                          <div class="notification__content">
+                            <p>Подробности по заказу можно посмотреть на <a href="#"> странице заказа</a>.</p>
                           </div>
-                          <div class="comment comment--theme-neutral">
-                            <div class="comment__body">
-                              <div class="comment__main">
-                                <div class="comment-info comment__info">
-                                  <div class="comment-info__profile">
-                                    <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
-                                      <source srcset="assets/media/photo-1.webp" type="image/webp" />
-                                    </picture>
-                                    <div class="comment-info__main">
-                                      <div class="comment-info__mame">Юрий Денисов</div>
-                                      <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg></div>
-                                    </div>
-                                  </div>
-                                  <div class="comment-info__product">
-                                    <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                    <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
-                                  </div>
-                                </div>
-                                <div class="comment__content-wrapper" data-component="more">
-                                  <div class="comment__content-inner" data-more="block">
-                                    <div class="comment__content" data-more="content">
-                                      <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
-                                    </div>
-                                  </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="comment__footer">
-                              <div class="comment__date">20 марта 2024</div><button class="button button--size-sm comment__answer-button" type="submit"><span>Ответить</span></button>
-                            </div>
-                          </div>
-                          <div class="comment comment--theme-neutral">
-                            <div class="comment__body">
-                              <div class="comment__main">
-                                <div class="comment-info comment__info">
-                                  <div class="comment-info__profile">
-                                    <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
-                                      <source srcset="assets/media/photo-1.webp" type="image/webp" />
-                                    </picture>
-                                    <div class="comment-info__main">
-                                      <div class="comment-info__mame">Юрий Денисов</div>
-                                      <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg></div>
-                                    </div>
-                                  </div>
-                                  <div class="comment-info__product">
-                                    <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                    <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
-                                  </div>
-                                </div>
-                                <div class="comment__content-wrapper" data-component="more">
-                                  <div class="comment__content-inner" data-more="block">
-                                    <div class="comment__content" data-more="content">
-                                      <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
-                                    </div>
-                                  </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="comment__footer">
-                              <div class="comment__date">20 марта 2024</div>
-                              <div class="comment-answer comment__answer">
-                                <div class="comment-answer__header"> <span>Ответ продавца</span><span>Сегодня, 9:36</span></div>
-                                <div class="comment-answer__body">
-                                  <p>Спасибо за положительный отзыв! Надеемся на дальнейшее сотрудничество)</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div><!-- если закончились отзывы-->
-                        <div class="section__caption section__caption--darker">Больше отзывов нет</div><!-- если нет отзывов-->
-                        <div class="section__caption">Здесь пока нет отзывов</div>
-                      </div>
-                      <div class="section__footer section__footer--size-md">
-                        <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
-                        <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                            </svg><span>Назад</span></a>
-                          <ul class="pagination__list">
-                            <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                            <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                            <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                            <li class="pagination__item">
-                              <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                            </li>
-                            <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                          </ul><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                            </svg></a>
                         </div>
                       </div>
-                    </div>
+                      <div class="notification">
+                        <div class="notification__header">
+                          <div class="notification__labels">
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
+                              </svg><span>Отзывы</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                              </svg><span>Споры</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
+                              </svg><span>Заказы</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#globe"></use>
+                              </svg><span>Платформа</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#message"></use>
+                              </svg><span>Сообщения</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#fire"></use>
+                              </svg><span>Акции</span></div>
+                            <div class="label label--theme-orange"><span>Новое</span></div>
+                          </div>
+                          <div class="notification__date">20 марта 2024</div>
+                        </div>
+                        <div class="notification__body">
+                          <h4 class="notification__title">Оформлен заказ №1982-00</h4>
+                          <div class="notification__content">
+                            <p>Подробности по заказу можно посмотреть на <a href="#"> странице заказа</a>.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notification">
+                        <div class="notification__header">
+                          <div class="notification__labels">
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
+                              </svg><span>Отзывы</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                              </svg><span>Споры</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
+                              </svg><span>Заказы</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#globe"></use>
+                              </svg><span>Платформа</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#message"></use>
+                              </svg><span>Сообщения</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#fire"></use>
+                              </svg><span>Акции</span></div>
+                            <div class="label label--theme-orange"><span>Новое</span></div>
+                          </div>
+                          <div class="notification__date">20 марта 2024</div>
+                        </div>
+                        <div class="notification__body">
+                          <h4 class="notification__title">Заказу №1982-00 назначен статус “В пути”</h4>
+                          <div class="notification__content">
+                            <p>Подробности по заказу можно посмотреть на <a href="#"> странице заказа</a>.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notification notification--theme-orange">
+                        <div class="notification__header">
+                          <div class="notification__labels">
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
+                              </svg><span>Отзывы</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                              </svg><span>Споры</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
+                              </svg><span>Заказы</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#globe"></use>
+                              </svg><span>Платформа</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#message"></use>
+                              </svg><span>Сообщения</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#fire"></use>
+                              </svg><span>Акции</span></div>
+                            <div class="label label--theme-orange"><span>Новое</span></div>
+                          </div>
+                          <div class="notification__date">20 марта 2024</div>
+                        </div>
+                        <div class="notification__body">
+                          <h4 class="notification__title">Мы не можем опубликовать ваш товар</h4>
+                          <div class="notification__content">
+                            <p>Для публикации карточки “Черный горошек” не хватает информации по товару в профиле товара. Заполните всю информацию о товаре на <a href="#"> странице заказа</a>.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notification notification--theme-orange">
+                        <div class="notification__header">
+                          <div class="notification__labels">
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
+                              </svg><span>Отзывы</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                              </svg><span>Споры</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
+                              </svg><span>Заказы</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#globe"></use>
+                              </svg><span>Платформа</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#message"></use>
+                              </svg><span>Сообщения</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#fire"></use>
+                              </svg><span>Акции</span></div>
+                            <div class="label label--theme-orange"><span>Новое</span></div>
+                          </div>
+                          <div class="notification__date">20 марта 2024</div>
+                        </div>
+                        <div class="notification__body">
+                          <h4 class="notification__title">Технические работы 21.03.2024 с 9:00-14:00</h4>
+                          <div class="notification__content">
+                            <p>Мы будем проводить работы по обновлению платформы. В указанное время некоторые функции могут быть недоступны. Просим проявить понимание!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notification">
+                        <div class="notification__header">
+                          <div class="notification__labels">
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
+                              </svg><span>Отзывы</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                              </svg><span>Споры</span></div>
+                            <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
+                              </svg><span>Заказы</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#globe"></use>
+                              </svg><span>Платформа</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#message"></use>
+                              </svg><span>Сообщения</span></div>
+                            <div class="label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#fire"></use>
+                              </svg><span>Акции</span></div>
+                            <div class="label label--theme-orange"><span>Новое</span></div>
+                          </div>
+                          <div class="notification__date">20 марта 2024</div>
+                        </div>
+                        <div class="notification__body">
+                          <h4 class="notification__title">Новое предложение по продвижению ваших товаров!</h4>
+                          <div class="notification__content">
+                            <p>Подробности можно посмотреть в <a href="#">разделе продвижения.</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- если закончились отзывы-->
+                    <div class="section__caption section__caption--darker">Больше уведомлений нет</div><!-- если нет отзывов-->
+                    <div class="section__caption">У вас нет уведомлений в разделе “Акции”</div>
                   </div>
-                  <div class="section-aside section__grid-aside">
-                    <div class="section-aside__inner">
-                      <div class="rating-panel">
-                        <div class="rating-panel__header">
-                          <div class="rating-panel__score"><span>4.0</span><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                            </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                            </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                            </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                            </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                            </svg></div>
-                          <div class="rating-panel__count">128 отзывов</div>
-                        </div>
-                        <div class="rating-panel__body">
-                          <div class="rating-panel-line rating-panel__line">
-                            <div class="rating-panel-line__value"> <span>5</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg></div>
-                            <div class="rating-panel-line__progress" style="--current-progress: 75"><span> </span></div>
-                            <div class="rating-panel-line__count">75</div>
-                          </div>
-                          <div class="rating-panel-line rating-panel__line">
-                            <div class="rating-panel-line__value"> <span>4</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg></div>
-                            <div class="rating-panel-line__progress" style="--current-progress: 25"><span> </span></div>
-                            <div class="rating-panel-line__count">25</div>
-                          </div>
-                          <div class="rating-panel-line rating-panel__line">
-                            <div class="rating-panel-line__value"> <span>3</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg></div>
-                            <div class="rating-panel-line__progress" style="--current-progress: 50"><span> </span></div>
-                            <div class="rating-panel-line__count">50</div>
-                          </div>
-                          <div class="rating-panel-line rating-panel__line">
-                            <div class="rating-panel-line__value"> <span>2</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg></div>
-                            <div class="rating-panel-line__progress" style="--current-progress: 0"><span> </span></div>
-                            <div class="rating-panel-line__count">0</div>
-                          </div>
-                          <div class="rating-panel-line rating-panel__line">
-                            <div class="rating-panel-line__value"> <span>1</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg></div>
-                            <div class="rating-panel-line__progress" style="--current-progress: 25"><span> </span></div>
-                            <div class="rating-panel-line__count">25</div>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="section__footer section__footer--size-md">
+                    <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
+                    <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                        </svg><span>Назад</span></a>
+                      <ul class="pagination__list">
+                        <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
+                        <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
+                        <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
+                        <li class="pagination__item">
+                          <div class="button button--size-rg pagination__link"> <span>...</span></div>
+                        </li>
+                        <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
+                      </ul><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                        </svg></a>
                     </div>
                   </div>
                 </div>

@@ -62,7 +62,7 @@
   }
 </style>
 <link rel="stylesheet" href="css/index.css">
-<title>Личный кабинет [Продавец]. Отзывы</title>
+<title>Личный кабинет [Продавец]. Мои заказы</title>
 
 <body class="layout">
   <div class="layout__main">
@@ -146,312 +146,660 @@
           <div class="section__body">
             <div class="section__main">
               <section class="section section--size-md">
-                <div class="section__header section__header--size-md section__header--row">
-                  <div class="section__header-content">
-                    <div class="section__header-main">
-                      <h1 class="section__title">Отзывы</h1>
-                    </div>
-                  </div>
-                  <div class="section__filter">
-                    <div class="badges">
-                      <div class="badges__list"><label class="badge badge--size-md badge--style-tag badge--theme-light"><input class="badge__input" type="radio" name="comments" value="comments" />
-                          <div class="badge__wrapper"> <span>2024 г.</span></div>
-                        </label><label class="badge badge--size-md badge--style-tag badge--theme-light"><input class="badge__input" type="radio" name="comments" value="comments" />
-                          <div class="badge__wrapper"> <span>2023 г.</span></div>
-                        </label></div>
-                    </div>
-                    <div class="section__filter-group">
-                      <div class="datepicker" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="datepicker" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
-                          <div class="button button--size-rg button--theme-light datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                <div class="section__body">
+                  <div class="section__main">
+                    <div class="grid grid--stats">
+                      <div class="stat stat--theme-blue-light">
+                        <div class="stat__content">
+                          <div class="stat__main">
+                            <h4 class="stat__title">Товары</h4>
+                            <div class="stat__count">144</div>
+                          </div>
+                          <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#package"></use>
                             </svg></div>
-                        </label></div>
+                        </div>
+                      </div>
+                      <div class="stat stat--theme-red-light">
+                        <div class="stat__content">
+                          <div class="stat__main">
+                            <h4 class="stat__title">Клиенты</h4>
+                            <div class="stat__count">35</div>
+                          </div>
+                          <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#users"></use>
+                            </svg></div>
+                        </div>
+                      </div>
+                      <div class="stat stat--theme-orange-light">
+                        <div class="stat__content">
+                          <div class="stat__main">
+                            <h4 class="stat__title">Категории</h4>
+                            <div class="stat__count">12</div>
+                          </div>
+                          <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                            </svg></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="section__grid">
-                  <div class="section__grid-main">
-                    <div class="section__body">
-                      <div class="section__main">
-                        <div class="grid">
-                          <div class="comment comment--theme-neutral">
-                            <div class="comment__body">
-                              <div class="comment__main">
-                                <div class="comment-info comment__info">
-                                  <div class="comment-info__profile">
-                                    <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
-                                      <source srcset="assets/media/photo-1.webp" type="image/webp" />
-                                    </picture>
-                                    <div class="comment-info__main">
-                                      <div class="comment-info__mame">Юрий Денисов</div>
-                                      <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg></div>
-                                    </div>
-                                  </div>
-                                  <div class="comment-info__product">
-                                    <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                    <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
-                                  </div>
-                                </div>
-                                <div class="comment__content-wrapper" data-component="more">
-                                  <div class="comment__content-inner" data-more="block">
-                                    <div class="comment__content" data-more="content">
-                                      <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
-                                    </div>
-                                  </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
-                                </div>
-                              </div>
-                              <div class="comment__images">
-                                <div class="comment__image" data-src="assets/media/cards/product/1.png" data-fancybox="comment"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/2.png" data-fancybox="comment"><img src="assets/media/cards/product/2.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/3.png" data-fancybox="comment"><img src="assets/media/cards/product/3.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/4.png" data-fancybox="comment"><img src="assets/media/cards/product/4.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/5.png" data-fancybox="comment"><img src="assets/media/cards/product/5.png" alt="" /></div>
-                              </div>
-                            </div>
-                            <div class="comment__footer">
-                              <div class="comment__date">20 марта 2024</div>
-                              <div class="comment-answer comment__answer">
-                                <div class="comment-answer__header"> <span>Ответ продавца</span><button class="comment-answer__close" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                    </svg></button></div>
-                                <div class="comment-answer__body">
-                                  <form action="#">
-                                    <div class="comment-answer__form">
-                                      <div class="input comment-answer__input input--style-ghost input--type-textarea" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="input" data-input="native" data-autoheight="data-autoheight"></textarea></label><span class="input__message"></span></div><button class="button button--size-sm comment-answer__button" type="submit"><span>Отправить</span></button>
-                                    </div>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="comment comment--theme-neutral">
-                            <div class="comment__body">
-                              <div class="comment__main">
-                                <div class="comment-info comment__info">
-                                  <div class="comment-info__profile">
-                                    <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
-                                      <source srcset="assets/media/photo-1.webp" type="image/webp" />
-                                    </picture>
-                                    <div class="comment-info__main">
-                                      <div class="comment-info__mame">Юрий Денисов</div>
-                                      <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg></div>
-                                    </div>
-                                  </div>
-                                  <div class="comment-info__product">
-                                    <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                    <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
-                                  </div>
-                                </div>
-                                <div class="comment__content-wrapper" data-component="more">
-                                  <div class="comment__content-inner" data-more="block">
-                                    <div class="comment__content" data-more="content">
-                                      <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
-                                    </div>
-                                  </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
-                                </div>
-                              </div>
-                              <div class="comment__images">
-                                <div class="comment__image" data-src="assets/media/cards/product/1.png" data-fancybox="comment"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/2.png" data-fancybox="comment"><img src="assets/media/cards/product/2.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/3.png" data-fancybox="comment"><img src="assets/media/cards/product/3.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/4.png" data-fancybox="comment"><img src="assets/media/cards/product/4.png" alt="" /></div>
-                                <div class="comment__image" data-src="assets/media/cards/product/5.png" data-fancybox="comment"><img src="assets/media/cards/product/5.png" alt="" /></div>
-                              </div>
-                            </div>
-                            <div class="comment__footer">
-                              <div class="comment__date">20 марта 2024</div>
-                              <div class="comment-answer comment__answer">
-                                <div class="comment-answer__header"> <span>Ответ продавца</span><span>Сегодня, 9:36</span></div>
-                                <div class="comment-answer__body">
-                                  <p>Спасибо за положительный отзыв! Надеемся на дальнейшее сотрудничество)</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="comment comment--theme-neutral">
-                            <div class="comment__body">
-                              <div class="comment__main">
-                                <div class="comment-info comment__info">
-                                  <div class="comment-info__profile">
-                                    <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
-                                      <source srcset="assets/media/photo-1.webp" type="image/webp" />
-                                    </picture>
-                                    <div class="comment-info__main">
-                                      <div class="comment-info__mame">Юрий Денисов</div>
-                                      <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg></div>
-                                    </div>
-                                  </div>
-                                  <div class="comment-info__product">
-                                    <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                    <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
-                                  </div>
-                                </div>
-                                <div class="comment__content-wrapper" data-component="more">
-                                  <div class="comment__content-inner" data-more="block">
-                                    <div class="comment__content" data-more="content">
-                                      <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
-                                    </div>
-                                  </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="comment__footer">
-                              <div class="comment__date">20 марта 2024</div><button class="button button--size-sm comment__answer-button" type="submit"><span>Ответить</span></button>
-                            </div>
-                          </div>
-                          <div class="comment comment--theme-neutral">
-                            <div class="comment__body">
-                              <div class="comment__main">
-                                <div class="comment-info comment__info">
-                                  <div class="comment-info__profile">
-                                    <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
-                                      <source srcset="assets/media/photo-1.webp" type="image/webp" />
-                                    </picture>
-                                    <div class="comment-info__main">
-                                      <div class="comment-info__mame">Юрий Денисов</div>
-                                      <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                        </svg></div>
-                                    </div>
-                                  </div>
-                                  <div class="comment-info__product">
-                                    <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
-                                    <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
-                                  </div>
-                                </div>
-                                <div class="comment__content-wrapper" data-component="more">
-                                  <div class="comment__content-inner" data-more="block">
-                                    <div class="comment__content" data-more="content">
-                                      <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
-                                    </div>
-                                  </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="comment__footer">
-                              <div class="comment__date">20 марта 2024</div>
-                              <div class="comment-answer comment__answer">
-                                <div class="comment-answer__header"> <span>Ответ продавца</span><span>Сегодня, 9:36</span></div>
-                                <div class="comment-answer__body">
-                                  <p>Спасибо за положительный отзыв! Надеемся на дальнейшее сотрудничество)</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div><!-- если закончились отзывы-->
-                        <div class="section__caption section__caption--darker">Больше отзывов нет</div><!-- если нет отзывов-->
-                        <div class="section__caption">Здесь пока нет отзывов</div>
-                      </div>
-                      <div class="section__footer section__footer--size-md">
-                        <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
-                        <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                            </svg><span>Назад</span></a>
-                          <ul class="pagination__list">
-                            <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                            <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                            <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                            <li class="pagination__item">
-                              <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                            </li>
-                            <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                          </ul><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                            </svg></a>
-                        </div>
-                      </div>
+              </section>
+              <section class="section section--size-md">
+                <div class="section__header section__header--row section__header--size-md">
+                  <div class="section__header-content">
+                    <div class="section__header-main">
+                      <h1 class="section__title">Мои товары</h1>
                     </div>
                   </div>
-                  <div class="section-aside section__grid-aside">
-                    <div class="section-aside__inner">
-                      <div class="rating-panel">
-                        <div class="rating-panel__header">
-                          <div class="rating-panel__score"><span>4.0</span><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                            </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                            </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                            </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                            </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                            </svg></div>
-                          <div class="rating-panel__count">128 отзывов</div>
+                  <div class="section__filter"><button class="button button--size-rg button--theme-light" type="button" data-bs-toggle="modal" data-bs-target="#modal-export-data"><span>Экспорт данных</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#download"></use>
+                      </svg></button><button class="button button--size-rg button--theme-light" type="button" data-bs-toggle="modal" data-bs-target="#modal-import-data"><span>Импорт данных</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
+                      </svg></button><a class="button button--size-rg" href="account-seller-products-new.html"><span>Добавить товар</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
+                      </svg></a></div>
+                </div>
+                <div class="section__body">
+                  <div class="section__main">
+                    <div class="grid grid--tiles grid--size-xl">
+                      <div class="account-table-tile">
+                        <div class="account-table-tile-header account-table-tile__header">
+                          <div class="account-table-tile-header__main">
+                            <h3 class="account-table-tile-header__title">Товары</h3>
+                            <div class="label label--size-sm label--theme-primary-light"><span>144</span></div>
+                          </div>
+                          <div class="account-table-tile-filter account-table-tile-header__filter"> <button class="button button--type-icon button--theme-light button--size-rg" type="button" data-bs-toggle="modal" data-bs-target="#modal-table-filter"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#filter"></use>
+                              </svg></button><label class="search-input account-table-tile-filter__search search-input--theme-light" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
+                                </svg></button><input class="search-input__field" type="text" name="search" placeholder="Поиск по поступлениям" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
+                                </svg></button></label>
+                            <div class="badges account-table-tile-filter__badges">
+                              <div class="badges__list"><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="badge 3" value="badge 3" checked="checked" />
+                                  <div class="badge__wrapper"> <span>День</span></div>
+                                </label><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="badge 3" value="badge 3" />
+                                  <div class="badge__wrapper"> <span>Неделя</span></div>
+                                </label><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="badge 3" value="badge 3" />
+                                  <div class="badge__wrapper"> <span>Месяц</span></div>
+                                </label></div>
+                            </div>
+                            <div class="datepicker account-table-tile-filter__calendar" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="date" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
+                                <div class="button button--size-rg button--theme-light datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                                  </svg></div>
+                              </label></div>
+                          </div>
+                          <div class="account-table-tile-filter-choosen account-table-tile-header__choosen"><button class="badge badge--style-tag" type="button">
+                              <div class="badge__wrapper"> <span>Скидка</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                </svg></div>
+                            </button><button class="badge badge--style-tag" type="button">
+                              <div class="badge__wrapper"> <span>20 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                </svg></div>
+                            </button><button class="badge badge--style-tag" type="button">
+                              <div class="badge__wrapper"> <span>30 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                </svg></div>
+                            </button><button class="badge badge--style-tag" type="button">
+                              <div class="badge__wrapper"> <span>Байер</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                </svg></div>
+                            </button><button class="badge badge--style-ghost" type="button">
+                              <div class="badge__wrapper"> <span>Удалить все</span></div>
+                            </button></div>
                         </div>
-                        <div class="rating-panel__body">
-                          <div class="rating-panel-line rating-panel__line">
-                            <div class="rating-panel-line__value"> <span>5</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg></div>
-                            <div class="rating-panel-line__progress" style="--current-progress: 75"><span> </span></div>
-                            <div class="rating-panel-line__count">75</div>
-                          </div>
-                          <div class="rating-panel-line rating-panel__line">
-                            <div class="rating-panel-line__value"> <span>4</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg></div>
-                            <div class="rating-panel-line__progress" style="--current-progress: 25"><span> </span></div>
-                            <div class="rating-panel-line__count">25</div>
-                          </div>
-                          <div class="rating-panel-line rating-panel__line">
-                            <div class="rating-panel-line__value"> <span>3</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg></div>
-                            <div class="rating-panel-line__progress" style="--current-progress: 50"><span> </span></div>
-                            <div class="rating-panel-line__count">50</div>
-                          </div>
-                          <div class="rating-panel-line rating-panel__line">
-                            <div class="rating-panel-line__value"> <span>2</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg></div>
-                            <div class="rating-panel-line__progress" style="--current-progress: 0"><span> </span></div>
-                            <div class="rating-panel-line__count">0</div>
-                          </div>
-                          <div class="rating-panel-line rating-panel__line">
-                            <div class="rating-panel-line__value"> <span>1</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                              </svg></div>
-                            <div class="rating-panel-line__progress" style="--current-progress: 25"><span> </span></div>
-                            <div class="rating-panel-line__count">25</div>
+                        <div class="account-table-tile__table">
+                          <table class="account-table">
+                            <thead class="account-table__header">
+                              <tr class="account-table__row">
+                                <th class="account-table__col">
+                                  <div class="account-table__header-item"> Название товара</div>
+                                </th>
+                                <th class="account-table__col">
+                                  <div class="account-table__header-item"> Категория</div>
+                                </th>
+                                <th class="account-table__col">
+                                  <div class="account-table__header-item"> Кол-во покупок</div>
+                                </th>
+                                <th class="account-table__col">
+                                  <div class="account-table__header-item"> Остаток</div>
+                                </th>
+                                <th class="account-table__col">
+                                  <div class="account-table__header-item"> Популярность<button class="tooltip-trigger" type="button" data-bs-toggle="tooltip" data-bs-title="Соотношение покупок товара к просмотрам показывает сколько пользователей из 100 купили ваш товар."><svg class="icon tooltip-trigger__icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#help--outline"></use>
+                                      </svg></button></div>
+                                </th>
+                                <th class="account-table__col">
+                                  <div class="account-table__header-item"> Статус</div>
+                                </th>
+                                <th class="account-table__col">
+                                  <div class="account-table__header-item"> Общая сумма заказов</div>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody class="account-table__body">
+                              <tr class="account-table__row">
+                                <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
+                                    <picture class="account-table-product__image">
+                                      <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                    </picture>
+                                    <div class="account-table-product__main">
+                                      <h4 class="account-table-product__title">Лавровый лист</h4>
+                                      <div class="account-table-product__subtitle">Арт. 3225</div>
+                                    </div>
+                                  </a></td>
+                                <td class="account-table__col">
+                                  <div class="account-table__category">
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                    </div>
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>+7</span></div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">12<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">50 кг</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">100/100</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">
+                                    <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger label label--size-sm label--theme-primary-darker" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                        </svg><span>Есть в наличии</span></button>
+                                      <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm dropdown-wrapper--width-content" data-dropdown="wrapper">
+                                        <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Есть в наличии</span></button><button class="dropdown-option" type="button"><span>Нет в наличии</span></button><button class="dropdown-option" type="button"><span>Пауза продаж</span></button></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">866 000₽<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="account-table__row">
+                                <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
+                                    <picture class="account-table-product__image">
+                                      <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                    </picture>
+                                    <div class="account-table-product__main">
+                                      <h4 class="account-table-product__title">Лавровый лист</h4>
+                                      <div class="account-table-product__subtitle">Арт. 3225</div>
+                                    </div>
+                                  </a></td>
+                                <td class="account-table__col">
+                                  <div class="account-table__category">
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                    </div>
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>+7</span></div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">12<div class="label label--size-xs label--theme-red-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-down"></use>
+                                      </svg><span>20%</span></div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">100 кг</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">68/100</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">
+                                    <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger label label--size-sm label--theme-neutral-darker" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                        </svg><span>Пауза продаж</span></button>
+                                      <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm dropdown-wrapper--width-content" data-dropdown="wrapper">
+                                        <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Есть в наличии</span></button><button class="dropdown-option" type="button"><span>Нет в наличии</span></button><button class="dropdown-option" type="button"><span>Пауза продаж</span></button></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">866 000₽<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-down"></use>
+                                      </svg><span>32%</span></div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="account-table__row">
+                                <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
+                                    <picture class="account-table-product__image">
+                                      <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                    </picture>
+                                    <div class="account-table-product__main">
+                                      <h4 class="account-table-product__title">Лавровый лист</h4>
+                                      <div class="account-table-product__subtitle">Арт. 3225</div>
+                                    </div>
+                                  </a></td>
+                                <td class="account-table__col">
+                                  <div class="account-table__category">
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                    </div>
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>+7</span></div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">12<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">50 кг</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">100/100</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">
+                                    <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger label label--size-sm label--theme-red-darker" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                        </svg><span>Нет в наличии</span></button>
+                                      <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm dropdown-wrapper--width-content" data-dropdown="wrapper">
+                                        <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Есть в наличии</span></button><button class="dropdown-option" type="button"><span>Нет в наличии</span></button><button class="dropdown-option" type="button"><span>Пауза продаж</span></button></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">866 000₽<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="account-table__row">
+                                <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
+                                    <picture class="account-table-product__image">
+                                      <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                    </picture>
+                                    <div class="account-table-product__main">
+                                      <h4 class="account-table-product__title">Лавровый лист</h4>
+                                      <div class="account-table-product__subtitle">Арт. 3225</div>
+                                    </div>
+                                  </a></td>
+                                <td class="account-table__col">
+                                  <div class="account-table__category">
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                    </div>
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>+7</span></div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">12<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">50 кг</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">100/100</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">
+                                    <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger label label--size-sm label--theme-orange-darker" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                        </svg><span>На модерации</span></button>
+                                      <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm dropdown-wrapper--width-content" data-dropdown="wrapper">
+                                        <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Есть в наличии</span></button><button class="dropdown-option" type="button"><span>Нет в наличии</span></button><button class="dropdown-option" type="button"><span>Пауза продаж</span></button></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">866 000₽<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="account-table__row">
+                                <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
+                                    <picture class="account-table-product__image">
+                                      <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                    </picture>
+                                    <div class="account-table-product__main">
+                                      <h4 class="account-table-product__title">Лавровый лист</h4>
+                                      <div class="account-table-product__subtitle">Арт. 3225</div>
+                                    </div>
+                                  </a></td>
+                                <td class="account-table__col">
+                                  <div class="account-table__category">
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                    </div>
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>+7</span></div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">12<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">50 кг</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">1/100</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">
+                                    <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger label label--size-sm label--theme-red-darker" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                        </svg><span>Нет в наличии</span></button>
+                                      <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm dropdown-wrapper--width-content" data-dropdown="wrapper">
+                                        <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Есть в наличии</span></button><button class="dropdown-option" type="button"><span>Нет в наличии</span></button><button class="dropdown-option" type="button"><span>Пауза продаж</span></button></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">1 866 000₽<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>40%</span></div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="account-table__row">
+                                <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
+                                    <picture class="account-table-product__image">
+                                      <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                    </picture>
+                                    <div class="account-table-product__main">
+                                      <h4 class="account-table-product__title">Лавровый лист</h4>
+                                      <div class="account-table-product__subtitle">Арт. 3225</div>
+                                    </div>
+                                  </a></td>
+                                <td class="account-table__col">
+                                  <div class="account-table__category">
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                    </div>
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>+7</span></div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">12<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">50 кг</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">100/100</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">
+                                    <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger label label--size-sm label--theme-primary-darker" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                        </svg><span>Есть в наличии</span></button>
+                                      <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm dropdown-wrapper--width-content" data-dropdown="wrapper">
+                                        <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Есть в наличии</span></button><button class="dropdown-option" type="button"><span>Нет в наличии</span></button><button class="dropdown-option" type="button"><span>Пауза продаж</span></button></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">866 000₽<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="account-table__row">
+                                <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
+                                    <picture class="account-table-product__image">
+                                      <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                    </picture>
+                                    <div class="account-table-product__main">
+                                      <h4 class="account-table-product__title">Лавровый лист</h4>
+                                      <div class="account-table-product__subtitle">Арт. 3225</div>
+                                    </div>
+                                  </a></td>
+                                <td class="account-table__col">
+                                  <div class="account-table__category">
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                    </div>
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>+7</span></div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">12<div class="label label--size-xs label--theme-red-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-down"></use>
+                                      </svg><span>20%</span></div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">100 кг</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">68/100</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">
+                                    <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger label label--size-sm label--theme-neutral-darker" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                        </svg><span>Пауза продаж</span></button>
+                                      <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm dropdown-wrapper--width-content" data-dropdown="wrapper">
+                                        <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Есть в наличии</span></button><button class="dropdown-option" type="button"><span>Нет в наличии</span></button><button class="dropdown-option" type="button"><span>Пауза продаж</span></button></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">866 000₽<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-down"></use>
+                                      </svg><span>32%</span></div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="account-table__row">
+                                <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
+                                    <picture class="account-table-product__image">
+                                      <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                    </picture>
+                                    <div class="account-table-product__main">
+                                      <h4 class="account-table-product__title">Лавровый лист</h4>
+                                      <div class="account-table-product__subtitle">Арт. 3225</div>
+                                    </div>
+                                  </a></td>
+                                <td class="account-table__col">
+                                  <div class="account-table__category">
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                    </div>
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>+7</span></div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">12<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">50 кг</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">100/100</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">
+                                    <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger label label--size-sm label--theme-red-darker" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                        </svg><span>Нет в наличии</span></button>
+                                      <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm dropdown-wrapper--width-content" data-dropdown="wrapper">
+                                        <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Есть в наличии</span></button><button class="dropdown-option" type="button"><span>Нет в наличии</span></button><button class="dropdown-option" type="button"><span>Пауза продаж</span></button></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">866 000₽<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="account-table__row">
+                                <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
+                                    <picture class="account-table-product__image">
+                                      <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                    </picture>
+                                    <div class="account-table-product__main">
+                                      <h4 class="account-table-product__title">Лавровый лист</h4>
+                                      <div class="account-table-product__subtitle">Арт. 3225</div>
+                                    </div>
+                                  </a></td>
+                                <td class="account-table__col">
+                                  <div class="account-table__category">
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                    </div>
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>+7</span></div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">12<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">50 кг</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">100/100</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">
+                                    <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger label label--size-sm label--theme-orange-darker" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                        </svg><span>На модерации</span></button>
+                                      <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm dropdown-wrapper--width-content" data-dropdown="wrapper">
+                                        <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Есть в наличии</span></button><button class="dropdown-option" type="button"><span>Нет в наличии</span></button><button class="dropdown-option" type="button"><span>Пауза продаж</span></button></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">866 000₽<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="account-table__row">
+                                <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
+                                    <picture class="account-table-product__image">
+                                      <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                    </picture>
+                                    <div class="account-table-product__main">
+                                      <h4 class="account-table-product__title">Лавровый лист</h4>
+                                      <div class="account-table-product__subtitle">Арт. 3225</div>
+                                    </div>
+                                  </a></td>
+                                <td class="account-table__col">
+                                  <div class="account-table__category">
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>Декоративные обсыпки</span></div>
+                                    </div>
+                                    <div class="badge badge--style-tag">
+                                      <div class="badge__wrapper"> <span>+7</span></div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">12<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>12%</span></div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">50 кг</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">1/100</div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">
+                                    <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger label label--size-sm label--theme-red-darker" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                        </svg><span>Нет в наличии</span></button>
+                                      <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm dropdown-wrapper--width-content" data-dropdown="wrapper">
+                                        <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Есть в наличии</span></button><button class="dropdown-option" type="button"><span>Нет в наличии</span></button><button class="dropdown-option" type="button"><span>Пауза продаж</span></button></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="account-table__col">
+                                  <div class="account-table__item">1 866 000₽<div class="label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#trend-up"></use>
+                                      </svg><span>40%</span></div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="account-table-tile-footer account-table-tile__footer">
+                          <div class="pagination account-table-tile-footer__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                              </svg><span>Назад</span></a>
+                            <ul class="pagination__list">
+                              <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
+                              <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
+                              <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
+                              <li class="pagination__item">
+                                <div class="button button--size-rg pagination__link"> <span>...</span></div>
+                              </li>
+                              <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
+                            </ul><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                              </svg></a>
                           </div>
                         </div>
                       </div>

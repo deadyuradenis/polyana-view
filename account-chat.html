@@ -91,7 +91,7 @@
               <form action="#">
                 <div class="header-search__wrapper"><label class="search-input header-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                      </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                       </svg></button></label>
                   <div class="header-search__result" data-header-search="result">
@@ -170,7 +170,7 @@
                 <div class="header-catalog-block__title">Каталог</div>
               </div><label class="search-input header-catalog-block__search" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Найти товар" autocomplete="off" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Найти товар" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="header-catalog-block__body"> <!-- Появляется только при найденных совпадениях-->
@@ -5147,7 +5147,7 @@
                   </div>
                   <div class="section__body">
                     <div class="section__main">
-                      <div class="chat" data-component="chat">
+                      <div class="chat chat--style-default" data-component="chat" data-chat-style="default">
                         <div class="chat-aside chat__aside" data-chat="aside">
                           <div class="chat-aside__header">
                             <h3 class="chat-aside__title">Список чатов</h3>
@@ -5159,21 +5159,23 @@
                                 </picture>
                                 <div class="chat-link__main">
                                   <div class="chat-link__header">
-                                    <div class="chat-link__name">Поддержка Поляна</div>
-                                    <div class="chat-link__date">26.10.2022</div>
+                                    <div class="chat-link__header-main">
+                                      <div class="chat-link__name">Поддержка Поляна</div><span class="chat-link__date">26.10.2022</span>
+                                    </div>
                                   </div>
                                   <div class="chat-link__body">
                                     <div class="chat-link__text">Текст последнего присланного сообщения в одну строку</div>
                                   </div>
                                 </div>
-                              </button><!-- Вроде как будет один чат, поэтому оставлю для примера непрочитанного--><!-- chat-link--unread для непрочитанных--><button class="chat-link chat-aside__link chat-link--unread" type="button" data-chat="link" data-chat-id="chat-1">
+                              </button><!-- chat-link--unread для непрочитанных--><button class="chat-link chat-aside__link chat-link--unread" type="button" data-chat="link" data-chat-id="chat-1">
                                 <picture class="chat-link__photo">
                                   <source srcset="assets/media/logos/logo-chat.svg" type="image/webp" /><img src="assets/media/logos/logo-chat.svg" alt="" />
                                 </picture>
                                 <div class="chat-link__main">
                                   <div class="chat-link__header">
-                                    <div class="chat-link__name">Поддержка поддержки Поляны</div>
-                                    <div class="chat-link__date">26.10.2022</div>
+                                    <div class="chat-link__header-main">
+                                      <div class="chat-link__name">Поддержка поддержки Поляны</div><span class="chat-link__date">26.10.2022</span>
+                                    </div>
                                   </div>
                                   <div class="chat-link__body">
                                     <div class="chat-link__text">Текст последнего присланного сообщения в одну строку. Текст последнего присланного сообщения в одну строку</div>
@@ -5182,151 +5184,285 @@
                                 </div>
                               </button></div>
                           </div>
-                        </div><!-- Если на мобилке нужно по дефолту открывать чат, то добавить is-active-->
+                        </div><!-- Если на мобилке нужно по дефолту открывать чат, то добавить is-active (только у юзера)-->
                         <div class="chat-main chat__main" data-chat="main">
                           <div class="chat-window chat-main__window">
                             <div class="chat-window__content">
-                              <div class="chat-window__header"><button class="button button--type-icon button--size-sm button--style-ghost button--theme-neutral chat-window__header-back" type="button" data-chat="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                                  </svg></button>
-                                <picture class="chat-window__header-photo">
-                                  <source srcset="assets/media/logos/logo-chat.svg" type="image/webp" /><img src="assets/media/logos/logo-chat.svg" alt="" />
-                                </picture>
-                                <div class="chat-window__header-name">Поддержка Поляна</div>
+                              <div class="chat-window-header chat-window__header">
+                                <div class="chat-window-header__main"><button class="button button--type-icon button--size-sm button--style-ghost button--theme-neutral chat-window-header__back" type="button" data-chat="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                                    </svg></button>
+                                  <div class="chat-window-header__user">
+                                    <picture class="chat-window-header__user-photo">
+                                      <source srcset="assets/media/logos/logo-chat.svg" type="image/webp" /><img src="assets/media/logos/logo-chat.svg" alt="" />
+                                    </picture>
+                                    <div class="chat-window-header__user-main">
+                                      <div class="chat-window-header__user-name">Поддержка Поляна</div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                               <div class="chat-window__body">
-                                <div class="chat-dialog chat-window__dialog" data-chat="dialog">
+                                <div class="chat-dialog chat-window__dialog" data-chat="dialog"><!-- Добавил все виды сразу во все чаты, чтобы не было путаницы-->
                                   <div class="chat-dialog__date">30 ноября</div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Здравствуйте, открыт спор по <a href="#"> заказу </a>?</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
                                   <div class="chat-message chat-dialog__message chat-message--outgoing">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
                                   </div>
                                   <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте!</p>
+                                    <div class="chat-message-order chat-message__order">
+                                      <div class="chat-message-order__info"><span class="chat-message-order__title">Заказ:</span><span class="chat-message-order__number">020902-98</span></div>
+                                      <div class="label label--size-xs label--theme-red-light"><span>Спор</span></div>
+                                      <div class="label label--size-xs label--theme-primary-light"><span>Спор открыт</span></div>
+                                    </div><a class="chat-message-product chat-message__product" href="#">
+                                      <picture class="chat-message-product__image">
+                                        <source srcset="" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                      </picture>
+                                      <div class="chat-message-product__main"><span class="chat-message-product__title">Перец черный горошек двойной фасовка  1кг</span><span class="chat-message-product__maker">Агродрое</span></div>
+                                    </a>
+                                    <div class="chat-message-detail chat-message__detail">
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Причина открытия спора:</span><span class="chat-message-detail__value">Несоответствие товара</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Стоимость за кг:</span><span class="chat-message-detail__value">2 780 ₽ /кг  </span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Общая стоимость:</span><span class="chat-message-detail__value">139 000 ₽</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Фасовка:</span><span class="chat-message-detail__value">50 кг</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Вес:</span><span class="chat-message-detail__value">50 кг</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Количество:</span><span class="chat-message-detail__value">50 кг</span></div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__title">Прикрепленный комментарий:</div>
+                                      <div class="chat-message-main__content chat-message-main__content--is-comment">
+                                        <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div><button class="button button--theme-light chat-message__button" type="button"><span>Открыть чат с продавцом</span></button>
                                   </div>
                                   <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте, открыть спор по <a href="#"> заказу </a>?</p>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Здравствуйте, открыт спор по <a href="#"> заказу </a>?</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
                                   </div>
                                   <div class="chat-dialog__date">29 ноября</div>
-                                  <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text"><a href="#"> Заказ </a>!</p>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message-order chat-message__order">
+                                      <div class="chat-message-order__info"><span class="chat-message-order__title">Заказ:</span><span class="chat-message-order__number">020902-98</span></div>
+                                      <div class="label label--size-xs label--theme-red-light"><span>Спор</span></div>
+                                      <div class="label label--size-xs label--theme-primary-light"><span>Спор открыт</span></div>
+                                    </div><a class="chat-message-product chat-message__product" href="#">
+                                      <picture class="chat-message-product__image">
+                                        <source srcset="" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                      </picture>
+                                      <div class="chat-message-product__main"><span class="chat-message-product__title">Перец черный горошек двойной фасовка  1кг</span><span class="chat-message-product__maker">Агродрое</span></div>
+                                    </a>
+                                    <div class="chat-message-detail chat-message__detail">
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Причина открытия спора:</span><span class="chat-message-detail__value">Несоответствие товара</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Стоимость за кг:</span><span class="chat-message-detail__value">2 780 ₽ /кг  </span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Общая стоимость:</span><span class="chat-message-detail__value">139 000 ₽</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Фасовка:</span><span class="chat-message-detail__value">50 кг</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Вес:</span><span class="chat-message-detail__value">50 кг</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Количество:</span><span class="chat-message-detail__value">50 кг</span></div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__title">Прикрепленный комментарий:</div>
+                                      <div class="chat-message-main__content chat-message-main__content--is-comment">
+                                        <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div><button class="button button--theme-light chat-message__button" type="button"><span>Открыть чат с продавцом</span></button>
                                   </div>
                                   <div class="chat-message chat-dialog__message chat-message--outgoing">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
-                                  </div>
-                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по заказу!</p>
-                                    </div>
-                                    <div class="chat-message__time">16:45</div>
                                   </div>
                                   <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    <div class="chat-message-order chat-message__order">
+                                      <div class="chat-message-order__info"><span class="chat-message-order__title">Заказ:</span><span class="chat-message-order__number">020902-98</span></div>
+                                      <div class="label label--size-xs label--theme-red-light"><span>Спор</span></div>
+                                      <div class="label label--size-xs label--theme-primary-light"><span>Спор открыт</span></div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Здравствуйте, хочу открыть спор по заказу!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message-order chat-message__order">
+                                      <div class="chat-message-order__info"><span class="chat-message-order__title">Заказ:</span><span class="chat-message-order__number">020902-98</span></div>
+                                      <div class="label label--size-xs label--theme-red-light"><span>Спор</span></div>
+                                      <div class="label label--size-xs label--theme-primary-light"><span>Спор открыт</span></div>
+                                    </div>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Здравствуйте, хочу открыть спор по заказу!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
                                   </div>
                                   <div class="chat-dialog__date">30 ноября</div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Здравствуйте, открыт спор по <a href="#"> заказу </a>?</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
                                   <div class="chat-message chat-dialog__message chat-message--outgoing">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
                                   </div>
                                   <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте!</p>
+                                    <div class="chat-message-order chat-message__order">
+                                      <div class="chat-message-order__info"><span class="chat-message-order__title">Заказ:</span><span class="chat-message-order__number">020902-98</span></div>
+                                      <div class="label label--size-xs label--theme-red-light"><span>Спор</span></div>
+                                      <div class="label label--size-xs label--theme-primary-light"><span>Спор открыт</span></div>
+                                    </div><a class="chat-message-product chat-message__product" href="#">
+                                      <picture class="chat-message-product__image">
+                                        <source srcset="" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                      </picture>
+                                      <div class="chat-message-product__main"><span class="chat-message-product__title">Перец черный горошек двойной фасовка  1кг</span><span class="chat-message-product__maker">Агродрое</span></div>
+                                    </a>
+                                    <div class="chat-message-detail chat-message__detail">
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Причина открытия спора:</span><span class="chat-message-detail__value">Несоответствие товара</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Стоимость за кг:</span><span class="chat-message-detail__value">2 780 ₽ /кг  </span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Общая стоимость:</span><span class="chat-message-detail__value">139 000 ₽</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Фасовка:</span><span class="chat-message-detail__value">50 кг</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Вес:</span><span class="chat-message-detail__value">50 кг</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Количество:</span><span class="chat-message-detail__value">50 кг</span></div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__title">Прикрепленный комментарий:</div>
+                                      <div class="chat-message-main__content chat-message-main__content--is-comment">
+                                        <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div><button class="button button--theme-light chat-message__button" type="button"><span>Открыть чат с продавцом</span></button>
                                   </div>
                                   <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте, открыть спор по <a href="#"> заказу </a>?</p>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Здравствуйте, открыт спор по <a href="#"> заказу </a>?</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
                                   </div>
                                   <div class="chat-dialog__date">29 ноября</div>
-                                  <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text"><a href="#"> Заказ </a>!</p>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message-order chat-message__order">
+                                      <div class="chat-message-order__info"><span class="chat-message-order__title">Заказ:</span><span class="chat-message-order__number">020902-98</span></div>
+                                      <div class="label label--size-xs label--theme-red-light"><span>Спор</span></div>
+                                      <div class="label label--size-xs label--theme-primary-light"><span>Спор открыт</span></div>
+                                    </div><a class="chat-message-product chat-message__product" href="#">
+                                      <picture class="chat-message-product__image">
+                                        <source srcset="" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                      </picture>
+                                      <div class="chat-message-product__main"><span class="chat-message-product__title">Перец черный горошек двойной фасовка  1кг</span><span class="chat-message-product__maker">Агродрое</span></div>
+                                    </a>
+                                    <div class="chat-message-detail chat-message__detail">
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Причина открытия спора:</span><span class="chat-message-detail__value">Несоответствие товара</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Стоимость за кг:</span><span class="chat-message-detail__value">2 780 ₽ /кг  </span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Общая стоимость:</span><span class="chat-message-detail__value">139 000 ₽</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Фасовка:</span><span class="chat-message-detail__value">50 кг</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Вес:</span><span class="chat-message-detail__value">50 кг</span></div>
+                                      <div class="chat-message-detail__item"><span class="chat-message-detail__title">Количество:</span><span class="chat-message-detail__value">50 кг</span></div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__title">Прикрепленный комментарий:</div>
+                                      <div class="chat-message-main__content chat-message-main__content--is-comment">
+                                        <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div><button class="button button--theme-light chat-message__button" type="button"><span>Открыть чат с продавцом</span></button>
                                   </div>
                                   <div class="chat-message chat-dialog__message chat-message--outgoing">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message-order chat-message__order">
+                                      <div class="chat-message-order__info"><span class="chat-message-order__title">Заказ:</span><span class="chat-message-order__number">020902-98</span></div>
+                                      <div class="label label--size-xs label--theme-red-light"><span>Спор</span></div>
+                                      <div class="label label--size-xs label--theme-primary-light"><span>Спор открыт</span></div>
+                                    </div>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Здравствуйте, хочу открыть спор по заказу!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
                                   </div>
                                   <div class="chat-message chat-dialog__message chat-message--outgoing">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по заказу!</p>
+                                    <div class="chat-message-order chat-message__order">
+                                      <div class="chat-message-order__info"><span class="chat-message-order__title">Заказ:</span><span class="chat-message-order__number">020902-98</span></div>
+                                      <div class="label label--size-xs label--theme-red-light"><span>Спор</span></div>
+                                      <div class="label label--size-xs label--theme-primary-light"><span>Спор открыт</span></div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
-                                  </div>
-                                  <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Здравствуйте, хочу открыть спор по заказу!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
-                                  </div>
-                                  <div class="chat-dialog__date">30 ноября</div>
-                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
-                                    </div>
-                                    <div class="chat-message__time">16:45</div>
-                                  </div>
-                                  <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте!</p>
-                                    </div>
-                                    <div class="chat-message__time">16:45</div>
-                                  </div>
-                                  <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте, открыть спор по <a href="#"> заказу </a>?</p>
-                                    </div>
-                                    <div class="chat-message__time">16:45</div>
-                                  </div>
-                                  <div class="chat-dialog__date">29 ноября</div>
-                                  <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text"><a href="#"> Заказ </a>!</p>
-                                    </div>
-                                    <div class="chat-message__time">16:45</div>
                                   </div>
                                   <div class="chat-message chat-dialog__message chat-message--outgoing">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                    <div class="chat-message__time">16:45</div>
-                                  </div>
-                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Здравствуйте, хочу открыть спор по заказу!</p>
-                                    </div>
-                                    <div class="chat-message__time">16:45</div>
-                                  </div>
-                                  <div class="chat-message chat-dialog__message chat-message--incoming">
-                                    <div class="chat-message__main">
-                                      <p class="chat-message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
-                                    </div>
-                                    <div class="chat-message__time">16:45</div>
                                   </div>
                                 </div>
                               </div>
@@ -5344,7 +5480,10 @@
                                     <use xlink:href="assets/icons/clean/sprite.svg#paperplane"></use>
                                   </svg></button>
                               </div>
-                            </form>
+                            </form><!-- Если закрыт-->
+                            <div class="label chat-form__closed label--size-md label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#lock"></use>
+                              </svg><span>Чат закрыт</span></div>
                           </div>
                         </div>
                       </div>
@@ -5480,7 +5619,7 @@
           <div class="modal-location__body">
             <div class="modal-location__search"> <label class="search-input modal-location__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="modal-location__result">
@@ -6110,7 +6249,7 @@
           <div class="modal-search__body">
             <div class="modal-search__search"> <label class="search-input modal-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="modal-search__result">

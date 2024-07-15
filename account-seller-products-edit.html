@@ -62,230 +62,392 @@
   }
 </style>
 <link rel="stylesheet" href="css/index.css">
-<title>Личный кабинет продавца</title>
+<title>Личный кабинет [Оператор]. Профиль. Редактирование</title>
 
 <body class="layout">
-  <header class="header-seller" data-component="header">
-    <div class="container">
-      <div class="header-seller__main"><a class="header-seller__logo" href="index.html"><img src="assets/media/logos/logo-large.svg" alt="" /><img src="assets/media/logos/logo.svg" alt="" /></a>
-        <div class="header-seller__label">Продавец</div>
-        <div class="header-seller__buttons"><button class="button button--size-rg header-seller__button" type="button" data-bs-toggle="modal" data-bs-target="#modal-authorization"><span>Вход</span></button><button class="button button--style-outline button--size-rg header-seller__button" type="button" data-bs-toggle="modal" data-bs-target="#modal-authorization"><span>Регистрация</span></button></div>
-      </div>
-    </div>
-  </header>
   <div class="layout__main">
-    <section class="section-buyer-intro">
-      <div class="container">
-        <div class="section-buyer-intro__content">
-          <div class="section-buyer-intro__main">
-            <h2 class="section-buyer-intro__title">Давайте растить бизнес <strong>вместе</strong></h2>
-            <p class="section-buyer-intro__text">На Поляне мы любим автоматизацию и очень не любим ручной труд, поэтому умные технологии все сделают за вас. Вам нужно всего-лишь зарегистрироваться и передать нам ваши товарные предложения.</p>
-            <div class="section-buyer-intro__label"><img src="assets/media/buyer/intro-label.svg" alt="" /><span>Год объединения современных технологий и агропромышленности</span></div>
-          </div><img class="section-buyer-intro__img" src="assets/media/seller-account/tree.png" />
-        </div>
-      </div>
-      <div class="section-buyer-intro__img-bg" style="background-image: url('assets/media/buyer/intro-bg.png')"></div>
-    </section>
-    <section class="section-buyer-quote">
-      <div class="container">
-        <div class="section-buyer-quote__content">
-          <p class="section-buyer-quote__text">На рынке мы появились совсем недавно, но уже сделали большой шаг к вашему удобству. Мы кратно наращиваем базу клиентов, ежемесячно наши поставщики получают значительно больше заказов.</p>
-        </div>
-      </div>
-    </section>
-    <section class="section-buyer-advantage">
-      <div class="container">
-        <div class="section-buyer-advantage__content">
-          <picture class="section-buyer-advantage__image"><img src="assets/media/seller-account/advantage-1.png" />
-            <source srcset="assets/media/seller-account/advantage-1.png" type="image/webp" />
-          </picture>
-          <div class="section-buyer-advantage__main">
-            <h3 class="section-buyer-advantage__title">Честная конкуренция и репутация</h3>
-            <p class="section-buyer-advantage__text">На Поляне мы любим автоматизацию и очень не любим ручной труд, поэтому умные технологии все сделают за вас. Вам нужно всего-лишь зарегистрироваться и передать нам ваши товарные предложения.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-buyer-advantage section-buyer-advantage--reverse">
-      <div class="container">
-        <div class="section-buyer-advantage__content">
-          <picture class="section-buyer-advantage__image"><img src="assets/media/seller-account/advantage-2.png" />
-            <source srcset="assets/media/seller-account/advantage-2.png" type="image/webp" />
-          </picture>
-          <div class="section-buyer-advantage__main">
-            <h3 class="section-buyer-advantage__title"></h3>
-            <div class="section-buyer-advantage__message section-buyer-advantage__message--upper">— А где оплата за заказ?</div>
-            <p class="section-buyer-advantage__text">Мы выступаем финансовым гарантом между поставщиком и покупателем, поэтому в момент заказа деньги уже у нас. Как только клиент зафиксирует момент отгрузки — деньги будут у вас.</p>
-            <div class="section-buyer-advantage__message section-buyer-advantage__message--lower">— Деньги были, деньги будут, денег нет</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-buyer-advantage">
-      <div class="container">
-        <div class="section-buyer-advantage__content">
-          <picture class="section-buyer-advantage__image"><img src="assets/media/buyer/advantage-3.png" />
-            <source srcset="assets/media/buyer/advantage-3.png" type="image/webp" />
-          </picture>
-          <div class="section-buyer-advantage__main">
-            <h3 class="section-buyer-advantage__title">Упростите жизнь бухгалтеру</h3>
-            <p class="section-buyer-advantage__text">Все бухгалтерские документы храняться в <a href="#">личном кабинете</a>. Доступ к документам 24/7.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-buyer-advantage section-buyer-advantage--reverse">
-      <div class="container">
-        <div class="section-buyer-advantage__content">
-          <picture class="section-buyer-advantage__image"><img src="assets/media/seller-account/advantage-3.png" />
-            <source srcset="assets/media/seller-account/advantage-3.png" type="image/webp" />
-          </picture>
-          <div class="section-buyer-advantage__main">
-            <h3 class="section-buyer-advantage__title">Пора сделать продажи автоматизированными</h3>
-            <p class="section-buyer-advantage__text">Улучшайте бизнес процессы, ускоряйте логистику, повышайте маржинальность. А продажи мы возьмем на себя.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-buyer-requirements">
-      <div class="container">
-        <div class="section-buyer-requirements__content">
-          <h2 class="section-buyer-requirements__title">Наши требования:</h2>
-          <div class="section-buyer-requirements__list">
-            <div class="section-buyer-requirements__item">
-              <div class="section-buyer-requirements__number">01</div>
-              <p class="section-buyer-requirements__text">Международные перевозки сборных и генеральных грузов</p>
-            </div>
-            <div class="section-buyer-requirements__item">
-              <div class="section-buyer-requirements__number">02</div>
-              <p class="section-buyer-requirements__text">Международные перевозки опасных (ADR) и негабаритных грузов</p>
-            </div>
-            <div class="section-buyer-requirements__item">
-              <div class="section-buyer-requirements__number">03</div>
-              <p class="section-buyer-requirements__text">Страхование грузов (АО СГ «Спасские ворота»)</p>
-            </div>
-            <div class="section-buyer-requirements__item">
-              <div class="section-buyer-requirements__number">04</div>
-              <p class="section-buyer-requirements__text">Услуги по таможенному оформлению</p>
-            </div>
-            <div class="section-buyer-requirements__item">
-              <div class="section-buyer-requirements__number">05</div>
-              <p class="section-buyer-requirements__text">Услуги по получению разрешительной документации</p>
-            </div>
-            <div class="section-buyer-requirements__item">
-              <div class="section-buyer-requirements__number">06</div>
-              <p class="section-buyer-requirements__text">ВЭД-консалтинг</p>
+    <section class="section section-account section-account--style-full" data-component="account">
+      <div class="section__grid section-account__grid">
+        <div class="section-aside section__grid-aside section-account__grid-aside">
+          <div class="section-aside__inner">
+            <div class="account-aside section-account__aside account-aside--style-full" data-component="account-aside">
+              <div class="account-aside__content">
+                <div class="account-aside__logo-wrapper"><a class="account-aside__logo" href="index.html"><img src="assets/media/logos/logo-large.svg" alt="" /></a></div>
+                <div class="account-aside-header account-aside__header"><button class="account-aside-header__close" type="button" data-account-aside="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                    </svg></button><button class="account-aside-header__image-wrapper" type="button" data-bs-toggle="modal" data-bs-target="#modal-edit-avatar">
+                    <picture class="account-aside-header__image"><img src="assets/media/seller-logo.png" alt="" />
+                      <source srcset="assets/media/seller-logo.webp" type="image/webp" />
+                    </picture>
+                  </button>
+                  <div class="account-aside-header__uppertitle">Добро пожаловать, </div>
+                  <div class="account-aside-header__title">Username</div>
+                </div>
+                <div class="account-aside__body">
+                  <div class="account-aside__body-content">
+                    <div class="account-aside-menu account-aside__menu">
+                      <div class="account-aside-menu__group account-aside-menu__group--has-divider">
+                        <div class="account-aside-menu__list"> <!-- Если это ссылка текущей страницы, то <button>, в остальных случаях <a>--><button class="account-aside__button account-aside__button--has-arrow" type="button" data-account="trigger"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#bell"></use>
+                            </svg><span class="account-aside__button-title">Уведомления</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                            </svg><span class="account-aside__button-counter">12</span></button><a class="account-aside__button account-aside__button--has-arrow" href="account-notifications.html" style="display: none;"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#bell"></use>
+                            </svg><span class="account-aside__button-title">Уведомления</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                            </svg><span class="account-aside__button-counter">12</span></a></div>
+                      </div>
+                      <div class="account-aside-menu__group">
+                        <div class="account-aside-menu__list"><a class="account-aside__button is-active" href="account-seller-profile.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
+                            </svg><span class="account-aside__button-title">Профиль</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                            </svg><!-- Пример счетчика--><span class="account-aside__button-counter">12</span></a><a class="account-aside__button" href="account-seller-statistics.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chart-pie"></use>
+                            </svg><span class="account-aside__button-title">Статистика</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                            </svg><!-- Пример счетчика--></a><a class="account-aside__button" href="account-seller-orders.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
+                            </svg><span class="account-aside__button-title">Мои заказы</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                            </svg><!-- Пример счетчика--></a><a class="account-aside__button" href="account-seller-products.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#package"></use>
+                            </svg><span class="account-aside__button-title">Мои товары</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                            </svg><!-- Пример счетчика--></a><a class="account-aside__button" href="account-seller-finance.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#wallet"></use>
+                            </svg><span class="account-aside__button-title">Финансы</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                            </svg><!-- Пример счетчика--></a><a class="account-aside__button" href="account-seller-promotion.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fire"></use>
+                            </svg><span class="account-aside__button-title">Продвижение</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                            </svg><!-- Пример счетчика--></a><a class="account-aside__button" href="account-seller-comments.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
+                            </svg><span class="account-aside__button-title">Отзывы</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                            </svg><!-- Пример счетчика--></a><a class="account-aside__button" href="account-seller-chat.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#message"></use>
+                            </svg><span class="account-aside__button-title">Сообщения</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                            </svg><!-- Пример счетчика--></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="account-aside__footer"><button class="account-aside__footer-button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#log-out"></use>
+                  </svg><span>Выйти</span></button></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section-buyer-conditions section-buyer-conditions--style-secondary">
-      <div class="container">
-        <h2 class="section-buyer-conditions__title">Условия:</h2>
-        <div class="section-buyer-conditions__list">
-          <div class="section-buyer-conditions__item"><img class="section-buyer-conditions__item-image" src="assets/media/seller-account/conditions-1.png" />
-            <div class="section-buyer-conditions__item-main">
-              <h3 class="section-buyer-conditions__item-title">Комиссия</h3>
-              <p class="section-buyer-conditions__item-text">и никаких скрытых платежей.</p>
+        <div class="section__grid-main section-account__grid-main">
+          <div class="section__body">
+            <div class="section__main">
+              <section class="section section--size-md">
+                <div class="section__header section__header--size-md">
+                  <div class="section__header-content">
+                    <div class="section__header-main">
+                      <h1 class="section__title">Редактирование товара</h1>
+                    </div>
+                    <div class="section__header-actions"><!-- Добавляется при редактировании--><!-- Из-за макета должен быть сразу в двух местах и с разными классами (только у юзера)-->
+                      <div class="account-edit-controls account-edit-controls--position-header"><button class="button button--theme-light button--size-rg account-edit-controls__button" type="button"><span>Отменить</span></button><button class="button button--size-rg account-edit-controls__button" type="button"><span>Сохранить</span></button></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__body">
+                  <div class="section__main">
+                    <div class="grid grid--tiles grid--size-xl">
+                      <div class="account-tile">
+                        <div class="account-tile-header">
+                          <div class="account-tile-header__main">
+                            <h2 class="account-tile-header__title">Персональные данные</h2>
+                          </div>
+                        </div>
+                        <div class="account-info-form">
+                          <div class="account-info-form__item">
+                            <div class="input input--type-text" data-component="input">
+                              <div class="input__title">Наименование товара <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" value="Черный перец из Малазии, крупным горошком, острый" data-input="native" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                </svg></label><span class="input__message">Обязательно для заполнения</span>
+                            </div>
+                          </div>
+                          <div class="account-info-form__item">
+                            <div class="badges account-info__item-badges">
+                              <div class="badges__title">Категория товара <span>*</span></div>
+                              <div class="badges__list"><label class="badge badge--size-rg badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                                  <div class="badge__wrapper"> <span>Специи и пряности</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                    </svg></div>
+                                </label><label class="badge badge--size-rg badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                                  <div class="badge__wrapper"> <span>Сушеные овощи</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                    </svg></div>
+                                </label><label class="badge badge--size-rg badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                                  <div class="badge__wrapper"> <span>Экстракты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                    </svg></div>
+                                </label><label class="badge badge--size-rg badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                                  <div class="badge__wrapper"> <span>Приправы</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                    </svg></div>
+                                </label><label class="badge badge--size-rg badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                                  <div class="badge__wrapper"> <span>Лекарственное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                    </svg></div>
+                                </label><label class="badge badge--size-rg badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                                  <div class="badge__wrapper"> <span>Чайное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                    </svg></div>
+                                </label><label class="badge badge--size-rg badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                                  <div class="badge__wrapper"> <span>Декоративные обсыпки</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                    </svg></div>
+                                </label><label class="badge badge--size-rg badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                                  <div class="badge__wrapper"> <span>Пищевые ингридиенты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                    </svg></div>
+                                </label></div>
+                            </div>
+                          </div>
+                          <div class="account-info-form__item">
+                            <div class="input input--type-text" data-component="input">
+                              <div class="input__title">Фотографии товара</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" value="4" data-input="native" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                </svg></label><span class="input__message">Обязательно для заполнения</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="account-tile">
+                        <div class="account-tile-header">
+                          <div class="account-tile-header__main">
+                            <h2 class="account-tile-header__title">Характеристики товара</h2>
+                          </div>
+                        </div>
+                        <div class="account-info-form">
+                          <div class="account-info-form__item">
+                            <div class="select" data-component="select">
+                              <div class="select__title">Продукт <span>*</span></div>
+                              <div class="select__main" data-select="main">
+                                <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                                  </svg></button>
+                              </div>
+                              <div class="select-dropdown select__dropdown" data-select="dropdown">
+                                <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Перец" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Перец</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Перец" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Перец</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Перец" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Перец</span></span></span></label></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="account-info-form__item">
+                            <div class="select" data-component="select">
+                              <div class="select__title">Вид <span>*</span></div>
+                              <div class="select__main" data-select="main">
+                                <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                                  </svg></button>
+                              </div>
+                              <div class="select-dropdown select__dropdown" data-select="dropdown">
+                                <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Черный" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Черный</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Черный" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Черный</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Черный" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Черный</span></span></span></label></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="account-info-form__item">
+                            <div class="select" data-component="select">
+                              <div class="select__title">Страна производитель <span>*</span></div>
+                              <div class="select__main" data-select="main">
+                                <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                                  </svg></button>
+                              </div>
+                              <div class="select-dropdown select__dropdown" data-select="dropdown">
+                                <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Малайзия" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Малайзия</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Малайзия" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Малайзия</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Малайзия" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Малайзия</span></span></span></label></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="account-info-form__item">
+                            <div class="select" data-component="select">
+                              <div class="select__title">Тип доставки</div>
+                              <div class="select__main" data-select="main">
+                                <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                                  </svg></button>
+                              </div>
+                              <div class="select-dropdown select__dropdown" data-select="dropdown">
+                                <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Доставка транспортной компанией" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Доставка транспортной компанией</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Доставка транспортной компанией" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Доставка транспортной компанией</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="option" value="Доставка транспортной компанией" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Доставка транспортной компанией</span></span></span></label></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="account-tile">
+                        <div class="account-tile-header">
+                          <div class="account-tile-header__main">
+                            <h2 class="account-tile-header__title">Фасовка</h2>
+                          </div>
+                        </div>
+                        <div class="account-packaging">
+                          <div class="account-packaging__list">
+                            <div class="account-packaging-item account-packaging__item">
+                              <div class="account-packaging-item__header">
+                                <h3 class="account-packaging-item__title">Фасовка 0</h3>
+                              </div>
+                              <div class="account-packaging-item__body">
+                                <div class="account-packaging-item__list">
+                                  <div class="account-packaging-item__col">
+                                    <div class="select" data-component="select">
+                                      <div class="select__title">Объем (кг) <span>*</span></div>
+                                      <div class="select__main" data-select="main">
+                                        <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                            <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                                          </svg></button>
+                                      </div>
+                                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="1" checked="checked" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>5</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="10" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>10</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="20" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>20</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="50" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>50</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="100" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>100</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="250" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>250</span></span></span></label></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="account-packaging-item__col">
+                                    <div class="input input--type-text" data-component="input">
+                                      <div class="input__title">Стоимость за кг <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="price" value="1000" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                        </svg></label><span class="input__message"></span>
+                                    </div>
+                                  </div>
+                                  <div class="account-packaging-item__col">
+                                    <div class="input input--type-text" data-component="input">
+                                      <div class="input__title">Итоговая стоимость <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="total-price" value="1000" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                        </svg></label><span class="input__message"></span>
+                                    </div>
+                                  </div>
+                                  <div class="account-packaging-item__col">
+                                    <div class="input input--type-text" data-component="input">
+                                      <div class="input__title">Скидка в фасовке <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="sale" value="5" data-input="native" data-mask="sale"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                        </svg></label><span class="input__message"></span>
+                                    </div>
+                                  </div>
+                                  <div class="account-packaging-item__col">
+                                    <div class="input input--type-text" data-component="input">
+                                      <div class="input__title">Остаток на складе (уп.) <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="remains" value="100" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                        </svg></label><span class="input__message"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="account-packaging-item__actions"> <button class="button button--size-rg button--theme-light" type="button"><span>Удалить</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                    </svg></button></div>
+                              </div>
+                            </div>
+                            <div class="account-packaging-item account-packaging__item">
+                              <div class="account-packaging-item__header">
+                                <h3 class="account-packaging-item__title">Фасовка 1</h3>
+                              </div>
+                              <div class="account-packaging-item__body">
+                                <div class="account-packaging-item__list">
+                                  <div class="account-packaging-item__col">
+                                    <div class="select" data-component="select">
+                                      <div class="select__title">Объем (кг) <span>*</span></div>
+                                      <div class="select__main" data-select="main">
+                                        <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                            <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                                          </svg></button>
+                                      </div>
+                                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="1" checked="checked" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>5</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="10" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>10</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="20" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>20</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="50" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>50</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="100" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>100</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="size" value="250" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>250</span></span></span></label></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="account-packaging-item__col">
+                                    <div class="input input--type-text" data-component="input">
+                                      <div class="input__title">Стоимость за кг <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="price" value="1000" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                        </svg></label><span class="input__message"></span>
+                                    </div>
+                                  </div>
+                                  <div class="account-packaging-item__col">
+                                    <div class="input input--type-text" data-component="input">
+                                      <div class="input__title">Итоговая стоимость <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="total-price" value="1000" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                        </svg></label><span class="input__message"></span>
+                                    </div>
+                                  </div>
+                                  <div class="account-packaging-item__col">
+                                    <div class="input input--type-text" data-component="input">
+                                      <div class="input__title">Скидка в фасовке <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="sale" value="5" data-input="native" data-mask="sale"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                        </svg></label><span class="input__message"></span>
+                                    </div>
+                                  </div>
+                                  <div class="account-packaging-item__col">
+                                    <div class="input input--type-text" data-component="input">
+                                      <div class="input__title">Остаток на складе (уп.) <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="remains" value="100" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                                        </svg></label><span class="input__message"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="account-packaging-item__actions"> <button class="button button--size-rg button--theme-light" type="button"><span>Удалить</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                                    </svg></button></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="account-packaging__actions"> <button class="button button--size-rg button--theme-light" type="button"><span>Добавить еще</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
+                              </svg></button></div>
+                        </div>
+                      </div>
+                      <div class="account-tile">
+                        <div class="account-tile-header">
+                          <div class="account-tile-header__main">
+                            <h2 class="account-tile-header__title">Описание товара</h2>
+                          </div>
+                        </div>
+                        <div class="account-info-form">
+                          <div class="account-info-form__item">
+                            <div class="input input--type-textarea" data-component="input">
+                              <div class="input__title">Опишите ваш товар <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="input" data-input="native" data-required="data-required">За всё время работы мы прошли большой путь, находясь в постоянном развитии - расширения географии, увеличивая количество направлений, ассортимента, сотрудников компании и оборота. И не намерены останавливаться, поскольку верим в Российский рынок и перспективы нашей страны в целом.а всё время работы мы прошли большой путь, находясь в постоянном развитии - расширения географии, увеличивая количество направлений, ассортимента, сотрудников компании и оборота. И не намерены останавливаться, поскольку верим в Российский рынок и перспективы нашей отрасли.</textarea></label><span class="input__message">Обязательно для заполнения</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__footer section__footer--size-lg">
+                    <div class="section__actions section__actions--shrink"><button class="button button--theme-red" type="button"><span>Удалить товар</span></button></div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
-          <div class="section-buyer-conditions__item"><img class="section-buyer-conditions__item-image" src="assets/media/seller-account/conditions-2.png" />
-            <div class="section-buyer-conditions__item-main">
-              <h3 class="section-buyer-conditions__item-title">Клиенты платят за логистику</h3>
-              <p class="section-buyer-conditions__item-text">телепортация, пока в разработке :)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-buyer-registration">
-      <div class="container">
-        <div class="section-buyer-registration__content"><button class="button button--size-lg section-buyer-registration__button" type="button" data-bs-toggle="modal" data-bs-target="#modal-location"><span>Регистрация</span><svg class="icon icon" aria-hidden="aria-hidden" role="presentation">
-              <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
-            </svg></button>
-          <picture class="section-buyer-registration__image section-buyer-registration__image--bg">
-            <source media="(max-width: 833px)" srcset="assets/media/seller-account/registration-mobile.png" />
-            <source media="(max-width: 1439px)" srcset="assets/media/seller-account/registration-tablet.png" /><img src="assets/media/seller-account/registration-desktop.png" />
-          </picture>
         </div>
       </div>
     </section>
   </div>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__main">
-          <div class="footer__logo-wrapper"><a class="footer__logo" href="index.html"><img src="assets/media/logos/logo-icon.svg" alt="" /></a></div>
-          <div class="footer-nav footer__nav">
-            <div class="footer-nav__group">
-              <nav class="nav footer-nav__list footer-nav__list--one-column">
-                <ul>
-                  <li> <a href="help.html">Помощь</a></li>
-                  <li> <a href="buyer.html">Покупателям</a></li>
-                  <li> <a href="#">Стать продавцом</a></li>
-                  <li> <a href="sellers.html">Все поставщики</a></li>
-                  <li> <a href="journal.html">Журнал</a></li>
-                </ul>
-              </nav><button class="footer-nav__registration" type="button" data-bs-toggle="modal" data-bs-target="#modal-authorization"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                  <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
-                </svg><span>Регистрация</span></button>
-            </div>
-            <div class="footer-nav__group footer-nav__group--other">
-              <div class="footer-nav__title">Основные разделы </div>
-              <div class="footer-nav__list">
-                <ul>
-                  <li><a href="#">Фрукты</a></li>
-                  <li><a href="#">Овощи</a></li>
-                  <li><a href="#">Удобрения</a></li>
-                  <li><a href="#">Семена</a></li>
-                  <li><a href="#">Декоративные обсыпки</a></li>
-                  <li><a href="#">Пищевые ингредиенты</a></li>
-                  <li><a href="#">Семена</a></li>
-                  <li><a href="#">Удобрения</a></li>
-                  <li><a href="#">Чайное сырье</a></li>
-                  <li><a href="#">Приправы</a></li>
-                  <li><a href="#">Лекарственное сырье</a></li>
-                  <li><a href="#">Пряности</a></li>
-                  <li><a href="#">Специи</a></li>
-                  <li><a href="#">Приправы</a></li>
-                  <li><a href="#">Лекарственное сырье</a></li>
-                  <li><a class="text-700" href="categories.html">Весь каталог</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-contacts footer__contacts">
-            <div class="footer-contacts__main">
-              <div class="footer-contacts__title">Написать нам</div>
-              <div class="footer-contacts__list">
-                <div class="footer-contacts__item"><span>Служба поддержки:</span><a href="mailto:info@polana.ru">info@polana.ru</a></div>
-                <div class="footer-contacts__item"><span>Сотрудничество:</span><a href="mailto:feedback@polana.ru">feedback@polana.ru</a></div>
-              </div>
-            </div>
-            <div class="footer-contacts__socials">
-              <div class="footer-contacts__socials-title">Следи за всеми событиями в наших соцсетях</div>
-              <div class="socials footer-socials__list"><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                    <use xlink:href="assets/icons/clean/sprite.svg#logo--vk"></use>
-                  </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                    <use xlink:href="assets/icons/clean/sprite.svg#logo--telegram"></use>
-                  </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                    <use xlink:href="assets/icons/clean/sprite.svg#logo--ok"></use>
-                  </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                    <use xlink:href="assets/icons/clean/sprite.svg#logo--dzen"></use>
-                  </svg></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="footer__protect">
-          <div class="footer__copyright">© 2023 «Поляна» <br> Все права защищены.</div>
-          <div class="footer__policy">Посещая данный сайт вы даете свое согласие на обработку персональных данных <a href="#">политика конфиденциальности</a></div>
-        </div>
-      </div>
-    </div>
-  </footer><button class="button button--type-icon button--rounded scroll-up" type="button" data-component="scroll-up"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-      <use xlink:href="assets/icons/clean/sprite.svg#arrow-long--up"></use>
-    </svg></button>
   <div class="modal fade modal-success modal--style-default modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">

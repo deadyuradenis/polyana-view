@@ -91,7 +91,7 @@
               <form action="#">
                 <div class="header-search__wrapper"><label class="search-input header-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                      </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                       </svg></button></label>
                   <div class="header-search__result" data-header-search="result">
@@ -170,7 +170,7 @@
                 <div class="header-catalog-block__title">Каталог</div>
               </div><label class="search-input header-catalog-block__search" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Найти товар" autocomplete="off" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Найти товар" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="header-catalog-block__body"> <!-- Появляется только при найденных совпадениях-->
@@ -5154,7 +5154,7 @@
                       </div>
                       <div class="section__filter-group">
                         <div class="datepicker" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="datepicker" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
-                            <div class="button button--type-icon button--theme-light button--size-rg" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <div class="button button--size-rg button--theme-light datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
                               </svg></div>
                           </label></div>
@@ -5163,7 +5163,7 @@
                   </div>
                   <div class="section__body">
                     <div class="section__main">
-                      <div class="grid grid--notifications">
+                      <div class="grid">
                         <div class="comment">
                           <div class="comment__bar">
                             <div class="comment__labels">
@@ -5182,13 +5182,13 @@
                                   <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
                                   <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
                                 </div>
-                                <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                                <div class="comment-info__rating"><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                  </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -5232,13 +5232,13 @@
                                   <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
                                   <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
                                 </div>
-                                <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                                <div class="comment-info__rating"><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                  </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -5288,13 +5288,13 @@
                                   <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
                                   <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
                                 </div>
-                                <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                                <div class="comment-info__rating"><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                  </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -5338,13 +5338,13 @@
                                   <div class="comment-info__product-image"><img src="assets/media/cards/product/1.png" alt="" /></div>
                                   <div class="comment-info__product-title">Корица молотая, 12 уп.</div>
                                 </div>
-                                <div class="comment-info__rating"> <svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                                <div class="comment-info__rating"><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
-                                  </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
                                   </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
@@ -5529,7 +5529,7 @@
           <div class="modal-location__body">
             <div class="modal-location__search"> <label class="search-input modal-location__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="modal-location__result">
@@ -6159,7 +6159,7 @@
           <div class="modal-search__body">
             <div class="modal-search__search"> <label class="search-input modal-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                  </svg></button><input class="search-input__field" type="text" name="search" data-search-input="field" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
                   </svg></button></label>
               <div class="modal-search__result">
