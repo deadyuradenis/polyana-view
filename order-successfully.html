@@ -5267,11 +5267,9 @@
                   <div class="input__title">Комментарий к товару</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="comment text" data-input="native" data-mask="letters"></textarea></label><span class="input__message">Обязательно для заполнения</span>
                 </div>
                 <div class="input-file" data-component="input-file" data-input-file-type="">
-                  <div class="input-file-preview input-file__preview" data-input-file="preview">
+                  <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
                     <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
-                    <div class="input-file-preview__list" data-input-file="preview-list" draggable="true">
-                      <div class="crop-container" data-crop-container="data-crop-container"></div>
-                    </div>
+                    <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
                   </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="media" multiple="multiple" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
                     <div class="input-file-field__content">
                       <div class="input-file-field__main">
@@ -5281,14 +5279,9 @@
                       </div>
                       <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
-                        </svg><span>JPG, WEBP or PNG. Максимальный размер 2MB</span></div>
+                        </svg><span>JPG, WEBP или PNG. Максимальный размер 2MB</span></div>
                     </div>
                   </label>
-                  <div class="input-file__editor input-file-editor" data-input-file="editor">
-                    <div class="input-file-editor__window">
-                      <div class="input-file-editor__content" data-input-file="editor-content"></div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -5782,11 +5775,9 @@
             </div>
             <div class="modal__body">
               <div class="input-file modal-edit-avatar__input input-file--type-avatar" data-component="input-file" data-input-file-type="avatar">
-                <div class="input-file-preview input-file__preview" data-input-file="preview">
+                <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
                   <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
-                  <div class="input-file-preview__list" data-input-file="preview-list" draggable="true">
-                    <div class="crop-container" data-crop-container="data-crop-container"></div>
-                  </div>
+                  <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
                 </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="avatar" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
                   <div class="input-file-field__content">
                     <div class="input-file-field__main">
@@ -5796,19 +5787,19 @@
                     </div>
                     <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
-                      </svg><span>JPG, WEBP or PNG. Максимальный размер 2MB</span></div>
+                      </svg><span>JPG, WEBP или PNG. Максимальный размер 2MB</span></div>
                   </div>
                 </label>
                 <div class="input-file__editor input-file-editor" data-input-file="editor">
                   <div class="input-file-editor__window">
                     <div class="input-file-editor__content" data-input-file="editor-content"></div>
                   </div>
-                  <div class="input-file-editor__actions"><button class="button button--theme-light input-file-editor__action input-file-editor__action--upload" type="button" data-input-file-button="upload"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
-                      </svg><span>Загрузить другое фото</span></button><button class="button button--theme-red button--style-outline input-file-editor__action" type="button" data-input-file-button="delete"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
-                      </svg><span>Удалить</span></button><button class="button input-file-editor__action" type="button" data-input-file-button="save"><span>Сохранить    </span></button></div>
                 </div>
+                <div class="input-file__actions"><button class="button button--theme-light input-file-editor__action input-file__action--solo" type="button" data-input-file-button="upload"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                    </svg><span>Загрузить другое фото</span></button><button class="button button--theme-red button--style-outline input-file__action" type="button" data-input-file-button="delete"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                    </svg><span>Удалить</span></button><button class="button input-file__action" type="button" data-input-file-button="save"><span>Сохранить</span></button></div>
               </div>
               <div class="modal-edit-avatar__actions"> <button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
             </div>

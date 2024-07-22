@@ -467,11 +467,9 @@
             </div>
             <div class="modal__body">
               <div class="input-file" data-component="input-file" data-input-file-type="">
-                <div class="input-file-preview input-file__preview" data-input-file="preview">
+                <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
                   <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
-                  <div class="input-file-preview__list" data-input-file="preview-list" draggable="true">
-                    <div class="crop-container" data-crop-container="data-crop-container"></div>
-                  </div>
+                  <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
                 </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="media" multiple="multiple" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
                   <div class="input-file-field__content">
                     <div class="input-file-field__main">
@@ -481,14 +479,9 @@
                     </div>
                     <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
-                      </svg><span>JPG, WEBP or PNG. Максимальный размер 2MB</span></div>
+                      </svg><span>JPG, WEBP или PNG. Максимальный размер 2MB</span></div>
                   </div>
                 </label>
-                <div class="input-file__editor input-file-editor" data-input-file="editor">
-                  <div class="input-file-editor__window">
-                    <div class="input-file-editor__content" data-input-file="editor-content"></div>
-                  </div>
-                </div>
               </div>
             </div>
             <div class="modal__footer"><button class="button" type="submit" disabled="disabled"><span>Загрузить</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Удалить все</span></button></div>
@@ -565,16 +558,26 @@
                       <use xlink:href="assets/icons/clean/sprite.svg#download"></use>
                     </svg></a>
                 </div>
-                <div class="input input--type-text" data-component="input">
-                  <div class="input__title">Прикрепите файл (CSV, Excel) <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="file" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message"></span>
+                <div class="input-file" data-component="input-file" data-input-file-type="">
+                  <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
+                    <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
+                    <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
+                  </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="file" multiple="multiple" accept=".csv, .xlsx" data-input-file="native" data-max-size="2000000" />
+                    <div class="input-file-field__content">
+                      <div class="input-file-field__main">
+                        <div class="text-swap input-file-field__call"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                          </svg><span>Перетащите сюда или <strong>Выберите файл</strong> для загрузки</span><span>Прикрепить фото</span></div>
+                      </div>
+                      <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
+                        </svg><span>JPG, WEBP или PNG. Максимальный размер 2MB</span></div>
+                    </div>
+                  </label>
                 </div>
               </div>
             </div>
-            <div class="modal__footer"><button class="button" href="#"><span>Импортировать</span></button></div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Импортировать</span></button></div>
           </form>
         </div>
       </div>
