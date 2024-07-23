@@ -75,7 +75,9 @@
                 <div class="account-aside__logo-wrapper"><a class="account-aside__logo" href="index.html"><img src="assets/media/logos/logo-large.svg" alt="" /></a></div>
                 <div class="account-aside-header account-aside__header"><button class="account-aside-header__close" type="button" data-account-aside="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                       <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                    </svg></button><button class="account-aside-header__image-wrapper" type="button" data-bs-toggle="modal" data-bs-target="#modal-edit-avatar">
+                    </svg></button><button class="account-aside-header__image-wrapper" type="button" data-bs-toggle="modal" data-bs-target="#modal-edit-avatar"><svg class="icon account-aside-header__image-icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#image"></use>
+                    </svg>
                     <picture class="account-aside-header__image"><img src="assets/media/seller-logo.png" alt="" />
                       <source srcset="assets/media/seller-logo.webp" type="image/webp" />
                     </picture>
@@ -144,11 +146,11 @@
                     <div class="section__filter-group">
                       <div class="badges">
                         <div class="badges__list"><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="badge" value="badge" checked="checked" />
-                            <div class="badge__wrapper"> <span>На модерации</span></div>
+                            <div class="badge__wrapper"> <span>На модерации <strong>12</strong></span><span class="count">5</span></div>
                           </label><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="badge" value="badge" />
-                            <div class="badge__wrapper"> <span>Одобренные</span></div>
+                            <div class="badge__wrapper"> <span>Одобренные <strong>6</strong></span><span class="count">5</span></div>
                           </label><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="badge" value="badge" />
-                            <div class="badge__wrapper"> <span>Заблокированные</span></div>
+                            <div class="badge__wrapper"> <span>Заблокированные <strong>32</strong></span><span class="count">5</span></div>
                           </label></div>
                       </div>
                     </div>
@@ -530,6 +532,93 @@
       </div>
     </div>
   </div>
+  <div class="modal fade modal-edit-avatar modal--style-default modal--size-md" id="modal-edit-avatar" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#"><!-- она нужна для отправки формы после клика сохранить (чтобы костыли не придумывать для кнопки сохранить у файлового инпута)--><button class="button" type="submit" style="display: none"></button>
+            <div class="modal__header">
+              <h2 class="modal__title">Редактирование фото</h2>
+            </div>
+            <div class="modal__body">
+              <div class="input-file modal-edit-avatar__input input-file--type-avatar" data-component="input-file" data-input-file-type="avatar">
+                <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
+                  <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
+                  <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
+                </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="avatar" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
+                  <div class="input-file-field__content">
+                    <div class="input-file-field__main">
+                      <div class="text-swap input-file-field__call"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                        </svg><span>Перетащите сюда или <strong>Выберите файл</strong> для загрузки</span><span>Прикрепить фото</span></div>
+                    </div>
+                    <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
+                      </svg><span>JPG, WEBP или PNG. Максимальный размер 2MB</span></div>
+                  </div>
+                </label>
+                <div class="input-file__editor input-file-editor" data-input-file="editor">
+                  <div class="input-file-editor__window">
+                    <div class="input-file-editor__content" data-input-file="editor-content"></div>
+                  </div>
+                </div>
+                <div class="input-file__actions"><button class="button button--theme-light input-file-editor__action input-file__action--solo" type="button" data-input-file-button="upload"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                    </svg><span>Загрузить другое фото</span></button><button class="button button--theme-red button--style-outline input-file__action" type="button" data-input-file-button="delete"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                    </svg><span>Удалить</span></button><button class="button input-file__action" type="button" data-input-file-button="save"><span>Сохранить</span></button></div>
+              </div>
+              <div class="modal-edit-avatar__actions"> <button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-search modal--style-full modal--size-md" id="modal-search" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <div class="modal-search__header">
+            <h2 class="modal-search__title">Поиск</h2>
+          </div>
+          <div class="modal-search__body">
+            <div class="modal-search__search"> <label class="search-input modal-search__input" data-component="search-input"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
+                  </svg></button><input class="search-input__field" type="text" name="search" placeholder="Искать на поляне" autocomplete="off" autofocus="autofocus" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
+                  </svg></button></label>
+              <div class="modal-search__result">
+                <div class="modal-search__result-content">
+                  <ul class="modal-search__result-group">
+                    <li> <a href="#">Абакан </a></li>
+                    <li> <a href="#"><strong>Санкт</strong>-Петербург</a></li>
+                    <li> <a href="#">Самара</a></li>
+                    <li> <a href="#">Саратов</a></li>
+                    <li> <a href="#">Сахалин</a></li>
+                    <li> <a href="#">Абакан </a></li>
+                    <li> <a href="#"><strong>Санкт</strong>-Петербург</a></li>
+                    <li> <a href="#">Самара</a></li>
+                    <li> <a href="#">Саратов</a></li>
+                    <li> <a href="#">Сахалин</a></li>
+                  </ul>
+                  <ul class="modal-search__result-group modal-search__result-group--maker">
+                    <li> <a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></li>
+                    <li> <a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></li>
+                    <li> <a href="#"><strong>Чангарский завод</strong><span>Продавец</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="modal fade modal--style-default modal--size-md" id="modal-table-filter" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
@@ -735,7 +824,7 @@
                     <div class="form-grid__row">
                       <div class="form-grid__col">
                         <div class="input input--type-text" data-component="input">
-                          <div class="input__title">Название акции</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="name" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <div class="input__title">Название акции</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="name" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                             </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -746,7 +835,7 @@
                     <div class="form-grid__row">
                       <div class="form-grid__col">
                         <div class="input input--type-text" data-component="input" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" />
-                          <div class="input__title">Дата начала</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="date-start" placeholder="дд.мм.гггг." data-input="native" data-component="datepicker" data-datepicker-type="single" autocomplete="off"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <div class="input__title">Дата начала</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="date-start" placeholder="дд.мм.гггг." data-input="native" data-component="datepicker" data-datepicker-type="single" autocomplete="off"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
                             </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
@@ -757,7 +846,7 @@
                       </div>
                       <div class="form-grid__col">
                         <div class="input input--type-text" data-component="input" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" />
-                          <div class="input__title">Дата завершения</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="date-end" placeholder="дд.мм.гггг." data-input="native" data-component="datepicker" data-datepicker-type="single" autocomplete="off"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <div class="input__title">Дата завершения</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="date-end" placeholder="дд.мм.гггг." data-input="native" data-component="datepicker" data-datepicker-type="single" autocomplete="off"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
                             </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
@@ -770,7 +859,7 @@
                     <div class="form-grid__row">
                       <div class="form-grid__col">
                         <div class="input input--type-text" data-component="input">
-                          <div class="input__title">Размер скидки</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="sale" placeholder="1-99%" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <div class="input__title">Размер скидки</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="sale" placeholder="1-99%" data-input="native" data-mask="sale"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                             </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -781,7 +870,7 @@
                     <div class="form-grid__row">
                       <div class="form-grid__col">
                         <div class="input input--type-textarea" data-component="input">
-                          <div class="input__title">Описание условий</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="description" data-input="native"></textarea></label><span class="input__message"></span>
+                          <div class="input__title">Описание условий</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="description" data-input="native"></textarea></label><span class="input__message"></span>
                         </div>
                       </div>
                     </div>
@@ -793,7 +882,7 @@
                     <div class="form-grid__row">
                       <div class="form-grid__col">
                         <div class="input input--type-text" data-component="input">
-                          <div class="input__title">Выберите категории или товары</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="products" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <div class="input__title">Выберите категории или товары</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="products" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                             </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -822,7 +911,7 @@
               <h2 class="modal__title">Прикрепить фото товара</h2>
             </div>
             <div class="modal__body">
-              <div class="input-file" data-component="input-file" data-input-file-type="">
+              <div class="input-file" data-component="input-file">
                 <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
                   <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
                   <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
@@ -871,7 +960,7 @@
                         <div class="badge__wrapper"> <span>За период</span></div>
                       </label></div>
                   </div>
-                  <div class="input input--size-lg input--type-text" data-component="input" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="date" placeholder="дд.мм.гггг." data-input="native" data-component="datepicker" data-datepicker-type="single" autocomplete="off"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  <div class="input input--size-lg input--type-text" data-component="input" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="date" placeholder="дд.мм.гггг." data-input="native" data-component="datepicker" data-datepicker-type="single" autocomplete="off"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
                       </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                         <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
@@ -914,7 +1003,7 @@
                       <use xlink:href="assets/icons/clean/sprite.svg#download"></use>
                     </svg></a>
                 </div>
-                <div class="input-file" data-component="input-file" data-input-file-type="">
+                <div class="input-file" data-component="input-file">
                   <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
                     <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
                     <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
@@ -1011,7 +1100,7 @@
                   </div>
                 </div>
                 <div class="input input--type-textarea" data-component="input">
-                  <div class="input__title">Комментарий для автора отзыва <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="input" data-input="native"></textarea></label><span class="input__message"></span>
+                  <div class="input__title">Комментарий для автора отзыва <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="input" data-input="native"></textarea></label><span class="input__message"></span>
                 </div>
               </div>
             </div>
