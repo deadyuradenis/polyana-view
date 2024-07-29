@@ -5084,7 +5084,7 @@
                   <div class="order"><!-- is-current для текущего шага--><!-- is-complete для всех выполненных-->
                     <div class="order-step order__step is-complete">
                       <div class="order-step__header">
-                        <div class="order-step__number"><span>1</span></div>
+                        <div class="order-step__number"><span></span></div>
                         <h3 class="order-step__title">Товары в заказе</h3>
                       </div>
                       <div class="order-step__body">
@@ -5097,8 +5097,9 @@
                                   </picture>
                                 </div>
                                 <div class="card-product-order__info">
-                                  <h4 class="card-product-order__title">Горох Дорохова</h4>
                                   <div class="card-product-order__maker">Агродрое</div>
+                                  <h4 class="card-product-order__title">Горох Дорохова</h4>
+                                  <div class="card-product-order__packaging">Фасовка: 1 кг</div>
                                 </div>
                               </a>
                               <div class="card-product-order__price-block"><span class="card-product-order__price-count">50 кг</span><span class="card-product-order__price-total">2 000 ₽</span></div>
@@ -5112,8 +5113,9 @@
                                   </picture>
                                 </div>
                                 <div class="card-product-order__info">
-                                  <h4 class="card-product-order__title">Перец черный горошек двойной</h4>
                                   <div class="card-product-order__maker">Агродрое</div>
+                                  <h4 class="card-product-order__title">Перец черный горошек двойной</h4>
+                                  <div class="card-product-order__packaging">Фасовка: 1 кг</div>
                                 </div>
                               </a>
                               <div class="card-product-order__price-block"><span class="card-product-order__price-count">50 кг</span><span class="card-product-order__price-total">4 291 ₽</span></div>
@@ -5127,8 +5129,9 @@
                                   </picture>
                                 </div>
                                 <div class="card-product-order__info">
-                                  <h4 class="card-product-order__title">Перец черный горошек двойной</h4>
                                   <div class="card-product-order__maker">Агродрое</div>
+                                  <h4 class="card-product-order__title">Перец черный горошек двойной</h4>
+                                  <div class="card-product-order__packaging">Фасовка: 1 кг</div>
                                 </div>
                               </a>
                               <div class="card-product-order__price-block"><span class="card-product-order__price-count">50 кг</span><span class="card-product-order__price-total">4 291 ₽</span></div>
@@ -5142,8 +5145,9 @@
                                   </picture>
                                 </div>
                                 <div class="card-product-order__info">
+                                  <div class="card-product-order__maker">Агродрое</div>
                                   <h4 class="card-product-order__title">Перец черный горошек двойной Перец черный горошек двойной Перец черный горошек двойной</h4>
-                                  <div class="card-product-order__maker">Агродрое</div>
+                                  <div class="card-product-order__packaging">Фасовка: 1 кг</div>
                                 </div>
                               </a>
                               <div class="card-product-order__price-block"><span class="card-product-order__price-count">50 кг</span><span class="card-product-order__price-total">1 523 ₽</span></div>
@@ -5154,7 +5158,7 @@
                     </div><!-- is-current для текущего шага--><!-- is-complete для всех выполненных-->
                     <div class="order-step order__step is-complete">
                       <div class="order-step__header">
-                        <div class="order-step__number"><span>2</span></div>
+                        <div class="order-step__number"><span></span></div>
                         <h3 class="order-step__title">Способ оплаты</h3>
                       </div>
                       <div class="order-step__body">
@@ -5166,23 +5170,26 @@
                             </label><label class="payment-option"><input class="payment-option__input" type="radio" name="payment-option" value="payment-option" />
                               <div class="payment-option__content"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#wallet"></use>
-                                </svg><span>Оплата бизнес-картой </span></div>
+                                </svg><span>Оплата бизнес-картой</span></div>
                             </label><label class="payment-option"><input class="payment-option__input" type="radio" name="payment-option" value="payment-option" />
                               <div class="payment-option__content"><img src="assets/media/logos/sbp.svg" alt="" /></div>
                             </label></div>
                         </div><!-- Cчёт для юр. лица -->
                         <div class="account-tile order-step__tile">
-                          <div class="select select--size-lg" data-component="select">
+                          <div class="select select--size-lg select--style-custom" data-component="select">
                             <div class="select__title">Реквизиты для оплаты</div>
                             <div class="select__main" data-select="main">
                               <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                   <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
                                 </svg></button>
                             </div>
-                            <div class="select-dropdown select__dropdown select-dropdown--size-lg" data-select="dropdown">
-                              <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requisites" value="requisites-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Аромат-Град</span>
+                            <div class="select-dropdown select__dropdown select-dropdown--size-lg select-dropdown--style-custom" data-select="dropdown">
+                              <div class="select-dropdown__list" data-select="list">
+                                <div class="select-option"><span class="select-option__content" data-select="option-content"><button class="select-add-button button button--theme-neutral button--size-rg" type="button" data-bs-toggle="modal" data-bs-target="#modal-add-requisites"><svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#plus"></use></svg><span>Добавить реквизиты</span></button></span></div><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requisites" value="requisites-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Аромат-Град</span>
                                   <div class="label label--size-xs"><span>Основной</span></div></span></span>
-                                </label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requisites" value="requisites-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Виноградарь</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requisites" value="requisites-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Кофешоп</span></span></span></label></div>
+                                </label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requisites" value="requisites-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Виноградарь</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requisites" value="requisites-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Кофешоп</span></span></span></label><!-- Если нет-->
+                                <div class="select-empty"><span>У вас нет реквизитов</span></div>
+                              </div>
                             </div>
                           </div>
                           <div class="account-info">
@@ -5223,7 +5230,7 @@
                               <div class="account-info__item-value">Россия, г. Ачинск, Школьный пер., д. 14 кв.6</div>
                             </div>
                           </div>
-                        </div><!-- Оплата бизнес-картой -->
+                        </div><!-- Оплата бизнес-картой --><!-- удалить если не надо-->
                         <div class="account-tile order-step__tile">
                           <div class="account-tile__row">
                             <div class="account-tile__col">
@@ -5261,45 +5268,71 @@
                     </div><!-- is-current для текущего шага--><!-- is-complete для всех выполненных-->
                     <div class="order-step order__step is-current order-step--last">
                       <div class="order-step__header">
-                        <div class="order-step__number"><span>3</span></div>
+                        <div class="order-step__number"><span></span></div>
                         <h3 class="order-step__title">Доставка</h3>
                       </div>
-                      <div class="order-step__body">
-                        <div class="badges order-step__badges">
-                          <div class="badges__list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="badge" value="badge" />
-                              <div class="badge__wrapper"> <span>До адреса</span></div>
-                            </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="badge" value="badge" />
-                              <div class="badge__wrapper"> <span>До пункта выдачи ТК</span></div>
-                            </label></div>
-                        </div><!-- Одна группа-->
+                      <div class="order-step__body"> <!-- Одна группа-->
                         <div class="account-tile order-step__tile">
-                          <div class="select select--size-lg" data-component="select">
-                            <div class="select__title">Транспортная компания</div>
-                            <div class="select__main" data-select="main">
-                              <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
-                                </svg></button>
-                            </div>
-                            <div class="select-dropdown select__dropdown select-dropdown--size-lg" data-select="dropdown">
-                              <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>СДЭК</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Почта россии</span></span></span></label></div>
-                            </div>
-                          </div>
-                          <div class="select select--size-lg select--style-address" data-component="select">
-                            <div class="select__title">Выбрать адрес</div>
-                            <div class="select__main" data-select="main">
-                              <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
-                                </svg></button>
-                            </div>
-                            <div class="select-dropdown select__dropdown select-dropdown--size-lg" data-select="dropdown">
-                              <div class="select-dropdown__list" data-select="list">
-                                <div class="select-option"><span class="select-option__content" data-select="option-content"> <button class="card-address card-address--style-add" type="button" data-bs-toggle="modal" data-bs-target="#modal-add-address"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#plus"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Добавить новый адрес</div></div></div></button></span></div><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-0" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Домашний адрес</div><div class="label card-address__label label--size-xs"><span>Основной</span>
+                          <div class="account-tile__group">
+                            <div class="account-tile__group-title">Адрес получения</div>
+                            <div class="account-tile__group-content">
+                              <div class="select select--size-lg select--style-custom" data-component="select">
+                                <div class="select__main" data-select="main">
+                                  <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                                    </svg></button>
+                                </div>
+                                <div class="select-dropdown select__dropdown select-dropdown--size-lg select-dropdown--style-custom" data-select="dropdown">
+                                  <div class="select-dropdown__list" data-select="list">
+                                    <div class="select-option"><span class="select-option__content" data-select="option-content"> <button class="select-add-button button button--theme-neutral button--size-rg" type="button" data-bs-toggle="modal" data-bs-target="#modal-add-address"><svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#plus"></use></svg><span>Добавить новый адрес</span></button></span></div><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-0" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Домашний адрес</div><div class="label card-address__label label--size-xs"><span>Основной</span>
+                                  </div>
+                                </div>
+                                <div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div>
                               </div>
-                            </div>
-                            <div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div>
+                            </div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-1" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Адрес офиса</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-2" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Склад</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-3" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Домашний адрес</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-4" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Адрес офиса</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-5" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Склад</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><!-- Если нет-->
+                            <div class="select-empty"><span>У вас нет реквизитов</span></div>
                           </div>
-                        </div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-1" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Адрес офиса</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-2" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Домашний адрес</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-3" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Адрес офиса</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-4" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Домашний адрес</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-5" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Адрес офиса</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label>
+                        </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="account-tile order-step__tile">
+                  <div class="account-tile__group">
+                    <div class="account-tile__group-title">Транспортная компания</div>
+                    <div class="account-tile__group-content">
+                      <div class="order-payments order-step__payments" data-component="drag-scroll">
+                        <div class="order-payments__content" data-drag-scroll="content"><label class="payment-option"><input class="payment-option__input" type="radio" name="transport-company" value="transport-company" />
+                            <div class="payment-option__content"><img src="assets/media/logos/pek.svg" alt="" /></div>
+                          </label><label class="payment-option"><input class="payment-option__input" type="radio" name="transport-company" value="transport-company" />
+                            <div class="payment-option__content"><img src="assets/media/logos/business-lines.png" alt="" /></div>
+                          </label></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="account-tile__group">
+                    <div class="account-tile__group-title">Способ получения</div>
+                    <div class="account-tile__group-content">
+                      <div class="account-tile__group-selectors"> <label class="radio"><input class="radio__input" type="radio" name="obtaining" value="radio" checked="checked" />
+                          <div class="radio__wrapper">
+                            <div class="radio__icon-wrapper">
+                              <div class="radio__icon"></div>
+                            </div>
+                            <div class="radio__content">
+                              <p>До адреса</p>
+                            </div>
+                          </div>
+                        </label><label class="radio"><input class="radio__input" type="radio" name="obtaining" value="radio" />
+                          <div class="radio__wrapper">
+                            <div class="radio__icon-wrapper">
+                              <div class="radio__icon"></div>
+                            </div>
+                            <div class="radio__content">
+                              <p>До пункта выдачи ТК</p>
+                            </div>
+                          </div>
+                        </label></div>
+                      <div class="label account-tile__group-label label--size-md label--theme-orange-light"><span>Транспортная компания не может доставить заказ по этому адресу</span></div>
                     </div>
                   </div>
                   <div class="order-price-block"><!-- После подсчета цены убрать класс order-price-block__title--disabled-->
@@ -5364,6 +5397,43 @@
                       </div>
                     </div>
                   </div>
+                  <div class="account-tile__group">
+                    <div class="account-tile__group-title">Транспортная компания</div>
+                    <div class="account-tile__group-content">
+                      <div class="order-payments order-step__payments" data-component="drag-scroll">
+                        <div class="order-payments__content" data-drag-scroll="content"><label class="payment-option"><input class="payment-option__input" type="radio" name="transport-company" value="transport-company" />
+                            <div class="payment-option__content"><img src="assets/media/logos/pek.svg" alt="" /></div>
+                          </label><label class="payment-option"><input class="payment-option__input" type="radio" name="transport-company" value="transport-company" />
+                            <div class="payment-option__content"><img src="assets/media/logos/business-lines.png" alt="" /></div>
+                          </label></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="account-tile__group">
+                    <div class="account-tile__group-title">Способ получения</div>
+                    <div class="account-tile__group-content">
+                      <div class="account-tile__group-selectors"> <label class="radio"><input class="radio__input" type="radio" name="obtaining" value="radio" checked="checked" />
+                          <div class="radio__wrapper">
+                            <div class="radio__icon-wrapper">
+                              <div class="radio__icon"></div>
+                            </div>
+                            <div class="radio__content">
+                              <p>До адреса</p>
+                            </div>
+                          </div>
+                        </label><label class="radio"><input class="radio__input" type="radio" name="obtaining" value="radio" />
+                          <div class="radio__wrapper">
+                            <div class="radio__icon-wrapper">
+                              <div class="radio__icon"></div>
+                            </div>
+                            <div class="radio__content">
+                              <p>До пункта выдачи ТК</p>
+                            </div>
+                          </div>
+                        </label></div>
+                      <div class="label account-tile__group-label label--size-md label--theme-orange-light"><span>Транспортная компания не может доставить заказ по этому адресу</span></div>
+                    </div>
+                  </div>
                   <div class="order-price-block"><!-- После подсчета цены убрать класс order-price-block__title--disabled-->
                     <div class="order-price-block__title order-price-block__title--disabled">Сумма доставки: <span>6 000 ₽</span></div>
                     <div class="order-price-block__actions"><button class="button button--size-rg button--theme-light order-price-block__button" type="button"><span>Применить для всех</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
@@ -5389,67 +5459,75 @@
                       </div>
                     </div>
                   </div>
-                  <div class="select select--size-lg" data-component="select">
-                    <div class="select__title">Транспортная компания</div>
-                    <div class="select__main" data-select="main">
-                      <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
-                        </svg></button>
-                    </div>
-                    <div class="select-dropdown select__dropdown select-dropdown--size-lg" data-select="dropdown">
-                      <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>СДЭК</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="delivery-company" value="company-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Почта россии</span></span></span></label></div>
-                    </div>
-                  </div>
-                  <div class="select select--size-lg select--style-address" data-component="select">
-                    <div class="select__title">Выбрать адрес</div>
-                    <div class="select__main" data-select="main">
-                      <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
-                        </svg></button>
-                    </div>
-                    <div class="select-dropdown select__dropdown select-dropdown--size-lg" data-select="dropdown">
-                      <div class="select-dropdown__list" data-select="list">
-                        <div class="select-option"><span class="select-option__content" data-select="option-content"> <button class="card-address card-address--style-add" type="button" data-bs-toggle="modal" data-bs-target="#modal-add-address"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#plus"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Добавить новый адрес</div></div></div></button></span></div><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-0" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Домашний адрес</div><div class="label card-address__label label--size-xs"><span>Основной</span>
+                  <div class="account-tile__group">
+                    <div class="account-tile__group-title">Транспортная компания</div>
+                    <div class="account-tile__group-content">
+                      <div class="order-payments order-step__payments" data-component="drag-scroll">
+                        <div class="order-payments__content" data-drag-scroll="content"><label class="payment-option"><input class="payment-option__input" type="radio" name="transport-company" value="transport-company" />
+                            <div class="payment-option__content"><img src="assets/media/logos/pek.svg" alt="" /></div>
+                          </label><label class="payment-option"><input class="payment-option__input" type="radio" name="transport-company" value="transport-company" />
+                            <div class="payment-option__content"><img src="assets/media/logos/business-lines.png" alt="" /></div>
+                          </label></div>
                       </div>
                     </div>
-                    <div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div>
                   </div>
-                </div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-1" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Адрес офиса</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-2" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Домашний адрес</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-3" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Адрес офиса</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-4" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Домашний адрес</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="address" value="address-5" /><span class="select-option__content" data-select="option-content"><div class="card-address card-address--style-option"><div class="card-address__icon"> <svg class="icon" aria-hidden="aria-hidden" role="presentation"><use xlink:href="assets/icons/clean/sprite.svg#location-pin"></use></svg></div><div class="card-address__main"> <div class="card-address__header"> <div class="card-address__title">Адрес офиса</div></div><div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div></div></div></span></label>
+                  <div class="account-tile__group">
+                    <div class="account-tile__group-title">Способ получения</div>
+                    <div class="account-tile__group-content">
+                      <div class="account-tile__group-selectors"> <label class="radio"><input class="radio__input" type="radio" name="obtaining" value="radio" checked="checked" />
+                          <div class="radio__wrapper">
+                            <div class="radio__icon-wrapper">
+                              <div class="radio__icon"></div>
+                            </div>
+                            <div class="radio__content">
+                              <p>До адреса</p>
+                            </div>
+                          </div>
+                        </label><label class="radio"><input class="radio__input" type="radio" name="obtaining" value="radio" />
+                          <div class="radio__wrapper">
+                            <div class="radio__icon-wrapper">
+                              <div class="radio__icon"></div>
+                            </div>
+                            <div class="radio__content">
+                              <p>До пункта выдачи ТК</p>
+                            </div>
+                          </div>
+                        </label></div>
+                      <div class="label account-tile__group-label label--size-md label--theme-orange-light"><span>Транспортная компания не может доставить заказ по этому адресу</span></div>
+                    </div>
+                  </div>
+                  <div class="order-price-block"><!-- После подсчета цены убрать класс order-price-block__title--disabled-->
+                    <div class="order-price-block__title order-price-block__title--disabled">Сумма доставки: <span>6 000 ₽</span></div>
+                    <div class="order-price-block__actions"><button class="button button--size-rg button--theme-light order-price-block__button" type="button"><span>Применить для всех</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#copy"></use>
+                        </svg></button></div>
+                  </div>
+                </div>
+                <div class="account-tile account-tile--theme-darker order-step__tile">
+                  <div class="order-comment">
+                    <div class="order-comment__header">
+                      <h4 class="order-comment__title">Комментарий к доставке</h4>
+                    </div>
+                    <div class="order-comment__body">
+                      <div class="order-comment__form">
+                        <div class="input input--type-text" data-component="input">
+                          <div class="input__title">Телефон для связи *</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="phone"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message">Обязательно для заполнения</span>
+                        </div>
+                        <div class="input input--type-textarea" data-component="input">
+                          <div class="input__title">Комментарий</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="textarea" data-input="native"></textarea></label><span class="input__message">Обязательно для заполнения</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="order-price-block"><!-- После подсчета цены убрать класс order-price-block__title--disabled-->
-            <div class="order-price-block__title order-price-block__title--disabled">Сумма доставки: <span>6 000 ₽</span></div>
-            <div class="order-price-block__actions"><button class="button button--size-rg button--theme-light order-price-block__button" type="button"><span>Применить для всех</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                  <use xlink:href="assets/icons/clean/sprite.svg#copy"></use>
-                </svg></button></div>
-          </div>
         </div>
-        <div class="account-tile account-tile--theme-darker order-step__tile">
-          <div class="order-comment">
-            <div class="order-comment__header">
-              <h4 class="order-comment__title">Комментарий к доставке</h4>
-            </div>
-            <div class="order-comment__body">
-              <div class="order-comment__form">
-                <div class="input input--type-text" data-component="input">
-                  <div class="input__title">Телефон для связи *</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="phone"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                    </svg></label><span class="input__message">Обязательно для заполнения</span>
-                </div>
-                <div class="input input--type-textarea" data-component="input">
-                  <div class="input__title">Комментарий</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="textarea" data-input="native"></textarea></label><span class="input__message">Обязательно для заполнения</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  </div>
-  </div>
-  </div>
-  </div>
   </div>
   </div>
   <div class="section-aside section__grid-aside">
@@ -5478,9 +5556,9 @@
                   <div class="tumbler__content"> <span>Списать баллы</span><strong>200</strong></div>
                   <div class="tumbler__icon"></div>
                 </div>
-              </label><!-- Если промокод есть, то disabled-->
-              <div class="input input-promocode is-active input--type-text" disabled="disabled" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="promocode" placeholder="Ввести промокод" data-input="native"></input><button class="button button--size-sm input-promocode__button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+              </label><!-- Если промокод есть, то disabled--><!-- Если применен, то класс is-success-->
+              <div class="input input-promocode input--type-text" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="promocode" placeholder="Ввести промокод" data-input="native"></input><button class="button button--type-icon button--size-sm button--theme-light input-promocode__button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
                     </svg></button><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                     <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                   </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
@@ -6344,6 +6422,133 @@
                           <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
                         </svg></div>
                       <div class="checkbox__content"><span>Основной адрес</span></div>
+                    </div>
+                  </label></div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Сохранить</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-add-requisites" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Добавить реквизиты</h2>
+            </div>
+            <div class="modal__body">
+              <div class="form-grid">
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">Название организации</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="name" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="select" data-component="select">
+                      <div class="select__title">Тип организации</div>
+                      <div class="select__main" data-select="main">
+                        <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                          </svg></button>
+                      </div>
+                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 5</span></span></span></label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">ИНН</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="inn" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">КПП</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="end-time" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">Р/С</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="inn" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">ОГРН</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="end-time" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">БИК</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="inn" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="select" data-component="select">
+                      <div class="select__title">Регион деятельности</div>
+                      <div class="select__main" data-select="main">
+                        <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                          </svg></button>
+                      </div>
+                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 5</span></span></span></label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">Юридический адрес</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="end-time" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row"> <label class="checkbox"><input class="checkbox__input" type="checkbox" name="main" value="main" />
+                    <div class="checkbox__wrapper">
+                      <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                        </svg></div>
+                      <div class="checkbox__content"><span>Основные реквизиты</span></div>
                     </div>
                   </label></div>
               </div>

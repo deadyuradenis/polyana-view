@@ -5081,6 +5081,9 @@
             <div class="section__grid-main">
               <div class="section__body">
                 <div class="section__main">
+                  <div class="label section-cart__label label--size-lg label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                    </svg><span>Состав <span class="blue">1 товара</span> изменился</span></div>
                   <div class="grid grid--cart">
                     <div class="card-product-cart card-product-cart--has-sale">
                       <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
@@ -5090,8 +5093,9 @@
                             </picture>
                           </div>
                           <div class="card-product-cart__info">
-                            <h4 class="card-product-cart__title">Горох Дорохова</h4>
                             <div class="card-product-cart__maker">Агродрое</div>
+                            <h4 class="card-product-cart__title">Горох Дорохова</h4>
+                            <div class="card-product-cart__packaging">Фасовка: 1 кг</div>
                           </div>
                         </a>
                         <div class="card-product-cart__price-block">
@@ -5133,8 +5137,9 @@
                             </picture>
                           </div>
                           <div class="card-product-cart__info">
-                            <h4 class="card-product-cart__title">Перец черный горошек двойной</h4>
                             <div class="card-product-cart__maker">Агродрое</div>
+                            <h4 class="card-product-cart__title">Перец черный горошек двойной</h4>
+                            <div class="card-product-cart__packaging">Фасовка: 1 кг</div>
                           </div>
                         </a>
                         <div class="card-product-cart__price-block">
@@ -5166,6 +5171,9 @@
                       </div>
                     </div>
                     <div class="card-product-cart">
+                      <div class="card-product-cart__delete-message"> <span>Товар был удален.</span><button class="card-product-cart__delete-button" type="button">Восстановить</button></div>
+                    </div>
+                    <div class="card-product-cart">
                       <div class="card-product-cart__content"><a class="card-product-cart__main" href="product.html">
                           <div class="card-product-cart__image-wrapper">
                             <picture class="card-product-cart__image"> <img src="assets/media/cards/product/1.png" alt="" />
@@ -5173,8 +5181,9 @@
                             </picture>
                           </div>
                           <div class="card-product-cart__info">
-                            <h4 class="card-product-cart__title">Перец черный горошек двойной</h4>
                             <div class="card-product-cart__maker">Агродрое</div>
+                            <h4 class="card-product-cart__title">Перец черный горошек двойной</h4>
+                            <div class="card-product-cart__packaging">Фасовка: 1 кг</div>
                           </div>
                         </a>
                         <div class="card-product-cart__price-block">
@@ -5213,8 +5222,9 @@
                             </picture>
                           </div>
                           <div class="card-product-cart__info">
-                            <h4 class="card-product-cart__title">Перец черный горошек двойной Перец черный горошек двойной Перец черный горошек двойной</h4>
                             <div class="card-product-cart__maker">Агродрое</div>
+                            <h4 class="card-product-cart__title">Перец черный горошек двойной Перец черный горошек двойной Перец черный горошек двойной</h4>
+                            <div class="card-product-cart__packaging">Фасовка: 1 кг</div>
                           </div>
                         </a>
                         <div class="card-product-cart__price-block">
@@ -5253,8 +5263,9 @@
                             </picture>
                           </div>
                           <div class="card-product-cart__info">
-                            <h4 class="card-product-cart__title">Перец черный горошек</h4>
                             <div class="card-product-cart__maker">Агродрое</div>
+                            <h4 class="card-product-cart__title">Перец черный горошек</h4>
+                            <div class="card-product-cart__packaging">Фасовка: 1 кг</div>
                           </div>
                         </a>
                         <div class="card-product-cart__mark">Нет в наличии</div>
@@ -5279,8 +5290,9 @@
                             </picture>
                           </div>
                           <div class="card-product-cart__info">
-                            <h4 class="card-product-cart__title">Перец черный горошек</h4>
                             <div class="card-product-cart__maker">Агродрое</div>
+                            <h4 class="card-product-cart__title">Перец черный горошек</h4>
+                            <div class="card-product-cart__packaging">Фасовка: 1 кг</div>
                           </div>
                         </a>
                         <div class="card-product-cart__mark">Нет в наличии</div>
@@ -5327,9 +5339,9 @@
                             <div class="tumbler__content"> <span>Списать баллы</span><strong>200</strong></div>
                             <div class="tumbler__icon"></div>
                           </div>
-                        </label><!-- Если промокод есть, то disabled-->
-                        <div class="input input-promocode input--type-text" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="promocode" placeholder="Ввести промокод" data-input="native"></input><button class="button button--size-sm input-promocode__button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                        </label><!-- Если промокод есть, то disabled--><!-- Если применен, то класс is-success-->
+                        <div class="input input-promocode input--type-text" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="promocode" placeholder="Ввести промокод" data-input="native"></input><button class="button button--type-icon button--size-sm button--theme-light input-promocode__button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
                               </svg></button><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                               <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                             </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
