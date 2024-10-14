@@ -62,7 +62,7 @@
   }
 </style>
 <link rel="stylesheet" href="css/index.css">
-<title>Категории</title>
+<title>Поставщик. Детальная</title>
 
 <body class="layout">
   <header class="header" data-component="header">
@@ -5059,235 +5059,651 @@
       <div class="container">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Главная</a></li>
-          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Журнал</a></li>
+          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Поставщики</a></li>
+          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">АгроДрон</a></li>
         </ul>
       </div>
     </div>
-    <section class="section">
+    <section class="section section-provider-about">
       <div class="container section__container">
-        <div class="section__header">
-          <div class="section__header-content">
-            <div class="section__header-main">
-              <h1 class="section__title">Аграрный журнал</h1>
-              <p class="section__subtitle">Здесь растёт бизнес</p>
+        <div class="section__header section-provider-about__header">
+          <div class="section-provider-about__header-content">
+            <div class="section-provider-about__logo-wrapper">
+              <picture class="section-provider-about__logo"> <img src="assets/media/seller-logo.png" alt=""></picture>
+            </div>
+            <div class="section-provider-about__main">
+              <div class="section-provider-about__main-content">
+                <div class="provider-info section-provider-about__info">
+                  <h4 class="provider-info__title">ОАО Нива</h4><button class="tooltip-trigger provider-info__icon" type="button" data-component="tooltip" data-bs-toggle="tooltip" data-bs-title="Краткое писание того, почему тут стоит этот значок при наведении"><svg class="icon tooltip-trigger__icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#protect"></use>
+                    </svg></button>
+                </div>
+                <div class="provider-rating section-provider-about__rating">
+                  <div class="provider-rating__main"> <span class="provider-rating__number">5.0</span>
+                    <div class="provider-rating__icons"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></div>
+                  </div><span class="provider-rating__reviews">128 отзывов</span>
+                </div>
+              </div>
+              <div class="label section-provider-about__label label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                </svg><span>Онлайн</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="section__body">
+          <div class="section__main">
+            <div class="section-provider-about__description-wrapper" data-component="more">
+              <div class="section-provider-about__description-inner" data-more="block">
+                <div class="section-provider-about__description-content" data-more="content">
+                  <p>Мы - компания, которая специализируется на покупке и продаже лекарственных растений для сферы медицины и фармокологии. Мы являемся номером 1 в стране по рейтингу ВОЗ и рейтингу "Лучшие торговые компании 2024 года" журнала "Медицина и фармокология в России". Мы - компания, которая специализируется на покупке и продаже лекарственных растений для сферы медицины и фармокологии. Мы являемся номером 1 в стране по рейтингу ВОЗ и рейтингу "Лучшие торговые компании 2024 года" журнала "Медицина и фармокология в России".</p>
+                  <p>Мы - компания, которая специализируется на покупке и продаже лекарственных растений для сферы медицины и фармокологии. Мы являемся номером 1 в стране по рейтингу ВОЗ и рейтингу "Лучшие торговые компании 2024 года" журнала "Медицина и фармокология в России". Мы - компания, которая специализируется на покупке и продаже лекарственных растений для сферы медицины и фармокологии. Мы являемся номером 1 в стране по рейтингу ВОЗ и рейтингу "Лучшие торговые компании 2024 года" журнала "Медицина и фармокология в России".</p>
+                  <p>Мы - компания, которая специализируется на покупке и продаже лекарственных растений для сферы медицины и фармокологии. Мы являемся номером 1 в стране по рейтингу ВОЗ и рейтингу "Лучшие торговые компании 2024 года" журнала "Медицина и фармокология в России". Мы - компания, которая специализируется на покупке и продаже лекарственных растений для сферы медицины и фармокологии. Мы являемся номером 1 в стране по рейтингу ВОЗ и рейтингу "Лучшие торговые компании 2024 года" журнала "Медицина и фармокология в России".</p>
+                </div>
+              </div><button class="section-provider-about__content-more" type="button" data-more="trigger"><span>Читать все</span><span>Скрыть</span></button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-journal">
-      <form action="#">
-        <div class="container section__container">
-          <div class="section__header">
-            <div class="section__filter"><!-- data-badgex-max - для ограничения количества баджей на деске и моби пример: data-badgex-max=[12, 6]-->
-              <div class="badges" data-component="badges" data-badges-mode="more" data-badges-max="12, 6">
-                <div class="badges__list" data-badges="list"><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
-                    <div class="badge__wrapper"> <span>Все</span></div>
-                  </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
-                    <div class="badge__wrapper"> <span>Статьи</span></div>
-                  </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" />
-                    <div class="badge__wrapper"> <span>Новости</span></div>
-                  </label><label class="badge badge--style-tab"><input class="badge__input" type="radio" name="catalog nav" value="catalog nav" checked="checked" />
-                    <div class="badge__wrapper"> <span>Видео</span></div>
-                  </label><button class="badge badges__more badge--style-ghost" type="button" data-badges="more">
-                    <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
-                      </svg></div>
-                  </button></div>
+    <section class="section">
+      <div class="container section__container">
+        <div class="section__header section__header--row section__header--size-rg">
+          <div class="section__header-content">
+            <div class="section__header-main">
+              <h2 class="section__title">Сведения об организации</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section__body">
+          <div class="section__main">
+            <div class="info-list">
+              <div class="info-list__group">
+                <div class="info-list__group-title">Юридическая информация</div>
+                <ul class="info-list__group-list">
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Наименование</span>
+                      <div class="info-list-item__value">ООО «Иволга»</div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">ОГРН</span>
+                      <div class="info-list-item__value">1026000982501</div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">ОКПО</span>
+                      <div class="info-list-item__value">53465963</div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">ИНН</span>
+                      <div class="info-list-item__value">6027061107</div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">КПП</span>
+                      <div class="info-list-item__value">602701001</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-list__group">
+                <div class="info-list__group-title">Общая информация</div>
+                <ul class="info-list__group-list">
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Существует</span>
+                      <div class="info-list-item__value">24 года</div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Выручка за 2023 год</span>
+                      <div class="info-list-item__value">Выручка за 2023 год</div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Уставной капитал</span>
+                      <div class="info-list-item__value">800 000 ₽</div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Сотрудники</span>
+                      <div class="info-list-item__value">74 чел.</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-list__group">
+                <div class="info-list__group-title">Действия на платформе</div>
+                <ul class="info-list__group-list">
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Отреагировал на</span>
+                      <div class="info-list-item__value">237 заявок</div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Возвраты</span>
+                      <div class="info-list-item__value">2% заказов</div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Провел более</span>
+                      <div class="info-list-item__value">21 заказа</div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Негативные отзывы</span>
+                      <div class="info-list-item__value">5%</div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="section__grid">
-            <div class="section__grid-main">
-              <div class="section__body">
-                <div class="section__main"><img class="section__decor" src="assets/media/decorations/branch.svg" alt="">
-                  <div class="grid grid--video grid--template-secondary"><a class="card-video" data-fancybox="video" href="https://www.youtube.com/watch?v=5z3j-woKCTw">
-                      <div class="card-video__image-wrapper">
-                        <picture class="card-video__image"><img src="assets/media/cards/video/1.jpg" />
-                          <source srcset="assets/media/cards/video/1.webp" />
-                        </picture>
-                        <div class="card-video__play"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#play"></use>
-                          </svg></div>
-                        <div class="card-video__time">2:56</div>
-                      </div>
-                      <div class="card-video__content">
-                        <h4 class="card-video__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                      </div>
-                    </a><a class="card-video" data-fancybox="video" href="https://www.youtube.com/watch?v=5z3j-woKCTw">
-                      <div class="card-video__image-wrapper">
-                        <picture class="card-video__image"><img src="assets/media/cards/video/1.jpg" />
-                          <source srcset="assets/media/cards/video/1.webp" />
-                        </picture>
-                        <div class="card-video__play"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#play"></use>
-                          </svg></div>
-                        <div class="card-video__time">2:56</div>
-                      </div>
-                      <div class="card-video__content">
-                        <h4 class="card-video__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                      </div>
-                    </a><a class="card-video" data-fancybox="video" href="https://www.youtube.com/watch?v=5z3j-woKCTw">
-                      <div class="card-video__image-wrapper">
-                        <picture class="card-video__image"><img src="assets/media/cards/video/1.jpg" />
-                          <source srcset="assets/media/cards/video/1.webp" />
-                        </picture>
-                        <div class="card-video__play"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#play"></use>
-                          </svg></div>
-                        <div class="card-video__time">2:56</div>
-                      </div>
-                      <div class="card-video__content">
-                        <h4 class="card-video__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                      </div>
-                    </a><a class="card-video" data-fancybox="video" href="https://www.youtube.com/watch?v=5z3j-woKCTw">
-                      <div class="card-video__image-wrapper">
-                        <picture class="card-video__image"><img src="assets/media/cards/video/1.jpg" />
-                          <source srcset="assets/media/cards/video/1.webp" />
-                        </picture>
-                        <div class="card-video__play"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#play"></use>
-                          </svg></div>
-                        <div class="card-video__time">2:56</div>
-                      </div>
-                      <div class="card-video__content">
-                        <h4 class="card-video__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                      </div>
-                    </a><a class="card-video" data-fancybox="video" href="https://www.youtube.com/watch?v=5z3j-woKCTw">
-                      <div class="card-video__image-wrapper">
-                        <picture class="card-video__image"><img src="assets/media/cards/video/1.jpg" />
-                          <source srcset="assets/media/cards/video/1.webp" />
-                        </picture>
-                        <div class="card-video__play"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#play"></use>
-                          </svg></div>
-                        <div class="card-video__time">2:56</div>
-                      </div>
-                      <div class="card-video__content">
-                        <h4 class="card-video__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                      </div>
-                    </a><a class="card-video" data-fancybox="video" href="https://www.youtube.com/watch?v=5z3j-woKCTw">
-                      <div class="card-video__image-wrapper">
-                        <picture class="card-video__image"><img src="assets/media/cards/video/1.jpg" />
-                          <source srcset="assets/media/cards/video/1.webp" />
-                        </picture>
-                        <div class="card-video__play"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                            <use xlink:href="assets/icons/clean/sprite.svg#play"></use>
-                          </svg></div>
-                        <div class="card-video__time">2:56</div>
-                      </div>
-                      <div class="card-video__content">
-                        <h4 class="card-video__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                      </div>
-                    </a></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container section__container">
+        <div class="section__header section__header--row section__header--size-rg">
+          <div class="section__header-content">
+            <div class="section__header-main">
+              <h2 class="section__title">Надежность</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section__body">
+          <div class="section__main">
+            <div class="info-list">
+              <div class="info-list__group">
+                <ul class="info-list__group-list">
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Долгое время работы</span>
+                      <div class="info-list-item__value"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#colored--check--outline"></use>
+                        </svg></div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Большой уставный капитал</span>
+                      <div class="info-list-item__value"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#colored--check--outline"></use>
+                        </svg></div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Уплачены налоги за прошлый отчетный период</span>
+                      <div class="info-list-item__value"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#colored--check--outline"></use>
+                        </svg></div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Нет связей с дисквалифицированными лицами</span>
+                      <div class="info-list-item__value"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#colored--check--outline"></use>
+                        </svg></div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Не входит в реестр недобросовестных поставщиков</span>
+                      <div class="info-list-item__value"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#colored--check--outline"></use>
+                        </svg></div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Массовый руководитель</span>
+                      <div class="info-list-item__value"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#colored--error--outline"></use>
+                        </svg></div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Задолженности, пени и штрафы</span>
+                      <div class="info-list-item__value"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#colored--error--outline"></use>
+                        </svg></div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Сообщения о банкротстве</span>
+                      <div class="info-list-item__value"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#colored--error--outline"></use>
+                        </svg></div>
+                    </div>
+                  </li>
+                  <li class="info-list__li">
+                    <div class="info-list-item info-list__item"><span class="info-list-item__title">Долги по исполнительным производствам</span>
+                      <div class="info-list-item__value"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#colored--error--outline"></use>
+                        </svg></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container section__container">
+        <div class="section__header section__header--row section__header--size-rg">
+          <div class="section__header-content">
+            <div class="section__header-main">
+              <h2 class="section__title">Статистика</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section__body">
+          <div class="section__main">
+            <div class="statistics-chart">
+              <div class="statistics-chart__header">
+                <div class="statistics-chart__labels">
+                  <div class="label label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                    </svg><span>Выручка</span></div>
+                  <div class="label label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                    </svg><span>Прибыль</span></div>
                 </div>
-                <div class="section__footer section__footer--size-rg">
-                  <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
-                  <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                      </svg><span>Назад</span></a>
-                    <ul class="pagination__list">
-                      <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                      <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                      <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                      <li class="pagination__item">
-                        <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                      </li>
-                      <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                    </ul><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                      </svg></a>
-                  </div>
+              </div>
+              <div class="statistics-chart__body">
+                <div class="chart statistics-chart__chart" data-component="chart" data-chart-type="full" data-chart-theme="primary">
+                  <div class="chart__wrapper" data-chart="wrapper"><canvas class="chart__content" data-chart="content"></canvas></div>
                 </div>
               </div>
             </div>
-            <div class="section-aside section__grid-aside">
-              <div class="section-aside__inner">
-                <div class="aside-articles">
-                  <div class="aside-articles__header">
-                    <h2 class="aside-articles__title">Самое интересное</h2>
-                  </div>
-                  <div class="aside-articles__body">
-                    <div class="aside-articles__list"><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-comments">
+      <div class="container section__container">
+        <div class="section__header section__header--size-rg">
+          <div class="section__header-content">
+            <div class="section__header-main">
+              <h2 class="section__title">Отзывы о заказах</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section__grid">
+          <div class="section__grid-main">
+            <div class="section__body">
+              <div class="section__main">
+                <div class="section-comments__grid">
+                  <div class="comment">
+                    <div class="comment__body">
+                      <div class="comment__main">
+                        <div class="comment-info comment__info">
+                          <div class="comment-info__profile">
+                            <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
+                              <source srcset="assets/media/photo-1.webp" type="image/webp" />
+                            </picture>
+                            <div class="comment-info__main">
+                              <div class="comment-info__mame">Юрий Денисов</div>
+                              <div class="provider-rating comment-info__rating">
+                                <div class="provider-rating__main"> <span class="provider-rating__number">5.0</span>
+                                  <div class="provider-rating__icons"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg></div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
+                        <div class="comment__content-wrapper" data-component="more">
+                          <div class="comment__content-inner" data-more="block">
+                            <div class="comment__content" data-more="content">
+                              <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
+                            </div>
+                          </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
                         </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a><a class="card-article card-article--style-mini" href="#">
-                        <div class="card-article__content">
-                          <div class="card-article__main">
-                            <h4 class="card-article__title">Холдинг «Доставка морем» нарастил агроэкспорт в 2023 году на 79%</h4>
-                            <div class="card-article__date">2 октября 2023</div>
-                          </div>
-                        </div>
-                      </a></div>
-                  </div>
-                  <div class="aside-articles__footer">
-                    <div class="card-article-socials card-article-socials--style-mini">
-                      <div class="card-article-socials__content">
-                        <div class="socials card-article-socials__list"><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#logo--vk"></use>
-                            </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#logo--telegram"></use>
-                            </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#logo--ok"></use>
-                            </svg></a><a class="socials__item" href="#"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#logo--dzen"></use>
-                            </svg></a></div>
-                        <div class="card-article-socials__title">Следи за всеми событиями в наших соцсетях</div>
+                      </div>
+                      <div class="comment__images">
+                        <div class="comment__image" data-src="assets/media/cards/product/1.png" data-fancybox="comment"><img src="assets/media/cards/product/1.png" alt="" /></div>
+                        <div class="comment__image" data-src="assets/media/cards/product/2.png" data-fancybox="comment"><img src="assets/media/cards/product/2.png" alt="" /></div>
+                        <div class="comment__image" data-src="assets/media/cards/product/3.png" data-fancybox="comment"><img src="assets/media/cards/product/3.png" alt="" /></div>
+                        <div class="comment__image" data-src="assets/media/cards/product/4.png" data-fancybox="comment"><img src="assets/media/cards/product/4.png" alt="" /></div>
+                        <div class="comment__image" data-src="assets/media/cards/product/5.png" data-fancybox="comment"><img src="assets/media/cards/product/5.png" alt="" /></div>
                       </div>
                     </div>
+                    <div class="comment__footer">
+                      <div class="comment__date">20 марта 2024</div>
+                      <div class="comment-answer comment__answer">
+                        <div class="comment-answer__header"> <span>Ответ продавца</span><span>Сегодня, 9:36</span></div>
+                        <div class="comment-answer__body">
+                          <p>Спасибо за положительный отзыв! Надеемся на дальнейшее сотрудничество)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <div class="comment__body">
+                      <div class="comment__main">
+                        <div class="comment-info comment__info">
+                          <div class="comment-info__profile">
+                            <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
+                              <source srcset="assets/media/photo-1.webp" type="image/webp" />
+                            </picture>
+                            <div class="comment-info__main">
+                              <div class="comment-info__mame">Юрий Денисов</div>
+                              <div class="provider-rating comment-info__rating">
+                                <div class="provider-rating__main"> <span class="provider-rating__number">5.0</span>
+                                  <div class="provider-rating__icons"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="comment__content-wrapper" data-component="more">
+                          <div class="comment__content-inner" data-more="block">
+                            <div class="comment__content" data-more="content">
+                              <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще! Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
+                            </div>
+                          </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
+                        </div>
+                      </div>
+                      <div class="comment__images">
+                        <div class="comment__image" data-src="assets/media/cards/product/1.png" data-fancybox="comment"><img src="assets/media/cards/product/1.png" alt="" /></div>
+                        <div class="comment__image" data-src="assets/media/cards/product/2.png" data-fancybox="comment"><img src="assets/media/cards/product/2.png" alt="" /></div>
+                        <div class="comment__image" data-src="assets/media/cards/product/3.png" data-fancybox="comment"><img src="assets/media/cards/product/3.png" alt="" /></div>
+                        <div class="comment__image" data-src="assets/media/cards/product/4.png" data-fancybox="comment"><img src="assets/media/cards/product/4.png" alt="" /></div>
+                        <div class="comment__image" data-src="assets/media/cards/product/5.png" data-fancybox="comment"><img src="assets/media/cards/product/5.png" alt="" /></div>
+                      </div>
+                    </div>
+                    <div class="comment__footer">
+                      <div class="comment__date">20 марта 2024</div>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <div class="comment__body">
+                      <div class="comment__main">
+                        <div class="comment-info comment__info">
+                          <div class="comment-info__profile">
+                            <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
+                              <source srcset="assets/media/photo-1.webp" type="image/webp" />
+                            </picture>
+                            <div class="comment-info__main">
+                              <div class="comment-info__mame">Юрий Денисов</div>
+                              <div class="provider-rating comment-info__rating">
+                                <div class="provider-rating__main"> <span class="provider-rating__number">5.0</span>
+                                  <div class="provider-rating__icons"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                    </svg></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="comment__content-wrapper" data-component="more">
+                          <div class="comment__content-inner" data-more="block">
+                            <div class="comment__content" data-more="content">
+                              <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
+                            </div>
+                          </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment__footer">
+                      <div class="comment__date">20 марта 2024</div>
+                      <div class="comment-answer comment__answer">
+                        <div class="comment-answer__header"> <span>Ответ продавца</span><span>Сегодня, 9:36</span></div>
+                        <div class="comment-answer__body">
+                          <p>Спасибо за положительный отзыв! Надеемся на дальнейшее сотрудничество)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__footer">
+                <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                    </svg><span>Назад</span></a>
+                  <ul class="pagination__list">
+                    <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
+                    <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
+                    <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
+                    <li class="pagination__item">
+                      <div class="button button--size-rg pagination__link"> <span>...</span></div>
+                    </li>
+                    <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
+                  </ul><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-aside section__grid-aside section__grid-aside--first">
+            <div class="section-aside__inner">
+              <div class="rating-panel">
+                <div class="rating-panel__header">
+                  <div class="rating-panel__score"><span>4.0</span><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                    </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                    </svg><svg class="icon is-active" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#interactive--star-half"></use>
+                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                    </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                    </svg></div>
+                  <div class="rating-panel__count">128 отзывов</div>
+                </div>
+                <div class="rating-panel__body">
+                  <div class="rating-panel-line rating-panel__line">
+                    <div class="rating-panel-line__value"> <span>5</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></div>
+                    <div class="rating-panel-line__progress" style="--current-progress: 75"><span> </span></div>
+                    <div class="rating-panel-line__count">75</div>
+                  </div>
+                  <div class="rating-panel-line rating-panel__line">
+                    <div class="rating-panel-line__value"> <span>4</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></div>
+                    <div class="rating-panel-line__progress" style="--current-progress: 25"><span> </span></div>
+                    <div class="rating-panel-line__count">25</div>
+                  </div>
+                  <div class="rating-panel-line rating-panel__line">
+                    <div class="rating-panel-line__value"> <span>3</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></div>
+                    <div class="rating-panel-line__progress" style="--current-progress: 50"><span> </span></div>
+                    <div class="rating-panel-line__count">50</div>
+                  </div>
+                  <div class="rating-panel-line rating-panel__line">
+                    <div class="rating-panel-line__value"> <span>2</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></div>
+                    <div class="rating-panel-line__progress" style="--current-progress: 0"><span> </span></div>
+                    <div class="rating-panel-line__count">0</div>
+                  </div>
+                  <div class="rating-panel-line rating-panel__line">
+                    <div class="rating-panel-line__value"> <span>1</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></div>
+                    <div class="rating-panel-line__progress" style="--current-progress: 25"><span> </span></div>
+                    <div class="rating-panel-line__count">25</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </form>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container section__container">
+        <div class="section__header section__header--row section__header--size-rg">
+          <div class="section__header-content">
+            <div class="section__header-main">
+              <h2 class="section__title">Похожие предложения у поставщиков</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section__grid">
+          <div class="section__grid-main">
+            <div class="section__body">
+              <div class="section__main">
+                <div class="grid grid--providers">
+                  <div class="card-provider-product"><a class="card-provider-product__image-wrapper" href="#">
+                      <picture class="card-provider-product__image"><img src="assets/media/cards/product/1.png" alt="" />
+                        <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                      </picture>
+                    </a>
+                    <div class="card-provider-product__content">
+                      <div class="card-provider-product__main-inner">
+                        <h4 class="card-provider-product__title"> <a href="#">Листья брусники лечебные</a></h4>
+                        <div class="badges card-provider-product__tags">
+                          <div class="badges__list">
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Грузия</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>до 20 кг</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Цельный</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-provider-product__price">от 2 500 ₽</div>
+                    </div>
+                  </div>
+                  <div class="card-provider-product"><a class="card-provider-product__image-wrapper" href="#">
+                      <picture class="card-provider-product__image"><img src="assets/media/cards/product/1.png" alt="" />
+                        <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                      </picture>
+                    </a>
+                    <div class="card-provider-product__content">
+                      <div class="card-provider-product__main-inner">
+                        <h4 class="card-provider-product__title"> <a href="#">Листья брусники лечебные</a></h4>
+                        <div class="badges card-provider-product__tags">
+                          <div class="badges__list">
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Грузия</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>до 20 кг</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Цельный</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-provider-product__price">от 2 500 ₽</div>
+                    </div>
+                  </div>
+                  <div class="card-provider-product"><a class="card-provider-product__image-wrapper" href="#">
+                      <picture class="card-provider-product__image"><img src="assets/media/cards/product/1.png" alt="" />
+                        <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                      </picture>
+                    </a>
+                    <div class="card-provider-product__content">
+                      <div class="card-provider-product__main-inner">
+                        <h4 class="card-provider-product__title"> <a href="#">Листья брусники лечебные</a></h4>
+                        <div class="badges card-provider-product__tags">
+                          <div class="badges__list">
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Грузия</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>до 20 кг</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Цельный</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-provider-product__price">от 2 500 ₽</div>
+                    </div>
+                  </div>
+                  <div class="card-provider-product"><a class="card-provider-product__image-wrapper" href="#">
+                      <picture class="card-provider-product__image"><img src="assets/media/cards/product/1.png" alt="" />
+                        <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                      </picture>
+                    </a>
+                    <div class="card-provider-product__content">
+                      <div class="card-provider-product__main-inner">
+                        <h4 class="card-provider-product__title"> <a href="#">Листья брусники лечебные</a></h4>
+                        <div class="badges card-provider-product__tags">
+                          <div class="badges__list">
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Грузия</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>до 20 кг</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Цельный</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-provider-product__price">от 2 500 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__footer">
+                <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
+              </div>
+            </div>
+          </div>
+          <div class="section-aside section__grid-aside">
+            <div class="section-aside__inner">
+              <div class="grid grid--banners-aside">
+                <div class="banner-sidebar">
+                  <div class="banner-sidebar__header">
+                    <h2 class="banner-sidebar__title">Создайте заявку — <br> получайте <br> предложения <br> от продавцов</h2>
+                  </div>
+                  <picture class="banner-sidebar__image"><img src="assets/media/banners/sidebar/3.png" />
+                    <source media="(max-width: 833px)" srcset="assets/media/banners/sidebar/3--md.png" />
+                  </picture>
+                  <div class="banner-sidebar__footer"> <a class="button button--theme-black banner-sidebar__button" href="#"><span>Создать заявку</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#arrow--up-right"></use>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
   <footer class="footer">
@@ -5678,6 +6094,15 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
+                      <div class="input__title">ИНН <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="input input--size-rg input--type-text" data-component="input">
                       <div class="input__title">Название организации <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
@@ -5685,6 +6110,8 @@
                         </svg></label><span class="input__message">Обязательно для заполнения</span>
                     </div>
                   </div>
+                </div>
+                <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="select" data-component="select">
                       <div class="select__title">Тип организации <span>*</span></div>
@@ -5698,20 +6125,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
                       <div class="input__title">ФИО руководителя <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                        </svg></label><span class="input__message">Обязательно для заполнения</span>
-                    </div>
-                  </div>
-                  <div class="form-grid__col">
-                    <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">ИНН <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5742,7 +6158,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">Р/С <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Юридический адрес <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5751,7 +6167,7 @@
                   </div>
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">Юридический адрес <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Р/С <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5957,6 +6373,26 @@
           </form>
         </div>
         <div class="modal__inner" style="display: none">
+          <form id="confirmation-code">
+            <div class="modal-authorization__header"><button class="button button--type-icon button--size-sm button--theme-neutral button--style-ghost modal-authorization__header-button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                </svg></button>
+              <h2 class="modal-authorization__header-title">Введите код</h2>
+            </div>
+            <div class="modal-authorization__body modal-authorization__body--shrink">
+              <div class="modal-authorization__subtitle">Код подтверждения отправлен на номер <span>+7 999 636‑42‑00</span></div>
+              <div class="modal-authorization__form">
+                <div class="input input--center modal-authorization__input-code input--size-lg input--type-text" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span></div>
+              </div>
+            </div>
+            <div class="modal-authorization__footer modal-authorization__footer--grow"><button class="button button--size-xs button--style-ghost modal-authorization__button-link" type="button"><span>Не приходит СМС</span></button></div>
+          </form>
+        </div>
+        <div class="modal__inner" style="display: none">
           <form action="#">
             <div class="modal-password-recovery__header">
               <h3 class="modal-password-recovery__header-title">Восстановление пароля</h3>
@@ -6053,6 +6489,60 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-comment-add modal--style-default modal--size-md" id="modal-comment-add" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Отзыв о товаре</h2>
+            </div>
+            <div class="modal__body">
+              <div class="modal-comment-add__form">
+                <div class="modal-comment-add__rating">
+                  <div class="text-swap modal-comment-add__rating-title"><span>Ваша оценка </span><span>Оцените товар *</span></div>
+                  <div class="rating"><input class="rating__input" type="radio" name="rating" value="5" id="rating-5" /><label class="rating__label" for="rating-5"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></label><input class="rating__input" type="radio" name="rating" value="4" id="rating-4" /><label class="rating__label" for="rating-4"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></label><input class="rating__input" type="radio" name="rating" value="3" id="rating-3" /><label class="rating__label" for="rating-3"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></label><input class="rating__input" type="radio" name="rating" value="2" id="rating-2" /><label class="rating__label" for="rating-2"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></label><input class="rating__input" type="radio" name="rating" value="1" id="rating-1" /><label class="rating__label" for="rating-1"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                      </svg></label></div>
+                </div>
+                <div class="input input--type-textarea" data-component="input">
+                  <div class="input__title">Комментарий к товару</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="comment text" data-input="native" data-mask="letters"></textarea></label><span class="input__message">Обязательно для заполнения</span>
+                </div>
+                <div class="input-file" data-component="input-file">
+                  <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
+                    <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
+                    <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
+                  </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="media" multiple="multiple" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
+                    <div class="input-file-field__content">
+                      <div class="input-file-field__main">
+                        <div class="text-swap input-file-field__call"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                          </svg><span>Перетащите сюда или <strong>Выберите файл</strong> для загрузки</span><span>Прикрепить фото</span></div>
+                      </div>
+                      <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
+                        </svg><span>JPG, WEBP или PNG. Максимальный размер 2MB</span></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit" disabled="disabled"><span>Отправить отзыв</span></button></div>
+          </form>
         </div>
       </div>
     </div>

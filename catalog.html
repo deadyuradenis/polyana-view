@@ -62,7 +62,7 @@
   }
 </style>
 <link rel="stylesheet" href="css/index.css">
-<title>Категории</title>
+<title>Категория</title>
 
 <body class="layout">
   <header class="header" data-component="header">
@@ -5059,102 +5059,1493 @@
       <div class="container">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Главная</a></li>
-          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Категории</a></li>
+          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Каталог</a></li>
         </ul>
       </div>
     </div>
-    <section class="section">
+    <section class="section section-catalog">
       <div class="container section__container">
         <div class="section__header">
-          <h1 class="section__title">Товары по категориям</h1>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container section__container">
-        <div class="section__body">
-          <div class="section__main">
-            <div class="grid grid--categories"><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/1.png" />
-                    <source srcset="assets/media/cards/category/1.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Специи и пряности</h4>
-              </a><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/2.png" />
-                    <source srcset="assets/media/cards/category/2.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Сушеные овощи</h4>
-              </a><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/3.png" />
-                    <source srcset="assets/media/cards/category/3.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Приправы</h4>
-              </a><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/4.png" />
-                    <source srcset="assets/media/cards/category/4.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Декоративная обсыпка</h4>
-              </a><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/5.png" />
-                    <source srcset="assets/media/cards/category/5.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Готовые смеси</h4>
-              </a><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/6.png" />
-                    <source srcset="assets/media/cards/category/6.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Зелень</h4>
-              </a><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/7.png" />
-                    <source srcset="assets/media/cards/category/7.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Чайное сырье</h4>
-              </a><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/8.png" />
-                    <source srcset="assets/media/cards/category/8.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Пищевые добавки</h4>
-              </a><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/9.png" />
-                    <source srcset="assets/media/cards/category/9.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Лекарственное сырье</h4>
-              </a><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/10.png" />
-                    <source srcset="assets/media/cards/category/10.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Декор</h4>
-              </a><a class="card-category" href="category.html">
-                <div class="card-category__image-wrapper">
-                  <picture class="card-category__image"><img src="assets/media/cards/category/11.png" />
-                    <source srcset="assets/media/cards/category/11.webp" />
-                  </picture>
-                </div>
-                <h4 class="card-category__title">Зерна пшеницы</h4>
-              </a></div>
+          <div class="section__header-content">
+            <div class="section__header-main">
+              <h1 class="section__title">Все товары</h1>
+              <p class="section__subtitle">228 товара</p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="section section-catalog">
+      <form action="#">
+        <div class="container section__container">
+          <div class="section__grid" data-component="filter-counter">
+            <div class="section-aside section__grid-aside">
+              <div class="section-aside__inner">
+                <div class="catalog-filter section-catalog__filter" data-filter-counter="filter" data-component="catalog-filter">
+                  <div class="catalog-filter__content">
+                    <div class="catalog-filter__header">
+                      <h2 class="catalog-filter__title">Фильтр</h2><button class="catalog-filter__close" type="button" data-catalog-filter="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                        </svg></button>
+                    </div>
+                    <div class="catalog-filter__body">
+                      <div class="catalog-filter__choosen" data-filter-counter="choosen"></div>
+                      <div class="catalog-filter-group catalog-filter-group--type-badge" data-component="more">
+                        <div class="catalog-filter-group__title">Категория</div>
+                        <div class="catalog-filter-group__body" data-more="block">
+                          <div class="catalog-filter-group__content" data-more="content"><label class="badge badge--style-tab" disabled="disabled"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Все</span></div>
+                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Травы</span></div>
+                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Листья</span></div>
+                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Корни</span></div>
+                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" checked="checked" />
+                              <div class="badge__wrapper"> <span>Цветки</span></div>
+                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Кора</span></div>
+                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Плоды</span></div>
+                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Грибы</span></div>
+                            </label><label class="badge badge--style-tab" disabled="disabled"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Шишки</span></div>
+                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Почки</span></div>
+                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Побеги</span></div>
+                            </label></div>
+                        </div><button class="badge catalog-filter-group__more badge--style-ghost" type="button" data-more="trigger">
+                          <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                            </svg></div>
+                        </button>
+                      </div>
+                      <div class="catalog-filter-group catalog-filter-group--type-checkbox" data-component="more">
+                        <div class="catalog-filter-group__title">Страна</div>
+                        <div class="catalog-filter-group__body" data-more="block">
+                          <div class="catalog-filter-group__content" data-more="content"><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter country" value="Россия" checked="checked" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Россия</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter country" value="Китай" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Китай</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter country" value="Индия" checked="checked" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Индия</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox" disabled="disabled"><input class="checkbox__input" type="checkbox" name="filter country" value="Бразилия" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Бразилия</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter country" value="Малайзия" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Малайзия</p>
+                                </div>
+                              </div>
+                            </label></div>
+                        </div><button class="badge catalog-filter-group__more badge--style-ghost" type="button" data-more="trigger">
+                          <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                            </svg></div>
+                        </button>
+                      </div>
+                      <div class="catalog-filter-group catalog-filter-group--type-radio" data-component="more">
+                        <div class="catalog-filter-group__title">Тип обработки</div>
+                        <div class="catalog-filter-group__body" data-more="block">
+                          <div class="catalog-filter-group__content" data-more="content"><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter type" value="Цельный" checked="checked" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Цельный</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter type" value="Резанный" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Резанный</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter type" value="Резанный" checked="checked" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Резанный</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox" disabled="disabled"><input class="checkbox__input" type="checkbox" name="filter type" value="Очищенный" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Очищенный</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter type" value="Порошок" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Порошок</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter type" value="Свежий" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Свежий</p>
+                                </div>
+                              </div>
+                            </label></div>
+                        </div><button class="badge catalog-filter-group__more badge--style-ghost" type="button" data-more="trigger">
+                          <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                            </svg></div>
+                        </button>
+                      </div>
+                      <div class="catalog-filter-group catalog-filter-group--type-checkbox" data-component="more">
+                        <div class="catalog-filter-group__title">Лечебное действие</div>
+                        <div class="catalog-filter-group__body" data-more="block">
+                          <div class="catalog-filter-group__content" data-more="content"><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter maker" value="Антигистаминное" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Антигистаминное</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter maker" value="Антисентическое" checked="checked" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Антисентическое</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter maker" value="Болеутоляющее" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Болеутоляющее</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter maker" value="Бактерицидное" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Бактерицидное</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox" disabled="disabled"><input class="checkbox__input" type="checkbox" name="filter maker" value="Антигистаминное" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Антигистаминное</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter maker" value="Антисентическое" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Антисентическое</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter maker" value="Болеутоляющее" checked="checked" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Болеутоляющее</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter maker" value="Бактерицидное" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Бактерицидное</p>
+                                </div>
+                              </div>
+                            </label></div>
+                        </div><button class="badge catalog-filter-group__more badge--style-ghost" type="button" data-more="trigger">
+                          <div class="badge__wrapper"> <span>Еще</span><span>Скрыть</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                            </svg></div>
+                        </button>
+                      </div>
+                      <div class="catalog-filter-group">
+                        <div class="catalog-filter-group__body">
+                          <div class="catalog-filter-group__content"><label class="tumbler tumbler--size-sm tumbler--style-block"><input class="tumbler__input" type="checkbox" name="filter tumbler" value="tumbler value" />
+                              <div class="tumbler__wrapper">
+                                <div class="tumbler__content"> <span>Новинки рынка</span></div>
+                                <div class="tumbler__icon"></div>
+                              </div>
+                            </label></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-filter__footer"><button class="button" type="submit"><span>Применить</span></button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section__grid-main">
+              <div class="section__body">
+                <div class="section__main">
+                  <div class="section-catalog-bar section-catalog__bar">
+                    <div class="section-catalog-bar__main">
+                      <div class="section-catalog-bar__triggers"><button class="button button--size-sm button--theme-light section-catalog-bar__filter-trigger" type="button" data-catalog-filter="trigger" data-filter-counter="count"><span>Фильтр</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#filter"></use>
+                          </svg></button><button class="button button--size-sm button--theme-light button--type-icon section-catalog-bar__sort-trigger" type="button" data-sort-by="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#swap"></use>
+                          </svg></button></div>
+                      <div class="section-catalog-bar__choosen" data-filter-counter="choosen"></div>
+                    </div>
+                    <div class="sort-by section-catalog-bar__sort" data-component="sort-by">
+                      <div class="sort-by__content">
+                        <div class="sort-by__header">
+                          <h3 class="sort-by__title">Сортировать</h3><button class="sort-by__close" type="button" data-sort-by="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                            </svg></button>
+                        </div>
+                        <div class="sort-by__body">
+                          <div class="sort-by__list" data-sort-badges-group="sort-by">
+                            <div class="sort-badge sort-by__badge sort-badge--size-rg" data-component="sort-badge"><input class="sort-badge__input" type="radio" name="sort-by" value="По популярности-rise" checked="checked" data-sort-badge-input="rise" /><input class="sort-badge__input" type="radio" name="sort-by" value="По популярности-decline" data-sort-badge-input="decline" />
+                              <div class="sort-badge__wrapper"> <span>По популярности</span>
+                                <div class="sort-badge__icons"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#arrowhead-mini--up"></use>
+                                  </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#arrowhead-mini--down"></use>
+                                  </svg></div>
+                              </div>
+                            </div>
+                            <div class="sort-badge sort-by__badge sort-badge--size-rg" data-component="sort-badge"><input class="sort-badge__input" type="radio" name="sort-by" value="По новизне-rise" data-sort-badge-input="rise" /><input class="sort-badge__input" type="radio" name="sort-by" value="По новизне-decline" data-sort-badge-input="decline" />
+                              <div class="sort-badge__wrapper"> <span>По новизне</span>
+                                <div class="sort-badge__icons"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#arrowhead-mini--up"></use>
+                                  </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#arrowhead-mini--down"></use>
+                                  </svg></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sort-by__footer"><button class="button sort-by__button" type="button"><span>Применить</span></button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid section-catalog__grid">
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                    <div class="card-product-slider" data-component="card-product-slider" data-card-product-slider-max="4">
+                      <div class="card-product-slider__preview">
+                        <div class="card-product-slider__content"><!-- Активный класс: is-active--><button class="favorite card-product-slider__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
+                            </svg></button><a class="card-product-slider__slider" href="#" data-card-product-slider="slider">
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/3.jpg" type="image/webp" /><img src="assets/media/cards/slider/3.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/4.jpg" type="image/webp" /><img src="assets/media/cards/slider/4.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/5.jpg" type="image/webp" /><img src="assets/media/cards/slider/5.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/1.jpg" type="image/webp" /><img src="assets/media/cards/slider/1.jpg" alt="" />
+                              </picture>
+                            </div>
+                            <div class="card-product-slider__image-wrapper" data-card-product-slider="card">
+                              <picture class="card-product-slider__image">
+                                <source srcset="assets/media/cards/slider/2.jpg" type="image/webp" /><img src="assets/media/cards/slider/2.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </a>
+                          <div class="card-product-slider__info">
+                            <h4 class="card-product-slider__title"><a href="#">Корень валерианы</a></h4>
+                          </div>
+                        </div>
+                        <div class="card-product-slider__duplicates" data-card-product-slider="duplicates"></div>
+                      </div>
+                      <ul class="card-product-slider__list" data-card-product-slider="list">
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut"></use>
+                            </svg><span>Резанный 20мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--cut-2"></use>
+                            </svg><span>Резанный 5мм </span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--purified"></use>
+                            </svg><span>Очищенный</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--dust"></use>
+                            </svg><span>Порошок</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--fresh"></use>
+                            </svg><span>Свежий</span></button></li>
+                        <li class="card-product-slider__item"><button class="card-product-slider__link" type="button" data-card-product-slider="link"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#fraction--solid"></use>
+                            </svg><span>Цельный</span></button></li><a class="card-product-slider__more" href="#" data-card-product-slider="more">еще 2</a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__footer">
+                  <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
+                  <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                      </svg><span>Назад</span></a>
+                    <ul class="pagination__list">
+                      <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
+                      <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
+                      <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
+                      <li class="pagination__item">
+                        <div class="button button--size-rg pagination__link"> <span>...</span></div>
+                      </li>
+                      <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
+                    </ul><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </section>
   </div>
   <footer class="footer">
@@ -5545,6 +6936,15 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
+                      <div class="input__title">ИНН <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="input input--size-rg input--type-text" data-component="input">
                       <div class="input__title">Название организации <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
@@ -5552,6 +6952,8 @@
                         </svg></label><span class="input__message">Обязательно для заполнения</span>
                     </div>
                   </div>
+                </div>
+                <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="select" data-component="select">
                       <div class="select__title">Тип организации <span>*</span></div>
@@ -5565,20 +6967,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
                       <div class="input__title">ФИО руководителя <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
-                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
-                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
-                        </svg></label><span class="input__message">Обязательно для заполнения</span>
-                    </div>
-                  </div>
-                  <div class="form-grid__col">
-                    <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">ИНН <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5609,7 +7000,7 @@
                 <div class="form-grid__row">
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">Р/С <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Юридический адрес <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5618,7 +7009,7 @@
                   </div>
                   <div class="form-grid__col">
                     <div class="input input--size-rg input--type-text" data-component="input">
-                      <div class="input__title">Юридический адрес <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="letter" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <div class="input__title">Р/С <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
                         </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
@@ -5821,6 +7212,26 @@
               </div>
             </div>
             <div class="modal-password-recovery__footer"><button class="button button--size-lg modal-password-recovery__button" type="button"><span>Отправить</span></button><button class="button button--size-xs button--style-ghost modal-password-recovery__button-link" type="button"><span>Войти или зарегистрироваться</span></button></div>
+          </form>
+        </div>
+        <div class="modal__inner" style="display: none">
+          <form id="confirmation-code">
+            <div class="modal-authorization__header"><button class="button button--type-icon button--size-sm button--theme-neutral button--style-ghost modal-authorization__header-button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                </svg></button>
+              <h2 class="modal-authorization__header-title">Введите код</h2>
+            </div>
+            <div class="modal-authorization__body modal-authorization__body--shrink">
+              <div class="modal-authorization__subtitle">Код подтверждения отправлен на номер <span>+7 999 636‑42‑00</span></div>
+              <div class="modal-authorization__form">
+                <div class="input input--center modal-authorization__input-code input--size-lg input--type-text" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="input" data-input="native" data-mask="number" data-required="data-required"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                    </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                    </svg></label><span class="input__message">Обязательно для заполнения</span></div>
+              </div>
+            </div>
+            <div class="modal-authorization__footer modal-authorization__footer--grow"><button class="button button--size-xs button--style-ghost modal-authorization__button-link" type="button"><span>Не приходит СМС</span></button></div>
           </form>
         </div>
         <div class="modal__inner" style="display: none">
