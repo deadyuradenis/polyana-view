@@ -62,7 +62,7 @@
   }
 </style>
 <link rel="stylesheet" href="css/index.css">
-<title>Результаты поиска</title>
+<title>Личный кабинет. Профиль</title>
 
 <body class="layout">
   <header class="header" data-component="header">
@@ -5055,925 +5055,84 @@
     </div>
   </header>
   <div class="layout__main">
-    <div class="breadcrumbs">
-      <div class="container">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Главная</a></li>
-          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Поиск</a></li>
-        </ul>
-      </div>
-    </div>
-    <section class="section">
-      <div class="container section__container">
-        <div class="section__header">
-          <div class="section__header-content">
-            <div class="section__header-main">
-              <h1 class="section__title">Результаты поиска</h1>
-              <p class="section__subtitle">30 товаров</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container section__container">
-        <div class="section__body">
-          <div class="section__main">
-            <div class="grid grid--products">
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
+    <section class="section section-account" data-component="account">
+      <div class="container section__container section-account__container">
+        <div class="section__grid section-account__grid">
+          <div class="section-aside section__grid-aside section-account__grid-aside">
+            <div class="section-aside__inner">
+              <div class="account-aside section-account__aside account-aside--style-default" data-component="account-aside">
+                <div class="account-aside__content">
+                  <div class="account-aside-header account-aside__header"><button class="account-aside-header__close" type="button" data-account-aside="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                      </svg></button><button class="account-aside-header__image-wrapper" type="button" data-bs-toggle="modal" data-bs-target="#modal-edit-avatar"><svg class="icon account-aside-header__image-icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#image"></use>
+                      </svg>
+                      <picture class="account-aside-header__image"><img src="assets/media/seller-logo.png" alt="" />
+                        <source srcset="assets/media/seller-logo.webp" type="image/webp" />
+                      </picture>
+                    </button>
+                    <div class="account-aside-header__title">ОАО Иволга</div>
                   </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-product">
-                <div class="card-product__header"> <a class="card-product__image-wrapper" href="#">
-                    <picture class="card-product__image"> <img src="assets/media/cards/product/1.png" alt="" />
-                      <source srcset="assets/media/cards/product/1.png" type="image/webp" />
-                    </picture>
-                  </a>
-                  <div class="card-product__logo-wrapper"><img src="assets/media/seller-logo.png" alt="" /></div><!-- Активный класс: is-active--><button class="favorite card-product__favorite is-active" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                      <use xlink:href="assets/icons/default/sprite.svg#interactive--favorite"></use>
-                    </svg></button>
-                  <div class="card-product__label"><span>15%</span></div>
-                </div><a class="card-product__body" href="#">
-                  <div class="card-product__maker">
-                    <div class="card-product__maker-name">ЮгАгро</div>
-                    <div class="card-product__rating"> <span>4.9</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                        <use xlink:href="assets/icons/clean/sprite.svg#star"></use>
-                      </svg></div>
-                  </div>
-                  <div class="card-product__prices"><span class="card-product__price">2 780 ₽ <span> / кг </span></span><span class="card-product__price-old">3 280₽</span></div>
-                  <h5 class="card-product__title">Перец черный горошек двойной очистки </h5>
-                </a>
-                <div class="card-product__form"><!-- на мобилке список фасовки открывается в модальном окне modal-packaging-->
-                  <div class="card-product__packaging-wrapper">
-                    <div class="badges card-product__packaging" data-component="product-packaging">
-                      <div class="badges__title">фасовка:</div>
-                      <div class="badges__list" data-product-packaging="list"><!-- для активного is-active-->
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>1</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>5</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>10</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>20</span></div>
-                        </div>
-                        <div class="badge card-product__package badge--style-outline" data-product-packaging="badge">
-                          <div class="badge__wrapper"> <span>+50 кг</span></div>
-                        </div><button class="badge card-product__package-trigger badge--style-outline" type="button" data-product-packaging="trigger">
-                          <div class="badge__wrapper"> <span>...</span></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-product__actions">
-                    <div class="counter card-product__counter" data-component="counter"><!-- Чтобы скрыть is-hide--><button class="button counter__button" type="button" data-counter="button"><span>В корзину </span></button>
-                      <div class="counter__wrapper"><!-- При добавлении или убавлении берется текущее значение дата-аттрибута data-step, не может быть меньше текущего значения data-min и data-max--><input class="counter__input" type="text" name="product-counter" value="0" data-counter="input" data-min="0" data-max="1000" data-step="1" />
-                        <div class="counter__main"> <button class="counter__action" type="button" data-counter-action="minus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#minus"></use>
-                            </svg></button>
-                          <div class="counter__result"> <span data-counter="result">0</span><span>кг</span></div><button class="counter__action" type="button" data-counter-action="plus"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                              <use xlink:href="assets/icons/clean/sprite.svg#plus"></use>
-                            </svg></button>
+                  <div class="account-aside__body">
+                    <div class="account-aside__body-content">
+                      <div class="account-aside-menu account-aside__menu">
+                        <div class="account-aside-menu__group">
+                          <div class="account-aside-menu__list"> <!-- Если это ссылка текущей страницы, то <button>, в остальных случаях <a>--><button class="account-aside__button" type="button" data-account="trigger"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#bell"></use>
+                              </svg><span class="account-aside__button-title">Уведомления</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><span class="account-aside__button-counter">12</span></button><a class="account-aside__button" href="account-notifications.html" style="display: none;"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#bell"></use>
+                              </svg><span class="account-aside__button-title">Уведомления</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><span class="account-aside__button-counter">12</span></a></div>
+                        </div>
+                        <div class="account-aside-menu__group account-aside-menu__group--has-divider">
+                          <div class="account-aside-menu__title">Общая информация</div>
+                          <div class="account-aside-menu__list"><a class="account-aside__button is-active" href="account-profile.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#profile"></use>
+                              </svg><span class="account-aside__button-title">Профиль</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><!-- Пример счетчика--><span class="account-aside__button-counter">12</span></a><a class="account-aside__button" href="account-seller-statistics.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chart-pie"></use>
+                              </svg><span class="account-aside__button-title">Статистика</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><!-- Пример счетчика--></a><a class="account-aside__button" href="account-favorites.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#favorite--outline"></use>
+                              </svg><span class="account-aside__button-title">Избранное</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><!-- Пример счетчика--></a></div>
+                        </div>
+                        <div class="account-aside-menu__group">
+                          <div class="account-aside-menu__title">Заказы</div>
+                          <div class="account-aside-menu__list"><a class="account-aside__button" href="account-products.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#package"></use>
+                              </svg><span class="account-aside__button-title">Мои товары</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><!-- Пример счетчика--><span class="account-aside__button-counter">12</span></a><a class="account-aside__button" href="account-requests.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
+                              </svg><span class="account-aside__button-title">Мои заявки</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><!-- Пример счетчика--></a><a class="account-aside__button" href="account-deals.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#basket"></use>
+                              </svg><span class="account-aside__button-title">Мои сделки</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><!-- Пример счетчика--></a><a class="account-aside__button" href="account-operator-comments.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
+                              </svg><span class="account-aside__button-title">Отзывы</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><!-- Пример счетчика--></a><a class="account-aside__button" href="account-help.html"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#message"></use>
+                              </svg><span class="account-aside__button-title">Поддержка</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg><!-- Пример счетчика--></a></div>
+                        </div>
+                        <div class="account-aside-menu__group account-aside-menu__group--has-divider">
+                          <div class="account-aside-menu__list"> <button class="account-aside__button" type="button"><svg class="icon account-aside__button-icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#log-out"></use>
+                              </svg><span class="account-aside__button-title">Выйти</span><svg class="icon account-aside__button-arrow" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron-small--right"></use>
+                              </svg></button></div>
                         </div>
                       </div>
                     </div>
@@ -5982,22 +5141,238 @@
               </div>
             </div>
           </div>
-          <div class="section__footer section__footer--size-lg">
-            <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
-            <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                </svg><span>Назад</span></a>
-              <ul class="pagination__list">
-                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                <li class="pagination__item">
-                  <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                </li>
-                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-              </ul><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                </svg></a>
+          <div class="section__grid-main section-account__grid-main">
+            <div class="section__body">
+              <div class="section__main">
+                <section class="section section--size-md">
+                  <div class="section__header section__header--row section__header--size-md section-account-header section-account__header" type="button" data-account="header">
+                    <div class="section__header-content"><button class="button button--style-ghost button--type-icon button--theme-neutral section__header-back" type="button" data-account="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                        </svg></button>
+                      <div class="section__header-main">
+                        <h1 class="section__title">Профиль</h1>
+                      </div>
+                      <div class="section__header-actions"><button class="button button--theme-light button--size-rg section__header-action" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
+                          </svg><span>Изменить</span></button></div>
+                    </div>
+                  </div>
+                </section>
+                <section class="section section--size-md">
+                  <div class="section__body">
+                    <div class="section__main">
+                      <div class="account-status-bar">
+                        <div class="account-status-bar__main">
+                          <div class="label label--size-lg label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#info--outline"></use>
+                            </svg><span>Страница находится на модерации</span></div>
+                        </div>
+                      </div>
+                      <div class="account-status-bar">
+                        <div class="account-status-bar__main">
+                          <div class="label label--size-lg label--theme-red-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#block"></use>
+                            </svg><span>Профиль будет удален через 30 дней</span></div>
+                        </div>
+                        <div class="account-status-bar__actions"><button class="button button--theme-secondary" type="button"><span>Восстановить</span></button></div>
+                      </div>
+                      <div class="grid grid--tiles grid--size-xl">
+                        <div class="account-tile">
+                          <div class="account-tile-header account-tile__header">
+                            <div class="account-tile-header__main">
+                              <h3 class="account-tile-header__title">Информация о компании</h3>
+                            </div>
+                          </div>
+                          <div class="account-tile__body">
+                            <div class="account-tile-group account-tile__group">
+                              <div class="account-tile-group__header">
+                                <h3 class="account-tile-group__title">Реквизиты</h3>
+                              </div>
+                              <div class="account-tile-group__body">
+                                <div class="account-info">
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">ФИО руководителя</h4>
+                                    <div class="account-info__item-value">Иванов Иван Иванович</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">Наименование компании</h4>
+                                    <div class="account-info__item-value">Иволга</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">Тип организации </h4>
+                                    <div class="account-info__item-value">Общество с ограниченной ответственностью</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">Юридический адрес</h4>
+                                    <div class="account-info__item-value">Россия, г. Ачинск, Школьный пер., д. 14 кв.6</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">Банк</h4>
+                                    <div class="account-info__item-value">СЕВЕРО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">ИНН</h4>
+                                    <div class="account-info__item-value">12345678901</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">КПП</h4>
+                                    <div class="account-info__item-value">12345678901</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">Р/С</h4>
+                                    <div class="account-info__item-value">12345678900987654432</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">БИК</h4>
+                                    <div class="account-info__item-value">1234567890</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">ОГРНИП</h4>
+                                    <div class="account-info__item-value">316861700133226</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="account-tile-group account-tile__group">
+                              <div class="account-tile-group__header">
+                                <h3 class="account-tile-group__title">Контактные данные</h3>
+                              </div>
+                              <div class="account-tile-group__body">
+                                <div class="account-info">
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">Email</h4>
+                                    <div class="account-info__item-value">info@mail.ru</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">Номер телефона</h4>
+                                    <div class="account-info__item-value">9-999-999-99-99</div>
+                                  </div>
+                                  <div class="account-info__item">
+                                    <h4 class="account-info__item-title">Время работы</h4>
+                                    <div class="account-info__item-value">10:00-18:00</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="account-tile-group account-tile__group">
+                              <div class="account-tile-group__header">
+                                <h3 class="account-tile-group__title">О компании</h3>
+                              </div>
+                              <div class="account-tile-group__body">
+                                <div class="account-infoblock" data-component="more">
+                                  <div class="account-infoblock__content-inner" data-more="block">
+                                    <div class="account-infoblock__content" data-more="content">
+                                      <p>Мы - компания, которая специализируется на покупке и продаже лекарственных растений для сферы медицины и фармокологии. Мы являемся номером 1 в стране по рейтингу ВОЗ и рейтингу "Лучшие тороговые компании 2024 года" журнала "Медицина и фармокология в России".</p>
+                                      <p>Мы - компания, которая специализируется на покупке и продаже лекарственных растений для сферы медицины и фармокологии. Мы являемся номером 1 в стране по рейтингу ВОЗ и рейтингу "Лучшие тороговые компании 2024 года" журнала "Медицина и фармокология в России".</p>
+                                    </div>
+                                  </div><button class="account-infoblock__content-more" type="button" data-more="trigger"><span>Показать все</span><span>Скрыть</span></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="account-tile">
+                          <div class="account-tile-header account-tile__header">
+                            <div class="account-tile-header__main">
+                              <h3 class="account-tile-header__title">Адреса доставки</h3>
+                            </div>
+                          </div>
+                          <div class="account-tile__body">
+                            <div class="account-actions"> <button class="button" type="button" data-bs-toggle="modal" data-bs-target="#modal-add-address"><span>Добавить</span></button></div>
+                            <div class="grid grid--addresses">
+                              <div class="card-address">
+                                <div class="card-address__main">
+                                  <div class="card-address__labels">
+                                    <div class="label card-address__label label--size-xs label--theme-neutral"><span>ПЭК</span></div>
+                                    <div class="label card-address__label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#check"></use>
+                                      </svg></div>
+                                  </div>
+                                  <div class="card-address__title">Название пункта ТК</div>
+                                  <div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div>
+                                </div>
+                                <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger button button--theme-secondary button--size-rg button--type-icon card-address__button" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#more--vertical"></use>
+                                    </svg></button>
+                                  <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm" data-dropdown="wrapper">
+                                    <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
+                                        </svg><span>Редактировать</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#check-badge--outline"></use>
+                                        </svg><span>Назначить основным</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                                        </svg><span>Удалить</span></button></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-address">
+                                <div class="card-address__main">
+                                  <div class="card-address__labels">
+                                    <div class="label card-address__label label--size-xs label--theme-neutral"><span>ПЭК</span></div>
+                                    <div class="label card-address__label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#check"></use>
+                                      </svg></div>
+                                  </div>
+                                  <div class="card-address__title">Название пункта ТК</div>
+                                  <div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div>
+                                </div>
+                                <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger button button--theme-secondary button--size-rg button--type-icon card-address__button" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#more--vertical"></use>
+                                    </svg></button>
+                                  <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm" data-dropdown="wrapper">
+                                    <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
+                                        </svg><span>Редактировать</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#check-badge--outline"></use>
+                                        </svg><span>Назначить основным</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                                        </svg><span>Удалить</span></button></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-address">
+                                <div class="card-address__main">
+                                  <div class="card-address__labels">
+                                    <div class="label card-address__label label--size-xs label--theme-neutral"><span>ПЭК</span></div>
+                                    <div class="label card-address__label label--size-xs label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#check"></use>
+                                      </svg></div>
+                                  </div>
+                                  <div class="card-address__title">Название пункта ТК</div>
+                                  <div class="card-address__value">г. Санкт-Петербург, Большая ул, д 15</div>
+                                </div>
+                                <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger button button--theme-secondary button--size-rg button--type-icon card-address__button" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#more--vertical"></use>
+                                    </svg></button>
+                                  <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm" data-dropdown="wrapper">
+                                    <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#edit"></use>
+                                        </svg><span>Редактировать</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#check-badge--outline"></use>
+                                        </svg><span>Назначить основным</span></button><button class="dropdown-option" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                          <use xlink:href="assets/icons/clean/sprite.svg#delete"></use>
+                                        </svg><span>Удалить</span></button></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="account-tile">
+                          <div class="account-tile-header account-tile__header">
+                            <div class="account-tile-header__main">
+                              <h3 class="account-tile-header__title">Управление аккаунтом</h3>
+                            </div>
+                          </div>
+                          <div class="account-tile__body">
+                            <div class="account-actions"> <button class="button button--theme-red" type="button" data-bs-toggle="modal" data-bs-target="#modal-status"><span>Удалить аккаунт</span></button></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
         </div>
@@ -6787,6 +6162,203 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-add-address" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Добавить адрес</h2>
+            </div>
+            <div class="modal__body">
+              <div class="form-grid">
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">Название точки</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="name" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">Адрес</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="address" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">Время начала работы</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="start-time" data-input="native" data-mask="time"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">Время конца работы</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="end-time" data-input="native" data-mask="time"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row"> <label class="checkbox"><input class="checkbox__input" type="checkbox" name="main" value="main" />
+                    <div class="checkbox__wrapper">
+                      <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                        </svg></div>
+                      <div class="checkbox__content"><span>Основной адрес</span></div>
+                    </div>
+                  </label></div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Сохранить</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-add-requisites" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Добавить реквизиты</h2>
+            </div>
+            <div class="modal__body">
+              <div class="form-grid">
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">Название организации</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="name" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="select" data-component="select">
+                      <div class="select__title">Тип организации</div>
+                      <div class="select__main" data-select="main">
+                        <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                          </svg></button>
+                      </div>
+                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="organization-type" value="organization-type-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Тип организации 5</span></span></span></label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">ИНН</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="inn" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">КПП</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="end-time" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">Р/С</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="inn" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">ОГРН</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="end-time" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">БИК</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="inn" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                  <div class="form-grid__col">
+                    <div class="select" data-component="select">
+                      <div class="select__title">Регион деятельности</div>
+                      <div class="select__main" data-select="main">
+                        <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                          </svg></button>
+                      </div>
+                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="region" value="region-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Регион деятельности 5</span></span></span></label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-text" data-component="input">
+                      <div class="input__title">Юридический адрес</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="end-time" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                        </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                        </svg></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row"> <label class="checkbox"><input class="checkbox__input" type="checkbox" name="main" value="main" />
+                    <div class="checkbox__wrapper">
+                      <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                        </svg></div>
+                      <div class="checkbox__content"><span>Основные реквизиты</span></div>
+                    </div>
+                  </label></div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Сохранить</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
+          </form>
         </div>
       </div>
     </div>
