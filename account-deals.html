@@ -62,7 +62,7 @@
   }
 </style>
 <link rel="stylesheet" href="css/index.css">
-<title>Личный кабинет. Статистика</title>
+<title>Личный кабинет. Мои сделки</title>
 
 <body class="layout">
   <header class="header" data-component="header">
@@ -5150,1292 +5150,515 @@
                           <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
                         </svg></button>
                       <div class="section__header-main">
-                        <h1 class="section__title">Статистика</h1>
+                        <h1 class="section__title">Мои сделки</h1>
                       </div>
                     </div>
                   </div>
                 </section>
                 <section class="section section--size-md">
                   <div class="section__header section__header--size-md">
-                    <div class="section-account-filter section-account-filter--row">
-                      <div class="badges" data-component="badges" data-badges-mode="scroll">
-                        <div class="badges__list" data-badges="list"><label class="badge badge--size-md badge--style-tab badge--theme-dark"><input class="badge__input" type="radio" name="nav" value="nav" checked="checked" />
-                            <div class="badge__wrapper"> <span>Продажи</span></div>
-                          </label><label class="badge badge--size-md badge--style-tab badge--theme-dark"><input class="badge__input" type="radio" name="nav" value="nav" />
-                            <div class="badge__wrapper"> <span>Покупки</span></div>
-                          </label></div>
-                      </div>
-                      <div class="section-account-filter__group">
-                        <div class="datepicker section-account-filter__button" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="date" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
-                            <div class="button button--size-rg button--theme-secondary datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
-                              </svg></div>
-                          </label></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="section__body">
-                    <div class="section__main">
-                      <div class="grid grid--tiles grid--size-xl">
-                        <div class="account-tile">
-                          <div class="account-tile-header account-tile__header">
-                            <div class="account-tile-header__main">
-                              <h3 class="account-tile-header__title">Общие показатели</h3>
-                            </div>
-                          </div>
-                          <div class="account-tile__body">
-                            <div class="grid grid--stats">
-                              <div class="stat stat--theme-primary-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Заказы</h4>
-                                    <div class="stat__count">1 345</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                              <div class="stat stat--theme-primary-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Получено</h4>
-                                    <div class="stat__count">650 000</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#database"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                              <div class="stat stat--theme-blue-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Средний чек</h4>
-                                    <div class="stat__count">138 887 ₽</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                              <div class="stat stat--theme-orange-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Клиенты</h4>
-                                    <div class="stat__count">35</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#users"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                              <div class="stat stat--theme-blue-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Мои товары</h4>
-                                    <div class="stat__count">2</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#package"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                              <div class="stat stat--theme-orange-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Мой рейтинг</h4>
-                                    <div class="stat__count">4.8</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="account-tile">
-                          <div class="account-tile-header account-tile__header" data-component="filter-counter">
-                            <div class="account-tile-header__main">
-                              <h3 class="account-tile-header__title">Мои товары</h3>
-                            </div>
-                            <div class="account-tile-header-filter account-tile-header__filter">
-                              <form action="#">
-                                <div class="account-tile-filter account-tile-header-filter__modal" data-component="account-tile-filter" data-filter-counter="filter">
-                                  <div class="account-tile-filter__modal" data-account-tile-filter="modal">
-                                    <div class="account-tile-filter__content"><button class="account-tile-filter__close" type="button" data-account-tile-filter="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                        </svg></button>
-                                      <div class="account-tile-filter__header">
-                                        <h2 class="account-tile-filter__title">Фильтр по таблице</h2>
-                                      </div>
-                                      <div class="account-tile-filter__body">
-                                        <div class="account-tile-filter__grid">
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Категории</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Специи и пряности</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сушеные овощи</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Экстракты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Приправы</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Лекарственное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Чайное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Декоративные обсыпки</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Пищевые ингридиенты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус товара</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Есть в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Нет в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На паузе продаж</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На модерации</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[0,980000],"min":0,"max":980000,"suffix":" ₽"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Остаток на складе</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Закончился</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>1 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>5 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>10 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>20 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>50 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус заказа</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Возврат</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Доставлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сформирован</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В сборке</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Отправлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В пути</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус акции</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Запущена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[1,100],"min":0,"max":100,"suffix":" %"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="account-tile-filter__footer"><button class="button" type="submit"><span>Применить</span></button><button class="button button--theme-secondary" type="button" data-filter-counter-button="reset"><span>Сбросить</span></button></div>
-                                    </div>
-                                  </div><button class="button button--type-icon button--theme-secondary button--size-rg account-tile-filter__trigger" type="button" data-account-tile-filter="trigger" data-filter-counter="count"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#slider"></use>
-                                    </svg></button>
-                                </div><label class="search-input account-tile-header-filter__search search-input--theme-secondary search-input--expanding" data-component="search-input" data-search-input-type="expanding"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                                    </svg></button><input class="search-input__field" type="text" name="search" placeholder="Поиск по товарам" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
-                                    </svg></button></label>
-                              </form>
-                            </div>
-                            <div class="account-tile-header__choosen" data-filter-counter="choosen"></div>
-                          </div>
-                          <div class="account-tile__body account-tile__body--table">
-                            <table class="account-table">
-                              <thead class="account-table__header">
-                                <tr class="account-table__row">
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Название товара</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Категория</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Заказы</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Остаток</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Выручка</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Статус</div>
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody class="account-table__body">
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
-                                      <picture class="account-table-product__image">
-                                        <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
-                                      </picture>
-                                      <div class="account-table-product__main">
-                                        <h4 class="account-table-product__title">Название товара</h4>
-                                        <div class="account-table-product__subtitle">Арт. 3225</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">Листья</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">50 кг</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000 ₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>В наличии</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
-                                      <picture class="account-table-product__image">
-                                        <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
-                                      </picture>
-                                      <div class="account-table-product__main">
-                                        <h4 class="account-table-product__title">Название товара</h4>
-                                        <div class="account-table-product__subtitle">Арт. 3225</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">Листья</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">50 кг</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000 ₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>В наличии</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
-                                      <picture class="account-table-product__image">
-                                        <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
-                                      </picture>
-                                      <div class="account-table-product__main">
-                                        <h4 class="account-table-product__title">Название товара</h4>
-                                        <div class="account-table-product__subtitle">Арт. 3225</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">Листья</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">50 кг</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000 ₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>В наличии</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
-                                      <picture class="account-table-product__image">
-                                        <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
-                                      </picture>
-                                      <div class="account-table-product__main">
-                                        <h4 class="account-table-product__title">Название товара</h4>
-                                        <div class="account-table-product__subtitle">Арт. 3225</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">Листья</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">50 кг</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000 ₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>В наличии</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
-                                      <picture class="account-table-product__image">
-                                        <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
-                                      </picture>
-                                      <div class="account-table-product__main">
-                                        <h4 class="account-table-product__title">Название товара</h4>
-                                        <div class="account-table-product__subtitle">Арт. 3225</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">Листья</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">50 кг</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000 ₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>В наличии</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div class="account-tile-footer account-tile__footer">
-                            <div class="pagination account-tile-footer__pagination"><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                                </svg></a>
-                              <ul class="pagination__list">
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                                <li class="pagination__item">
-                                  <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                                </li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                              </ul><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                                </svg></a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="account-tile">
-                          <div class="account-tile-header account-tile__header" data-component="filter-counter">
-                            <div class="account-tile-header__main">
-                              <h3 class="account-tile-header__title">Мои заказы</h3>
-                            </div>
-                            <div class="account-tile-header-filter account-tile-header__filter">
-                              <form action="#">
-                                <div class="account-tile-filter account-tile-header-filter__modal" data-component="account-tile-filter" data-filter-counter="filter">
-                                  <div class="account-tile-filter__modal" data-account-tile-filter="modal">
-                                    <div class="account-tile-filter__content"><button class="account-tile-filter__close" type="button" data-account-tile-filter="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                        </svg></button>
-                                      <div class="account-tile-filter__header">
-                                        <h2 class="account-tile-filter__title">Фильтр по таблице</h2>
-                                      </div>
-                                      <div class="account-tile-filter__body">
-                                        <div class="account-tile-filter__grid">
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Категории</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Специи и пряности</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сушеные овощи</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Экстракты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Приправы</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Лекарственное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Чайное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Декоративные обсыпки</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Пищевые ингридиенты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус товара</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Есть в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Нет в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На паузе продаж</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На модерации</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[0,980000],"min":0,"max":980000,"suffix":" ₽"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Остаток на складе</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Закончился</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>1 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>5 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>10 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>20 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>50 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус заказа</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Возврат</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Доставлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сформирован</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В сборке</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Отправлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В пути</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус акции</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Запущена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[1,100],"min":0,"max":100,"suffix":" %"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="account-tile-filter__footer"><button class="button" type="submit"><span>Применить</span></button><button class="button button--theme-secondary" type="button" data-filter-counter-button="reset"><span>Сбросить</span></button></div>
-                                    </div>
-                                  </div><button class="button button--type-icon button--theme-secondary button--size-rg account-tile-filter__trigger" type="button" data-account-tile-filter="trigger" data-filter-counter="count"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#slider"></use>
-                                    </svg></button>
-                                </div><label class="search-input account-tile-header-filter__search search-input--theme-secondary search-input--expanding" data-component="search-input" data-search-input-type="expanding"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                                    </svg></button><input class="search-input__field" type="text" name="search" placeholder="Поиск по товарам" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
-                                    </svg></button></label>
-                              </form>
-                            </div>
-                            <div class="account-tile-header__choosen" data-filter-counter="choosen"></div>
-                          </div>
-                          <div class="account-tile__body account-tile__body--table">
-                            <table class="account-table">
-                              <thead class="account-table__header">
-                                <tr class="account-table__row">
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Заказ</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Сумма заказа</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Срок доставки</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Статус заказа</div>
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody class="account-table__body">
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div class="account-tile-footer account-tile__footer">
-                            <div class="pagination account-tile-footer__pagination"><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                                </svg></a>
-                              <ul class="pagination__list">
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                                <li class="pagination__item">
-                                  <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                                </li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                              </ul><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                                </svg></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="section section--size-md">
-                  <div class="section__header section__header--size-md">
-                    <div class="section-account-filter section-account-filter--row">
+                    <div class="section-account-filter">
                       <div class="badges" data-component="badges" data-badges-mode="scroll">
                         <div class="badges__list" data-badges="list"><label class="badge badge--size-md badge--style-tab badge--theme-dark"><input class="badge__input" type="radio" name="notifications-type" value="notifications-type" checked="checked" />
-                            <div class="badge__wrapper"> <span>Продажи</span></div>
+                            <div class="badge__wrapper"> <span>Покупка</span></div>
                           </label><label class="badge badge--size-md badge--style-tab badge--theme-dark"><input class="badge__input" type="radio" name="notifications-type" value="notifications-type" />
-                            <div class="badge__wrapper"> <span>Покупки</span></div>
+                            <div class="badge__wrapper"> <span>Продажа</span></div>
                           </label></div>
                       </div>
-                      <div class="section-account-filter__group">
-                        <div class="datepicker section-account-filter__button" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="date" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
+                      <div class="section-account-filter__group section-account-filter__group--nowrap">
+                        <div class="select" data-component="select">
+                          <div class="select__main" data-select="main">
+                            <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                              </svg></button>
+                          </div>
+                          <div class="select-dropdown select__dropdown" data-select="dropdown">
+                            <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="filter" value="filter-0" checked="checked" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Все статусы</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="filter" value="filter-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Не оплачен</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="filter" value="filter-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>В пути</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="filter" value="filter-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Доставлен</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="filter" value="filter-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Спор</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="filter" value="filter-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Возврат</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="filter" value="filter-6" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Завершен</span></span></span></label></div>
+                          </div>
+                        </div>
+                        <div class="datepicker" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="date" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
                             <div class="button button--size-rg button--theme-secondary datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                                 <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
                               </svg></div>
-                          </label></div>
+                          </label></div><label class="search-input search-input--theme-secondary search-input--expanding" data-component="search-input" data-search-input-type="expanding"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
+                            </svg></button><input class="search-input__field" type="text" name="search" placeholder="Поиск по сделкам" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
+                            </svg></button></label>
                       </div>
                     </div>
                   </div>
                   <div class="section__body">
                     <div class="section__main">
-                      <div class="grid grid--tiles grid--size-xl">
-                        <div class="account-tile">
-                          <div class="account-tile-header account-tile__header">
-                            <div class="account-tile-header__main">
-                              <h3 class="account-tile-header__title">Общие показатели</h3>
+                      <div class="grid">
+                        <div class="card-deal">
+                          <div class="card-deal__header">
+                            <div class="card-deal__header-main">
+                              <h4 class="card-deal__title"><a href="account-deals-detail.html">Сделка #00-001</a></h4>
+                              <div class="label card-deal__label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                </svg><span>Не оплачен</span></div>
+                            </div><span class="card-deal__price">64 200 ₽</span>
+                          </div>
+                          <div class="card-deal__body">
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
                             </div>
                           </div>
-                          <div class="account-tile__body">
-                            <div class="grid grid--stats">
-                              <div class="stat stat--theme-primary-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Мои заказы</h4>
-                                    <div class="stat__count">1 345</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
-                                    </svg></div>
+                          <div class="card-deal__footer">
+                            <div class="card-deal__actions"> <button class="button button--size-rg" type="button"><span>Оплатить</span></button></div>
+                          </div>
+                        </div>
+                        <div class="card-deal">
+                          <div class="card-deal__header">
+                            <div class="card-deal__header-main">
+                              <h4 class="card-deal__title"><a href="account-deals-detail.html">Сделка #00-001</a></h4>
+                              <div class="label card-deal__label label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                </svg><span>Не оплачен</span></div>
+                            </div><span class="card-deal__price">64 200 ₽</span>
+                          </div>
+                          <div class="card-deal__body">
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
                                 </div>
                               </div>
-                              <div class="stat stat--theme-primary-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Сумма заказов</h4>
-                                    <div class="stat__count">65 000</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#database"></use>
-                                    </svg></div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
                                 </div>
                               </div>
-                              <div class="stat stat--theme-blue-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Средний чек</h4>
-                                    <div class="stat__count">138 887 ₽</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                    </svg></div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-deal__footer">
+                            <div class="card-deal__actions"> <button class="button button--size-rg" type="button"><span>Отправить</span></button></div>
+                          </div>
+                        </div>
+                        <div class="card-deal">
+                          <div class="card-deal__header">
+                            <div class="card-deal__header-main">
+                              <h4 class="card-deal__title"><a href="account-deals-detail.html">Сделка #00-002</a></h4>
+                              <div class="label card-deal__label label--theme-orange-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                </svg><span>В сборке</span></div>
+                            </div><span class="card-deal__price">64 200 ₽</span>
+                          </div>
+                          <div class="card-deal__body">
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/2.png" type="image/webp" /><img src="assets/media/cards/product/2.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
                                 </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="account-tile">
-                          <div class="account-tile-header account-tile__header" data-component="filter-counter">
-                            <div class="account-tile-header__main">
-                              <h3 class="account-tile-header__title">Мои заказы</h3>
-                            </div>
-                            <div class="account-tile-header-filter account-tile-header__filter">
-                              <form action="#">
-                                <div class="account-tile-filter account-tile-header-filter__modal" data-component="account-tile-filter" data-filter-counter="filter">
-                                  <div class="account-tile-filter__modal" data-account-tile-filter="modal">
-                                    <div class="account-tile-filter__content"><button class="account-tile-filter__close" type="button" data-account-tile-filter="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                        </svg></button>
-                                      <div class="account-tile-filter__header">
-                                        <h2 class="account-tile-filter__title">Фильтр по таблице</h2>
-                                      </div>
-                                      <div class="account-tile-filter__body">
-                                        <div class="account-tile-filter__grid">
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Категории</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Специи и пряности</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сушеные овощи</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Экстракты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Приправы</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Лекарственное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Чайное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Декоративные обсыпки</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Пищевые ингридиенты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус товара</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Есть в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Нет в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На паузе продаж</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На модерации</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[0,980000],"min":0,"max":980000,"suffix":" ₽"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Остаток на складе</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Закончился</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>1 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>5 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>10 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>20 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>50 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус заказа</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Возврат</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Доставлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сформирован</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В сборке</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Отправлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В пути</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус акции</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Запущена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[1,100],"min":0,"max":100,"suffix":" %"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="account-tile-filter__footer"><button class="button" type="submit"><span>Применить</span></button><button class="button button--theme-secondary" type="button" data-filter-counter-button="reset"><span>Сбросить</span></button></div>
-                                    </div>
-                                  </div><button class="button button--type-icon button--theme-secondary button--size-rg account-tile-filter__trigger" type="button" data-account-tile-filter="trigger" data-filter-counter="count"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#slider"></use>
-                                    </svg></button>
-                                </div><label class="search-input account-tile-header-filter__search search-input--theme-secondary search-input--expanding" data-component="search-input" data-search-input-type="expanding"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                                    </svg></button><input class="search-input__field" type="text" name="search" placeholder="Поиск по товарам" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
-                                    </svg></button></label>
-                              </form>
-                            </div>
-                            <div class="account-tile-header__choosen" data-filter-counter="choosen"></div>
+                        <div class="card-deal">
+                          <div class="card-deal__header">
+                            <div class="card-deal__header-main">
+                              <h4 class="card-deal__title"><a href="account-deals-detail.html">Сделка #00-003</a></h4>
+                              <div class="label card-deal__label label--theme-blue-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                </svg><span>В пути</span></div>
+                            </div><span class="card-deal__price">64 200 ₽</span>
                           </div>
-                          <div class="account-tile__body account-tile__body--table">
-                            <table class="account-table">
-                              <thead class="account-table__header">
-                                <tr class="account-table__row">
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Заказ</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Сумма заказа</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Срок доставки</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Статус заказа</div>
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody class="account-table__body">
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div class="account-tile-footer account-tile__footer">
-                            <div class="pagination account-tile-footer__pagination"><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                                </svg></a>
-                              <ul class="pagination__list">
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                                <li class="pagination__item">
-                                  <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                                </li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                              </ul><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                                </svg></a>
+                          <div class="card-deal__body">
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
                             </div>
                           </div>
+                          <div class="card-deal__footer">
+                            <div class="card-deal__actions"> <button class="button button--size-rg button--theme-secondary" type="button"><span>Отслеживать</span></button></div>
+                          </div>
+                        </div>
+                        <div class="card-deal">
+                          <div class="card-deal__header">
+                            <div class="card-deal__header-main">
+                              <h4 class="card-deal__title"><a href="account-deals-detail.html">Сделка #00-004</a></h4>
+                              <div class="label card-deal__label label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                </svg><span>Доставлен</span></div>
+                            </div><span class="card-deal__price">64 200 ₽</span>
+                          </div>
+                          <div class="card-deal__body">
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/4.png" type="image/webp" /><img src="assets/media/cards/product/4.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-deal__footer">
+                            <div class="card-deal__actions"> <button class="button button--size-rg button--theme-red" type="button" data-bs-toggle="modal" data-bs-target="#modal-open-dispute"><span>Открыть спор</span></button></div>
+                          </div>
+                        </div>
+                        <div class="card-deal">
+                          <div class="card-deal__header">
+                            <div class="card-deal__header-main">
+                              <h4 class="card-deal__title"><a href="account-deals-detail.html">Сделка #00-005</a></h4>
+                              <div class="label card-deal__label label--theme-red-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                </svg><span>Спор</span></div>
+                            </div><span class="card-deal__price">64 200 ₽</span>
+                          </div>
+                          <div class="card-deal__body">
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-deal__footer">
+                            <div class="card-deal__actions"> <button class="button button--size-rg button--theme-red" type="button"><span>К спору</span></button></div>
+                          </div>
+                        </div>
+                        <div class="card-deal">
+                          <div class="card-deal__header">
+                            <div class="card-deal__header-main">
+                              <h4 class="card-deal__title"><a href="account-deals-detail.html">Сделка #00-006</a></h4>
+                              <div class="label card-deal__label label--theme-red-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                </svg><span>Возврат</span></div>
+                            </div><span class="card-deal__price">64 200 ₽</span>
+                          </div>
+                          <div class="card-deal__body">
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/2.png" type="image/webp" /><img src="assets/media/cards/product/2.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-deal">
+                          <div class="card-deal__header">
+                            <div class="card-deal__header-main">
+                              <h4 class="card-deal__title"><a href="account-deals-detail.html">Сделка #00-007</a></h4>
+                              <div class="label card-deal__label label--theme-primary-light"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
+                                </svg><span>Завершен</span></div>
+                            </div><span class="card-deal__price">64 200 ₽</span>
+                          </div>
+                          <div class="card-deal__body">
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                            <div class="card-deal-product card-deal__product">
+                              <div class="card-deal-product__main"> <a class="card-deal-product__image-wrapper" href="#">
+                                  <picture class="card-deal-product__image">
+                                    <source srcset="assets/media/cards/product/3.png" type="image/webp" /><img src="assets/media/cards/product/3.png" alt="" />
+                                  </picture>
+                                </a>
+                                <div class="card-deal-product__info">
+                                  <h5 class="card-deal-product__title"><a href="#">Ромашка лекарственная</a></h5><span class="card-deal-product__subtitle">арт. 00-4324</span>
+                                </div>
+                              </div>
+                              <div class="card-deal-product__list">
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Тип</span><span class="card-deal-product__item-value">Резанный 20мм</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Объем</span><span class="card-deal-product__item-value">100 кг</span></div>
+                                <div class="card-deal-product__item"> <span class="card-deal-product__item-title">Срок доставки</span><span class="card-deal-product__item-value">31.12.2024</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-deal__footer">
+                            <div class="card-deal__actions"> <button class="button button--size-rg button--theme-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-comment-add"><span>Оценить</span></button></div>
+                          </div>
+                        </div>
+                      </div><!-- если нет отзывов-->
+                      <div class="section__caption">Больше сделок нет</div>
+                      <div class="section__footer">
+                        <div class="section__actions"><button class="button button--theme-secondary" type="button"><span>Показать еще</span></button></div>
+                        <div class="pagination section__pagination"><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                            </svg></a>
+                          <ul class="pagination__list">
+                            <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
+                            <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
+                            <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
+                            <li class="pagination__item">
+                              <div class="button button--size-rg pagination__link"> <span>...</span></div>
+                            </li>
+                            <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
+                          </ul><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
+                            </svg></a>
                         </div>
                       </div>
                     </div>

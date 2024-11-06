@@ -62,7 +62,7 @@
   }
 </style>
 <link rel="stylesheet" href="css/index.css">
-<title>Личный кабинет. Статистика</title>
+<title>Личный кабинет. Поддержка</title>
 
 <body class="layout">
   <header class="header" data-component="header">
@@ -5144,1297 +5144,200 @@
           <div class="section__grid-main section-account__grid-main">
             <div class="section__body">
               <div class="section__main">
-                <section class="section section--size-md">
-                  <div class="section__header section__header--row section__header--size-md section-account-header section-account__header" type="button" data-account="header">
+                <section class="section section--size-md section-chat">
+                  <div class="section__header section__header--size-md section__header--row">
                     <div class="section__header-content"><button class="button button--style-ghost button--type-icon button--theme-neutral section__header-back" type="button" data-account="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
                         </svg></button>
                       <div class="section__header-main">
-                        <h1 class="section__title">Статистика</h1>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="section section--size-md">
-                  <div class="section__header section__header--size-md">
-                    <div class="section-account-filter section-account-filter--row">
-                      <div class="badges" data-component="badges" data-badges-mode="scroll">
-                        <div class="badges__list" data-badges="list"><label class="badge badge--size-md badge--style-tab badge--theme-dark"><input class="badge__input" type="radio" name="nav" value="nav" checked="checked" />
-                            <div class="badge__wrapper"> <span>Продажи</span></div>
-                          </label><label class="badge badge--size-md badge--style-tab badge--theme-dark"><input class="badge__input" type="radio" name="nav" value="nav" />
-                            <div class="badge__wrapper"> <span>Покупки</span></div>
-                          </label></div>
-                      </div>
-                      <div class="section-account-filter__group">
-                        <div class="datepicker section-account-filter__button" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="date" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
-                            <div class="button button--size-rg button--theme-secondary datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
-                              </svg></div>
-                          </label></div>
+                        <h1 class="section__title">Поддержка</h1>
                       </div>
                     </div>
                   </div>
                   <div class="section__body">
                     <div class="section__main">
-                      <div class="grid grid--tiles grid--size-xl">
-                        <div class="account-tile">
-                          <div class="account-tile-header account-tile__header">
-                            <div class="account-tile-header__main">
-                              <h3 class="account-tile-header__title">Общие показатели</h3>
-                            </div>
+                      <div class="chat chat--style-full" data-component="chat" data-chat-style="full">
+                        <div class="chat-aside chat__aside" data-chat="aside">
+                          <div class="chat-aside__header">
+                            <h3 class="chat-aside__title">Список чатов</h3>
                           </div>
-                          <div class="account-tile__body">
-                            <div class="grid grid--stats">
-                              <div class="stat stat--theme-primary-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Заказы</h4>
-                                    <div class="stat__count">1 345</div>
+                          <div class="chat-aside__body">
+                            <div class="chat-aside__list"><!-- chat-link--unread для непрочитанных--><button class="chat-link chat-aside__link" type="button" data-chat="link" data-chat-id="chat-1">
+                                <picture class="chat-link__photo">
+                                  <source srcset="assets/media/logos/logo-chat.svg" type="image/webp" /><img src="assets/media/logos/logo-chat.svg" alt="" />
+                                </picture>
+                                <div class="chat-link__main">
+                                  <div class="chat-link__header">
+                                    <div class="chat-link__name">Сделка #00-023</div>
+                                    <div class="label label--size-xs label--theme-red-light"><span>Спор</span></div><span class="chat-link__date">26.10.2022</span>
                                   </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                              <div class="stat stat--theme-primary-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Получено</h4>
-                                    <div class="stat__count">650 000</div>
+                                  <div class="chat-link__body">
+                                    <div class="chat-link__text">Текст последнего присланного сообщения в одну строку</div>
                                   </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#database"></use>
-                                    </svg></div>
                                 </div>
-                              </div>
-                              <div class="stat stat--theme-blue-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Средний чек</h4>
-                                    <div class="stat__count">138 887 ₽</div>
+                              </button><!-- chat-link--unread для непрочитанных--><button class="chat-link chat-aside__link chat-link--unread" type="button" data-chat="link" data-chat-id="chat-1">
+                                <picture class="chat-link__photo">
+                                  <source srcset="assets/media/logos/logo-chat.svg" type="image/webp" /><img src="assets/media/logos/logo-chat.svg" alt="" />
+                                </picture>
+                                <div class="chat-link__main">
+                                  <div class="chat-link__header">
+                                    <div class="chat-link__name">Поддержка поддержки Поляны</div>
+                                    <div class="label label--size-xs label--theme-neutral"><span>Спор закрыт</span></div><span class="chat-link__date">26.10.2022</span>
                                   </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                              <div class="stat stat--theme-orange-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Клиенты</h4>
-                                    <div class="stat__count">35</div>
+                                  <div class="chat-link__body">
+                                    <div class="chat-link__text">Текст последнего присланного сообщения в одну строку. Текст последнего присланного сообщения в одну строку</div>
+                                    <div class="chat-link__count">14</div>
                                   </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#users"></use>
-                                    </svg></div>
                                 </div>
-                              </div>
-                              <div class="stat stat--theme-blue-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Мои товары</h4>
-                                    <div class="stat__count">2</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#package"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                              <div class="stat stat--theme-orange-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Мой рейтинг</h4>
-                                    <div class="stat__count">4.8</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#star-large--outline"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                            </div>
+                              </button></div>
                           </div>
-                        </div>
-                        <div class="account-tile">
-                          <div class="account-tile-header account-tile__header" data-component="filter-counter">
-                            <div class="account-tile-header__main">
-                              <h3 class="account-tile-header__title">Мои товары</h3>
-                            </div>
-                            <div class="account-tile-header-filter account-tile-header__filter">
-                              <form action="#">
-                                <div class="account-tile-filter account-tile-header-filter__modal" data-component="account-tile-filter" data-filter-counter="filter">
-                                  <div class="account-tile-filter__modal" data-account-tile-filter="modal">
-                                    <div class="account-tile-filter__content"><button class="account-tile-filter__close" type="button" data-account-tile-filter="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                        </svg></button>
-                                      <div class="account-tile-filter__header">
-                                        <h2 class="account-tile-filter__title">Фильтр по таблице</h2>
-                                      </div>
-                                      <div class="account-tile-filter__body">
-                                        <div class="account-tile-filter__grid">
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Категории</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Специи и пряности</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сушеные овощи</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Экстракты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Приправы</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Лекарственное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Чайное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Декоративные обсыпки</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Пищевые ингридиенты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус товара</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Есть в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Нет в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На паузе продаж</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На модерации</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[0,980000],"min":0,"max":980000,"suffix":" ₽"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Остаток на складе</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Закончился</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>1 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>5 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>10 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>20 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>50 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус заказа</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Возврат</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Доставлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сформирован</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В сборке</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Отправлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В пути</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус акции</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Запущена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[1,100],"min":0,"max":100,"suffix":" %"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
+                        </div><!-- Если на мобилке нужно по дефолту открывать чат, то добавить is-active (только у юзера)-->
+                        <div class="chat-main chat__main" data-chat="main">
+                          <div class="chat-window chat-main__window">
+                            <div class="chat-window__content">
+                              <div class="chat-window-header chat-window__header"><button class="button button--type-icon button--size-sm button--style-ghost button--theme-neutral chat-window-header__back" type="button" data-chat="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
+                                  </svg></button><span class="chat-window-header__username">Сделка <a href="account-deals-detail.html">#00-023</a></span>
+                                <div class="dropdown dropdown--size-sm" data-component="dropdown"><button class="dropdown__trigger button button--style-ghost button--theme-neutral button--size-sm button--type-icon" type="button" data-dropdown="trigger"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#more--vertical"></use>
+                                    </svg></button>
+                                  <div class="dropdown-wrapper dropdown__wrapper dropdown-wrapper--size-sm" data-dropdown="wrapper">
+                                    <div class="dropdown-wrapper__list"><button class="dropdown-option" type="button"><span>Заблокировать пользователя</span></button></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="chat-status-bar chat-window__status-bar">
+                                <div class="chat-status-bar__info">
+                                  <div class="chat-status-bar__item">
+                                    <div class="chat-status-bar__item-title">Статус:</div>
+                                    <div class="chat-status-bar__item-value">
+                                      <div class="label label--size-sm label--theme-primary-darker"><span>Открыт</span></div>
+                                      <div class="label label--size-sm label--theme-red-light"><span>Спор</span></div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-status-bar__item">
+                                    <div class="chat-status-bar__item-title">Требование:</div>
+                                    <div class="chat-status-bar__item-value">Возврат средств</div>
+                                  </div>
+                                </div>
+                                <div class="chat-status-bar__actions"> <button class="button button--theme-red button--size-sm" type="button"><span>Закрыть спор</span></button></div>
+                              </div>
+                              <div class="chat-window__body">
+                                <div class="chat-dialog chat-window__dialog" data-chat="dialog">
+                                  <div class="chat-dialog__date">30 ноября</div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message-main__text">Здравствуйте, открыт спор по <a href="#"> заказу </a>?</p>
+                                        <div class="chat-message-main__media">
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/1.png" data-fancybox="message"><img src="assets/media/cards/product/1.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/2.png" data-fancybox="message"><img src="assets/media/cards/product/2.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/3.png" data-fancybox="message"><img src="assets/media/cards/product/3.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/4.png" data-fancybox="message"><img src="assets/media/cards/product/4.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/5.png" data-fancybox="message"><img src="assets/media/cards/product/5.png" alt="" /></div>
                                         </div>
                                       </div>
-                                      <div class="account-tile-filter__footer"><button class="button" type="submit"><span>Применить</span></button><button class="button button--theme-secondary" type="button" data-filter-counter-button="reset"><span>Сбросить</span></button></div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                  </div><button class="button button--type-icon button--theme-secondary button--size-rg account-tile-filter__trigger" type="button" data-account-tile-filter="trigger" data-filter-counter="count"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#slider"></use>
-                                    </svg></button>
-                                </div><label class="search-input account-tile-header-filter__search search-input--theme-secondary search-input--expanding" data-component="search-input" data-search-input-type="expanding"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                                    </svg></button><input class="search-input__field" type="text" name="search" placeholder="Поиск по товарам" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
-                                    </svg></button></label>
-                              </form>
-                            </div>
-                            <div class="account-tile-header__choosen" data-filter-counter="choosen"></div>
-                          </div>
-                          <div class="account-tile__body account-tile__body--table">
-                            <table class="account-table">
-                              <thead class="account-table__header">
-                                <tr class="account-table__row">
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Название товара</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Категория</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Заказы</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Остаток</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Выручка</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Статус</div>
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody class="account-table__body">
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
-                                      <picture class="account-table-product__image">
-                                        <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
-                                      </picture>
-                                      <div class="account-table-product__main">
-                                        <h4 class="account-table-product__title">Название товара</h4>
-                                        <div class="account-table-product__subtitle">Арт. 3225</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">Листья</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">50 кг</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000 ₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>В наличии</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
-                                      <picture class="account-table-product__image">
-                                        <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
-                                      </picture>
-                                      <div class="account-table-product__main">
-                                        <h4 class="account-table-product__title">Название товара</h4>
-                                        <div class="account-table-product__subtitle">Арт. 3225</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">Листья</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">50 кг</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000 ₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>В наличии</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
-                                      <picture class="account-table-product__image">
-                                        <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
-                                      </picture>
-                                      <div class="account-table-product__main">
-                                        <h4 class="account-table-product__title">Название товара</h4>
-                                        <div class="account-table-product__subtitle">Арт. 3225</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">Листья</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">50 кг</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000 ₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>В наличии</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
-                                      <picture class="account-table-product__image">
-                                        <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
-                                      </picture>
-                                      <div class="account-table-product__main">
-                                        <h4 class="account-table-product__title">Название товара</h4>
-                                        <div class="account-table-product__subtitle">Арт. 3225</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">Листья</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">50 кг</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000 ₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>В наличии</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-product account-table__product" href="account-seller-products-detail.html">
-                                      <picture class="account-table-product__image">
-                                        <source srcset="assets/media/cards/product/1.png" type="image/webp" /><img src="assets/media/cards/product/1.png" alt="" />
-                                      </picture>
-                                      <div class="account-table-product__main">
-                                        <h4 class="account-table-product__title">Название товара</h4>
-                                        <div class="account-table-product__subtitle">Арт. 3225</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">Листья</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">50 кг</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000 ₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>В наличии</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div class="account-tile-footer account-tile__footer">
-                            <div class="pagination account-tile-footer__pagination"><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                                </svg></a>
-                              <ul class="pagination__list">
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                                <li class="pagination__item">
-                                  <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                                </li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                              </ul><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                                </svg></a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="account-tile">
-                          <div class="account-tile-header account-tile__header" data-component="filter-counter">
-                            <div class="account-tile-header__main">
-                              <h3 class="account-tile-header__title">Мои заказы</h3>
-                            </div>
-                            <div class="account-tile-header-filter account-tile-header__filter">
-                              <form action="#">
-                                <div class="account-tile-filter account-tile-header-filter__modal" data-component="account-tile-filter" data-filter-counter="filter">
-                                  <div class="account-tile-filter__modal" data-account-tile-filter="modal">
-                                    <div class="account-tile-filter__content"><button class="account-tile-filter__close" type="button" data-account-tile-filter="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                        </svg></button>
-                                      <div class="account-tile-filter__header">
-                                        <h2 class="account-tile-filter__title">Фильтр по таблице</h2>
-                                      </div>
-                                      <div class="account-tile-filter__body">
-                                        <div class="account-tile-filter__grid">
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Категории</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Специи и пряности</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сушеные овощи</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Экстракты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Приправы</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Лекарственное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Чайное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Декоративные обсыпки</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Пищевые ингридиенты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус товара</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Есть в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Нет в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На паузе продаж</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На модерации</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[0,980000],"min":0,"max":980000,"suffix":" ₽"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Остаток на складе</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Закончился</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>1 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>5 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>10 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>20 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>50 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус заказа</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Возврат</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Доставлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сформирован</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В сборке</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Отправлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В пути</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус акции</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Запущена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[1,100],"min":0,"max":100,"suffix":" %"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message-main__text">Здравствуйте, хочу открыть спор по <a href="#"> заказу </a>!</p>
+                                        <div class="chat-message-main__media">
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/1.png" data-fancybox="message"><img src="assets/media/cards/product/1.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/2.png" data-fancybox="message"><img src="assets/media/cards/product/2.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/3.png" data-fancybox="message"><img src="assets/media/cards/product/3.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/4.png" data-fancybox="message"><img src="assets/media/cards/product/4.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/5.png" data-fancybox="message"><img src="assets/media/cards/product/5.png" alt="" /></div>
                                         </div>
                                       </div>
-                                      <div class="account-tile-filter__footer"><button class="button" type="submit"><span>Применить</span></button><button class="button button--theme-secondary" type="button" data-filter-counter-button="reset"><span>Сбросить</span></button></div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                  </div><button class="button button--type-icon button--theme-secondary button--size-rg account-tile-filter__trigger" type="button" data-account-tile-filter="trigger" data-filter-counter="count"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#slider"></use>
-                                    </svg></button>
-                                </div><label class="search-input account-tile-header-filter__search search-input--theme-secondary search-input--expanding" data-component="search-input" data-search-input-type="expanding"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                                    </svg></button><input class="search-input__field" type="text" name="search" placeholder="Поиск по товарам" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
-                                    </svg></button></label>
-                              </form>
-                            </div>
-                            <div class="account-tile-header__choosen" data-filter-counter="choosen"></div>
-                          </div>
-                          <div class="account-tile__body account-tile__body--table">
-                            <table class="account-table">
-                              <thead class="account-table__header">
-                                <tr class="account-table__row">
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Заказ</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Сумма заказа</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Срок доставки</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Статус заказа</div>
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody class="account-table__body">
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div class="account-tile-footer account-tile__footer">
-                            <div class="pagination account-tile-footer__pagination"><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                                </svg></a>
-                              <ul class="pagination__list">
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                                <li class="pagination__item">
-                                  <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                                </li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                              </ul><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                                </svg></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="section section--size-md">
-                  <div class="section__header section__header--size-md">
-                    <div class="section-account-filter section-account-filter--row">
-                      <div class="badges" data-component="badges" data-badges-mode="scroll">
-                        <div class="badges__list" data-badges="list"><label class="badge badge--size-md badge--style-tab badge--theme-dark"><input class="badge__input" type="radio" name="notifications-type" value="notifications-type" checked="checked" />
-                            <div class="badge__wrapper"> <span>Продажи</span></div>
-                          </label><label class="badge badge--size-md badge--style-tab badge--theme-dark"><input class="badge__input" type="radio" name="notifications-type" value="notifications-type" />
-                            <div class="badge__wrapper"> <span>Покупки</span></div>
-                          </label></div>
-                      </div>
-                      <div class="section-account-filter__group">
-                        <div class="datepicker section-account-filter__button" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><input data-datepicker="input-to" type="hidden" name="date_to" readonly="readonly" value="" /><label class="datepicker__wrapper"><input class="datepicker__input" type="text" name="date" data-component="datepicker" data-datepicker-type="range" autocomplete="off" />
-                            <div class="button button--size-rg button--theme-secondary datepicker__button" type="button"><span data-datepicker="result"></span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
-                              </svg></div>
-                          </label></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="section__body">
-                    <div class="section__main">
-                      <div class="grid grid--tiles grid--size-xl">
-                        <div class="account-tile">
-                          <div class="account-tile-header account-tile__header">
-                            <div class="account-tile-header__main">
-                              <h3 class="account-tile-header__title">Общие показатели</h3>
-                            </div>
-                          </div>
-                          <div class="account-tile__body">
-                            <div class="grid grid--stats">
-                              <div class="stat stat--theme-primary-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Мои заказы</h4>
-                                    <div class="stat__count">1 345</div>
                                   </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#basket--light"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                              <div class="stat stat--theme-primary-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Сумма заказов</h4>
-                                    <div class="stat__count">65 000</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#database"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                              <div class="stat stat--theme-blue-light">
-                                <div class="stat__content">
-                                  <div class="stat__main">
-                                    <h4 class="stat__title">Средний чек</h4>
-                                    <div class="stat__count">138 887 ₽</div>
-                                  </div>
-                                  <div class="stat__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                    </svg></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="account-tile">
-                          <div class="account-tile-header account-tile__header" data-component="filter-counter">
-                            <div class="account-tile-header__main">
-                              <h3 class="account-tile-header__title">Мои заказы</h3>
-                            </div>
-                            <div class="account-tile-header-filter account-tile-header__filter">
-                              <form action="#">
-                                <div class="account-tile-filter account-tile-header-filter__modal" data-component="account-tile-filter" data-filter-counter="filter">
-                                  <div class="account-tile-filter__modal" data-account-tile-filter="modal">
-                                    <div class="account-tile-filter__content"><button class="account-tile-filter__close" type="button" data-account-tile-filter="close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                        </svg></button>
-                                      <div class="account-tile-filter__header">
-                                        <h2 class="account-tile-filter__title">Фильтр по таблице</h2>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message-main__text">Здравствуйте, открыт спор по <a href="#"> заказу </a>?</p>
                                       </div>
-                                      <div class="account-tile-filter__body">
-                                        <div class="account-tile-filter__grid">
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Категории</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Специи и пряности</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сушеные овощи</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Экстракты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Приправы</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Лекарственное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Чайное сырье</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Декоративные обсыпки</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Пищевые ингридиенты</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус товара</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Есть в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Нет в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На паузе продаж</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>На модерации</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[0,980000],"min":0,"max":980000,"suffix":" ₽"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Остаток на складе</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Закончился</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>1 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>5 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>10 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>20 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>50 кг</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус заказа</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Возврат</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Доставлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Сформирован</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В сборке</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Отправлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>В пути</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Статус акции</div>
-                                            <div class="badges">
-                                              <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
-                                                  <div class="badge__wrapper"> <span>Запущена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
-                                                  <div class="badge__wrapper"> <span>Завершена</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
-                                                      <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
-                                                    </svg></div>
-                                                </label></div>
-                                            </div>
-                                          </div>
-                                          <div class="account-tile-filter__item">
-                                            <div class="account-tile-filter__item-title">Сумма заказа</div>
-                                            <div class="range" data-component="range" data-options='{"start":[1,100],"min":0,"max":100,"suffix":" %"}'>
-                                              <div class="range__slider-main">
-                                                <div class="range__inputs">
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
-                                                  <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
-                                                </div>
-                                                <div class="range__slider-wrapper">
-                                                  <div class="range__slider" data-range="slider"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-dialog__date">29 ноября</div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message-main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message-main__text">Здравствуйте, хочу открыть спор по заказу!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--incoming">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message-main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                        <div class="chat-message-main__media">
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/1.png" data-fancybox="message"><img src="assets/media/cards/product/1.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/2.png" data-fancybox="message"><img src="assets/media/cards/product/2.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/3.png" data-fancybox="message"><img src="assets/media/cards/product/3.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/4.png" data-fancybox="message"><img src="assets/media/cards/product/4.png" alt="" /></div>
+                                          <div class="chat-message-main__image" data-src="assets/media/cards/product/5.png" data-fancybox="message"><img src="assets/media/cards/product/5.png" alt="" /></div>
                                         </div>
                                       </div>
-                                      <div class="account-tile-filter__footer"><button class="button" type="submit"><span>Применить</span></button><button class="button button--theme-secondary" type="button" data-filter-counter-button="reset"><span>Сбросить</span></button></div>
+                                      <div class="chat-message__time">16:45</div>
                                     </div>
-                                  </div><button class="button button--type-icon button--theme-secondary button--size-rg account-tile-filter__trigger" type="button" data-account-tile-filter="trigger" data-filter-counter="count"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#slider"></use>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message-main__text">Здравствуйте, хочу открыть спор по заказу!</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-message chat-dialog__message chat-message--outgoing">
+                                    <div class="chat-message-main chat-message__main">
+                                      <div class="chat-message-main__content">
+                                        <p class="chat-message-main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptatibus ipsum. Dolor eum, tempora laudantium provident eos, blanditiis qui, officiis asperiores temporibus quod amet fugiat officia ab totam sint.</p>
+                                      </div>
+                                      <div class="chat-message__time">16:45</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="chat-window__footer">
+                                <div class="chat-window__variants" data-chat="variants"><button class="button button--size-rg chat-window__variant" type="button"><span>Текст сообщения</span></button><button class="button button--size-rg chat-window__variant" type="button"><span>Другой текст</span></button><button class="button button--size-rg chat-window__variant" type="button"><span>Еще какой-то текст</span></button><button class="button button--size-rg chat-window__variant" type="button"><span>А может вопрос</span></button><button class="button button--size-rg chat-window__variant" type="button"><span>А может открыть спор</span></button><button class="button button--size-rg chat-window__variant" type="button"><span>Или узнать дату доставки по сделке</span></button></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat-form chat-main__form">
+                            <form action="#">
+                              <div class="chat-form__content">
+                                <div class="chat-form__preview" data-chat-form-input-file="preview" data-component="drag-scroll">
+                                  <div class="chat-form__preview-list" data-chat-form-input-file="preview-list" data-drag-scroll="content"></div>
+                                </div>
+                                <div class="chat-form__main"><label class="chat-form-input-file" data-component="chat-form-input-file"><input class="chat-form-input-file__native" type="file" name="images" multiple="multiple" accept=".png, .jpg, .jpeg" data-chat-form-input-file="native" data-max-size="2000000" />
+                                    <div class="button button--type-icon button--size-rg button--style-ghost button--theme-neutral chat-form-input-file__button" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                        <use xlink:href="assets/icons/clean/sprite.svg#attachment"></use>
+                                      </svg></div>
+                                  </label>
+                                  <div class="input chat-form__field input--type-textarea" data-component="input"><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="message" placeholder="Введите сообщение" data-input="native" data-autoheight="data-autoheight"></textarea></label><span class="input__message">Обязательно для заполнения</span></div><button class="button button--type-icon button--size-rg button--style-ghost button--theme-neutral chat-form__button" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                      <use xlink:href="assets/icons/clean/sprite.svg#paperplane"></use>
                                     </svg></button>
-                                </div><label class="search-input account-tile-header-filter__search search-input--theme-secondary search-input--expanding" data-component="search-input" data-search-input-type="expanding"><button class="search-input__submit" type="submit"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
-                                    </svg></button><input class="search-input__field" type="text" name="search" placeholder="Поиск по товарам" autocomplete="off" data-search-input="field" /><button class="search-input__clear" type="button" data-search-input="clear"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                      <use xlink:href="assets/icons/clean/sprite.svg#error--fill"></use>
-                                    </svg></button></label>
-                              </form>
-                            </div>
-                            <div class="account-tile-header__choosen" data-filter-counter="choosen"></div>
-                          </div>
-                          <div class="account-tile__body account-tile__body--table">
-                            <table class="account-table">
-                              <thead class="account-table__header">
-                                <tr class="account-table__row">
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Заказ</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Сумма заказа</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Срок доставки</div>
-                                  </th>
-                                  <th class="account-table__col">
-                                    <div class="account-table__header-item"> Статус заказа</div>
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody class="account-table__body">
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr class="account-table__row">
-                                  <td class="account-table__col"><a class="account-table-operation account-table__operation account-table-operation--theme-primary" href="#">
-                                      <div class="account-table-operation__icon"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#receipt"></use>
-                                        </svg></div>
-                                      <div class="account-table-operation__main">
-                                        <h4 class="account-table-operation__title">Заказ 09-1002-233</h4>
-                                        <div class="account-table-operation__subtitle">12-0987</div>
-                                      </div>
-                                    </a></td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">10 000₽</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">01.01.2024</div>
-                                  </td>
-                                  <td class="account-table__col">
-                                    <div class="account-table__item">
-                                      <div class="label label--size-sm label--theme-primary-darker"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                          <use xlink:href="assets/icons/clean/sprite.svg#dot"></use>
-                                        </svg><span>Завершен</span></div>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div class="account-tile-footer account-tile__footer">
-                            <div class="pagination account-tile-footer__pagination"><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                                </svg></a>
-                              <ul class="pagination__list">
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>3</span></a></li>
-                                <li class="pagination__item">
-                                  <div class="button button--size-rg pagination__link"> <span>...</span></div>
-                                </li>
-                                <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                              </ul><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
-                                  <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
-                                </svg></a>
-                            </div>
+                                </div>
+                              </div>
+                            </form><!-- Если закрыт-->
+                            <div class="label chat-form__closed label--size-md label--theme-neutral"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#lock"></use>
+                              </svg><span>Чат закрыт</span></div>
                           </div>
                         </div>
                       </div>

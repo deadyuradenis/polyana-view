@@ -5657,9 +5657,9 @@
                     </a></div>
                   <div class="section__footer">
                     <div class="section__actions"><button class="button button--theme-light" type="button"><span>Показать еще</span></button></div>
-                    <div class="pagination section__pagination"><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                    <div class="pagination section__pagination"><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#arrow--left"></use>
-                        </svg><span>Назад</span></a>
+                        </svg></a>
                       <ul class="pagination__list">
                         <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>1</span></a></li>
                         <li class="pagination__item"><a class="button button--size-rg pagination__link is-active" href="#"><span>2</span></a></li>
@@ -5668,7 +5668,7 @@
                           <div class="button button--size-rg pagination__link"> <span>...</span></div>
                         </li>
                         <li class="pagination__item"><a class="button button--size-rg pagination__link" href="#"> <span>12</span></a></li>
-                      </ul><a class="button button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <span>Вперёд</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      </ul><a class="button button--type-icon button--style-ghost button--theme-neutral button--size-rg pagination__button" href="#"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
                           <use xlink:href="assets/icons/clean/sprite.svg#arrow--right"></use>
                         </svg></a>
                     </div>
@@ -5790,20 +5790,56 @@
   </footer><button class="button button--type-icon button--rounded scroll-up" type="button" data-component="scroll-up"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
       <use xlink:href="assets/icons/clean/sprite.svg#arrow-long--up"></use>
     </svg></button>
+  <div class="modal fade modal-success modal--style-default modal--size-sm" id="modal-success" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <div class="modal-success__status-image"><img src="assets/media/modal/success.svg" alt="" /></div>
+          <div class="modal-success__header">
+            <h2 class="modal-success__title">Спасибо!</h2>
+          </div>
+          <div class="modal-success__body">
+            <p class="modal-success__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
+          </div>
+          <div class="modal-success__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-success modal--style-full modal--size-rg" id="modal-success-full" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <div class="modal-success__status-image"><img src="assets/media/modal/success.svg" alt="" /></div>
+          <div class="modal-success__header">
+            <h2 class="modal-success__title">Спасибо!</h2>
+          </div>
+          <div class="modal-success__body">
+            <p class="modal-success__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
+          </div>
+          <div class="modal-success__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="modal fade modal-status modal--style-default modal--size-sm" id="modal-status" aria-hidden="aria-hidden" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
           </svg></button>
         <div class="modal__inner">
-          <div class="modal-status__status-image"><img src="assets/media/modal/success.svg" alt="" /><img src="assets/media/modal/question.svg" alt="" /><img src="assets/media/modal/attention.svg" alt="" /></div>
+          <div class="modal-status__status-image"><img src="assets/media/modal/success.svg" alt="" /><img src="assets/media/modal/attention.svg" alt="" /><img src="assets/media/modal/question.svg" alt="" /><img src="assets/media/modal/question--gray.svg" alt="" /></div>
           <div class="modal-status__header">
             <h2 class="modal-status__title">Спасибо!</h2>
           </div>
           <div class="modal-status__body">
             <p class="modal-status__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
           </div>
-          <div class="modal-status__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
+          <div class="modal-status__footer"> <button class="button button--size-lg button--theme-secondary" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отмена</span></button><button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button><button class="button button--size-lg button--theme-red" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Удалить</span></button><button class="button button--size-lg button--theme-black" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Удалить</span></button></div>
         </div>
       </div>
     </div>
@@ -5814,14 +5850,14 @@
             <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
           </svg></button>
         <div class="modal__inner">
-          <div class="modal-status__status-image"><img src="assets/media/modal/status.svg" alt="" /></div>
+          <div class="modal-status__status-image"><img src="assets/media/modal/success.svg" alt="" /><img src="assets/media/modal/attention.svg" alt="" /><img src="assets/media/modal/question.svg" alt="" /><img src="assets/media/modal/question--gray.svg" alt="" /></div>
           <div class="modal-status__header">
             <h2 class="modal-status__title">Спасибо!</h2>
           </div>
           <div class="modal-status__body">
             <p class="modal-status__text">Спасибо за оценку товара. Ваш отзыв отправлен на модерацию.</p>
           </div>
-          <div class="modal-status__footer"> <button class="button button--size-lg" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button><button class="button button--size-lg button--theme-red" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button></div>
+          <div class="modal-status__footer"> <button class="button button--size-lg button--theme-secondary" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отмена</span></button><button class="button button--size-lg button--theme-red" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Готово</span></button><button class="button button--size-lg button--theme-red" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Удалить</span></button><button class="button button--size-lg button--theme-black" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Удалить</span></button></div>
         </div>
       </div>
     </div>
@@ -6505,6 +6541,863 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-table-filter" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Фильтр по таблице</h2>
+            </div>
+            <div class="modal__body">
+              <div class="modal-table-filter__grid">
+                <div class="modal-table-filter__item">
+                  <div class="modal-table-filter__item-title">Категории</div>
+                  <div class="badges">
+                    <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                        <div class="badge__wrapper"> <span>Травы</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Листья</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Корни</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Цветки</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Кора</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Плоды</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Грибы</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Шишки</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Почки</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Побеги</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label></div>
+                  </div>
+                </div>
+                <div class="modal-table-filter__item">
+                  <div class="modal-table-filter__item-title">Тип обработки</div>
+                  <div class="badges">
+                    <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                        <div class="badge__wrapper"> <span>Цельный</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Очищенный</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Свежий</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Порошок</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Резанный 5мм</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Резанный 20мм</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label></div>
+                  </div>
+                </div>
+                <div class="modal-table-filter__item">
+                  <div class="modal-table-filter__item-title">Статус товара</div>
+                  <div class="badges">
+                    <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                        <div class="badge__wrapper"> <span>Есть в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Нет в наличии</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>На паузе продаж</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>На модерации</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label></div>
+                  </div>
+                </div>
+                <div class="modal-table-filter__item">
+                  <div class="modal-table-filter__item-title">Сумма заказа</div>
+                  <div class="range" data-component="range" data-options='{"start":[0,980000],"min":0,"max":980000,"suffix":" ₽"}'>
+                    <div class="range__slider-main">
+                      <div class="range__inputs">
+                        <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
+                        <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
+                      </div>
+                      <div class="range__slider-wrapper">
+                        <div class="range__slider" data-range="slider"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-table-filter__item">
+                  <div class="modal-table-filter__item-title">Статус заказа</div>
+                  <div class="badges">
+                    <div class="badges__list"><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" checked="checked" />
+                        <div class="badge__wrapper"> <span>Возврат</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Доставлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Сформирован</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>В сборке</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Отправлен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>В пути</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label><label class="badge badge--style-tag"><input class="badge__input" type="checkbox" name="badge" value="badge" />
+                        <div class="badge__wrapper"> <span>Завершен</span><svg class="icon badge__close" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+                          </svg></div>
+                      </label></div>
+                  </div>
+                </div>
+                <div class="modal-table-filter__item">
+                  <div class="modal-table-filter__item-title">Сумма заказа</div>
+                  <div class="range" data-component="range" data-options='{"start":[1,100],"min":0,"max":100,"suffix":" %"}'>
+                    <div class="range__slider-main">
+                      <div class="range__inputs">
+                        <div class="range__input"><input class="range__input-field" type="text" name="range-from" data-range="input" data-type="from" /></div><span>-</span>
+                        <div class="range__input"><input class="range__input-field" type="text" name="range-to" data-range="input" data-type="to" /></div>
+                      </div>
+                      <div class="range__slider-wrapper">
+                        <div class="range__slider" data-range="slider"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Применить</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Сбросить</span></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-create-promo modal--style-default modal--size-md" id="modal-create-promo" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Создание акции</h2>
+              <div class="label label--size-md label--theme-red"><span>Скидка на товары</span></div>
+            </div>
+            <div class="modal__body">
+              <div class="modal-create-promo__grid">
+                <div class="modal-create-promo__item">
+                  <div class="modal-create-promo__item-title">Условия акции</div>
+                  <div class="form-grid">
+                    <div class="form-grid__row">
+                      <div class="form-grid__col">
+                        <div class="input input--type-text" data-component="input">
+                          <div class="input__title">Название акции</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="name" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message">Обязательно для заполнения</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-grid__row">
+                      <div class="form-grid__col">
+                        <div class="input input--type-text" data-component="input" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" />
+                          <div class="input__title">Дата начала</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="date-start" placeholder="дд.мм.гггг." data-input="native" data-component="datepicker" data-datepicker-type="single" autocomplete="off"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                            </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message"></span>
+                        </div>
+                      </div>
+                      <div class="form-grid__col">
+                        <div class="input input--type-text" data-component="input" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" />
+                          <div class="input__title">Дата завершения</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="date-end" placeholder="дд.мм.гггг." data-input="native" data-component="datepicker" data-datepicker-type="single" autocomplete="off"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                            </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-grid__row">
+                      <div class="form-grid__col">
+                        <div class="input input--type-text" data-component="input">
+                          <div class="input__title">Размер скидки</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="sale" placeholder="1-99%" data-input="native" data-mask="sale"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-grid__row">
+                      <div class="form-grid__col">
+                        <div class="input input--type-textarea" data-component="input">
+                          <div class="input__title">Описание условий</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="description" data-input="native"></textarea></label><span class="input__message"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-create-promo__item">
+                  <div class="modal-create-promo__item-title">Товары</div>
+                  <div class="form-grid">
+                    <div class="form-grid__row">
+                      <div class="form-grid__col">
+                        <div class="input input--type-text" data-component="input">
+                          <div class="input__title">Выберите категории или товары</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="products" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Создать акцию</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Сбросить</span></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-add-images" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Прикрепить фото товара</h2>
+            </div>
+            <div class="modal__body">
+              <div class="input-file" data-component="input-file">
+                <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
+                  <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
+                  <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
+                </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="media" multiple="multiple" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
+                  <div class="input-file-field__content">
+                    <div class="input-file-field__main">
+                      <div class="text-swap input-file-field__call"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                        </svg><span>Перетащите сюда или <strong>Выберите файл</strong> для загрузки</span><span>Прикрепить фото</span></div>
+                    </div>
+                    <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
+                      </svg><span>JPG, WEBP или PNG. Максимальный размер 2MB</span></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit" disabled="disabled"><span>Загрузить</span></button><button class="button button--theme-light" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Удалить все</span></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-export-data modal--style-default modal--size-rg" id="modal-export-data" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Экспорт данных</h2>
+            </div>
+            <div class="modal__body">
+              <div class="modal-export-data__grid">
+                <div class="modal-export-data__item">
+                  <div class="modal-export-data__item-title">Период</div>
+                  <div class="badges">
+                    <div class="badges__list"><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="period" value="period" checked="checked" />
+                        <div class="badge__wrapper"> <span>День</span></div>
+                      </label><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="period" value="period" />
+                        <div class="badge__wrapper"> <span>Неделя</span></div>
+                      </label><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="period" value="period" />
+                        <div class="badge__wrapper"> <span>Месяц</span></div>
+                      </label><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="period" value="period" />
+                        <div class="badge__wrapper"> <span>За период</span></div>
+                      </label></div>
+                  </div>
+                  <div class="input input--size-lg input--type-text" data-component="input" data-datepicker="wrapper"><input data-datepicker="input-from" type="hidden" name="date_from" readonly="readonly" value="" /><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="date" placeholder="дд.мм.гггг." data-input="native" data-component="datepicker" data-datepicker-type="single" autocomplete="off"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#calendar"></use>
+                      </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                      </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                      </svg></label><span class="input__message"></span></div>
+                </div>
+                <div class="modal-export-data__item">
+                  <div class="modal-export-data__item-title">Формат</div>
+                  <div class="badges">
+                    <div class="badges__list"><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="type" value="type" checked="checked" />
+                        <div class="badge__wrapper"> <span>CSV</span></div>
+                      </label><label class="badge badge--size-md badge--style-light"><input class="badge__input" type="radio" name="type" value="type" />
+                        <div class="badge__wrapper"> <span>Excel</span></div>
+                      </label></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><a class="button" href="#"><span>Скачать</span></a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-import-data modal--style-default modal--size-md" id="modal-import-data" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Импорт данных</h2>
+            </div>
+            <div class="modal__body">
+              <div class="modal-import-data__grid">
+                <div class="manual">
+                  <p class="manual__text">Скачайте инструкцию по подготовке файлов к импорту, чтобы ваши товары загрузить корректно.</p><a class="button button--style-outline button--theme-neutral button--size-rg manual__button" href="#"><span>Скачать</span><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                      <use xlink:href="assets/icons/clean/sprite.svg#download"></use>
+                    </svg></a>
+                </div>
+                <div class="input-file" data-component="input-file">
+                  <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
+                    <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
+                    <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
+                  </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="file" multiple="multiple" accept=".csv, .xlsx" data-input-file="native" data-max-size="2000000" />
+                    <div class="input-file-field__content">
+                      <div class="input-file-field__main">
+                        <div class="text-swap input-file-field__call"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                          </svg><span>Перетащите сюда или <strong>Выберите файл</strong> для загрузки</span><span>Прикрепить фото</span></div>
+                      </div>
+                      <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                          <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
+                        </svg><span>JPG, WEBP или PNG. Максимальный размер 2MB</span></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Импортировать</span></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-publish-reject modal--style-default modal--size-md" id="modal-publish-reject" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Отказ в публикации</h2>
+            </div>
+            <div class="modal__body"><!-- Если отзыва-->
+              <div class="comment modal-publish-reject__comment comment--theme-neutral">
+                <div class="comment__body">
+                  <div class="comment__main">
+                    <div class="comment-info comment__info">
+                      <div class="comment-info__profile">
+                        <picture class="comment-info__profile-photo"><img src="assets/media/photo.jpg" alt="" />
+                          <source srcset="assets/media/photo-1.webp" type="image/webp" />
+                        </picture>
+                        <div class="comment-info__main">
+                          <div class="comment-info__mame">Юрий Денисов</div>
+                          <div class="provider-rating comment-info__rating">
+                            <div class="provider-rating__main"> <span class="provider-rating__number">5.0</span>
+                              <div class="provider-rating__icons"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                  <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                                </svg></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment__content-wrapper" data-component="more">
+                      <div class="comment__content-inner" data-more="block">
+                        <div class="comment__content" data-more="content">
+                          <p>Заказали 12 упаковок молотого черного перца. Хорошее качество, нам понравилось. Доставка была быстрая по адресу. Будем заказывать еще!</p>
+                        </div>
+                      </div><button class="comment__content-more" type="button" data-more="trigger"><span>Весь отзыв</span><span>Скрыть</span></button>
+                    </div>
+                  </div>
+                  <div class="comment__images">
+                    <div class="comment__image" data-src="assets/media/cards/product/1.png" data-fancybox="comment"><img src="assets/media/cards/product/1.png" alt="" /></div>
+                    <div class="comment__image" data-src="assets/media/cards/product/2.png" data-fancybox="comment"><img src="assets/media/cards/product/2.png" alt="" /></div>
+                    <div class="comment__image" data-src="assets/media/cards/product/3.png" data-fancybox="comment"><img src="assets/media/cards/product/3.png" alt="" /></div>
+                    <div class="comment__image" data-src="assets/media/cards/product/4.png" data-fancybox="comment"><img src="assets/media/cards/product/4.png" alt="" /></div>
+                    <div class="comment__image" data-src="assets/media/cards/product/5.png" data-fancybox="comment"><img src="assets/media/cards/product/5.png" alt="" /></div>
+                  </div>
+                </div>
+                <div class="comment__footer">
+                  <div class="comment__date">20 марта 2024</div>
+                </div>
+              </div>
+              <div class="modal-publish-reject__form">
+                <div class="select" data-component="select">
+                  <div class="select__title">Причина отказа в публикации <span>*</span></div>
+                  <div class="select__main" data-select="main">
+                    <div class="select__value" data-select="value"><span class="select__placeholder">Выберите из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                        <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                      </svg></button>
+                  </div>
+                  <div class="select-dropdown select__dropdown" data-select="dropdown">
+                    <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина отказа в публикации 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина отказа в публикации 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="select" value="select-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина отказа в публикации 2</span></span></span></label></div>
+                  </div>
+                </div>
+                <div class="input input--type-textarea" data-component="input">
+                  <div class="input__title">Комментарий для автора отзыва <span>*</span></div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="input" data-input="native"></textarea></label><span class="input__message"></span>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit" disabled="disabled"><span>Отказать в публикации</span></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-respond-request modal--style-default modal--size-md" id="modal-respond-request" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Отклик на заявку</h2>
+            </div>
+            <div class="modal__body">
+              <div class="modal-request-responses__grid">
+                <div class="modal-request-responses__item">
+                  <div class="modal-request-responses__item-title">Параметры товара</div>
+                  <div class="form-grid">
+                    <div class="form-grid__row">
+                      <div class="form-grid__col">
+                        <div class="input input--type-text" data-component="input">
+                          <div class="input__title">Выбрать товар</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="product" placeholder="Поиск по товару" data-input="native"></input><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#search"></use>
+                            </svg><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message">Обязательно для заполнения</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-grid__row">
+                      <div class="form-grid__col">
+                        <div class="input input--type-text" data-component="input">
+                          <div class="input__title">Объем товара, кг</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="size" placeholder="100" data-input="native" data-mask="number"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message"></span>
+                        </div>
+                      </div>
+                      <div class="form-grid__col">
+                        <div class="input input--type-text" data-component="input">
+                          <div class="input__title">Стоимость товара, ₽</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="price" placeholder="до 100 000 ₽" data-input="native" data-mask="price"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-request-responses__item">
+                  <div class="modal-request-responses__item-title">Данные доставки</div>
+                  <div class="form-grid">
+                    <div class="form-grid__row">
+                      <div class="form-grid__col">
+                        <div class="input input--type-text" data-component="input">
+                          <div class="input__title">Адрес погрузки</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><input class="input__native" type="text" name="address" data-input="native"></input><svg class="icon input__status input__status--error" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#error--colored"></use>
+                            </svg><svg class="icon input__status input__status--success" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/default/sprite.svg#success--colored"></use>
+                            </svg></label><span class="input__message"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button" type="submit"><span>Отправить</span></button><button class="button button--theme-secondary" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-request-responses modal--style-default modal--size-md" id="modal-request-responses" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Отклики по заявке</h2>
+            </div>
+            <div class="modal__body">
+              <div class="grid modal-request-responses__grid">
+                <div class="card-provider-product">
+                  <div class="card-provider-product__inner"><a class="card-provider-product__image-wrapper" href="#">
+                      <picture class="card-provider-product__image"><img src="assets/media/cards/product/1.png" alt="" />
+                        <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                      </picture>
+                    </a>
+                    <div class="card-provider-product__content">
+                      <div class="card-provider-product__main-inner">
+                        <h4 class="card-provider-product__title"> <a href="#">Листья брусники лечебные</a></h4>
+                        <div class="badges card-provider-product__tags">
+                          <div class="badges__list">
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Грузия</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>до 20 кг</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Цельный</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-provider-product__price">от 2 500 ₽</div>
+                      <div class="card-provider-product__provider">
+                        <div class="provider-info card-provider-product__provider-info">
+                          <h4 class="provider-info__title"><a href="#">ЮгАгро</a></h4><button class="tooltip-trigger provider-info__icon" type="button" data-component="tooltip" data-bs-toggle="tooltip" data-bs-title="Краткое писание того, почему тут стоит этот значок при наведении"><svg class="icon tooltip-trigger__icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#protect"></use>
+                            </svg></button>
+                        </div>
+                        <div class="provider-rating card-provider-product__provider-rating">
+                          <div class="provider-rating__main"> <span class="provider-rating__number">5.0</span>
+                            <div class="provider-rating__icons"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg></div>
+                          </div><span class="provider-rating__reviews">128</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-provider-product__actions"> <button class="button account-requisites__button" type="button"><span>Принять</span></button></div>
+                </div>
+                <div class="card-provider-product">
+                  <div class="card-provider-product__inner"><a class="card-provider-product__image-wrapper" href="#">
+                      <picture class="card-provider-product__image"><img src="assets/media/cards/product/1.png" alt="" />
+                        <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                      </picture>
+                    </a>
+                    <div class="card-provider-product__content">
+                      <div class="card-provider-product__main-inner">
+                        <h4 class="card-provider-product__title"> <a href="#">Листья брусники лечебные</a></h4>
+                        <div class="badges card-provider-product__tags">
+                          <div class="badges__list">
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Грузия</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>до 20 кг</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Цельный</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-provider-product__price">от 2 500 ₽</div>
+                      <div class="card-provider-product__provider">
+                        <div class="provider-info card-provider-product__provider-info">
+                          <h4 class="provider-info__title"><a href="#">ЮгАгро</a></h4><button class="tooltip-trigger provider-info__icon" type="button" data-component="tooltip" data-bs-toggle="tooltip" data-bs-title="Краткое писание того, почему тут стоит этот значок при наведении"><svg class="icon tooltip-trigger__icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#protect"></use>
+                            </svg></button>
+                        </div>
+                        <div class="provider-rating card-provider-product__provider-rating">
+                          <div class="provider-rating__main"> <span class="provider-rating__number">5.0</span>
+                            <div class="provider-rating__icons"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg></div>
+                          </div><span class="provider-rating__reviews">128</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-provider-product__actions"> <button class="button account-requisites__button" type="button"><span>Принять</span></button></div>
+                </div>
+                <div class="card-provider-product">
+                  <div class="card-provider-product__inner"><a class="card-provider-product__image-wrapper" href="#">
+                      <picture class="card-provider-product__image"><img src="assets/media/cards/product/1.png" alt="" />
+                        <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                      </picture>
+                    </a>
+                    <div class="card-provider-product__content">
+                      <div class="card-provider-product__main-inner">
+                        <h4 class="card-provider-product__title"> <a href="#">Листья брусники лечебные</a></h4>
+                        <div class="badges card-provider-product__tags">
+                          <div class="badges__list">
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Грузия</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>до 20 кг</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Цельный</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-provider-product__price">от 2 500 ₽</div>
+                      <div class="card-provider-product__provider">
+                        <div class="provider-info card-provider-product__provider-info">
+                          <h4 class="provider-info__title"><a href="#">ЮгАгро</a></h4><button class="tooltip-trigger provider-info__icon" type="button" data-component="tooltip" data-bs-toggle="tooltip" data-bs-title="Краткое писание того, почему тут стоит этот значок при наведении"><svg class="icon tooltip-trigger__icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#protect"></use>
+                            </svg></button>
+                        </div>
+                        <div class="provider-rating card-provider-product__provider-rating">
+                          <div class="provider-rating__main"> <span class="provider-rating__number">5.0</span>
+                            <div class="provider-rating__icons"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg></div>
+                          </div><span class="provider-rating__reviews">128</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-provider-product__actions"> <button class="button account-requisites__button" type="button"><span>Принять</span></button></div>
+                </div>
+                <div class="card-provider-product">
+                  <div class="card-provider-product__inner"><a class="card-provider-product__image-wrapper" href="#">
+                      <picture class="card-provider-product__image"><img src="assets/media/cards/product/1.png" alt="" />
+                        <source srcset="assets/media/cards/product/1.png" type="image/webp" />
+                      </picture>
+                    </a>
+                    <div class="card-provider-product__content">
+                      <div class="card-provider-product__main-inner">
+                        <h4 class="card-provider-product__title"> <a href="#">Листья брусники лечебные</a></h4>
+                        <div class="badges card-provider-product__tags">
+                          <div class="badges__list">
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Грузия</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>до 20 кг</span></div>
+                            </div>
+                            <div class="badge badge--style-tag">
+                              <div class="badge__wrapper"> <span>Цельный</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-provider-product__price">от 2 500 ₽</div>
+                      <div class="card-provider-product__provider">
+                        <div class="provider-info card-provider-product__provider-info">
+                          <h4 class="provider-info__title"><a href="#">ЮгАгро</a></h4><button class="tooltip-trigger provider-info__icon" type="button" data-component="tooltip" data-bs-toggle="tooltip" data-bs-title="Краткое писание того, почему тут стоит этот значок при наведении"><svg class="icon tooltip-trigger__icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#protect"></use>
+                            </svg></button>
+                        </div>
+                        <div class="provider-rating card-provider-product__provider-rating">
+                          <div class="provider-rating__main"> <span class="provider-rating__number">5.0</span>
+                            <div class="provider-rating__icons"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#star-large"></use>
+                              </svg></div>
+                          </div><span class="provider-rating__reviews">128</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-provider-product__actions"> <button class="button account-requisites__button" type="button"><span>Принять</span></button></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal--style-default modal--size-md" id="modal-open-dispute" aria-hidden="aria-hidden" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+            <use xlink:href="assets/icons/clean/sprite.svg#cross"></use>
+          </svg></button>
+        <div class="modal__inner">
+          <form action="#">
+            <div class="modal__header">
+              <h2 class="modal__title">Открытие спора</h2>
+            </div>
+            <div class="modal__body">
+              <div class="form-grid">
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="select" data-component="select">
+                      <div class="select__title">Причина открытия спора</div>
+                      <div class="select__main" data-select="main">
+                        <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                          </svg></button>
+                      </div>
+                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="reason" value="reason-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Причина 5</span></span></span></label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="select" data-component="select">
+                      <div class="select__title">Требования к спору</div>
+                      <div class="select__main" data-select="main">
+                        <div class="select__value" data-select="value"><span class="select__placeholder">Выбрать из списка</span></div><button class="select__trigger" type="button"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                            <use xlink:href="assets/icons/clean/sprite.svg#chevron--down"></use>
+                          </svg></button>
+                      </div>
+                      <div class="select-dropdown select__dropdown" data-select="dropdown">
+                        <div class="select-dropdown__list" data-select="list"><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-0" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 0</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-1" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 1</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-2" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 2</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-3" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 3</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-4" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 4</span></span></span></label><label class="select-option" data-select="option"><input class="select-option__native" type="radio" name="requirement" value="requirement-5" /><span class="select-option__content" data-select="option-content"><span class="select-value"><span>Требование 5</span></span></span></label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input input--type-textarea" data-component="input">
+                      <div class="input__title">Комментарий</div><label class="input__wrapper"><!-- Маски указываюстя в data-mask, варианты: number, letters, phone, mail, phone-email, time-ramge, time, sale, card-number, card-cvv, card-date;--><textarea class="input__native" type="textarea" name="comment text" placeholder="Опишите вашу проблему" data-input="native" data-mask="letters"></textarea></label><span class="input__message">Обязательно для заполнения</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid__row">
+                  <div class="form-grid__col">
+                    <div class="input-file" data-component="input-file">
+                      <div class="input-file__title">Прикрепить фотографии</div>
+                      <div class="input-file-preview input-file__preview" data-input-file="preview" data-component="drag-scroll">
+                        <div class="input-file-preview__title" data-input-file="preview-title">0 фото загружено</div>
+                        <div class="input-file-preview__list" data-input-file="preview-list" data-drag-scroll="content"></div>
+                      </div><label class="input-file-field input-file__field" data-input-file="field"><input class="input-file-field__native" type="file" name="media" multiple="multiple" accept=".png, .jpg, .jpeg" data-input-file="native" data-max-size="2000000" />
+                        <div class="input-file-field__content">
+                          <div class="input-file-field__main">
+                            <div class="text-swap input-file-field__call"> <svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                                <use xlink:href="assets/icons/clean/sprite.svg#upload"></use>
+                              </svg><span>Перетащите сюда или <strong>Выберите файл</strong> для загрузки</span><span>Прикрепить фото</span></div>
+                          </div>
+                          <div class="input-file-field__conditions"><svg class="icon" aria-hidden="aria-hidden" role="presentation">
+                              <use xlink:href="assets/icons/clean/sprite.svg#info--fill"></use>
+                            </svg><span>JPG, WEBP или PNG. Максимальный размер 2MB</span></div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer"><button class="button button--theme-red" type="submit"><span>Открыть спор</span></button><button class="button button--theme-secondary" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Отменить</span></button></div>
+          </form>
         </div>
       </div>
     </div>
