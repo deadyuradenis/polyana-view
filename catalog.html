@@ -5093,25 +5093,25 @@
                       <div class="catalog-filter-group catalog-filter-group--type-badge" data-component="more">
                         <div class="catalog-filter-group__title">Категория</div>
                         <div class="catalog-filter-group__body" data-more="block">
-                          <div class="catalog-filter-group__content" data-more="content"><label class="badge badge--style-tab" disabled="disabled"><input class="badge__input" type="checkbox" name="package" value="package" />
+                          <div class="catalog-filter-group__content" data-more="content"><!-- data-filter-counter="all" для чекбоксов "Все"--><label class="badge badge--style-tab" data-filter-counter="all"><input class="badge__input" type="checkbox" name="package" value="package" />
                               <div class="badge__wrapper"> <span>Все</span></div>
                             </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
                               <div class="badge__wrapper"> <span>Травы</span></div>
-                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                            </label><label class="badge badge--style-tab" disabled="disabled"><input class="badge__input" type="checkbox" name="package" value="package" />
                               <div class="badge__wrapper"> <span>Листья</span></div>
                             </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
                               <div class="badge__wrapper"> <span>Корни</span></div>
-                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" checked="checked" />
-                              <div class="badge__wrapper"> <span>Цветки</span></div>
                             </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Цветки</span></div>
+                            </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" checked="checked" />
                               <div class="badge__wrapper"> <span>Кора</span></div>
                             </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
                               <div class="badge__wrapper"> <span>Плоды</span></div>
                             </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
                               <div class="badge__wrapper"> <span>Грибы</span></div>
-                            </label><label class="badge badge--style-tab" disabled="disabled"><input class="badge__input" type="checkbox" name="package" value="package" />
-                              <div class="badge__wrapper"> <span>Шишки</span></div>
                             </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
+                              <div class="badge__wrapper"> <span>Шишки</span></div>
+                            </label><label class="badge badge--style-tab" disabled="disabled"><input class="badge__input" type="checkbox" name="package" value="package" />
                               <div class="badge__wrapper"> <span>Почки</span></div>
                             </label><label class="badge badge--style-tab"><input class="badge__input" type="checkbox" name="package" value="package" />
                               <div class="badge__wrapper"> <span>Побеги</span></div>
@@ -5125,7 +5125,16 @@
                       <div class="catalog-filter-group catalog-filter-group--type-checkbox" data-component="more">
                         <div class="catalog-filter-group__title">Страна</div>
                         <div class="catalog-filter-group__body" data-more="block">
-                          <div class="catalog-filter-group__content" data-more="content"><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter country" value="Россия" checked="checked" />
+                          <div class="catalog-filter-group__content" data-more="content"><!-- data-filter-counter="all" для чекбоксов "Все"--><label class="checkbox" data-filter-counter="all"><input class="checkbox__input" type="checkbox" name="filter country" value="all" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
+                                    <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <p>Все</p>
+                                </div>
+                              </div>
+                            </label><label class="checkbox"><input class="checkbox__input" type="checkbox" name="filter country" value="Россия" checked="checked" />
                               <div class="checkbox__wrapper">
                                 <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon" aria-hidden="aria-hidden" role="presentation">
                                     <use xlink:href="assets/icons/clean/sprite.svg#checkbox"></use>
